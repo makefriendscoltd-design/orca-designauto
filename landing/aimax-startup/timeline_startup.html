@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<!--
+  AIMAX 창업 프로그램 — 커리큘럼 타임라인 (카페 모집글 삽입용 1장, 1080px)
+
+  detail_startup.html(상세페이지)과 별개다. 상세는 기수 날짜를 일부러 빼서 재사용하지만,
+  이 파일은 카페 모집글에 붙는 기수 전용 이미지라 실제 날짜를 박는다.
+
+  ▼ 기수가 바뀌면 아래 COHORT 블록 안 날짜 6개만 고쳐 다시 렌더한다.
+    주차 규칙: 1회차 주=W1, 2회차 주=W2, 첫 라이브=W3, 1:1 컨설팅 시작=W5
+
+  요일 검증: 2026-08-10 = 월요일(유저 확인) → 8/9·8/16 = 일요일, 8/24·9/7 = 월요일
+
+  렌더:
+    python ~/.claude/skills/detail-page/scripts/render_detail.py timeline_startup.html timeline_4gi_v1.png
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>AIMAX 창업 프로그램 — 커리큘럼 타임라인</title>
+<style>
+  @font-face{ font-family:"Wanted"; font-weight:500; src:url("assets/fonts/WantedSans-Medium.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:700; src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:800; src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:900; src:url("assets/fonts/WantedSans-Black.woff2") format("woff2"); }
+
+  :root{ --ink:#0d1526; --ink2:#5b6478; --line:#dfe3ec;
+         --blue:#1B3C9C; --blue2:#3E63DD; --tint:#EEF2FC; --navy:#0B1637; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased;
+        width:1080px; word-break:keep-all; background:#fff; color:var(--ink); }
+
+  /* ── 헤더 ────────────────────────────────────────── */
+  .head{ padding:140px 90px 0; }
+  .eyebrow{ font-size:24px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
+  h1{ font-size:76px; font-weight:900; line-height:1.2; letter-spacing:-.045em; margin-top:32px; }
+  .lead{ font-size:29px; font-weight:500; line-height:1.8; color:var(--ink2); margin-top:40px; }
+  .lead b{ color:var(--ink); font-weight:700; }
+
+  /* 상단 요약 3칸 — 전체 구조를 한눈에 */
+  .sum{ display:grid; grid-template-columns:repeat(3,1fr); margin-top:64px;
+        border:1px solid var(--line); }
+  .sum > div{ padding:44px 32px; border-left:1px solid var(--line); text-align:center; }
+  .sum > div:first-child{ border-left:0; }
+  .sum .n{ font-size:40px; font-weight:900; letter-spacing:-.04em; color:var(--blue); }
+  .sum .l{ font-size:23px; font-weight:600; color:var(--ink2); margin-top:14px; }
+
+  /* ── 타임라인 ─────────────────────────────────────── */
+  .tl{ position:relative; padding:110px 90px 0; }
+  /* 축: 도트 중심(왼쪽 90 + 24)에 맞춘다 */
+  .tl::before{ content:''; position:absolute; left:112px; top:150px; bottom:120px;
+               width:3px; background:var(--line); }
+
+  .node{ position:relative; padding-left:114px; padding-bottom:78px; }
+  .node:last-child{ padding-bottom:0; }
+  .node::before{ content:''; position:absolute; left:0; top:6px; width:48px; height:48px;
+                 border-radius:50%; background:#fff; border:3px solid var(--line); }
+  /* 오프라인 = 채운 블루 */
+  .node.off::before{ background:var(--blue); border-color:var(--blue); }
+  /* 온라인 = 흰 속 + 블루 테두리 */
+  .node.on::before{ border-color:var(--blue2); }
+  /* 1:1 = 채운 네이비 */
+  .node.solo::before{ background:var(--navy); border-color:var(--navy); }
+  /* VOD = 밝은 블루. 특정 시점이 아니라 전 구간에 걸리는 항목이라 색을 따로 준다 */
+  .node.vod::before{ background:var(--blue2); border-color:var(--blue2); }
+
+  .node .wk{ position:absolute; left:0; top:66px; width:48px; text-align:center;
+             font-size:19px; font-weight:800; letter-spacing:.02em; color:#a9b1c4; }
+
+  .badge{ display:inline-block; font-size:20px; font-weight:800; letter-spacing:.1em;
+          padding:9px 16px; border:1px solid var(--line); color:var(--ink2); }
+  .node.off .badge{ background:var(--blue); border-color:var(--blue); color:#fff; }
+  .node.on .badge{ border-color:var(--blue2); color:var(--blue2); }
+  .node.solo .badge{ background:var(--navy); border-color:var(--navy); color:#fff; }
+  .node.vod .badge{ background:var(--blue2); border-color:var(--blue2); color:#fff; }
+
+  .node .when{ font-size:44px; font-weight:900; letter-spacing:-.04em; margin-top:22px; line-height:1.3; }
+  .node .when em{ font-style:normal; font-size:30px; font-weight:700; color:var(--ink2);
+                  letter-spacing:-.02em; margin-left:14px; }
+  .node .what{ font-size:27px; font-weight:600; line-height:1.72; color:var(--ink2); margin-top:20px; }
+  .node .what b{ color:var(--ink); font-weight:800; }
+
+  /* 미확정 정보 각주 — 날짜를 박을 수 없는 자리에 쓴다 */
+  .memo{ margin-top:24px; font-size:23px; font-weight:600; color:#98a1b6; }
+
+  /* 노드 안 STEP 나열 */
+  .steps{ margin-top:28px; border-top:1px solid var(--line); }
+  .steps .s{ display:grid; grid-template-columns:132px 1fr; gap:26px; align-items:baseline;
+             padding:26px 0; border-bottom:1px solid var(--line); }
+  .steps .k{ font-size:20px; font-weight:800; letter-spacing:.08em; color:var(--blue2); }
+  .steps .v{ font-size:26px; font-weight:700; letter-spacing:-.02em; }
+  .steps .v span{ font-weight:500; color:var(--ink2); }
+
+  /* 온라인 피드백 주기 목록 */
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:28px; }
+  .two > div{ background:var(--tint); padding:34px 30px; }
+  .two .k{ font-size:20px; font-weight:800; letter-spacing:.08em; color:var(--blue2); }
+  .two .v{ font-size:28px; font-weight:800; letter-spacing:-.03em; margin-top:14px; }
+
+  /* ── 온라인 5개월 : 매일 · 매주 · 매달 세 주기 ─────────── */
+  .tracks{ padding:130px 90px 0; }
+  .tracknote{ padding:42px 46px; background:var(--tint); border-left:4px solid var(--blue);
+              font-size:27px; font-weight:600; line-height:1.7; color:var(--ink2); }
+  .tracknote b{ color:var(--ink); font-weight:800; }
+  .mon{ margin-top:26px; border:1px solid var(--line); padding:54px 48px; }
+  .mon .k{ font-size:21px; font-weight:800; letter-spacing:.1em; color:var(--blue2); }
+  .mon .t{ font-size:38px; font-weight:900; letter-spacing:-.035em; margin-top:18px; }
+  .mon ol{ margin:36px 0 0; padding:0; list-style:none; counter-reset:n; }
+  .mon li{ counter-increment:n; font-size:26px; font-weight:700; line-height:1.6;
+           padding-left:58px; position:relative; margin-top:24px; letter-spacing:-.02em; }
+  .mon li:first-child{ margin-top:0; }
+  .mon li::before{ content:counter(n,decimal-leading-zero); position:absolute; left:0; top:3px;
+                   font-size:20px; font-weight:800; color:#a9b1c4; }
+  .mon li span{ color:var(--ink2); font-weight:500; }
+
+  /* ── 마감 ────────────────────────────────────────── */
+  .last{ margin-top:130px; background:var(--navy); color:#fff; text-align:center; padding:120px 90px; }
+  .last .q{ font-size:52px; font-weight:900; letter-spacing:-.045em; line-height:1.34; }
+  .last .q em{ font-style:normal; color:#8FB0FF; }
+  .last .d{ margin-top:38px; font-size:26px; font-weight:600; color:#93a1c2; line-height:1.7; }
+  .last .bar{ display:flex; justify-content:center; gap:14px; margin-top:52px; flex-wrap:wrap; }
+  .last .bar span{ font-size:23px; font-weight:700; color:#cfd9f0;
+                   border:1px solid #2a3a63; padding:14px 24px; }
+  .foot{ height:14px; background:var(--blue); }
+</style>
+</head>
+<body>
+
+  <!-- COHORT ▼ 기수가 바뀌면 이 블록의 날짜만 고친다 ─────────────── -->
+  <div class="head">
+    <div class="eyebrow">4기 · 8월반 커리큘럼</div>
+    <h1>2주 오프라인으로 만들고<br>5개월 온라인으로 완성합니다</h1>
+    <div class="lead">첫 달 <b>2주 연속 일요일</b> 오프라인에서 AI 직원을 만들어 나옵니다.
+      이후 <b>5개월 동안 매일 · 매주 · 매달</b> 세 박자로 굴러갑니다.
+      모든 영상은 <b>VOD로 재시청</b>할 수 있습니다.</div>
+
+    <div class="sum">
+      <div><div class="n">2회</div><div class="l">오프라인 · 6h + 4h</div></div>
+      <div><div class="n">5개월</div><div class="l">온라인 · 매월 1회 라이브</div></div>
+      <div><div class="n">10명</div><div class="l">기수 정원</div></div>
+    </div>
+  </div>
+
+  <div class="tl">
+
+    <div class="node off">
+      <div class="wk">W1</div>
+      <div class="badge">오프라인 1회차</div>
+      <div class="when">8월 9일 (일)<em>12시 ~ 18시 · 6시간</em></div>
+      <div class="what">바이브코딩을 처음부터 배우고 <b>그 자리에서 내 AI 직원 MVP까지</b> 만듭니다.</div>
+      <div class="steps">
+        <div class="s"><div class="k">AI 직원 제작</div><div class="v">사전 질문지 전달 &amp; 작성</div></div>
+        <div class="s"><div class="k"></div><div class="v">바이브코딩 A to Z 교육</div></div>
+        <div class="s"><div class="k"></div><div class="v">어떤 직원을 만들지 결정</div></div>
+        <div class="s"><div class="k"></div><div class="v">바이브코딩 실습 시작</div></div>
+        <div class="s"><div class="k"></div><div class="v">나만의 AI 직원 MVP 제작</div></div>
+      </div>
+    </div>
+
+    <div class="node off">
+      <div class="wk">W2</div>
+      <div class="badge">오프라인 2회차</div>
+      <div class="when">8월 16일 (일)<em>12시 ~ 16시 · 4시간</em></div>
+      <div class="what">만든 직원에 <b>파는 구조를 붙입니다.</b> 실습 중심으로 진행합니다.</div>
+      <div class="steps">
+        <div class="s"><div class="k">마케팅 실습</div><div class="v">제작한 AI 직원 수익화 설계</div></div>
+        <div class="s"><div class="k"></div><div class="v">실제 AI 서비스 마케팅 사례</div></div>
+        <div class="s"><div class="k"></div><div class="v">SNS 마케팅 실습 <span>— 유입 · 전환 설계</span></div></div>
+      </div>
+    </div>
+
+    <!-- 온라인 구간은 날짜를 박지 않는다. 매일/매주/매달이라는 주기만 고정값이다 -->
+    <div class="node on">
+      <div class="wk">이후</div>
+      <div class="badge">온라인 5개월</div>
+      <div class="when">2회차 다음 주부터<em>매일 · 매주 · 매달</em></div>
+      <div class="what">주기가 셋입니다. <b>매일 손이 가고, 매주 점검하고, 매달 다시 훑습니다.</b>
+        혼자 끙끙대다 멈추는 구간을 없애는 구조입니다.</div>
+    </div>
+
+    <div class="node solo">
+      <div class="badge">매월 1회</div>
+      <div class="when">전 과정 복습 라이브<em>5단계 커리큘럼</em></div>
+      <div class="what">한 달에 한 번 <b>0에서 판매까지 다섯 단계를 통째로 다시 훑습니다.</b>
+        놓친 달이 있어도 다음 달에 따라잡습니다.</div>
+    </div>
+
+    <div class="node vod">
+      <div class="wk">전 과정</div>
+      <div class="badge">VOD</div>
+      <div class="when">놓쳐도 다시 봅니다<em>모든 영상 VOD 제공</em></div>
+      <div class="what">오프라인 2회차와 온라인 라이브 <b>모든 영상을 VOD로 드립니다.</b>
+        그날 못 들어와도, 나중에 다시 봐도 진도가 끊기지 않습니다.</div>
+    </div>
+
+  </div>
+  <!-- COHORT ▲ ────────────────────────────────────────────────── -->
+
+  <div class="tracks">
+    <div class="tracknote">온라인 5개월은 <b>매일 · 매주 · 매달 세 주기가 겹쳐서</b> 돌아갑니다.
+      한 달에 한 번은 전 과정을 통째로 다시 훑습니다.</div>
+
+    <div class="mon">
+      <div class="k">DAILY</div>
+      <div class="t">매일</div>
+      <ol>
+        <li>SNS 마케팅 활동 점검 &amp; 피드백</li>
+        <li>복붙하면 되는 콘텐츠 제공 <span>(파트너스)</span></li>
+        <li>바이브코딩 질의응답 바로 답변</li>
+      </ol>
+    </div>
+
+    <div class="mon">
+      <div class="k">WEEKLY</div>
+      <div class="t">매주</div>
+      <ol>
+        <li>월요일 AI 작업물 점검 &amp; 피드백</li>
+        <li>수 or 금 마케팅 라이브 피드백 <span>(파트너스)</span></li>
+        <li>요청 시 1:1 수익화 점검 컨설팅</li>
+      </ol>
+    </div>
+
+    <div class="mon">
+      <div class="k">MONTHLY</div>
+      <div class="t">매달</div>
+      <ol>
+        <li>전 과정 복습 라이브 <span>(아래 커리큘럼)</span></li>
+        <li>마지막 주 토요일 AI 강연 참석권</li>
+        <li>AI 서비스 수익 정산 <span>(파트너스)</span></li>
+      </ol>
+    </div>
+
+    <div class="mon">
+      <div class="k">매월 1회 · 복습 라이브 커리큘럼</div>
+      <div class="t">0에서 판매까지 다섯 단계</div>
+      <ol>
+        <li>프로젝트 폴더 완성 <span>— 개발 가능한 상태 만들기</span></li>
+        <li>핵심기능 1개 &amp; 오류 해결 <span>— 팔리는 상태 만들기</span></li>
+        <li>버전관리 및 배포 링크 점검 <span>— 실전 배포하기</span></li>
+        <li>API key · 비용 · 보안 체크 <span>— 안전한 운영 상태 만들기</span></li>
+        <li>데모 영상 · 상세페이지 · 고객 피드백 <span>— 판매 제안하기</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="last">
+    <div class="q">2주 만에 만들고<br><em>5개월 동안 팔아봅니다</em></div>
+    <!-- "모두 참석해야" 로 쓰면 VOD 제공과 충돌한다. 참석 강제가 아니라
+         두 회차가 하나로 이어진다는 쪽으로 잡았다 -->
+    <div class="d">두 회차가 하나로 이어집니다.<br>한 회차만 듣고 끝낼 수 있는 구성이 아닙니다.</div>
+    <div class="bar"><span>오프라인 2회차</span><span>온라인 5개월</span><span>전 과정 VOD</span><span>정원 10명</span></div>
+  </div>
+  <div class="foot"></div>
+
+</body>
+</html>

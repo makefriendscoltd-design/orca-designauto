@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+  AIMAX 창업 프로그램 — 기수 일정 안내 블록 (1080px, 상세페이지 뒤에 붙이는 별도 조각)
+
+  ■ 26-07-30 부터 이 파일에도 날짜가 없다 (유저 확정).
+    기수 날짜는 카페24 **상품 요약설명(텍스트 필드)** 에서만 관리한다.
+      - 이미지는 교체에 3분, 텍스트는 3초. 그리고 텍스트는 잊어도 티가 난다
+      - 이미지에 박으면 기수가 넘어갈 때 **지난 날짜가 조용히 남는다**. 그게 가장 위험하다
+      - 카페24 상품명·옵션에 이미 기수 표기가 있어, 이미지에 또 두면 세트로 갈 곳이 하나 늘어난다
+    그래서 여기엔 **고정값만** 둔다 — 회차 · 요일 · 시간 · 회차 간격 · 정원 · 인상 예고.
+    기수가 바뀌어도 이 1장은 다시 렌더하지 않는다.
+
+  ※ 카페 모집글용(cards_startup.html · timeline_startup.html)은 반대다 — 거긴 날짜를 박는다.
+    기수마다 새 글이라 지나간 글은 그냥 지나간 글이 되기 때문. make_cards.py 로 뽑는다.
+  렌더: python ~/.claude/skills/detail-page/scripts/render_detail.py detail_startup_schedule.html schedule_v4_5.png
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>AIMAX 창업 프로그램 — 기수 일정</title>
+<style>
+  @font-face{ font-family:"Wanted"; font-weight:500; src:url("assets/fonts/WantedSans-Medium.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:700; src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:800; src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:900; src:url("assets/fonts/WantedSans-Black.woff2") format("woff2"); }
+
+  :root{ --ink:#0d1526; --ink2:#5b6478; --line:#dfe3ec;
+         --blue:#1B3C9C; --blue2:#3E63DD; --tint:#EEF2FC; --navy:#0B1637; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased;
+        width:1080px; word-break:keep-all; background:#fff; color:var(--ink); }
+
+  section{ padding:170px 90px; }
+  .eyebrow{ font-size:24px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
+  h2{ font-size:72px; font-weight:900; line-height:1.22; letter-spacing:-.045em; margin-top:34px; }
+  .lead{ font-size:29px; font-weight:500; line-height:1.85; color:var(--ink2); margin-top:44px; }
+  .lead b{ color:var(--ink); font-weight:700; }
+
+  .gen{ margin-top:88px; border:1px solid var(--line); }
+  .gen + .gen{ margin-top:30px; }
+  .gen.on{ border-color:var(--blue); background:var(--tint); }
+  .gen .hd{ display:flex; align-items:baseline; gap:20px; padding:48px 52px 0; }
+  .gen .no{ font-size:46px; font-weight:900; letter-spacing:-.04em; }
+  .gen.on .no{ color:var(--blue); }
+  .gen .tag{ font-size:21px; font-weight:800; letter-spacing:.08em; color:#98a1b6; }
+  .gen.on .tag{ color:var(--blue2); }
+  .gen .rows{ padding:36px 52px 52px; }
+  .gen .r{ display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:30px;
+           padding:34px 0; border-top:1px solid var(--line); }
+  .gen.on .r{ border-top-color:#d5def5; }
+  .gen .r:first-child{ border-top:0; padding-top:14px; }
+  .gen .d{ font-size:36px; font-weight:800; letter-spacing:-.03em; }
+  .gen .t{ font-size:27px; font-weight:600; color:var(--ink2); white-space:nowrap; }
+
+  .note{ margin-top:88px; padding-top:44px; border-top:1px solid var(--line);
+         font-size:26px; font-weight:600; color:var(--ink2); line-height:1.75; }
+  .note b{ color:var(--ink); font-weight:800; }
+
+  /* 마지막 한 줄은 다크로 눌러 끝낸다 */
+  .last{ background:var(--navy); color:#fff; text-align:center; padding:140px 90px; }
+  .last .q{ font-size:56px; font-weight:900; letter-spacing:-.045em; line-height:1.35; }
+  .last .q em{ font-style:normal; color:#8FB0FF; }
+  .last .d{ margin-top:44px; font-size:26px; font-weight:600; color:#93a1c2; line-height:1.7; }
+</style>
+</head>
+<body>
+  <section>
+    <div class="eyebrow">오프라인 일정</div>
+    <h2>소수정예로 합니다</h2>
+    <div class="lead">오프라인은 <b>2주 연속 일요일 2회차</b>로 끝냅니다. 첫 회차 6시간에 직원을 만들고,
+      두 번째 회차 4시간에 판매 붙이는 것까지 갑니다.
+      이후 <b>5개월 동안 매일·매주·매달</b> 온라인으로 이어집니다.</div>
+
+    <!-- 날짜를 박지 않는다 (26-07-30 유저 확정).
+         기수 날짜는 카페24 "상품 요약설명"(텍스트 필드)에서 관리한다 — 3초에 바뀐다.
+         이미지에 박으면 기수가 넘어갈 때 지난 날짜가 그대로 남는다.
+         고정값(요일·시간·회차 간격)만 남겨 이 1장이 어느 기수에도 그대로 쓰이게 한다 -->
+    <div class="gen on">
+      <div class="hd"><div class="no">1회차</div><div class="tag">일요일 · 6시간</div></div>
+      <div class="rows">
+        <div class="r"><div class="d">AI 직원 제작</div><div class="t">12시 ~ 18시</div></div>
+        <div class="r"><div class="d">바이브코딩으로 MVP까지</div><div class="t">실습 중심</div></div>
+      </div>
+    </div>
+
+    <div class="gen">
+      <div class="hd"><div class="no">2회차</div><div class="tag">다음 주 일요일 · 4시간</div></div>
+      <div class="rows">
+        <div class="r"><div class="d">마케팅 실습</div><div class="t">12시 ~ 16시</div></div>
+        <div class="r"><div class="d">수익화 설계 · 유입 · 전환</div><div class="t">실습 중심</div></div>
+      </div>
+    </div>
+
+    <!-- "모두 참석해야" 로 쓰면 VOD 제공과 충돌한다. 참석 강제가 아니라 두 회차가 이어진다는 얘기 -->
+    <div class="note">두 회차는 <b>1회차에서 만든 것을 2회차에서 파는 데까지</b> 잇습니다.
+      <b>모든 영상은 VOD로 제공</b>되어 놓친 부분은 다시 볼 수 있습니다.<br>
+      <b>기수별 날짜는 옵션과 상품 안내에서 확인하실 수 있습니다.</b></div>
+  </section>
+
+  <div class="last">
+    <div class="q"><em>기수가 올라갈수록<br>가격이 인상됩니다</em></div>
+    <div class="d">매 기수 정원 10명, 정원 전에 마감됩니다.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 1000×1000 대표이미지. 상세페이지와 같은 시스템(화이트&블루 · Wanted Sans).
+     가격은 넣지 않는다 — 자료가 늘면 인상되므로 카페24 판매가만 바꿔 운영한다.
+     인물 대신 "안에 든 것"을 세운다. 이 상품은 사람이 아니라 쌓인 자료가 주인공이다.
+     렌더: python ~/.claude/skills/detail-page/scripts/render_detail.py thumbnail_lifetime.html thumbnail_lifetime.png --width 1000 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>메이크패밀리 평생회원제 — 썸네일</title>
+<style>
+  @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:700; src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:800; src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:900; src:url("assets/fonts/WantedSans-Black.woff2") format("woff2"); }
+
+  :root{ --ink:#0d1526; --ink2:#5b6478; --line:#dfe3ec; --blue:#1B3C9C; --blue2:#3E63DD; --tint:#EEF2FC; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased; width:1000px; word-break:keep-all; }
+
+  .card{ position:relative; width:1000px; height:1000px; background:#fff; color:var(--ink);
+         overflow:hidden; display:flex; flex-direction:column; }
+  /* 맨 아래가 흰색이면 render_detail.py 가 여백으로 보고 잘라낸다. 블루 띠로 바닥을 고정 */
+  .card::after{ content:""; position:absolute; left:0; bottom:0; width:1000px; height:12px; background:var(--blue); }
+
+  .top{ position:relative; padding:62px 62px 0; }
+  .brand{ display:flex; align-items:center; gap:12px; font-size:25px; font-weight:800; letter-spacing:-.01em; }
+  .brand i{ width:10px; height:10px; background:var(--blue); display:block; font-style:normal; }
+  .brand span{ color:var(--ink2); font-weight:600; }
+
+  /* 상품명은 칩으로 작게, 헤드라인 자리는 실제 후킹 문장에 준다 */
+  .chip{ display:inline-block; margin-top:44px; background:var(--blue); color:#fff;
+         font-size:25px; font-weight:800; letter-spacing:-.01em; padding:15px 26px; }
+  h1{ margin-top:34px; font-size:70px; font-weight:900; line-height:1.22; letter-spacing:-.055em; white-space:nowrap; }
+  h1 em{ font-style:normal; color:var(--blue); }
+  .sub{ margin-top:34px; font-size:25px; font-weight:600; color:var(--ink2); line-height:1.72; }
+  .sub b{ color:var(--ink); font-weight:800; }
+
+  /* 안에 든 것 — 큰 숫자 3개로 보여준다.
+     아래 .bar 가 margin-top:auto 로 바닥에 붙으므로, 여기 높이가 커지면 라벨이 바에 먹힌다 */
+  .inv{ margin:46px 62px 0; display:grid; grid-template-columns:repeat(3,1fr);
+        border-top:1px solid var(--line); }
+  .inv div{ padding:42px 0 0; }
+  .inv .n{ font-size:62px; font-weight:900; letter-spacing:-.05em; line-height:1; color:var(--blue); }
+  .inv .n small{ font-size:33px; }
+  .inv .l{ font-size:22px; color:var(--ink2); margin-top:18px; font-weight:600; white-space:nowrap; }
+
+  .bar{ margin-top:auto; position:relative; background:var(--tint); padding:44px 62px;
+        display:flex; align-items:center; gap:18px; margin-bottom:12px; }
+  .bar .t{ font-size:31px; font-weight:900; letter-spacing:-.03em; }
+  .bar .t em{ font-style:normal; color:var(--blue); }
+  .bar .d{ font-size:21px; color:var(--ink2); font-weight:600; margin-left:auto; white-space:nowrap; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand"><i></i>AIMAX<span>· 메이크패밀리</span></div>
+      <div class="chip">평생회원제</div>
+      <h1>다른 강의 듣느라<br><em>시간 버리지 마세요</em></h1>
+      <div class="sub">회원방에 <b>강의 12편과 전용 툴 3종</b>이 이미 들어 있습니다.<br>
+        한 번 결제하면 앞으로 추가되는 것까지 봅니다.</div>
+    </div>
+    <div class="inv">
+      <div><div class="n">12<small>편</small></div><div class="l">강의 전편</div></div>
+      <div><div class="n">3<small>종</small></div><div class="l">회원 전용 툴</div></div>
+      <div><div class="n">0<small>원</small></div><div class="l">추가 결제</div></div>
+    </div>
+    <div class="bar">
+      <div class="t">수강 기간 <em>없음</em></div>
+      <div class="d">월간 웨비나 · 오프라인 스터디 · 단톡방</div>
+    </div>
+  </div>
+</body>
+</html>

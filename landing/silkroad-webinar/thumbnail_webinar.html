@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- 1000×1000 대표이미지. 렌더:
+     python ~/.claude/skills/detail-page/scripts/render_detail.py thumbnail_webinar.html thumbnail_webinar.png --width 1000 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>수출 매칭 수익화 클래스 — 썸네일</title>
+<style>
+  @font-face{ font-family:"Pretendard"; font-weight:500; src:url("assets/pretendard/Pretendard-Medium.woff2") format("woff2"); }
+  @font-face{ font-family:"Pretendard"; font-weight:600; src:url("assets/pretendard/Pretendard-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Pretendard"; font-weight:700; src:url("assets/pretendard/Pretendard-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Pretendard"; font-weight:800; src:url("assets/pretendard/Pretendard-ExtraBold.woff2") format("woff2"); }
+
+  :root{ --acc:#ED7D31; --acc2:#FFA65B; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Pretendard",sans-serif; -webkit-font-smoothing:antialiased; width:1000px; word-break:keep-all; }
+
+  .card{ position:relative; overflow:hidden; width:1000px; height:1000px; color:#fff;
+    display:flex; flex-direction:column; padding:74px 72px 66px;
+    background:radial-gradient(110% 62% at 86% 2%, rgba(237,125,49,.40) 0%, rgba(10,24,48,0) 58%),
+               linear-gradient(158deg,#162c53 0%,#0d1e3d 54%,#070f1f 100%); }
+  .comet{ position:absolute; top:52px; right:-190px; width:600px; height:104px;
+    background:linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,166,91,.6) 86%, #ffd9b8 100%);
+    border-radius:999px; filter:blur(2px); opacity:.5; transform:rotate(-9deg); }
+
+  .top{ display:flex; align-items:center; gap:16px; position:relative; }
+  .top .dot{ width:20px; height:20px; border-radius:50%; background:var(--acc); flex:none; }
+  .top .bn{ font-size:29px; font-weight:800; letter-spacing:-.01em; }
+  .top .sep{ color:#5a6980; font-weight:600; font-size:26px; }
+  .top .sb{ color:#9db0cd; font-weight:600; font-size:25px; }
+
+  .badge{ align-self:flex-start; margin-top:52px; font-size:25px; font-weight:800; letter-spacing:4px;
+    color:#0a1830; background:linear-gradient(100deg,#ffd9ac,var(--acc2)); padding:12px 28px; border-radius:999px; }
+
+  .spacer{ flex:1; }
+
+  .eyeb{ font-size:30px; font-weight:700; color:var(--acc2); letter-spacing:-.01em; }
+  h1{ font-size:100px; font-weight:800; line-height:1.1; letter-spacing:-.05em; margin-top:20px; }
+  h1 .u{ background:linear-gradient(180deg,transparent 78%, rgba(237,125,49,.95) 78% 97%, transparent 97%); }
+
+  .when{ margin-top:44px; display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+  .when .d{ background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18);
+    border-radius:14px; padding:16px 24px; font-size:31px; font-weight:800; letter-spacing:-.02em; }
+  .when .live{ font-size:27px; font-weight:600; color:#a9b8d0; }
+
+  .foot{ margin-top:52px; padding-top:34px; border-top:1px solid #27334c; display:flex; }
+  .foot .f{ flex:1; }
+  .foot .f .n{ font-size:36px; font-weight:800; letter-spacing:-.03em; }
+  .foot .f .n.on{ color:var(--acc2); }
+  .foot .f .l{ font-size:22px; color:#8695ae; margin-top:8px; font-weight:600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="comet"></div>
+
+    <div class="top">
+      <span class="dot"></span><span class="bn">실크로드</span>
+      <span class="sep">·</span><span class="sb">수출입 실무 커뮤니티</span>
+    </div>
+
+    <div class="badge">무료 웨비나</div>
+
+    <div class="spacer"></div>
+
+    <div class="eyeb">퇴근 후, 국내 말고 세계시장</div>
+    <h1>직장인을 위한<br><span class="u">수출 매칭</span><br>수익화 클래스</h1>
+
+    <div class="when">
+      <div class="d">8월 10일 (월) 20:00</div>
+      <div class="live">온라인 라이브</div>
+    </div>
+
+    <div class="foot">
+      <div class="f"><div class="n on">참가비 0원</div><div class="l">사전 신청자 한정</div></div>
+      <div class="f"><div class="n">약 2시간</div><div class="l">다시보기 없음</div></div>
+      <div class="f"><div class="n">AI 활용</div><div class="l">바이어 탐색·제안</div></div>
+    </div>
+  </div>
+</body>
+</html>

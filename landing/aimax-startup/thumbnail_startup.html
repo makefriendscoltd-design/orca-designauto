@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- 1000×1000 대표이미지. 상세페이지와 같은 시스템(화이트&블루 · Wanted Sans).
+     가격·일정은 넣지 않는다 — 기수마다 바뀌므로 카페24 판매가만 바꿔 운영한다.
+     렌더: python ~/.claude/skills/detail-page/scripts/render_detail.py thumbnail_startup.html thumbnail_startup.png --width 1000 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>AIMAX 창업 프로그램 — 썸네일</title>
+<style>
+  @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:700; src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:800; src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:900; src:url("assets/fonts/WantedSans-Black.woff2") format("woff2"); }
+
+  :root{ --ink:#0d1526; --ink2:#5b6478; --line:#dfe3ec; --blue:#1B3C9C; --blue2:#3E63DD; --tint:#EEF2FC; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased; width:1000px; word-break:keep-all; }
+
+  .card{ position:relative; width:1000px; height:1000px; background:#fff; color:var(--ink);
+         overflow:hidden; display:flex; flex-direction:column; }
+  /* 우측 연블루 면 위에 인물을 세운다 — 흰 셔츠가 흰 배경에 묻히는 걸 막는다 */
+  .card::before{ content:""; position:absolute; right:0; top:0; width:380px; height:790px; background:var(--tint); }
+  /* 맨 아래가 흰색이면 render_detail.py 가 여백으로 보고 잘라낸다. 블루 띠로 바닥을 고정 */
+  .card::after{ content:""; position:absolute; left:0; bottom:0; width:1000px; height:12px; background:var(--blue); }
+
+  .top{ position:relative; padding:62px 62px 0; }
+  .brand{ display:flex; align-items:center; gap:12px; font-size:25px; font-weight:800; letter-spacing:-.01em; }
+  .brand i{ width:10px; height:10px; background:var(--blue); display:block; font-style:normal; }
+  .brand span{ color:var(--ink2); font-weight:600; }
+
+  h1{ margin-top:78px; font-size:76px; font-weight:900; line-height:1.22; letter-spacing:-.05em; white-space:nowrap; }
+  h1 em{ font-style:normal; color:var(--blue); }
+  .sub{ margin-top:38px; font-size:26px; font-weight:600; color:var(--ink2); line-height:1.7; }
+
+  .ph{ position:absolute; right:0; bottom:210px; }
+  .ph img{ width:380px; }
+
+  .bar{ margin-top:auto; position:relative; display:grid; grid-template-columns:repeat(3,1fr);
+        border-top:1px solid var(--line); background:#fff; margin-bottom:12px; }
+  .bar div{ padding:38px 26px; border-right:1px solid var(--line); }
+  .bar div:last-child{ border-right:0; }
+  .bar .n{ font-size:32px; font-weight:900; letter-spacing:-.03em; white-space:nowrap; }
+  .bar .n.b{ color:var(--blue); }
+  .bar .l{ font-size:19px; color:var(--ink2); margin-top:12px; font-weight:600; white-space:nowrap; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="top">
+      <div class="brand"><i></i>AIMAX<span>· 메이크패밀리 창업 프로그램</span></div>
+      <h1>AI를 배우지 마세요<br><em>AI 직원을 만드세요</em></h1>
+      <div class="sub">내 대신 일하는 직원을 하나 완성하고,<br>그걸 파는 데까지 갑니다.</div>
+    </div>
+    <div class="ph"><img src="assets/site/tutor_cut.png" alt=""></div>
+    <div class="bar">
+      <div><div class="n b">90%</div><div class="l">수강생 제작 성공</div></div>
+      <div><div class="n">정원 10명</div><div class="l">매 기수 조기 마감</div></div>
+      <div><div class="n">2회 + 5개월</div><div class="l">오프라인 · 온라인</div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!--
+  AIMAX 창업 프로그램 — 카페 모집글 첨부용 카드 3장 (1080×1350 · 4:5)
+
+  timeline_startup.html(1080×5,439 롱이미지)과 용도가 다르다.
+    롱이미지 = 상세페이지 포맷. 카페 본문에 넣으면 모바일에서 한참 스크롤한다
+    이 파일  = 카페 글 흐름 중간에 박는 카드. 한 화면에 훑힌다
+
+  4:5 인 이유: 카페는 모바일이 주력이고 세로 4:5 가 화면을 가장 크게 먹는다.
+  가로형은 모바일에서 작아져서 글씨가 안 읽힌다.
+
+  각 .card 는 height 1350px 고정이다. 내용을 늘리면 조용히 잘리므로
+  고친 뒤에는 반드시 세 장을 눈으로 볼 것.
+
+  렌더 → 3등분:
+    python make_cards.py --gen 4 --label 8월반 --first 2026-08-09
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>AIMAX 창업 프로그램 — 카페 카드 3장</title>
+<style>
+  @font-face{ font-family:"Wanted"; font-weight:500; src:url("assets/fonts/WantedSans-Medium.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:700; src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:800; src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2"); }
+  @font-face{ font-family:"Wanted"; font-weight:900; src:url("assets/fonts/WantedSans-Black.woff2") format("woff2"); }
+
+  :root{ --ink:#0d1526; --ink2:#5b6478; --line:#dfe3ec;
+         --blue:#1B3C9C; --blue2:#3E63DD; --tint:#EEF2FC; --navy:#0B1637; }
+  *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased;
+        width:1080px; word-break:keep-all; background:#fff; color:var(--ink); }
+
+  /* 카드는 높이 고정. 넘치면 잘린다 */
+  .card{ width:1080px; height:1350px; padding:88px 76px; position:relative; overflow:hidden; }
+  .card.dark{ background:var(--navy); color:#fff; }
+
+  .eyebrow{ font-size:25px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
+  .card.dark .eyebrow{ color:#8FB0FF; }
+  h1{ font-size:66px; font-weight:900; line-height:1.22; letter-spacing:-.045em; margin-top:24px; }
+  h1 em{ font-style:normal; color:var(--blue); }
+  .card.dark h1 em{ color:#8FB0FF; }
+  .sub{ font-size:27px; font-weight:600; line-height:1.7; color:var(--ink2); margin-top:26px; }
+  .card.dark .sub{ color:#93a1c2; }
+  .sub b{ color:var(--ink); font-weight:800; }
+  .card.dark .sub b{ color:#fff; }
+
+  /* 우하단 워터마크 — 카페 글에서 이미지가 흩어져도 출처가 남는다 */
+  .mark{ position:absolute; right:76px; bottom:66px; font-size:21px; font-weight:800;
+         letter-spacing:.1em; color:#b9c0cf; }
+  .card.dark .mark{ color:#465577; }
+
+  /* ── 카드 1 : 전체 흐름 ───────────────────────────── */
+  .flow{ margin-top:54px; position:relative; padding-left:96px; }
+  .flow::before{ content:''; position:absolute; left:19px; top:16px; bottom:26px;
+                 width:3px; background:var(--line); }
+  .fn{ position:relative; padding-bottom:42px; }
+  .fn:last-child{ padding-bottom:0; }
+  .fn::before{ content:''; position:absolute; left:-96px; top:4px; width:41px; height:41px;
+               border-radius:50%; background:#fff; border:3px solid var(--line); }
+  .fn.off::before{ background:var(--blue); border-color:var(--blue); }
+  .fn.on::before{ border-color:var(--blue2); }
+  .fn.solo::before{ background:var(--navy); border-color:var(--navy); }
+  .fn.vod::before{ background:var(--blue2); border-color:var(--blue2); }
+  .fn .t{ font-size:38px; font-weight:900; letter-spacing:-.035em; line-height:1.3; }
+  .fn .t em{ font-style:normal; font-size:26px; font-weight:700; color:var(--ink2);
+             letter-spacing:-.02em; margin-left:12px; }
+  .fn .d{ font-size:25px; font-weight:600; color:var(--ink2); margin-top:12px; line-height:1.6; }
+
+  .pills{ display:flex; gap:12px; margin-top:44px; flex-wrap:wrap; }
+  .pills span{ font-size:23px; font-weight:700; color:var(--blue);
+               background:var(--tint); padding:16px 24px; }
+
+  /* ── 카드 2 : 오프라인 STEP ───────────────────────── */
+  .day{ margin-top:40px; border:1px solid var(--line); padding:34px 40px; }
+  .day + .day{ margin-top:20px; }
+  .day.hi{ border-color:var(--blue); background:var(--tint); }
+  .day .hd{ display:flex; align-items:baseline; gap:18px; }
+  .day .dt{ font-size:38px; font-weight:900; letter-spacing:-.04em; }
+  .day.hi .dt{ color:var(--blue); }
+  .day .tm{ font-size:24px; font-weight:700; color:var(--ink2); }
+  .day .ttl{ font-size:32px; font-weight:900; letter-spacing:-.035em; margin-top:20px;
+             padding-top:20px; border-top:1px solid var(--line); }
+  .day.hi .ttl{ border-top-color:#d5def5; color:var(--blue); }
+  .day ul{ margin:20px 0 0; padding:0; list-style:none; }
+  .day li{ font-size:26px; font-weight:700; letter-spacing:-.02em; line-height:1.5;
+           margin-top:15px; padding-left:30px; position:relative; }
+  .day li:first-child{ margin-top:0; }
+  .day li::before{ content:''; position:absolute; left:2px; top:15px;
+                   width:11px; height:2px; background:#b9c0cf; }
+  .day.hi li::before{ background:var(--blue2); }
+  .day li span{ font-weight:500; color:var(--ink2); }
+
+  /* ── 카드 3 : 매일 / 매주 / 매달 ──────────────────── */
+  .cyc{ margin-top:52px; border-left:4px solid var(--blue2); padding:6px 0 6px 34px; }
+  .cyc .hd{ display:flex; align-items:baseline; gap:16px; }
+  .cyc .c{ font-size:40px; font-weight:900; letter-spacing:-.04em; color:var(--blue); }
+  .cyc .e{ font-size:19px; font-weight:800; letter-spacing:.14em; color:#b9c0cf; }
+  .cyc ul{ margin:24px 0 0; padding:0; list-style:none; }
+  .cyc li{ font-size:27px; font-weight:700; letter-spacing:-.02em; line-height:1.5;
+           margin-top:19px; padding-left:28px; position:relative; }
+  .cyc li:first-child{ margin-top:0; }
+  .cyc li::before{ content:''; position:absolute; left:0; top:15px;
+                   width:11px; height:2px; background:#b9c0cf; }
+  .cyc li span{ font-weight:600; color:#98a1b6; }
+
+  /* ── 카드 4 : 복습 라이브 커리큘럼 ─────────────────── */
+  .trk{ margin-top:40px; border:1px solid #24325a; padding:38px 42px; }
+  .trk ol{ margin:0; padding:0; list-style:none; counter-reset:n; }
+  .trk li{ counter-increment:n; font-size:28px; font-weight:800; line-height:1.45;
+           padding-left:60px; position:relative; margin-top:32px; letter-spacing:-.025em; }
+  .trk li:first-child{ margin-top:0; }
+  .trk li::before{ content:counter(n,decimal-leading-zero); position:absolute; left:0; top:4px;
+                   font-size:21px; font-weight:800; color:#5b6c96; }
+  .trk li span{ display:block; font-size:24px; color:#93a1c2; font-weight:500; margin-top:8px; }
+  .vodline{ margin-top:26px; padding:24px 34px; background:#152449;
+            font-size:25px; font-weight:700; line-height:1.6; color:#cfd9f0; }
+  .vodline b{ color:#8FB0FF; font-weight:800; }
+</style>
+</head>
+<body>
+
+<!-- ══ 카드 1 — 전체 흐름 ═══════════════════════════════════ -->
+<div class="card">
+  <div class="eyebrow">4기 · 8월반</div>
+  <h1>2주 만에 만들고<br><em>5개월 동안 팝니다</em></h1>
+  <div class="sub">첫 달 <b>2주 연속 일요일</b> 오프라인, 이후 <b>5개월 온라인.</b>
+    모든 영상은 VOD로 재시청할 수 있습니다.</div>
+
+  <div class="flow">
+    <div class="fn off">
+      <div class="t">8월 9일 (일)<em>6시간</em></div>
+      <div class="d">오프라인 1회차 — AI 직원 제작</div>
+    </div>
+    <div class="fn off">
+      <div class="t">8월 16일 (일)<em>4시간</em></div>
+      <div class="d">오프라인 2회차 — 마케팅 실습</div>
+    </div>
+    <div class="fn on">
+      <div class="t">이후 5개월<em>온라인</em></div>
+      <div class="d">매일 · 매주 · 매달로 굴러갑니다 — 혼자 두지 않습니다</div>
+    </div>
+    <div class="fn solo">
+      <div class="t">매월 1회</div>
+      <div class="d">전 과정 복습 라이브 — 5단계 커리큘럼을 다시 훑습니다</div>
+    </div>
+    <div class="fn vod">
+      <div class="t">전 과정</div>
+      <div class="d">VOD 제공 — 놓쳐도, 나중에도 다시 볼 수 있습니다</div>
+    </div>
+  </div>
+
+  <div class="pills"><span>오프라인 2회차</span><span>온라인 5개월</span><span>정원 10명</span></div>
+  <div class="mark">AIMAX</div>
+</div>
+
+<!-- ══ 카드 2 — 오프라인 1·2회차 ═══════════════════════════ -->
+<div class="card">
+  <div class="eyebrow">오프라인 2회차 · 6시간 + 4시간</div>
+  <h1>1회차엔 만들고<br><em>2회차엔 파는 법을</em></h1>
+
+  <div class="day hi">
+    <div class="hd"><div class="dt">8월 9일 (일)</div><div class="tm">12시 ~ 18시 · 6시간</div></div>
+    <div class="ttl">AI 직원 제작</div>
+    <ul>
+      <li>사전 질문지 전달 &amp; 작성</li>
+      <li>바이브코딩 A to Z 교육</li>
+      <li>어떤 직원을 만들지 결정</li>
+      <li>바이브코딩 실습 시작</li>
+      <li>나만의 AI 직원 MVP 제작</li>
+    </ul>
+  </div>
+
+  <div class="day">
+    <div class="hd"><div class="dt">8월 16일 (일)</div><div class="tm">12시 ~ 16시 · 4시간</div></div>
+    <div class="ttl">마케팅 실습</div>
+    <ul>
+      <li>제작한 AI 직원 수익화 설계</li>
+      <li>실제 AI 서비스 마케팅 사례</li>
+      <li>SNS 마케팅 실습 <span>— 유입 · 전환 설계</span></li>
+    </ul>
+  </div>
+
+  <div class="mark">AIMAX</div>
+</div>
+
+<!-- ══ 카드 3 — 온라인 5개월 운영 (매일 / 매주 / 매달) ═════════ -->
+<div class="card">
+  <div class="eyebrow">온라인 5개월</div>
+  <h1>혼자 두지 않습니다</h1>
+  <div class="sub">오프라인이 끝나면 <b>매일 · 매주 · 매달</b> 세 박자로 굴러갑니다.</div>
+
+  <div class="cyc">
+    <div class="hd"><div class="c">매일</div><div class="e">DAILY</div></div>
+    <ul>
+      <li>SNS 마케팅 활동 점검 &amp; 피드백</li>
+      <li>복붙하면 되는 콘텐츠 제공 <span>(파트너스)</span></li>
+      <li>바이브코딩 질의응답 바로 답변</li>
+    </ul>
+  </div>
+
+  <div class="cyc">
+    <div class="hd"><div class="c">매주</div><div class="e">WEEKLY</div></div>
+    <ul>
+      <li>월요일 AI 작업물 점검 &amp; 피드백</li>
+      <li>수 or 금 마케팅 라이브 피드백 <span>(파트너스)</span></li>
+      <li>요청 시 1:1 수익화 점검 컨설팅</li>
+    </ul>
+  </div>
+
+  <div class="cyc">
+    <div class="hd"><div class="c">매달</div><div class="e">MONTHLY</div></div>
+    <ul>
+      <li>전 과정 복습 라이브</li>
+      <li>마지막 주 토요일 AI 강연 참석권</li>
+      <li>AI 서비스 수익 정산 <span>(파트너스)</span></li>
+    </ul>
+  </div>
+
+  <div class="mark">AIMAX</div>
+</div>
+
+<!-- ══ 카드 4 — 매월 복습 라이브 커리큘럼 (다크로 마감) ═════════ -->
+<div class="card dark">
+  <div class="eyebrow">매월 1회 · 전 과정 복습 라이브</div>
+  <h1>0에서 판매까지<br><em>다섯 단계</em></h1>
+  <div class="sub">매달 이 커리큘럼을 다시 훑습니다. <b>놓친 달이 있어도 다음 달에 따라잡습니다.</b></div>
+
+  <div class="trk">
+    <ol>
+      <li>프로젝트 폴더 완성 <span>— 개발 가능한 상태 만들기</span></li>
+      <li>핵심기능 1개 &amp; 오류 해결 <span>— 팔리는 상태 만들기</span></li>
+      <li>버전관리 및 배포 링크 점검 <span>— 실전 배포하기</span></li>
+      <li>API key · 비용 · 보안 체크 <span>— 안전한 운영 상태 만들기</span></li>
+      <li>데모 영상 · 상세페이지 · 고객 피드백 <span>— 판매 제안하기</span></li>
+    </ol>
+  </div>
+
+  <div class="vodline">모든 영상은 <b>VOD로 제공</b>돼 재시청할 수 있습니다.</div>
+  <div class="mark">AIMAX</div>
+</div>
+
+</body>
+</html>
