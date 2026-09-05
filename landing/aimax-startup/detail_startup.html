@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <!--
-  AIMAX 창업 프로그램 — 유료 세일즈 상세페이지 (1080px)
+  AIMAX 창업 프로그램 — 유료 세일즈 상세페이지 (740px)
 
-  ■ 톤앤무드 : 화이트 & 블루
-  ■ 공간 체계 (몰입감의 8할은 여백이다)
-      섹션 상하 패딩   200px   (기존 120px → 대폭 확대)
-      좌우 마진        90px    → 콘텐츠 900px
-      제목 ↔ 본문      44px
-      본문 ↔ 다음요소  88px
-      요소 간 간격     28px 이상, 나열형은 절대 붙이지 않는다
-      풀블리드 이미지  앞뒤로 최소 160px 확보. 텍스트와 맞붙이지 않는다
+  ■ 왜 740px 인가 (26-08-03 전면 재조판)
+      와디즈 상세(FundingStory) 실측 폭이 740px 다. 우리는 1080px 이었다.
+      이미지 상세는 모바일에서 화면 폭(≈390px)에 맞춰 통째로 축소되므로
+      캔버스가 넓을수록 글자가 작아진다.
+          1080px → 390px  =  0.361배   본문 25px 이 9.0px 로 보임
+           740px → 390px  =  0.527배   본문 25px 이 13.2px 로 보임
+      같은 폰트가 1.46배 크게 보인다. "폰트를 키운다"가 아니라 "캔버스를 좁힌다"가 답이다.
+      한 줄 글자 수가 줄어 시선 복귀 거리도 짧아진다 — 이게 가독성의 본체다.
+      ※ 폭을 다시 넓히지 말 것. 넓히는 순간 모바일 가독성이 그대로 무너진다.
+
+  ■ 폰트 원칙 : 제목은 줄이고 본문은 유지한다
+      1080 때는 제목/본문 비율이 3.4배(84:25)라 제목만 읽히고 본문은 개미였다.
+      740 에서는 1.9배(46:24)로 좁혀 본문이 읽히게 만든다.
+      본문 24px = 모바일 12.6px, 리드 26px = 13.7px 가 하한선이다. 더 낮추지 말 것.
+
+  ■ 공간 체계
+      섹션 상하 패딩   120px      좌우 56px → 콘텐츠 628px
+      제목 ↔ 본문      30px       본문 ↔ 다음요소  56px
+      나열형은 절대 붙이지 않는다
   ■ 금지 : 그라디언트 · 글로우 · 생성 3D · 형광 다색 · 장식 폰트
   ■ 서체 : Wanted Sans 한 벌 (OFL)
-  렌더: python ~/.claude/skills/detail-page/scripts/render_detail.py detail_startup.html detail_startup_full.png
+
+  렌더(폭 인자 필수):
+    python ~/.claude/skills/detail-page/scripts/render_detail.py detail_startup.html detail_startup_full.png --width 740
 -->
 <html lang="ko">
 <head>
@@ -29,7 +42,7 @@
 
   :root{
     --ink:#0d1526;      /* 본문 잉크 */
-    --ink2:#5b6478;     /* 보조 텍스트 */
+    --ink2:#54607a;     /* 보조 텍스트 — 1080판 #5b6478 보다 진하게. 작은 글씨 대비 확보 */
     --line:#dfe3ec;     /* 괘선 */
     --blue:#1B3C9C;     /* AIMAX 브랜드 (로고 실측) */
     --blue2:#3E63DD;    /* 밝은 블루 */
@@ -39,240 +52,295 @@
   }
   *{ margin:0; box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
   body{ font-family:"Wanted",sans-serif; -webkit-font-smoothing:antialiased;
-        width:1080px; word-break:keep-all; background:#fff; color:var(--ink); }
+        width:740px; word-break:keep-all; background:#fff; color:var(--ink); }
   img{ display:block; }
 
   /* ── 공간 체계 ─────────────────────────────── */
-  section{ padding:200px 90px; }
+  section{ padding:120px 56px; }
   section.tint{ background:var(--tint); }
   section.navy{ background:var(--navy); color:#fff; }
-  .eyebrow{ font-size:24px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
-  h2{ font-size:72px; font-weight:900; line-height:1.22; letter-spacing:-.045em; margin-top:34px; }
-  h2.sm{ font-size:58px; }
+  .eyebrow{ font-size:19px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
+  h2{ font-size:44px; font-weight:900; line-height:1.26; letter-spacing:-.04em; margin-top:22px; }
+  h2.sm{ font-size:38px; }
   section.navy h2{ color:#fff; }
-  .lead{ font-size:29px; font-weight:500; line-height:1.85; color:var(--ink2); margin-top:44px; }
+  .lead{ font-size:26px; font-weight:500; line-height:1.8; color:var(--ink2); margin-top:30px; }
   .lead b{ color:var(--ink); font-weight:700; }
-  section.navy .lead{ color:#a9b5d0; } section.navy .lead b{ color:#fff; }
-  .after{ margin-top:88px; }
-  .note{ margin-top:88px; padding-top:44px; border-top:1px solid var(--line);
-         font-size:26px; font-weight:600; color:var(--ink2); line-height:1.75; }
+  section.navy .lead{ color:#aab6d2; } section.navy .lead b{ color:#fff; }
+  .after{ margin-top:56px; }
+  .note{ margin-top:56px; padding-top:30px; border-top:1px solid var(--line);
+         font-size:24px; font-weight:600; color:var(--ink2); line-height:1.72; }
   .note b{ color:var(--ink); font-weight:800; }
-  section.navy .note{ border-color:#22315c; color:#a9b5d0; } section.navy .note b{ color:#fff; }
+  section.navy .note{ border-color:#22315c; color:#aab6d2; } section.navy .note b{ color:#fff; }
   .bl{ color:var(--blue); }
 
-  /* ── HERO ──────────────────────────────────── */
-  .hero{ display:grid; grid-template-columns:1fr 392px; align-items:end; min-height:940px;
-         background:linear-gradient(90deg,#fff 0 63%, var(--tint) 63% 100%); }
-  .hero .tx{ padding:0 40px 150px 90px; }
-  .hero .brand{ display:flex; align-items:center; gap:13px; font-size:25px; font-weight:800; letter-spacing:-.01em; }
-  .hero .brand i{ width:10px; height:10px; background:var(--blue); display:block; font-style:normal; }
+  /* ── HERO ──────────────────────────────────────
+     그리드에 min-width:0 이 없으면 1fr 의 min-content 가 h1 전체 폭이 되어
+     그리드가 740 을 넘고 인물 사진이 캔버스 밖으로 잘린다. 1080판에서 실제로 잘려 나갔다.
+     텍스트 칸 폭 = 740 − 236(사진) − 76(패딩) = 428px. h1 46px 은 여기 들어간다 */
+  .hero{ display:grid; grid-template-columns:1fr 236px; align-items:end; min-height:620px;
+         background:linear-gradient(90deg,#fff 0 64%, var(--tint) 64% 100%); }
+  .hero .tx{ padding:0 20px 96px 56px; min-width:0; }
+  .hero .brand{ display:flex; align-items:center; gap:10px; font-size:20px; font-weight:800; letter-spacing:-.01em; }
+  .hero .brand i{ width:9px; height:9px; background:var(--blue); display:block; font-style:normal; }
   .hero .brand span{ color:var(--ink2); font-weight:600; }
-  .hero h1{ margin-top:88px; font-size:84px; font-weight:900; line-height:1.16; letter-spacing:-.05em;
-            white-space:nowrap; }
+  .hero h1{ margin-top:56px; font-size:46px; font-weight:900; line-height:1.2; letter-spacing:-.045em; }
   .hero h1 em{ font-style:normal; color:var(--blue); }
-  .hero .sub{ margin-top:48px; font-size:28px; font-weight:500; color:var(--ink2); line-height:1.8; }
+  .hero .sub{ margin-top:32px; font-size:25px; font-weight:500; color:var(--ink2); line-height:1.75; }
   .hero .sub b{ color:var(--ink); font-weight:700; }
   .hero .ph{ align-self:end; }
-  .hero .ph img{ width:392px; }
+  .hero .ph img{ width:236px; }
 
-  .facts{ display:grid; grid-template-columns:repeat(4,1fr);
+  /* 사실 4칸 → 740 에서는 2×2. 4칸이면 칸당 185px 라 라벨이 접힌다.
+     자손(.facts div)이 아니라 자식(>) 셀렉터여야 한다 — 안 그러면 안쪽 .n/.l 에도
+     패딩과 괘선이 먹어 숫자와 라벨이 벌어지고 칸 구분선이 중간에서 끊긴다 */
+  .facts{ display:grid; grid-template-columns:repeat(2,1fr);
           border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-  /* 칸 폭 270px. 패딩을 키우면 "오프라인 2회차"가 2줄로 접히고 리듬이 깨진다 */
-  .facts div{ padding:46px 20px; border-right:1px solid var(--line); text-align:center; }
-  .facts div:last-child{ border-right:0; }
-  .facts .n{ font-size:24px; font-weight:800; letter-spacing:-.03em; white-space:nowrap; }
-  .facts .l{ font-size:19px; color:var(--ink2); margin-top:12px; font-weight:600; white-space:nowrap; }
+  .facts > div{ padding:32px 18px; text-align:center;
+                border-right:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .facts > div:nth-child(2n){ border-right:0; }
+  .facts > div:nth-child(n+3){ border-bottom:0; }
+  .facts .n{ font-size:23px; font-weight:800; letter-spacing:-.03em; }
+  .facts .l{ font-size:20px; color:var(--ink2); margin-top:9px; font-weight:600; }
+
+  /* ── 브릿지 : 와디즈 4단의 2단 ──────────────────
+     오프닝(HERO) 다음 곧바로 문제제기로 가면 독자가 전체 그림 없이 스크롤한다.
+     와디즈는 여기서 전체를 3문장으로 요약하고 들어간다 */
+  .bridge{ padding:80px 56px; background:var(--tint); }
+  .bridge .bk{ font-size:19px; font-weight:800; letter-spacing:.14em; color:var(--blue2); }
+  .bridge ol{ margin:34px 0 0; padding:0; list-style:none; counter-reset:b; }
+  .bridge li{ counter-increment:b; position:relative; padding-left:52px; margin-top:26px;
+              font-size:25px; font-weight:600; line-height:1.65; color:var(--ink2); }
+  .bridge li:first-child{ margin-top:0; }
+  .bridge li b{ color:var(--ink); font-weight:800; }
+  .bridge li::before{ content:counter(b); position:absolute; left:0; top:0;
+                      width:32px; height:32px; border-radius:50%; background:var(--blue);
+                      color:#fff; font-size:17px; font-weight:800;
+                      display:flex; align-items:center; justify-content:center; }
 
   /* ── 나열 : 절대 붙이지 않는다 ──────────────── */
-  .pains{ margin-top:80px; }
-  .pain{ display:grid; grid-template-columns:78px 1fr; align-items:baseline;
-         padding:46px 0; border-top:1px solid var(--line); }
+  .pains{ margin-top:52px; }
+  .pain{ display:grid; grid-template-columns:52px 1fr; align-items:baseline;
+         padding:32px 0; border-top:1px solid var(--line); }
   .pain:last-child{ border-bottom:1px solid var(--line); }
-  .pain .i{ font-size:22px; font-weight:800; color:#a9b1c4; letter-spacing:.06em; }
-  .pain .t{ font-size:38px; font-weight:700; letter-spacing:-.03em; }
+  .pain .i{ font-size:19px; font-weight:800; color:#a3abbf; letter-spacing:.06em; }
+  .pain .t{ font-size:30px; font-weight:700; letter-spacing:-.03em; line-height:1.4; }
 
   /* 도입부 : 욕구를 먼저 짚는다. 진단보다 앞에 온다 */
-  .want{ margin-top:96px; }
-  .want .w{ padding:58px 0; border-top:1px solid var(--line); display:grid;
-            grid-template-columns:1fr auto; align-items:baseline; gap:40px; }
+  .want{ margin-top:60px; }
+  .want .w{ padding:38px 0; border-top:1px solid var(--line); display:grid;
+            grid-template-columns:1fr auto; align-items:baseline; gap:24px; }
   .want .w:last-child{ border-bottom:1px solid var(--line); }
-  .want .t{ font-size:52px; font-weight:900; letter-spacing:-.04em; line-height:1.2; }
+  .want .t{ font-size:32px; font-weight:900; letter-spacing:-.04em; line-height:1.25; }
   .want .t em{ font-style:normal; color:var(--blue); }
-  .want .d{ font-size:25px; color:var(--ink2); font-weight:600; text-align:right; line-height:1.6; }
+  .want .d{ font-size:22px; color:var(--ink2); font-weight:600; text-align:right; line-height:1.55; }
 
   /* 한 문장만 놓는 몰입 판 */
-  .oneline{ padding:260px 90px; background:var(--navy); color:#fff; text-align:center; }
-  .oneline .q{ font-size:70px; font-weight:900; letter-spacing:-.05em; line-height:1.4; }
+  .oneline{ padding:150px 56px; background:var(--navy); color:#fff; text-align:center; }
+  .oneline .q{ font-size:42px; font-weight:900; letter-spacing:-.045em; line-height:1.45; }
   .oneline .q em{ font-style:normal; color:#8FB0FF; }
-  .oneline .d{ margin-top:64px; font-size:28px; font-weight:600; color:#93a1c2; line-height:1.7; }
+  .oneline .d{ margin-top:44px; font-size:24px; font-weight:600; color:#9aa8c8; line-height:1.7; }
 
   /* 진단 끝에 던지는 질문 */
-  .ask{ margin-top:96px; font-size:64px; font-weight:900; letter-spacing:-.045em; line-height:1.3; }
+  .ask{ margin-top:60px; font-size:40px; font-weight:900; letter-spacing:-.04em; line-height:1.35; }
   .ask em{ font-style:normal; color:var(--blue); }
 
   /* 상황 묘사 — 독자의 하루를 문장으로 */
-  .scene{ margin-top:88px; }
-  .scene .s{ font-size:31px; font-weight:600; line-height:1.75; color:var(--ink2);
-             padding:34px 0 34px 40px; border-left:3px solid var(--line); }
-  .scene .s + .s{ margin-top:22px; }
+  .scene{ margin-top:56px; }
+  .scene .s{ font-size:25px; font-weight:600; line-height:1.7; color:var(--ink2);
+             padding:24px 0 24px 28px; border-left:3px solid var(--line); }
+  .scene .s + .s{ margin-top:16px; }
   .scene .s b{ color:var(--ink); font-weight:800; }
   .scene .s.on{ border-left-color:var(--blue); }
 
   /* 말풍선 + 캐릭터 */
-  .say{ background:var(--tint); padding:170px 90px 0; }
+  .say{ background:var(--tint); padding:110px 56px 0; }
   .say .bub{ position:relative; background:#fff; border:1px solid var(--line);
-             border-radius:34px; padding:64px 60px; max-width:820px; margin:0 auto; }
-  .say .bub .l{ font-family:"Hanna","Wanted",sans-serif; font-size:46px; line-height:1.7;
+             border-radius:26px; padding:44px 40px; max-width:560px; margin:0 auto; }
+  .say .bub .l{ font-family:"Hanna","Wanted",sans-serif; font-size:32px; line-height:1.7;
                 color:var(--ink); text-align:center; }
-  .say .bub .l + .l{ margin-top:12px; }
-  .say .bub::after{ content:""; position:absolute; left:130px; bottom:-38px; width:0; height:0;
-    border-left:0 solid transparent; border-right:64px solid transparent; border-top:40px solid #fff; }
-  .say .bub::before{ content:""; position:absolute; left:129px; bottom:-41px; width:0; height:0;
-    border-left:0 solid transparent; border-right:66px solid transparent; border-top:42px solid var(--line); }
-  .say .who2{ display:flex; align-items:flex-end; gap:20px; margin-top:34px; padding-left:40px; }
-  .say .who2 img{ width:250px; }
-  .say .who2 .q{ font-size:96px; font-weight:900; color:var(--blue2); padding-bottom:80px; }
-  .say.right .bub::after{ left:auto; right:130px; border-right:0; border-left:64px solid transparent; }
-  .say.right .bub::before{ left:auto; right:129px; border-right:0; border-left:66px solid transparent; }
-  .say.right .who2{ justify-content:flex-end; padding-left:0; padding-right:40px; }
+  .say .bub .l + .l{ margin-top:8px; }
+  .say .bub::after{ content:""; position:absolute; left:88px; bottom:-26px; width:0; height:0;
+    border-left:0 solid transparent; border-right:44px solid transparent; border-top:28px solid #fff; }
+  .say .bub::before{ content:""; position:absolute; left:87px; bottom:-29px; width:0; height:0;
+    border-left:0 solid transparent; border-right:46px solid transparent; border-top:30px solid var(--line); }
+  .say .who2{ display:flex; align-items:flex-end; gap:14px; margin-top:24px; padding-left:26px; }
+  .say .who2 img{ width:170px; }
+  .say .who2 .q{ font-size:64px; font-weight:900; color:var(--blue2); padding-bottom:52px; }
+  .say.right .bub::after{ left:auto; right:88px; border-right:0; border-left:44px solid transparent; }
+  .say.right .bub::before{ left:auto; right:87px; border-right:0; border-left:46px solid transparent; }
+  .say.right .who2{ justify-content:flex-end; padding-left:0; padding-right:26px; }
 
-  /* 전환 2단 */
-  .flip{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:88px; }
-  .flip .c{ padding:56px 48px; border:1px solid var(--line); }
+  /* 전환 2단 — 칸 폭 (628−22)/2 = 303px */
+  .flip{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:56px; }
+  .flip .c{ padding:36px 30px; border:1px solid var(--line); }
   .flip .c.on{ border-color:var(--blue); background:var(--tint); }
-  .flip .k{ font-size:21px; font-weight:800; letter-spacing:.12em; color:#98a1b6; }
+  .flip .k{ font-size:18px; font-weight:800; letter-spacing:.12em; color:#8f99ad; }
   .flip .c.on .k{ color:var(--blue2); }
-  .flip .t{ font-size:48px; font-weight:900; letter-spacing:-.04em; margin-top:22px; line-height:1.2; }
+  .flip .t{ font-size:33px; font-weight:900; letter-spacing:-.04em; margin-top:16px; line-height:1.25; }
   .flip .c.on .t{ color:var(--blue); }
-  .flip .d{ font-size:25px; color:var(--ink2); margin-top:28px; font-weight:500; line-height:1.75; }
+  .flip .d{ font-size:23px; color:var(--ink2); margin-top:20px; font-weight:500; line-height:1.7; }
 
   /* 직원 2인 */
-  .duo{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:88px; }
-  .duo .d{ background:#fff; border:1px solid var(--line); padding:56px 48px; }
-  .duo .k{ font-size:20px; font-weight:800; letter-spacing:.12em; color:var(--blue2); }
-  .duo .n{ font-size:48px; font-weight:900; letter-spacing:-.035em; margin-top:20px; }
-  .duo ul{ list-style:none; padding:0; margin:36px 0 0; }
-  .duo li{ font-size:25px; color:var(--ink2); line-height:1.6; margin-top:20px;
-           padding-left:26px; position:relative; font-weight:600; }
-  .duo li::before{ content:""; position:absolute; left:0; top:16px; width:10px; height:2px; background:var(--blue2); }
+  .duo{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:56px; }
+  .duo .d{ background:#fff; border:1px solid var(--line); padding:36px 30px; }
+  .duo .k{ font-size:17px; font-weight:800; letter-spacing:.12em; color:var(--blue2); }
+  .duo .n{ font-size:33px; font-weight:900; letter-spacing:-.035em; margin-top:14px; }
+  .duo ul{ list-style:none; padding:0; margin:26px 0 0; }
+  .duo li{ font-size:23px; color:var(--ink2); line-height:1.55; margin-top:16px;
+           padding-left:22px; position:relative; font-weight:600; }
+  .duo li::before{ content:""; position:absolute; left:0; top:14px; width:9px; height:2px; background:var(--blue2); }
 
   /* 수치 */
-  .bignum{ text-align:center; padding:230px 90px; }
-  .bignum .n{ font-size:250px; font-weight:900; letter-spacing:-.06em; line-height:.86; color:var(--blue); }
-  .bignum .n small{ font-size:96px; }
-  .bignum .d{ margin-top:64px; font-size:34px; font-weight:700; letter-spacing:-.02em; }
-  .bignum .s{ margin-top:28px; font-size:26px; font-weight:500; color:var(--ink2); line-height:1.75; }
+  .bignum{ text-align:center; padding:140px 56px; }
+  .bignum .n{ font-size:150px; font-weight:900; letter-spacing:-.06em; line-height:.88; color:var(--blue); }
+  .bignum .n small{ font-size:58px; }
+  .bignum .d{ margin-top:44px; font-size:28px; font-weight:700; letter-spacing:-.025em; line-height:1.45; }
+  .bignum .s{ margin-top:22px; font-size:24px; font-weight:500; color:var(--ink2); line-height:1.7; }
 
   /* 증거 */
-  .shot{ margin-top:96px; }
-  .shot img{ width:900px; border:1px solid var(--line); }
-  .shot .cap{ font-size:24px; color:var(--ink2); margin-top:30px; font-weight:600; line-height:1.6; }
+  .shot{ margin-top:56px; }
+  .shot img{ width:628px; border:1px solid var(--line); }
+  .shot .cap{ font-size:22px; color:var(--ink2); margin-top:22px; font-weight:600; line-height:1.6; }
   .shot .cap b{ color:var(--ink); font-weight:800; }
-  .pair{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:96px; align-items:start; }
+  /* 증거 스크린샷은 2단으로 두면 칸당 303px 이라 모바일에서 글자가 죽는다.
+     740 에서는 세로로 쌓아 폭을 통째로 준다 */
+  .pair{ margin-top:56px; }
+  .pair > div + div{ margin-top:44px; }
   .pair img{ width:100%; border:1px solid var(--line); }
-  .chips{ display:flex; flex-wrap:wrap; gap:12px; margin-top:88px; }
-  .chip{ border:1px solid var(--line); color:var(--ink2); padding:16px 24px; font-size:23px; font-weight:600; }
+  .chips{ display:flex; flex-wrap:wrap; gap:10px; margin-top:56px; }
+  .chip{ border:1px solid var(--line); color:var(--ink2); padding:12px 18px; font-size:20px; font-weight:600; }
 
   /* 풀블리드 이미지 */
   .bleed{ margin:0; }
-  .bleed img{ width:1080px; }
-  .bleedcap{ padding:70px 90px 0; font-size:25px; color:var(--ink2); font-weight:600; line-height:1.7; }
+  .bleed img{ width:740px; }
+  .bleedcap{ padding:48px 56px 0; font-size:23px; color:var(--ink2); font-weight:600; line-height:1.7; }
 
-  /* 정원 */
-  .cap10{ display:grid; grid-template-columns:auto 1fr; gap:70px; align-items:center; margin-top:88px; }
-  .cap10 .n{ font-size:150px; font-weight:900; letter-spacing:-.055em; line-height:.9; }
+  /* 정원 — 740 에서 가로 2단은 좁아 세로로 쌓는다 */
+  .cap10{ margin-top:56px; }
+  .cap10 .n{ font-size:72px; font-weight:900; letter-spacing:-.05em; line-height:1; }
   .cap10 .n em{ font-style:normal; color:var(--blue); }
-  .cap10 .d{ font-size:29px; color:var(--ink2); font-weight:600; line-height:1.75; }
+  .cap10 .d{ margin-top:30px; font-size:25px; color:var(--ink2); font-weight:600; line-height:1.72; }
   .cap10 .d b{ color:var(--ink); font-weight:800; }
 
-  /* 커리큘럼 */
-  .step{ display:grid; grid-template-columns:170px 1fr; gap:36px; padding:52px 0; border-top:1px solid var(--line); }
-  .step:last-of-type{ border-bottom:1px solid var(--line); }
-  .step .i{ font-size:22px; font-weight:800; letter-spacing:.1em; color:var(--blue2); padding-top:12px; }
-  .step .t{ font-size:42px; font-weight:800; letter-spacing:-.035em; }
-  .step .d{ font-size:25px; color:var(--ink2); margin-top:20px; line-height:1.75; font-weight:500; }
-  /* 오프라인 회차 카드 */
-  .off{ border:1px solid var(--line); padding:56px 52px; background:#fff; }
-  .off + .off{ margin-top:30px; }
-  .off .hd{ padding-bottom:34px; border-bottom:1px solid var(--line); }
-  .off .i{ font-size:21px; font-weight:800; letter-spacing:.1em; color:var(--blue2); }
-  .off .t{ font-size:46px; font-weight:900; letter-spacing:-.04em; margin-top:18px; }
-  .off ul{ list-style:none; padding:0; margin:38px 0 0; }
-  .off li{ font-size:27px; font-weight:600; line-height:1.6; color:var(--ink);
-           padding-left:30px; position:relative; margin-top:24px; }
+  /* 커리큘럼 — 오프라인 회차 카드 */
+  .off{ border:1px solid var(--line); padding:40px 36px; background:#fff; }
+  .off + .off{ margin-top:22px; }
+  .off .hd{ padding-bottom:24px; border-bottom:1px solid var(--line); }
+  .off .i{ font-size:19px; font-weight:800; letter-spacing:.1em; color:var(--blue2); }
+  .off .t{ font-size:34px; font-weight:900; letter-spacing:-.04em; margin-top:12px; }
+  .off ul{ list-style:none; padding:0; margin:28px 0 0; }
+  .off li{ font-size:25px; font-weight:600; line-height:1.55; color:var(--ink);
+           padding-left:24px; position:relative; margin-top:18px; }
   .off li:first-child{ margin-top:0; }
-  .off li::before{ content:""; position:absolute; left:0; top:16px; width:14px; height:2px; background:var(--blue2); }
+  .off li::before{ content:""; position:absolute; left:0; top:14px; width:12px; height:2px; background:var(--blue2); }
 
-  /* 매일 · 매주 · 매달 3단 리듬. 이 프로그램의 실체는 "주 1회 라이브"가 아니라 이 밀도다 */
-  .rhythm{ margin-top:88px; }
-  .rhythm .r{ display:grid; grid-template-columns:180px 1fr; gap:40px;
-              padding:54px 0; border-top:1px solid var(--line); }
+  /* 매일 · 매주 · 매달 3단 리듬. 이 프로그램의 실체는 라이브 횟수가 아니라 이 밀도다 */
+  .rhythm{ margin-top:56px; }
+  .rhythm .r{ display:grid; grid-template-columns:104px 1fr; gap:24px;
+              padding:34px 0; border-top:1px solid var(--line); }
   .rhythm .r:last-child{ border-bottom:1px solid var(--line); }
-  .rhythm .rk{ font-size:46px; font-weight:900; letter-spacing:-.04em; color:var(--blue); }
+  .rhythm .rk{ font-size:32px; font-weight:900; letter-spacing:-.04em; color:var(--blue); }
   .rhythm ul{ list-style:none; padding:0; margin:0; }
-  .rhythm li{ font-size:27px; font-weight:600; line-height:1.55; color:var(--ink2); margin-top:22px; }
-  .rhythm li:first-child{ margin-top:6px; }
+  .rhythm li{ font-size:24px; font-weight:600; line-height:1.5; color:var(--ink2); margin-top:16px; }
+  .rhythm li:first-child{ margin-top:2px; }
   .rhythm li b{ color:var(--ink); font-weight:800; }
-  .rhythm li span{ display:inline-block; margin-left:10px; font-size:19px; font-weight:800;
+  /* 파트너스는 일부 항목에만 붙는다. 전원 제공으로 읽히면 클레임이라 배지로 명시 */
+  .rhythm li span{ display:inline-block; margin-left:8px; font-size:17px; font-weight:800;
                    letter-spacing:.04em; color:var(--blue2); border:1px solid #c9d6f5;
-                   padding:4px 12px; vertical-align:2px; }
+                   padding:3px 9px; vertical-align:2px; }
 
-  .mon{ margin-top:88px; border:1px solid var(--line); padding:60px 52px; }
-  .mon + .mon{ margin-top:30px; }
-  .mon .k{ font-size:21px; font-weight:800; letter-spacing:.1em; color:var(--blue2); }
-  .mon .t{ font-size:40px; font-weight:900; letter-spacing:-.035em; margin-top:20px; }
-  .mon ol{ margin:44px 0 0; padding:0; list-style:none; counter-reset:n; }
-  .mon li{ counter-increment:n; font-size:26px; font-weight:600; line-height:1.6;
-           padding-left:60px; position:relative; margin-top:26px; }
+  .mon{ margin-top:56px; border:1px solid var(--line); padding:40px 36px; }
+  .mon + .mon{ margin-top:22px; }
+  .mon .k{ font-size:19px; font-weight:800; letter-spacing:.1em; color:var(--blue2); }
+  .mon .t{ font-size:30px; font-weight:900; letter-spacing:-.035em; margin-top:14px; }
+  .mon ol{ margin:30px 0 0; padding:0; list-style:none; counter-reset:n; }
+  .mon li{ counter-increment:n; font-size:24px; font-weight:600; line-height:1.55;
+           padding-left:46px; position:relative; margin-top:20px; }
   .mon li:first-child{ margin-top:0; }
-  .mon li::before{ content:counter(n,decimal-leading-zero); position:absolute; left:0; top:3px;
-                   font-size:20px; font-weight:800; color:#a9b1c4; }
+  .mon li::before{ content:counter(n,decimal-leading-zero); position:absolute; left:0; top:2px;
+                   font-size:18px; font-weight:800; color:#a3abbf; }
   .mon li span{ color:var(--ink2); font-weight:500; }
 
   /* 가져가는 것 */
-  .get{ margin-top:80px; }
-  .get .g{ display:grid; grid-template-columns:78px 1fr auto; align-items:baseline; gap:24px;
-           padding:50px 0; border-top:1px solid var(--line); }
+  .get{ margin-top:52px; }
+  .get .g{ display:grid; grid-template-columns:46px 1fr auto; align-items:baseline; gap:18px;
+           padding:32px 0; border-top:1px solid var(--line); }
   .get .g:last-child{ border-bottom:1px solid var(--line); }
-  .get .i{ font-size:21px; font-weight:800; color:#a9b1c4; letter-spacing:.06em; }
-  .get .t{ font-size:44px; font-weight:800; letter-spacing:-.035em; }
-  .get .v{ font-size:25px; color:var(--blue); font-weight:700; }
+  .get .i{ font-size:19px; font-weight:800; color:#a3abbf; letter-spacing:.06em; }
+  .get .t{ font-size:30px; font-weight:800; letter-spacing:-.035em; line-height:1.35; }
+  .get .v{ font-size:21px; color:var(--blue); font-weight:700; white-space:nowrap; }
 
   /* 적합 */
-  .fit{ display:grid; grid-template-columns:1fr 1fr; gap:30px; margin-top:88px; }
-  .fit .c{ background:#fff; border:1px solid var(--line); padding:56px 48px; }
+  .fit{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:56px; }
+  .fit .c{ background:#fff; border:1px solid var(--line); padding:36px 30px; }
   .fit .c.ok{ border-color:var(--blue); }
-  .fit .ct{ font-size:34px; font-weight:900; letter-spacing:-.03em; }
+  .fit .ct{ font-size:28px; font-weight:900; letter-spacing:-.03em; }
   .fit .c.ok .ct{ color:var(--blue); }
-  .fit .c.no .ct{ color:#98a1b6; }
-  .fit ul{ list-style:none; padding:0; margin:40px 0 0; }
-  .fit li{ font-size:25px; line-height:1.6; margin-top:26px; padding-left:32px;
+  .fit .c.no .ct{ color:#8f99ad; }
+  .fit ul{ list-style:none; padding:0; margin:28px 0 0; }
+  .fit li{ font-size:23px; line-height:1.55; margin-top:20px; padding-left:24px;
            position:relative; font-weight:500; }
   .fit li:first-child{ margin-top:0; }
   .fit .c.ok li{ color:var(--ink); }
-  .fit .c.ok li::before{ content:""; position:absolute; left:0; top:16px; width:14px; height:2px; background:var(--blue); }
-  .fit .c.no li{ color:#98a1b6; }
-  .fit .c.no li::before{ content:""; position:absolute; left:0; top:16px; width:14px; height:2px; background:#c4cad8; }
+  .fit .c.ok li::before{ content:""; position:absolute; left:0; top:14px; width:12px; height:2px; background:var(--blue); }
+  .fit .c.no li{ color:#8f99ad; }
+  .fit .c.no li::before{ content:""; position:absolute; left:0; top:14px; width:12px; height:2px; background:#bfc6d4; }
 
-  /* 강사 */
-  .who{ display:grid; grid-template-columns:392px 1fr; gap:72px; align-items:end; margin-top:96px; }
-  .who img{ width:392px; }
-  .who .nm{ font-size:62px; font-weight:900; letter-spacing:-.04em; }
-  .who .rl{ font-size:25px; color:#8FB0FF; font-weight:700; margin-top:18px; }
-  .who .bd{ font-size:26px; color:#a9b5d0; margin-top:44px; font-weight:500; line-height:1.85; }
+  /* 강사 — 누끼 원본이 상반신이라 하단이 잘려 있다. 다크 면 위에서는 흰 옷 경계가
+     도드라지므로 HERO 와 같은 패턴으로 텍스트 왼쪽 · 사진 오른쪽 하단 정렬을 쓴다.
+     사진 밑동이 텍스트 블록 밑동과 만나 잘린 티가 나지 않는다 */
+  .who{ display:grid; grid-template-columns:1fr 200px; gap:28px; align-items:end; margin-top:56px; }
+  .who img{ width:200px; }
+  .who .wt{ min-width:0; }
+  .who .nm{ font-size:42px; font-weight:900; letter-spacing:-.04em; }
+  .who .rl{ font-size:22px; color:#8FB0FF; font-weight:700; margin-top:12px; }
+  .who .bd{ font-size:24px; color:#aab6d2; margin-top:36px; font-weight:500; line-height:1.8; }
   .who .bd b{ color:#fff; font-weight:800; }
 
   /* CTA */
-  .cta{ background:var(--blue); color:#fff; text-align:center; padding:210px 90px; }
-  .cta h2{ font-size:76px; margin-top:0; color:#fff; }
-  .cta .pills{ display:flex; justify-content:center; gap:14px; margin-top:72px; flex-wrap:wrap; }
-  .cta .pills span{ border:1px solid rgba(255,255,255,.42); padding:18px 30px; font-size:26px; font-weight:700; }
-  .cta .btn{ display:inline-block; margin-top:88px; background:#fff; color:var(--blue);
-             font-size:46px; font-weight:900; padding:34px 88px; letter-spacing:-.03em; }
-  .cta .fine{ font-size:23px; color:rgba(255,255,255,.8); margin-top:56px; font-weight:600; line-height:1.75; }
+  .cta{ background:var(--blue); color:#fff; text-align:center; padding:130px 56px; }
+  .cta h2{ font-size:46px; margin-top:0; color:#fff; }
+  /* 알약 4개는 628px 한 줄에 3+1 로 깨진다. 폭을 묶어 2+2 로 떨어뜨린다 */
+  .cta .pills{ display:flex; justify-content:center; gap:10px; margin-top:48px; flex-wrap:wrap;
+               max-width:420px; margin-left:auto; margin-right:auto; }
+  .cta .pills span{ border:1px solid rgba(255,255,255,.42); padding:14px 22px; font-size:21px; font-weight:700; }
+  .cta .btn{ display:inline-block; margin-top:56px; background:#fff; color:var(--blue);
+             font-size:34px; font-weight:900; padding:26px 64px; letter-spacing:-.03em; }
+  .cta .fine{ font-size:20px; color:rgba(255,255,255,.82); margin-top:40px; font-weight:600; line-height:1.75; }
+
+  /* 후기 (26-08-03 신설) */
+  .rvstat{ display:grid; grid-template-columns:1fr 1fr; gap:22px; margin-top:52px; }
+  .rvstat > div{ border:1px solid var(--line); padding:30px 22px; text-align:center; }
+  .rvstat .n{ font-size:36px; font-weight:900; letter-spacing:-.04em; color:var(--blue); }
+  .rvstat .l{ font-size:20px; color:var(--ink2); font-weight:600; margin-top:10px; line-height:1.5; }
+  .rv{ margin-top:16px; border-left:4px solid var(--blue); background:var(--tint); padding:26px 28px; }
+  .rvk{ font-size:18px; font-weight:800; letter-spacing:.1em; color:var(--blue2); margin-bottom:12px; }
+  .rvm{ font-size:24px; font-weight:600; line-height:1.72; color:var(--ink2); }
+  .rvm b{ color:var(--ink); font-weight:800; }
+  .rvw{ margin-top:20px; font-size:19px; font-weight:700; color:#8f99ad; text-align:right; }
+
+  /* 결과물 월 — 실제 카페 게시글. 기수 배지 + 제목 + 닉네임·날짜 2줄 배치.
+     한 줄로 붙이면 628px 안에서 제목과 닉네임이 서로 밀어낸다 */
+  .wall{ margin-top:56px; }
+  .wall .w{ display:grid; grid-template-columns:52px 1fr; gap:14px; align-items:start;
+            padding:16px 0; border-top:1px solid var(--line); }
+  .wall .w:last-child{ border-bottom:1px solid var(--line); }
+  .wall .g{ font-size:16px; font-weight:800; color:var(--blue2); border:1px solid #c9d6f5;
+            padding:4px 0; text-align:center; letter-spacing:.02em; }
+  .wall .nm{ font-size:22px; font-weight:700; letter-spacing:-.025em; line-height:1.4; }
+  .wall .by{ font-size:17px; font-weight:600; color:#8f99ad; margin-top:5px; }
+  .wallmore{ margin-top:26px; font-size:22px; font-weight:600; color:var(--ink2); line-height:1.65; }
+  .wallmore b{ color:var(--ink); font-weight:800; }
+
+  /* 90% 판은 다크로 — 흰 섹션이 연달아 오는 구간의 리듬을 끊는다 */
+  .bignum{ background:var(--navy); }
+  .bignum .n{ color:#8FB0FF; }
+  .bignum .d{ color:#fff; }
+  .bignum .s{ color:#9aa8c8; }
 </style>
 </head>
 <body>
+
 
   <!-- HERO -->
   <div class="hero">
@@ -280,16 +348,157 @@
       <div class="brand"><i></i>AIMAX<span>· 메이크패밀리 창업 프로그램</span></div>
       <h1>AI를 배우지 마세요<br><em>AI 직원을 만드세요</em></h1>
       <div class="sub">툴을 배우는 자리가 아닙니다.<br>
-        <b>내 대신 일하는 직원을 하나 완성</b>하고, <b>그걸 파는 데까지</b> 갑니다.</div>
+        <b>내 대신 일하는 직원을 하나 완성</b>하고,<br><b>그걸 파는 데까지</b> 갑니다.</div>
     </div>
     <div class="ph"><img src="assets/site/tutor_cut.png" alt=""></div>
   </div>
   <div class="facts">
-    <div><div class="n">오프라인 2회차</div><div class="l">6시간 + 4시간</div></div>
+    <div><div class="n">오프라인 2주</div><div class="l">일요일 5시간 × 2회</div></div>
     <div><div class="n">온라인 5개월</div><div class="l">매일 · 매주 · 매달</div></div>
     <div><div class="n">정원 10명</div><div class="l">매 기수 조기 마감</div></div>
     <div><div class="n">전 과정 VOD</div><div class="l">재시청 가능</div></div>
   </div>
+
+  <!-- 브릿지 : 스크롤 전에 전체 그림을 준다 (와디즈 4단의 2단) -->
+  <div class="bridge">
+    <div class="bk">이 프로그램을 세 줄로</div>
+    <ol>
+      <li>2주 연속 일요일 <b>매회 5시간</b> 오프라인에서 <b>내 AI 직원을 하나 완성</b>해 나옵니다.</li>
+      <li>이후 5개월간 <b>매일 · 매주 · 매달</b> 붙어서 파는 데까지 갑니다.</li>
+      <li>내 상품이 아직 없어도 <b>패밀리 파트너스</b>로 먼저 파는 경험부터 합니다.</li>
+    </ol>
+  </div>
+
+
+  <!-- 후기 — 와디즈 1원칙: 후기·증거를 최상단에 둔다. 26-08-03 신설.
+       소재는 메이크패밀리 카페 후기글(3기, 26-07-07)과 결과물 게시글 목록.
+       원문을 통째로 옮기지 않고 발췌만 쓴다. 닉네임·기수·날짜를 붙여 검증 가능하게 둔다.
+       "30건 +"는 목록에서 AIMAX 창업프로그램 명시분만 센 37건의 하한이다. 올려 쓰지 말 것 -->
+  <section>
+    <div class="eyebrow">먼저 다녀간 사람들</div>
+    <h2 class="sm">배우고 끝난 게 아니라<br>만들어서 나갔습니다</h2>
+    <!-- 수치 프레임은 "이만큼 나온다". 정원 10명 × 3기수에서 30건 이상이면
+         기수당 10개 이상 = 1인 1서비스 이상이라는 뜻이고, 90% 제작 성공과도 맞물린다 -->
+    <div class="rvstat">
+      <div><div class="n">30건 +</div><div class="l">1~3기가 만든 서비스</div></div>
+      <div><div class="n">기수당 10개 +</div><div class="l">정원 10명에서 나오는 수</div></div>
+    </div>
+    <!-- 같은 후기 한 편에서 before → 체감 → 이후 순으로 발췌했다.
+         여러 명인 것처럼 보이면 안 되므로 출처는 아래 한 줄로 묶어 표기한다.
+         후기를 지어내지 말 것 — 표시광고법 위반이고 카페 원문과 대조되면 신뢰가 끝난다 -->
+    <div class="rv">
+      <div class="rvk">참여 전</div>
+      <div class="rvm">AI로 무엇을 할 수 있는지 <b>막연하게만 알고 있었고</b>,
+        어떻게 활용해야 할지 감이 잡히지 않아 막막한 마음이 있었습니다.</div>
+    </div>
+    <div class="rv">
+      <div class="rvk">듣고 나서</div>
+      <div class="rvm">복잡한 과정 없이도 아이디어를 빠르게 구현할 수 있다는 점이 인상 깊었습니다.
+        정보를 생성하는 수준을 넘어 <b>실제로 작동하는 형태까지 만들어낼 수 있다</b>는 걸
+        체감했습니다.</div>
+    </div>
+    <div class="rv">
+      <div class="rvk">지금</div>
+      <div class="rvm">기술적인 장벽 때문에 시도하지 못했던 것들도
+        <b>이제는 충분히 도전해볼 수 있겠다</b>는 생각이 들었습니다.</div>
+    </div>
+    <div class="rvw">고스 님 · 3기 수강 · 2026.07.07 카페 후기글에서 발췌</div>
+    <div class="note">후기와 결과물은 <b>메이크패밀리 카페에 그대로 공개</b>되어 있습니다.
+      닉네임과 날짜까지 확인하실 수 있습니다.</div>
+  </section>
+
+  <!-- 수치 -->
+  <div class="bignum">
+    <div class="n">90<small>%</small></div>
+    <div class="d">수강생이 본인 AI 서비스·직원<br>제작에 성공했습니다</div>
+    <div class="s">같은 걸 따라 만드는 과정이 아닙니다.<br>각자의 문제를 푸는 직원을 만듭니다.</div>
+  </div>
+
+  <!-- 증거 -->
+  <section>
+    <div class="eyebrow">1~3기가 실제로 만든 것</div>
+    <h2 class="sm">수강생이 만든 AI 직원이<br>이미 팔리고 있습니다</h2>
+
+    <div class="shot">
+      <img src="assets/proof/p1_works.png" alt="">
+      <div class="cap"><b>기수별 결과물</b> — 회의록 · 일정관리 · ERP · 상품소식 · 카드뉴스.
+        업종도 목적도 전부 다릅니다.</div>
+    </div>
+
+    <div class="pair">
+      <div>
+        <img src="assets/proof/p2_apply.png" alt="">
+        <div class="cap"><b>입점 신청</b><br>만든 직원을 판매까지 연결합니다</div>
+      </div>
+      <div>
+        <img src="assets/proof/p4_pay.png" alt="">
+        <div class="cap"><b>결제창 연동</b><br>팔 수 있는 상태까지 직접 붙입니다</div>
+      </div>
+    </div>
+
+    <!-- 결과물 월 — 카페 게시글 목록에서 그대로 옮긴 실제 기록이다 (26-08-03 유저 제공 캡처).
+         스크린샷은 모바일에서 글자가 죽으니 읽히는 텍스트로 한 번 더 놓는다.
+         기수·제목·닉네임·날짜를 붙여야 대조가 가능하다. 임의로 추가하지 말 것 -->
+    <div class="wall">
+      <div class="w"><div class="g">3기</div><div><div class="nm">AI 가계부</div><div class="by">고스 · 26.07.24</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">최저가언니</div><div class="by">youagent · 26.07.20</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">챙겨톡 김실장</div><div class="by">youagent · 26.07.20</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">1인 미디어용 인터뷰 제작 시스템</div><div class="by">리키안 · 26.07.19</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">장비온 장비관리 프로그램</div><div class="by">리키안 · 26.07.19</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">SNS 마케팅 자동화</div><div class="by">하자하자 · 26.07.14</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">성경 교독 어플 maju reading</div><div class="by">김시아 · 26.07.08</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">까먹지마</div><div class="by">blingkkami · 26.07.07</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">AI직원 상수씨</div><div class="by">blingkkami · 26.07.07</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">ReturnGuard</div><div class="by">AION · 26.06.30</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">Qoo10 상품소식기</div><div class="by">youagent · 26.06.29</div></div></div>
+      <div class="w"><div class="g">1기</div><div><div class="nm">자영업자 사장님을 위한 홍보직원</div><div class="by">Q type · 26.06.29</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">골프장관리 ERP</div><div class="by">불꾼 · 26.06.22</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">MeetingNote_AI 회의록</div><div class="by">AION · 26.06.17</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">전국 캐디전용 플랫폼 캐디온</div><div class="by">불꾼 · 26.06.13</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">딸깍 스레드</div><div class="by">Seank · 26.06.12</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">AI 비용 감사관</div><div class="by">AION · 26.06.14</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">화장품 AI 상품페이지 기획자</div><div class="by">세리13982 · 26.06.14</div></div></div>
+      <div class="w"><div class="g">2기</div><div><div class="nm">정부지원사업 매칭 · 사업계획서 작성</div><div class="by">예림 · 26.06.11</div></div></div>
+    </div>
+    <!-- "한 사람이 여러 개 만들었다"로 쓰지 말 것 (26-08-03 유저 지적).
+         수강생이 적어 보이는 역효과가 난다. 프레임은 "이만큼 쏟아진다" 여야 한다 -->
+    <div class="wallmore">부동산 · 골프장 · 회의록 · 가계부 · 정부지원사업 · 상품페이지까지
+      <b>업종도 목적도 전부 다릅니다.</b><br>
+      정원 10명짜리 기수에서 <b>매번 이만큼 나옵니다.</b></div>
+    <div class="note">배우고 끝나는 과정이 아닙니다. <b>만들고, 올리고, 파는 데까지 갑니다.</b></div>
+  </section>
+
+  <!-- 현장 : 풀블리드 -->
+  <div class="bleed"><img src="assets/site/f1.jpg" alt=""></div>
+  <!-- 이 섹션은 흰색이어야 한다. 바로 뒤 "구성 요약"이 tint 라 둘 다 tint 면
+       경계가 사라진다. 앞의 풀블리드 사진이 구분자 역할을 해준다 -->
+  <section>
+    <div class="eyebrow">왜 소수인원만 받는가</div>
+    <h2 class="sm">떠먹여 주는 강의가 아니라<br>옆에 앉아 같이 만드는 자리입니다</h2>
+    <div class="cap10">
+      <div class="n">정원 <em>10명</em></div>
+      <div class="d">한 명씩 붙어서 구조를 만들어야 하니 늘리지 않습니다.<br>
+        <b>1기 · 2기 · 3기 전부 정원 전에 마감됐습니다.</b></div>
+    </div>
+  </section>
+
+
+  <!-- 구성 요약 — 와디즈 본문 4단의 1단. 상세로 들어가기 전에 "뭘 받는지"를 한 화면에.
+       26-08-03 신설. 옛 "가져가는 것" 섹션을 이 자리로 끌어올려 대체했다 -->
+  <section class="tint">
+    <div class="eyebrow">무엇을 받게 되나</div>
+    <h2 class="sm">다섯 가지가 세트로 갑니다</h2>
+    <div class="get">
+      <div class="g"><div class="i">01</div><div class="t">오프라인 2주 · 10시간</div><div class="v">5시간 × 2회</div></div>
+      <div class="g"><div class="i">02</div><div class="t">내 AI 직원 1개 완성</div><div class="v">작동하는 상태</div></div>
+      <div class="g"><div class="i">03</div><div class="t">온라인 5개월 운영</div><div class="v">매일 · 매주 · 매달</div></div>
+      <div class="g"><div class="i">04</div><div class="t">패밀리 파트너스</div><div class="v">매달 수익 정산</div></div>
+      <div class="g"><div class="i">05</div><div class="t">전 과정 VOD</div><div class="v">재시청 가능</div></div>
+    </div>
+    <div class="note">메이크패밀리가 이미 판매 중인 AI 서비스를 같이 팝니다.
+      <b>내 상품이 아직 없어도 먼저 파는 경험부터</b> 시작할 수 있습니다.
+      지금부터 이 다섯 가지를 하나씩 펼쳐 보여드립니다.</div>
+  </section>
 
   <!-- 도입부 1 : 상황 묘사 → 욕구 -->
   <section>
@@ -317,39 +526,17 @@
     </div>
   </div>
 
-  <!-- 도입부 2 : 욕구 -->
-  <section class="tint" style="padding-top:150px">
-    <div class="eyebrow">그래서 이런 걸 바라셨을 겁니다</div>
-    <h2>내가 자는 동안에도<br>뭔가는 돌아가고 있으면</h2>
-    <div class="lead">퇴근하고 또 일하는 부업 말고요.
-      한 번 만들어두면 <b>나 없이도 굴러가는 것</b> 하나 있었으면 하셨을 겁니다.</div>
-    <div class="want">
-      <div class="w">
-        <div class="t"><em>내 대신</em> 일하고</div>
-        <div class="d">매일 붙어 있지 않아도<br>알아서 돌아가는 구조</div>
-      </div>
-      <div class="w">
-        <div class="t"><em>내 대신</em> 돈 벌고</div>
-        <div class="d">월급 말고<br>회사 밖의 파이프라인</div>
-      </div>
-      <div class="w">
-        <div class="t">심지어 <em>같이 파는</em> 것까지</div>
-        <div class="d">혼자 팔지 않아도 되는<br>패밀리 파트너스</div>
-      </div>
-    </div>
-  </section>
-
   <!-- 도입부 2 : 몰입 판 — 정체성을 지목한다 -->
   <div class="oneline">
     <div class="q">당신이 아직 이 페이지를<br>읽고 있는 이유는<br>
-      <em>단 한 번도 생산자가 되어 본 적이<br>없기 때문입니다</em></div>
+      <em>단 한 번도 생산자가<br>되어 본 적이 없기 때문입니다</em></div>
     <div class="d">사는 쪽에만 있었지, 파는 쪽에 서 본 적이 없습니다.</div>
   </div>
 
   <!-- 진단 -->
   <section>
     <div class="eyebrow">AI 많이 써보셨죠</div>
-    <h2>글도 써봤고 이미지도 만들어봤고<br>자동화도 해봤습니다</h2>
+    <h2>글도 써봤고 이미지도<br>만들어봤고 자동화도 해봤습니다</h2>
     <div class="pains">
       <div class="pain"><div class="i">01</div><div class="t">툴은 아는데 구조가 없다</div></div>
       <div class="pain"><div class="i">02</div><div class="t">만들긴 했는데 팔 줄을 모른다</div></div>
@@ -366,7 +553,7 @@
     <div class="flip">
       <div class="c">
         <div class="k">지금까지</div>
-        <div class="t">AI를 배운다</div>
+        <div class="t">AI를<br>배운다</div>
         <div class="d">쓸 줄은 아는데 매번 내가 붙어 있어야 합니다. 배움이 쌓여도 수익은 그대로입니다.</div>
       </div>
       <div class="c on">
@@ -377,20 +564,8 @@
     </div>
   </section>
 
-  <!-- 말풍선 2 : 실행 중 좌절 (비개발자가 실제로 포기하는 지점) -->
-  <div class="say right">
-    <div class="bub">
-      <div class="l">"만들다가 막히면 어떡하지..</div>
-      <div class="l">혼자 끙끙대다 또 포기할 텐데.."</div>
-    </div>
-    <div class="who2">
-      <div class="q">...</div>
-      <img src="assets/char/w_cut.png" alt="">
-    </div>
-  </div>
-
   <!-- 직원 2인 -->
-  <section class="tint" style="padding-top:150px">
+  <section class="tint" style="padding-top:100px">
     <div class="eyebrow">이미 돌아가고 있습니다</div>
     <h2 class="sm">저희가 먼저 만들어<br>직접 돌리고 있는 직원입니다</h2>
     <div class="duo">
@@ -406,72 +581,21 @@
     <div class="note">이건 저희 직원입니다. <b>이제 당신의 직원을 만들 차례입니다.</b></div>
   </section>
 
-  <!-- 수치 -->
-  <div class="bignum">
-    <div class="n">90<small>%</small></div>
-    <div class="d">수강생이 본인 AI 서비스·직원 제작에 성공했습니다</div>
-    <div class="s">같은 걸 따라 만드는 과정이 아닙니다.<br>각자의 문제를 푸는 직원을 만듭니다.</div>
-  </div>
-
-  <!-- 증거 -->
-  <section>
-    <div class="eyebrow">1~3기가 실제로 만든 것</div>
-    <h2 class="sm">수강생이 만든 AI 직원이<br>이미 팔리고 있습니다</h2>
-
-    <div class="shot">
-      <img src="assets/proof/p1_works.png" alt="">
-      <div class="cap"><b>기수별 결과물</b> — 회의록 · 일정관리 · ERP · 상품소식 · 카드뉴스.
-        업종도 목적도 전부 다릅니다.</div>
-    </div>
-
-    <div class="pair">
-      <div>
-        <img src="assets/proof/p2_apply.png" alt="">
-        <div class="cap"><b>입점 신청</b><br>만든 직원을 판매까지 연결합니다</div>
-      </div>
-      <div>
-        <img src="assets/proof/p4_pay.png" alt="">
-        <div class="cap"><b>결제창 연동</b><br>팔 수 있는 상태까지 직접 붙입니다</div>
-      </div>
-    </div>
-
-    <div class="chips">
-      <span class="chip">ReturnGuard</span><span class="chip">MeetingNote_AI 회의록</span>
-      <span class="chip">챙겨톡</span><span class="chip">Qoo10 상품소식기</span>
-      <span class="chip">골프장관리 ERP</span><span class="chip">최저가언니</span>
-      <span class="chip">카드뉴스 자동생성기</span><span class="chip">SnapReel</span>
-    </div>
-    <div class="note">배우고 끝나는 과정이 아닙니다. <b>만들고, 올리고, 파는 데까지 갑니다.</b></div>
-  </section>
-
-  <!-- 현장 : 풀블리드 -->
-  <div class="bleed"><img src="assets/site/f1.jpg" alt=""></div>
-  <section class="tint">
-    <div class="eyebrow">왜 소수인원만 받는가</div>
-    <h2 class="sm">떠먹여 주는 강의가 아니라<br>옆에 앉아 같이 만드는 자리입니다</h2>
-    <div class="cap10">
-      <div class="n">정원 <em>10명</em></div>
-      <div class="d">한 명씩 붙어서 구조를 만들어야 하니 늘리지 않습니다.<br>
-        <b>1기 · 2기 · 3기 전부 정원 전에 마감됐습니다.</b></div>
-    </div>
-  </section>
-
   <!-- 커리큘럼 — 26-07-30 유저 정리본.
        STEP 01~05(기획/제작/상품화/판매구조/공동판매) 체계는 폐기됐다. 되살리지 말 것.
-       구조 = 첫 달 오프라인 2회(2주 연속 일요일) → 이후 5개월 운영(매일·매주·매달)
-       "주 1회 라이브"로 뭉뚱그리면 실체보다 약해 보인다. 매일 도는 게 따로 있다 -->
+       구조 = 첫 달 오프라인 2회(2주 연속 일요일) → 이후 5개월 운영(매일·매주·매달) -->
   <section>
-    <div class="eyebrow">커리큘럼 · 회차별 진행</div>
+    <div class="eyebrow">커리큘럼 · 오프라인 2주</div>
     <h2 class="sm">첫 달에 만들고<br>5개월 동안 팔아봅니다</h2>
-    <div class="lead">첫 달은 <b>2주 연속 일요일 오프라인</b>으로 직원을 만들어 나옵니다.
-      이후 5개월은 매일·매주·매달 리듬으로 붙습니다.
-      <b>모든 영상은 VOD로 제공</b>되어 언제든 다시 볼 수 있습니다.</div>
+    <div class="lead">첫 달은 <b>2주 연속 일요일, 매회 5시간</b> 오프라인입니다.
+      만드는 것과 파는 것을 <b>회차로 나누지 않고 2주 내내 같이</b> 진행합니다.
+      이후 5개월은 매일·매주·매달 리듬으로 붙습니다.</div>
 
     <div class="after">
       <div class="off">
         <div class="hd">
-          <div class="i">오프라인 1회차 · 6시간</div>
-          <div class="t">AI 직원 제작</div>
+          <div class="i">2주 내내 진행</div>
+          <div class="t">AI 바이브코딩</div>
         </div>
         <ul>
           <li>사전 질문지 전달 &amp; 작성</li>
@@ -483,8 +607,8 @@
       </div>
       <div class="off">
         <div class="hd">
-          <div class="i">오프라인 2회차 · 4시간</div>
-          <div class="t">마케팅 실습</div>
+          <div class="i">2주 내내 진행</div>
+          <div class="t">수익화 세팅</div>
         </div>
         <ul>
           <li>제작한 AI 직원 수익화 설계</li>
@@ -493,8 +617,9 @@
         </ul>
       </div>
     </div>
-    <div class="note">두 회차는 <b>2주 연속 일요일</b>로 붙어 있습니다.
-      1회차에서 만든 것을 2회차에서 <b>파는 데까지 잇는</b> 구성입니다.</div>
+    <div class="note">만들어 놓고 나중에 파는 법을 배우는 구성이 아닙니다.
+      <b>만드는 동시에 파는 구조를 같이 얹습니다.</b>
+      2주 연속 일요일이라 흐름이 끊기지 않습니다.</div>
   </section>
 
   <!-- 이후 5개월 : 매일 · 매주 · 매달 -->
@@ -546,7 +671,7 @@
       내 상품이 아직 없어도 <b>콘텐츠를 받아 팔고, 매달 수익을 정산</b>받습니다.</div>
   </section>
 
-  <!-- 말풍선 3 : 시장 불신 (소비자원 통계로 뒷받침되는 실제 반박) -->
+  <!-- 말풍선 3 : 시장 불신 -->
   <div class="say">
     <div class="bub">
       <div class="l">"근데 이것도 결국</div>
@@ -559,7 +684,7 @@
   </div>
 
   <!-- 불신에 대한 답 -->
-  <section style="padding-top:150px">
+  <section style="padding-top:100px">
     <div class="eyebrow">의심하시는 게 정상입니다</div>
     <h2 class="sm">그런 강의가 실제로<br>늘고 있으니까요</h2>
     <!-- 소비자원 통계(2024년 11건→2025년 42건, 품질불만 40.7%)는 사실이지만
@@ -569,7 +694,7 @@
       들인 돈과 시간이 그대로 사라집니다. 그래서 저희는 이렇게 만들었습니다.</div>
     <div class="after">
       <div class="get">
-        <div class="g"><div class="i">01</div><div class="t">오프라인 대면 2회차</div><div class="v">6시간 + 4시간</div></div>
+        <div class="g"><div class="i">01</div><div class="t">오프라인 대면 2주</div><div class="v">10시간</div></div>
         <div class="g"><div class="i">02</div><div class="t">바이브코딩 질의응답</div><div class="v">매일 · 바로 답변</div></div>
         <div class="g"><div class="i">03</div><div class="t">AI 작업물 점검 &amp; 피드백</div><div class="v">매주 월요일</div></div>
         <div class="g"><div class="i">04</div><div class="t">1:1 수익화 점검 컨설팅</div><div class="v">요청 시</div></div>
@@ -578,21 +703,6 @@
     <div class="note">비개발자가 포기하는 자리는 기능 구현이 아니라 <b>오류가 났을 때</b>입니다.
       그래서 오류 질문은 주 단위로 모아 받지 않고 <b>매일 바로 답변</b>합니다.
       <b>혼자 구글링하지 않게</b> 만드는 게 이 프로그램의 설계입니다.</div>
-  </section>
-
-  <!-- 가져가는 것 -->
-  <section class="tint">
-    <div class="eyebrow">손에 남는 것</div>
-    <h2 class="sm">단순히 배우는 게 아닙니다</h2>
-    <div class="get">
-      <div class="g"><div class="i">01</div><div class="t">내 AI 직원 1개 완성</div><div class="v">작동하는 상태</div></div>
-      <div class="g"><div class="i">02</div><div class="t">판매 가능한 상품 완성</div><div class="v">상세페이지 + 구조</div></div>
-      <div class="g"><div class="i">03</div><div class="t">패밀리 파트너스</div><div class="v">매달 수익 정산</div></div>
-      <div class="g"><div class="i">04</div><div class="t">전 과정 VOD</div><div class="v">재시청 가능</div></div>
-    </div>
-    <div class="note">메이크패밀리가 이미 판매 중인 AI 서비스를 같이 팝니다.
-      복붙하면 되는 콘텐츠를 매일 받고, <b>매달 수익을 정산</b>받습니다.
-      <b>내 상품이 아직 없어도 먼저 파는 경험부터 시작할 수 있습니다.</b></div>
   </section>
 
   <!-- 적합 -->
@@ -616,7 +726,7 @@
           <li>정보만 듣고 끝낼 분</li>
           <li>대신 만들어 주기를 기대하는 분</li>
           <li>단기간 수익 보장을 원하는 분</li>
-          <li>오프라인 2회차에 참석이 어려운 분</li>
+          <li>2주 연속 일요일 참석이 어려운 분</li>
           <li>이미 판매까지 돌아가는 구조가 있는 분</li>
         </ul>
       </div>
@@ -630,14 +740,14 @@
     <div class="eyebrow" style="color:#8FB0FF">누가 진행하나</div>
     <h2 class="sm">직접 만들어 팔고 있는 사람이<br>그 구조를 그대로 엽니다</h2>
     <div class="who">
-      <img src="assets/site/tutor_cut.png" alt="">
-      <div>
+      <div class="wt">
         <div class="nm">나민수</div>
         <div class="rl">AIMAX · 메이크패밀리</div>
         <div class="bd">저도 처음엔 배우기만 했습니다. 글도 써보고 이미지도 만들어보고 자동화도 해봤는데
           <b>정작 돈은 안 벌렸습니다.</b> 툴이 부족한 게 아니라 파는 구조가 없다는 걸 나중에 알았습니다.
           그래서 직접 AI 직원을 만들어 사업에 붙였고, 지금은 그 직원들을 상품으로도 팔고 있습니다.</div>
       </div>
+      <img src="assets/site/tutor_cut.png" alt="">
     </div>
   </section>
 
@@ -645,12 +755,13 @@
   <section class="cta">
     <h2>소비자에서 생산자로</h2>
     <div class="pills">
-      <span>오프라인 2회차</span><span>온라인 5개월</span><span>전 과정 VOD</span><span>정원 10명</span>
+      <span>오프라인 2주</span><span>온라인 5개월</span><span>전 과정 VOD</span><span>정원 10명</span>
     </div>
     <div class="btn">지원하기</div>
     <div class="fine">참가비와 일정은 결제창에서 확인하실 수 있습니다.<br>
       기수가 올라갈수록 인상되며, 매 기수 조기 마감됩니다.</div>
   </section>
+
 
 </body>
 </html>

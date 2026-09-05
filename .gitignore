@@ -23,3 +23,14 @@ tmp/
 # OS
 .DS_Store
 Thumbs.db
+
+# 렌더 산출물. HTML 원본과 make_*.py 로 다시 만든다.
+landing/*/slices_*/
+landing/*/reference_*/
+landing/*/assets/drive/
+landing/*/_*chk*.png
+landing/*/_mocks.png
+landing/*/_capability_test.png
+landing/*/_compare_mobile.png
+landing/*/_ref_hero.png
+landing/*/_portfolio_chk.png

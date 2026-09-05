@@ -2,17 +2,19 @@
 """
 AIMAX 창업 프로그램 — 기수별 커리큘럼 타임라인 이미지 생성기 (카페 모집글용)
 
-기수가 바뀌면 첫 오프라인 날짜 하나만 주면 2회차까지 계산해
+기수가 바뀌면 첫 오프라인 날짜 하나만 주면 2주차까지 계산해
 timeline_startup.html 을 복제·치환하고 렌더까지 한다.
 
     python make_timeline.py --gen 5 --label 9월반 --first 2026-09-06
 
-    1회차 = first        (일요일 · 6시간)
-    2회차 = first + 7일   (일요일 · 4시간)
+    1주차 = first        (일요일 · 5시간)
+    2주차 = first + 7일   (일요일 · 5시간)
 
-**날짜가 박히는 건 오프라인 2회뿐이다.** 온라인 라이브 요일·시간과 1:1 컨설팅 시점은
-기수마다 정해지므로 이미지에 안 넣는다 — 타임라인은 "2회차 다음 주부터 주 1회",
-"보통 5주차 전후" 라는 순서만 보여준다. 이 부분을 날짜로 바꾸지 말 것.
+26-08-03 구조 변경 — 두 주가 같은 내용(바이브코딩 + 수익화 병행)이라 회차로 쪼개지 않고
+"9월 6일 · 13일 (일)" 한 문자열로 박는다.
+
+**날짜가 박히는 건 오프라인 2주뿐이다.** 온라인 운영 주기와 복습 라이브 시점은
+"오프라인 다음 주부터 매일·매주·매달" · "매월 1회" 라는 주기만 쓴다. 날짜로 바꾸지 말 것.
 
 first 가 일요일이 아니면 경고만 하고 진행한다. 오프라인을 다른 요일에 잡는 기수가
 나올 수 있어서 막지는 않는다.
@@ -50,13 +52,14 @@ def build(gen, label, first, t1, t2, out, no_render):
 
     # 각 치환은 정확히 1건이어야 한다. 0건이면 HTML 구조가 바뀐 것 → 조용히 넘어가면
     # 옛 날짜가 그대로 박힌 이미지가 나오므로 즉시 멈춘다.
+    tail = f"{second.day}일" if first.month == second.month else f"{second.month}월 {second.day}일"
+    dates = f"{first.month}월 {first.day}일 · {tail} ({dow(first)})"
     subs = [
         (r'(<div class="eyebrow">)[^<]*(</div>)',
          rf'\g<1>{gen}기 · {label} 커리큘럼\g<2>'),
-        (r'(<div class="when">)[^<]*?(<em>12시 ~ 18시)',
-         rf'\g<1>{md(first)} ({dow(first)})\g<2>'),
-        (r'(<div class="when">)[^<]*?(<em>12시 ~ 16시)',
-         rf'\g<1>{md(second)} ({dow(second)})\g<2>'),
+        # 26-08-03: 회차 분리 폐기 → 두 날짜를 한 문자열로 박는다
+        (r'(<div class="when">)[^<]*?(<em>매회 12시 ~ 17시)',
+         rf'\g<1>{dates}\g<2>'),
     ]
     for pat, rep in subs:
         html, n = re.subn(pat, rep, html, count=1)
@@ -65,17 +68,14 @@ def build(gen, label, first, t1, t2, out, no_render):
 
     # 시간대가 기수마다 다르면 여기서 갈아끼운다
     if t1:
-        html = html.replace("12시 ~ 18시 · 6시간", t1)
-    if t2:
-        html = html.replace("12시 ~ 16시 · 4시간", t2)
+        html = html.replace("매회 12시 ~ 17시 · 5시간", t1)
 
     stem = out or f"timeline_{gen}gi"
     tmp = HERE / f"_{stem}.html"
     tmp.write_text(html, encoding="utf-8")
 
     print(f"  {gen}기 · {label}")
-    print(f"    1회차  {first}  ({dow(first)})  6시간")
-    print(f"    2회차  {second}  ({dow(second)})  4시간")
+    print(f"    오프라인  {dates}  ·  매회 5시간 (2주 10시간)")
     print(f"    라이브 · 1:1 은 날짜를 박지 않는다 (순서만 표시)")
 
     if no_render:
@@ -97,8 +97,8 @@ def main():
     p.add_argument("--gen", required=True, help="기수 번호 (예: 5)")
     p.add_argument("--label", required=True, help="기수 라벨 (예: 9월반)")
     p.add_argument("--first", required=True, help="1회차 오프라인 날짜 YYYY-MM-DD")
-    p.add_argument("--t1", help="1회차 시간 문구 (기본 '12시 ~ 18시 · 6시간')")
-    p.add_argument("--t2", help="2회차 시간 문구 (기본 '12시 ~ 16시 · 4시간')")
+    p.add_argument("--t1", help="시간대 문구 (기본 '매회 12시 ~ 17시 · 5시간')")
+    p.add_argument("--t2", help=argparse.SUPPRESS)   # 회차 분리 폐기로 미사용
     p.add_argument("--out", help="출력 파일 stem (기본 timeline_<gen>gi)")
     p.add_argument("--no-render", action="store_true", help="HTML만 만들고 렌더는 건너뜀")
     a = p.parse_args()
