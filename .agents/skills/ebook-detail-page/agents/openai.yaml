@@ -1,0 +1,7 @@
+interface:
+  display_name: "전자책 상세페이지"
+  short_description: "전자책 판매·배포 상세 제작과 렌더 검수"
+  default_prompt: "Use $ebook-detail-page to create or refine an ebook detail page and validate its rendered outputs."
+
+policy:
+  allow_implicit_invocation: true
