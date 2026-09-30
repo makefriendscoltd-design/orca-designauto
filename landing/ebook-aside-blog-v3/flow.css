@@ -1,0 +1,98 @@
+/* Continuous backgrounds own several sections; cards retain only real evidence. */
+.flow-opening{
+  background:radial-gradient(ellipse 470px 1550px at 57% 36%,#79663020,transparent 72%),
+    radial-gradient(ellipse 620px 1600px at 50% 70%,#15506340,transparent 76%),#081b20;
+}
+.flow-opening>section{background:transparent}
+.hero{padding-bottom:44px}
+.blog-proof{padding-top:60px;padding-bottom:52px}
+.demo{padding-top:58px;padding-bottom:48px}
+.hero-cta{margin-top:34px}
+.blog-proof .eyebrow{margin-top:5px}
+.blog-capture{margin-top:35px}
+.blog-profile-crop{border-color:#296070;border-radius:10px}
+
+.flow-intro{background:#eff0ed}
+.flow-intro>section{background:transparent}
+.flow-intro .intro{
+  background:linear-gradient(#081b20 0,#24393e 115px,#84969a 260px,#d4dcda 440px,#eff0ed 650px);
+  padding-bottom:32px;
+}
+.spotlight{height:620px}
+.spotlight:before{
+  top:10px;bottom:-60px;left:-90px;right:-90px;
+  clip-path:polygon(44% 0,56% 0,100% 100%,0 100%);
+  background:linear-gradient(#fff0,#ffffff32 65%,#fff0);
+}
+.spotlight:after{bottom:-25px;background:#ffffff20;height:150px;filter:blur(32px)}
+.after{
+  background:transparent;color:#183845;border-radius:0;
+  padding:14px 0 13px;
+}
+.after .label{color:#708895}
+.after .metal{background-image:linear-gradient(#45ade8,#0670c4 60%,#144a7a);filter:none}
+.after p{color:#617f8e;margin-top:25px}
+.before{padding-bottom:28px}
+.intro .note{margin-top:17px}
+.author{
+  padding-top:63px;padding-bottom:230px;
+  background:linear-gradient(#eff0ed 0,#eff0ed calc(100% - 210px),#bccbd0 calc(100% - 140px),#405967 calc(100% - 65px),#102a35 100%)!important;
+}
+.author:after{
+  content:'';position:absolute;left:50%;bottom:20px;width:1px;height:130px;
+  background:linear-gradient(#617f8b00,#7ca6b4aa,#7ca6b400);
+}
+
+.flow-practice{
+  background:radial-gradient(ellipse 660px 1400px at 35% 30%,#32617255,transparent 75%),
+    radial-gradient(ellipse 700px 1900px at 75% 74%,#183d5577,transparent 73%),#102a35;
+}
+.flow-practice>section{background:transparent;color:#f6f7f4;padding-top:46px;padding-bottom:55px}
+.lesson-top{margin-bottom:21px}
+.lesson-top b,.lesson-two .lesson-top b{color:#a9c1cb}
+.lesson-top>span:first-child{background:transparent;border:1px solid #729bab66;color:#9ce4fc}
+.lesson-two .lesson-top>span:first-child{background:transparent;color:#9ce4fc}
+.lesson-emoji{margin:24px 0 8px}
+.lesson-two .blue{color:#78dbff}
+.lesson-two>p{color:#c1d0d5}
+.lesson-two>.note{color:#90a8b3}
+.prompt-card{
+  border-radius:3px;box-shadow:6px 9px 0 #b8c9ce,0 25px 60px #0003;
+  margin-top:35px;transform:rotate(-1.3deg);
+}
+.lesson-one .browser{margin-bottom:0}
+.lesson-one .checkline{padding-bottom:28px;border-bottom:1px solid #87aebe26}
+.lesson-two .browser{margin-top:44px}
+.lesson-two>.note{padding-bottom:25px;border-bottom:1px solid #87aebe26}
+.revision{margin-top:45px}
+.revision p{
+  background:transparent;color:#d5e3e9;box-shadow:none;border-radius:0;
+  border-left:2px solid #7cb0c2;padding:3px 0 3px 26px;
+  margin:32px 12px 0;
+}
+.revision .note{margin-top:20px}
+.lesson-three{padding-bottom:40px!important}
+
+.flow-book{
+  background:radial-gradient(ellipse 1050px 2500px at 110% 53%,#cae1e655,transparent 70%),#eff0ed;
+}
+.flow-book>section{background:transparent;color:#253c46}
+.contents{
+  padding-top:280px;padding-bottom:38px;
+  background:linear-gradient(#102a35 0,#56717d 85px,#c3d1d3 165px,#eff0ed 250px,#eff0ed00 500px)!important;
+}
+.chapter{padding:25px 0}
+.fit{background:transparent;box-shadow:none;border-radius:0;border-top:1px solid #bacbd1;padding:30px 0 0;margin-top:18px}
+.company{padding-top:65px;padding-bottom:40px}
+.community{padding-top:65px;padding-bottom:45px}
+.community-card{background:transparent;box-shadow:none;border-radius:0;padding:29px 0;margin-top:25px;border-top:1px solid #c0d0d5}
+.community-card img{border-radius:10px}
+.metric-heading strong{margin-bottom:23px}
+.faq{
+  padding-top:40px;padding-bottom:265px;
+  background:linear-gradient(#eff0ed00 0,#eff0ed calc(100% - 245px),#c3d1d3 calc(100% - 170px),#506873 calc(100% - 90px),#081b20 100%)!important;
+}
+.qa-item{padding-top:28px;border-top:1px solid #c2d0d4;margin-top:30px}
+.qa-item h3 span{display:inline-block;font-size:32px;margin:0 17px 0 0}
+.qa-item p{background:transparent;border-radius:0;padding:0 0 0 42px;margin-top:16px}
+.closing{padding-top:12px;background:radial-gradient(ellipse at 50% 50%,#735e2529,transparent 57%),#081b20}

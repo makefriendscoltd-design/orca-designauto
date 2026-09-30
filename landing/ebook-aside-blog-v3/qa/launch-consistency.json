@@ -2,7 +2,7 @@
   "excluded_files": [
     "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-expected.json"
   ],
-  "files_scanned": 19,
+  "files_scanned": 20,
   "issues": [],
   "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3",
   "summary": {
@@ -12,7 +12,7 @@
       "prices": 1,
       "product_ids": 0,
       "times": 5,
-      "urls": 8
+      "urls": 2
     }
   },
   "unreadable": [],
@@ -36,128 +36,18 @@
         },
         {
           "context": "<figure class=\"proof\"><img src=\"assets/evidence/aixlife-credentials.png\" alt=\"AIXLIFE 공개 교육 실적 자료: 강의 600시간 이상, 교육 1500명 이상\"><figcaption>AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집<br>저자의 교육 실적으로 이 전자책 구매자의 성과와 구분됩니다</figcaption",
-          "line": 44,
+          "line": 47,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         },
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\"assets/evidence/cafe-members.png\" alt=\"2026년 9월 10일 네이버 카페 회원 12127명 캡처\"><p class=\"",
-          "line": 86,
+          "line": 93,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         },
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\"assets/evidence/lounge-members.png\" alt=\"2026년 9월 10일 라운지 공개 첫 화면에 표시된 2885명\"><p class=",
-          "line": 87,
+          "line": 94,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"2026-09-10\": [",
-          "line": 21,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\",",
-          "line": 23,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\",",
-          "line": 28,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 라운지 공개 첫 화면에 표시된 인원\",",
-          "line": 33,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<figure class=\\\"proof\\\"><img src=\\\"assets/evidence/aixlife-credentials.png\\\" alt=\\\"AIXLIFE 공개 교육 실적 자료: 강의 600시간 이상, 교육 1500명 이상\\\"><figcaption>AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집<br>저자의 교육 실적으로 이 전자책 구매자의 성과와",
-          "line": 38,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"2026-09-10\\\": [\",",
-          "line": 53,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\\\",\",",
-          "line": 58,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\\\",\",",
-          "line": 63,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 라운지 공개 첫 화면에 표시된 인원\\\",\",",
-          "line": 68,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<figure class=\\\\\\\"proof\\\\\\\"><img src=\\\\\\\"assets/evidence/aixlife-credentials.png\\\\\\\" alt=\\\\\\\"AIXLIFE 공개 교육 실적 자료: 강의 600시간 이상, 교육 1500명 이상\\\\\\\"><figcaption>AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집<br",
-          "line": 73,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\\\",\",",
-          "line": 78,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\\\",\",",
-          "line": 83,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 라운지 공개 첫 화면에 표시된 인원\\\",\",",
-          "line": 88,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\\\",\",",
-          "line": 93,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\\\",\",",
-          "line": 98,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.10 라운지 공개 첫 화면에 표시된 인원\\\",\",",
-          "line": 103,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\",",
-          "line": 108,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\",",
-          "line": 113,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 라운지 공개 첫 화면에 표시된 인원\",",
-          "line": 118,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집\",",
-          "line": 123,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat\",",
-          "line": 128,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.10 라운지 공개 첫 화면에 표시된 인원\",",
-          "line": 133,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집",
@@ -198,268 +88,8 @@
         },
         {
           "context": "<p class=\"note live-source\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>",
-          "line": 28,
+          "line": 29,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"2026-09-22\": [",
-          "line": 138,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 140,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 145,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"2026-09-22\\\": [\",",
-          "line": 150,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 155,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 160,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"source_date\\\\\\\": \\\\\\\"2026-09-22\\\\\\\",\\\",\",",
-          "line": 165,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 170,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 175,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 180,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 185,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 190,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 195,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 200,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 205,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 210,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 215,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"source_date\\\": \\\"2026-09-22\\\",\",",
-          "line": 220,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 225,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 230,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 358,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 363,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 373,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 378,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 383,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 388,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 398,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 403,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 413,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 418,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 423,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 428,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 433,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 438,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 448,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 453,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 460,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 465,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 475,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 480,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 485,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 490,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 495,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 500,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 505,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 510,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 520,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 525,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 535,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 540,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 550,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 555,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "\"source_date\": \"2026-09-22\",",
@@ -490,58 +120,8 @@
         },
         {
           "context": "<figure class=\"blog-capture\"><div class=\"blog-profile-crop\"><img src=\"assets/evidence/blog-neighbors.png\" alt=\"메이크패밀리 네이버 블로그 makefamily_ 프로필: 이웃 10700명\"></div><figcaption>메이크패밀리 네이버 블로그 @makefamily_<br>2026.09.30 공개 프로필",
-          "line": 20,
+          "line": 21,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"2026-09-30\": [",
-          "line": 235,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.30 공개 프로필 기준\",",
-          "line": 237,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<figure class=\\\"blog-capture\\\"><img src=\\\"assets/evidence/blog-neighbors.png\\\" alt=\\\"메이크패밀리 네이버 블로그 makefamily_ 프로필: 이웃 10700명\\\"><figcaption>메이크패밀리 네이버 블로그 @makefamily_<br>2026.09.30 공개 프로필 기준</figcaption></f",
-          "line": 242,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"2026-09-30\\\": [\",",
-          "line": 247,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.30 공개 프로필 기준\\\",\",",
-          "line": 252,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<figure class=\\\\\\\"blog-capture\\\\\\\"><img src=\\\\\\\"assets/evidence/blog-neighbors.png\\\\\\\" alt=\\\\\\\"메이크패밀리 네이버 블로그 makefamily_ 프로필: 이웃 10700명\\\\\\\"><figcaption>메이크패밀리 네이버 블로그 @makefamily_<br>2026.09.3",
-          "line": 257,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.30 공개 프로필 기준\\\",\",",
-          "line": 262,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.30 공개 프로필 기준\\\",\",",
-          "line": 267,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.30 공개 프로필 기준\",",
-          "line": 272,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.30 공개 프로필 기준\",",
-          "line": 277,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "2026.09.30 공개 프로필 기준",
@@ -557,63 +137,13 @@
       "2026년9월10일": [
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\"assets/evidence/cafe-members.png\" alt=\"2026년 9월 10일 네이버 카페 회원 12127명 캡처\"><p class=\"",
-          "line": 86,
+          "line": 93,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         },
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\"assets/evidence/lounge-members.png\" alt=\"2026년 9월 10일 라운지 공개 첫 화면에 표시된 2885명\"><p class=",
-          "line": 87,
+          "line": 94,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"context\": \"<div class=\\\"community-card\\\"><div class=\\\"metric-heading\\\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\\\"assets/evidence/cafe-members.png\\\" alt=\\\"2026년 9월 10일 네이버 카페 회원 12",
-          "line": 43,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<div class=\\\"community-card\\\"><div class=\\\"metric-heading\\\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\\\"assets/evidence/lounge-members.png\\\" alt=\\\"2026년 9월 10일 라운지 공개 첫 화면에 표",
-          "line": 48,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"2026년9월10일\": [",
-          "line": 282,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<div class=\\\"community-card\\\"><div class=\\\"metric-heading\\\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\\\"assets/evidence/cafe-members.png\\\" alt=\\\"2026년 9월 10일 네이버 카페 회원 12",
-          "line": 284,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<div class=\\\"community-card\\\"><div class=\\\"metric-heading\\\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\\\"assets/evidence/lounge-members.png\\\" alt=\\\"2026년 9월 10일 라운지 공개 첫 화면에 표",
-          "line": 289,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<div class=\\\\\\\"community-card\\\\\\\"><div class=\\\\\\\"metric-heading\\\\\\\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\\\\\\\"assets/evidence/cafe-members.png\\\\\\\" alt=",
-          "line": 294,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<div class=\\\\\\\"community-card\\\\\\\"><div class=\\\\\\\"metric-heading\\\\\\\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\\\\\\\"assets/evidence/lounge-members.png\\\\\\\" alt=\\\\",
-          "line": 299,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"2026년9월10일\\\": [\",",
-          "line": 304,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<div class=\\\\\\\"community-card\\\\\\\"><div class=\\\\\\\"metric-heading\\\\\\\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\\\\\\\"assets/evidence/cafe-members.png\\\\\\\" alt=",
-          "line": 309,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<div class=\\\\\\\"community-card\\\\\\\"><div class=\\\\\\\"metric-heading\\\\\\\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\\\\\\\"assets/evidence/lounge-members.png\\\\\\\" alt=\\\\",
-          "line": 314,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ]
     },
@@ -621,43 +151,13 @@
       "30000원": [
         {
           "context": "- 운영값 정본: `../lounge-rebuild-20260930/catalog-audit.json`, presentationId `aside-blog`. 상품399,30,000원, 주문 이메일PDF 수령/동일이메일 라운지 재열람 유지.",
-          "line": 15,
+          "line": 17,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
           "context": "30,000원",
           "line": 158,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
-        },
-        {
-          "context": "\"context\": \"30,000원\",",
-          "line": 323,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"30,000원\\\",\",",
-          "line": 328,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"30,000원\\\",\",",
-          "line": 333,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"30,000원\\\",\",",
-          "line": 338,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"30,000원\",",
-          "line": 343,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"30,000원\",",
-          "line": 348,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "30,000원",
@@ -676,7 +176,7 @@
       "00:34": [
         {
           "context": "- 09.22 실제 라이브 원본의00:34:45–00:35:02를 추출. 빈 에디터→제목·본문 입력→이미지 삽입. 재연·생성 화면 없이17초 원속도 반복.",
-          "line": 10,
+          "line": 12,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
@@ -686,273 +186,8 @@
         },
         {
           "context": "<p class=\"note live-source\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>",
-          "line": 28,
+          "line": 29,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 140,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 145,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 155,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 160,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 170,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 175,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 180,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 185,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 190,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 195,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 200,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 205,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 210,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 215,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 225,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 230,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"00:34\": [",
-          "line": 356,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 358,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 363,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"00:34\\\",\",",
-          "line": 368,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 373,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 378,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 383,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 388,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"00:34\\\": [\",",
-          "line": 393,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 398,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 403,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"start_timecode\\\\\\\": \\\\\\\"00:34:45\\\\\\\",\\\",\",",
-          "line": 408,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 413,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 418,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 423,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 428,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 433,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 438,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"start_timecode\\\": \\\"00:34:45\\\",\",",
-          "line": 443,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 448,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 453,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 460,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 465,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 475,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 480,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 485,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 490,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 495,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 500,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 505,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 510,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 520,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 525,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 535,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 540,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 550,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 555,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "\"start_timecode\": \"00:34:45\",",
@@ -973,7 +208,7 @@
       "00:35": [
         {
           "context": "- 09.22 실제 라이브 원본의00:34:45–00:35:02를 추출. 빈 에디터→제목·본문 입력→이미지 삽입. 재연·생성 화면 없이17초 원속도 반복.",
-          "line": 10,
+          "line": 12,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
@@ -983,273 +218,8 @@
         },
         {
           "context": "<p class=\"note live-source\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>",
-          "line": 28,
+          "line": 29,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 140,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 145,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 155,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 160,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 170,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 175,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 180,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 185,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 190,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 195,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 200,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 205,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 210,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 215,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 225,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 230,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 358,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 363,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 373,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 378,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 383,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 388,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 398,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 403,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 413,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 418,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 423,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 428,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 433,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 438,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 448,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 453,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"00:35\": [",
-          "line": 458,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 460,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"<p class=\\\"note live-source\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\",",
-          "line": 465,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"00:35\\\",\",",
-          "line": 470,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 475,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 480,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 485,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 490,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 495,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 500,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 505,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 510,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"00:35\\\": [\",",
-          "line": 515,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 520,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"<p class=\\\\\\\"note live-source\\\\\\\">2026.09.22 라이브 · 00:34:45–00:35:02<br>실제 속도 17초 반복 재생</p>\\\",\",",
-          "line": 525,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"end_timecode\\\\\\\": \\\\\\\"00:35:02\\\\\\\",\\\",\",",
-          "line": 530,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 535,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"2026.09.22 라이브 · 00:34:45–00:35:02\\\",\",",
-          "line": 540,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"end_timecode\\\": \\\"00:35:02\\\",\",",
-          "line": 545,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 550,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"2026.09.22 라이브 · 00:34:45–00:35:02\",",
-          "line": 555,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         },
         {
           "context": "\"end_timecode\": \"00:35:02\",",
@@ -1272,51 +242,6 @@
           "context": "\"observed_at\": \"2026-09-30T17:13:10.503226+09:00\",",
           "line": 7,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/blog-evidence.json"
-        },
-        {
-          "context": "\"09:00\": [",
-          "line": 560,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"observed_at\\\": \\\"2026-09-30T17:13:10.503226+09:00\\\",\",",
-          "line": 562,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"09:00\\\",\",",
-          "line": 567,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"09:00\\\": [\",",
-          "line": 572,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 577,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 582,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"observed_at\\\": \\\"2026-09-30T17:13:10.503226+09:00\\\",\",",
-          "line": 589,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 599,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 609,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ],
       "17:13": [
@@ -1324,51 +249,6 @@
           "context": "\"observed_at\": \"2026-09-30T17:13:10.503226+09:00\",",
           "line": 7,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/blog-evidence.json"
-        },
-        {
-          "context": "\"context\": \"\\\"observed_at\\\": \\\"2026-09-30T17:13:10.503226+09:00\\\",\",",
-          "line": 562,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 577,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 582,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"17:13\": [",
-          "line": 587,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"observed_at\\\": \\\"2026-09-30T17:13:10.503226+09:00\\\",\",",
-          "line": 589,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"17:13\\\",\",",
-          "line": 594,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 599,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"17:13\\\": [\",",
-          "line": 604,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"observed_at\\\\\\\": \\\\\\\"2026-09-30T17:13:10.503226+09:00\\\\\\\",\\\",\",",
-          "line": 609,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ],
       "1:02": [
@@ -1376,31 +256,6 @@
           "context": "name = f'slices/{len(parts)+1:02}.png'",
           "line": 38,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/package.py"
-        },
-        {
-          "context": "\"1:02\": [",
-          "line": 614,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"name = f'slices/{len(parts)+1:02}.png'\",",
-          "line": 616,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"1:02\\\"\",",
-          "line": 621,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"1:02\\\": [\",",
-          "line": 626,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"name = f'slices/{len(parts)+1:02}.png'\\\",\",",
-          "line": 631,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ]
     },
@@ -1408,82 +263,20 @@
       "https://m.blog.naver.com/makefamily_": [
         {
           "context": "- 블로그 원문: https://m.blog.naver.com/makefamily_ . `qa/blog-evidence.json`, `assets/evidence/blog-neighbors.png`.",
-          "line": 18,
+          "line": 20,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
           "context": "\"source_url\": \"https://m.blog.naver.com/makefamily_\",",
           "line": 4,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/blog-evidence.json"
-        },
-        {
-          "context": "\"https://m.blog.naver.com/makefamily_\": [",
-          "line": 638,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        }
-      ],
-      "https://m.blog.naver.com/makefamily_\\": [
-        {
-          "context": "\"context\": \"\\\"source_url\\\": \\\"https://m.blog.naver.com/makefamily_\\\",\",",
-          "line": 640,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"https://m.blog.naver.com/makefamily_\\\": [\",",
-          "line": 645,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        }
-      ],
-      "https://m.blog.naver.com/makefamily_\\\\": [
-        {
-          "context": "\"https://m.blog.naver.com/makefamily_\\\\\": [",
-          "line": 650,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        }
-      ],
-      "https://m.blog.naver.com/makefamily_\\\\\\": [
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"source_url\\\\\\\": \\\\\\\"https://m.blog.naver.com/makefamily_\\\\\\\",\\\",\",",
-          "line": 652,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ],
       "https://www.youtube.com/watch?v=jNzt7Ejq4bQ": [
         {
-          "context": "\"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\": [",
-          "line": 657,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
           "context": "\"source_youtube\": \"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\",",
           "line": 3,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/live-provenance.json"
-        }
-      ],
-      "https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\": [
-        {
-          "context": "\"context\": \"\\\"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\": [\",",
-          "line": 659,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        },
-        {
-          "context": "\"context\": \"\\\"source_youtube\\\": \\\"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\",\",",
-          "line": 664,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        }
-      ],
-      "https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\\": [
-        {
-          "context": "\"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\\\": [",
-          "line": 669,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
-        }
-      ],
-      "https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\\\\": [
-        {
-          "context": "\"context\": \"\\\"context\\\": \\\"\\\\\\\"source_youtube\\\\\\\": \\\\\\\"https://www.youtube.com/watch?v=jNzt7Ejq4bQ\\\\\\\",\\\",\",",
-          "line": 671,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-consistency.json"
         }
       ]
     }

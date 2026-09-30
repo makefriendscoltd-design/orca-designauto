@@ -28,5 +28,5 @@ try {
     await page.close();
   }
   await fs.writeFile(path.join(dir,'qa/preview-verification.json'),JSON.stringify(results,null,2));
-  console.log('PASS: 390/740px, 12 PNGs + actual GIF, all loaded, no gaps/overflow, GIF visibly changes');
+  console.log('PASS: 390/740px, static PNG sequence + actual GIF, all loaded, no gaps/overflow, GIF visibly changes');
 } finally { await browser.close(); }

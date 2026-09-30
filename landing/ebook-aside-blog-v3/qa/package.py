@@ -13,7 +13,7 @@ m = r['motion'][0]
 assert m['src'].endswith('.gif')
 start, end = math.floor(m['top']), math.ceil(m['top'] + m['height'])
 safe = [False] * h
-uniform = [all(b-a <= 3 for a,b in im.crop((0,y,w,y+1)).getextrema()) for y in range(h)]
+uniform = [False] + [max(v[1] for v in ImageChops.difference(im.crop((0,y-1,w,y)), im.crop((0,y,w,y+1))).getextrema()) <= 3 for y in range(1,h)]
 for y in range(3,h-3):
     safe[y] = all(uniform[y-3:y+4])
 for block in r['protected']:
@@ -60,6 +60,10 @@ for part in parts:
         blocks.append(f'<div class="motion-row" style="padding-top:{part["height"]/w*100:.9f}%;background-image:url({part["background"]})"><img data-live-demo src="{part["file"]}" alt="라이브 원본에서 추출한 실제 블로그 자동 입력 장면" style="left:{part["image_left"]/w*100:.9f}%;top:{part["image_top"]/part["height"]*100:.9f}%;width:{part["image_width"]/w*100:.9f}%"></div>')
 html = '<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ASIDE 블로그 자동화 전자책</title><style>*{box-sizing:border-box}body{margin:0;background:#081b20}main{width:100%;max-width:740px;margin:auto}.slice{display:block;width:100%;height:auto}.motion-row{position:relative;height:0;background-size:100% 100%;background-repeat:no-repeat}.motion-row img{position:absolute;display:block;height:auto}</style></head><body><main>' + ''.join(blocks) + '</main></body></html>'
 (p/'preview.html').write_text(html)
+used = {part['file'] for part in parts if part['type'] == 'image'}
+for file in out.glob('*.png'):
+    if str(file.relative_to(p)) not in used:
+        file.unlink()
 (p/'qa/export-parts.json').write_text(json.dumps(parts,ensure_ascii=False,indent=2))
 validation = dict(width=w,height=h,static_count=sum(x['type']=='image' for x in parts),gif_count=1,
                   pixel_match=True,height_sum=h,text_overflow=0,all_images_loaded=True,

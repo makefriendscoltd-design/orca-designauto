@@ -1,0 +1,105 @@
+{
+  "copy_unchanged": true,
+  "before": [
+    {
+      "id": "blog-proof",
+      "mean_rgb_jump": 0.02
+    },
+    {
+      "id": "demo",
+      "mean_rgb_jump": 12.33
+    },
+    {
+      "id": "problem",
+      "mean_rgb_jump": 1.09
+    },
+    {
+      "id": "author",
+      "mean_rgb_jump": 0.0
+    },
+    {
+      "id": "lesson-1",
+      "mean_rgb_jump": 215.19
+    },
+    {
+      "id": "lesson-2",
+      "mean_rgb_jump": 216.33
+    },
+    {
+      "id": "lesson-3",
+      "mean_rgb_jump": 207.49
+    },
+    {
+      "id": "contents",
+      "mean_rgb_jump": 209.0
+    },
+    {
+      "id": "company",
+      "mean_rgb_jump": 4.33
+    },
+    {
+      "id": "community",
+      "mean_rgb_jump": 12.0
+    },
+    {
+      "id": "faq",
+      "mean_rgb_jump": 2.67
+    },
+    {
+      "id": "purchase",
+      "mean_rgb_jump": 216.33
+    }
+  ],
+  "after": [
+    {
+      "id": "blog-proof",
+      "mean_rgb_jump": 0.01
+    },
+    {
+      "id": "demo",
+      "mean_rgb_jump": 0.0
+    },
+    {
+      "id": "problem",
+      "mean_rgb_jump": 0.25
+    },
+    {
+      "id": "author",
+      "mean_rgb_jump": 0.0
+    },
+    {
+      "id": "lesson-1",
+      "mean_rgb_jump": 0.75
+    },
+    {
+      "id": "lesson-2",
+      "mean_rgb_jump": 0.02
+    },
+    {
+      "id": "lesson-3",
+      "mean_rgb_jump": 0.01
+    },
+    {
+      "id": "contents",
+      "mean_rgb_jump": 0.33
+    },
+    {
+      "id": "company",
+      "mean_rgb_jump": 0.0
+    },
+    {
+      "id": "community",
+      "mean_rgb_jump": 0.0
+    },
+    {
+      "id": "faq",
+      "mean_rgb_jump": 0.01
+    },
+    {
+      "id": "purchase",
+      "mean_rgb_jump": 0.88
+    }
+  ],
+  "before_max": 216.33,
+  "after_max": 0.88
+}

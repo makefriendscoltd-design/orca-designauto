@@ -3,19 +3,25 @@
     "type": "image",
     "file": "slices/01.png",
     "top": 0,
-    "height": 2041
+    "height": 1498
   },
   {
     "type": "image",
     "file": "slices/02.png",
-    "top": 2041,
-    "height": 1735
+    "top": 1498,
+    "height": 1519
+  },
+  {
+    "type": "image",
+    "file": "slices/03.png",
+    "top": 3017,
+    "height": 609
   },
   {
     "type": "motion",
     "file": "assets/live/aside-live-writing.gif",
     "background": "assets/live/row-poster.png",
-    "top": 3776,
+    "top": 3626,
     "height": 559,
     "image_left": 26,
     "image_top": 0.453125,
@@ -24,62 +30,68 @@
   },
   {
     "type": "image",
-    "file": "slices/04.png",
-    "top": 4335,
-    "height": 1385
-  },
-  {
-    "type": "image",
     "file": "slices/05.png",
-    "top": 5720,
-    "height": 1596
+    "top": 4185,
+    "height": 1308
   },
   {
     "type": "image",
     "file": "slices/06.png",
-    "top": 7316,
-    "height": 1752
+    "top": 5493,
+    "height": 1436
   },
   {
     "type": "image",
     "file": "slices/07.png",
-    "top": 9068,
-    "height": 2002
+    "top": 6929,
+    "height": 1323
   },
   {
     "type": "image",
     "file": "slices/08.png",
-    "top": 11070,
-    "height": 1819
+    "top": 8252,
+    "height": 1181
   },
   {
     "type": "image",
     "file": "slices/09.png",
-    "top": 12889,
-    "height": 1500
+    "top": 9433,
+    "height": 1583
   },
   {
     "type": "image",
     "file": "slices/10.png",
-    "top": 14389,
+    "top": 11016,
     "height": 1500
   },
   {
     "type": "image",
     "file": "slices/11.png",
-    "top": 15889,
-    "height": 1579
+    "top": 12516,
+    "height": 1465
   },
   {
     "type": "image",
     "file": "slices/12.png",
-    "top": 17468,
-    "height": 1606
+    "top": 13981,
+    "height": 1518
   },
   {
     "type": "image",
     "file": "slices/13.png",
-    "top": 19074,
-    "height": 1849
+    "top": 15499,
+    "height": 1500
+  },
+  {
+    "type": "image",
+    "file": "slices/14.png",
+    "top": 16999,
+    "height": 1346
+  },
+  {
+    "type": "image",
+    "file": "slices/15.png",
+    "top": 18345,
+    "height": 1414
   }
 ]
