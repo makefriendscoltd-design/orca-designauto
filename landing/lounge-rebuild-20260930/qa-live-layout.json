@@ -1,0 +1,25 @@
+[
+  {
+    "product_no": 321,
+    "width": 390,
+    "images": 11,
+    "loaded": true,
+    "containerWidth": 390,
+    "left": 0,
+    "right": 390,
+    "viewport": 390,
+    "fit": true,
+    "public_routing_note": "Requested /shop4 path on custom domain resolves internally to SHOP_NO 1; this screenshot verifies the currently served main shop design, not the inactive shop4 variant."
+  },
+  {
+    "product_no": 277,
+    "width": 1280,
+    "images": 22,
+    "loaded": true,
+    "containerWidth": 740,
+    "left": 270,
+    "right": 1010,
+    "viewport": 1280,
+    "fit": true
+  }
+]
