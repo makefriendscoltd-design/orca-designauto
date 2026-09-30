@@ -4,7 +4,7 @@
 
 - 정본: detail.html / design.css / youtube.css / funnel.css. 승인 ASIDE·YouTube 타이포/공유배경/그라데이션/누적매출카드 재사용.
 - 제품 정본: 기존 catalog-audit.json과 기존 auto-funnel brief. 현재 API 상품 282 · 판매가 50,000원 확인: qa/current-product.json. 공개라운지제공문구 재확인: qa/current-delivery.json.
-- 기본몰 판매·진열중,별도몰중지; 시안은50000원. 외부운영/가격/발송변경없음.
+- 기본몰 판매·진열중,별도몰중지; 시안은50000원. 가격/고객발송변경없음. 사용자최종승인으로기본몰PC/mobile상세교체완료.
 - 원문: incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/원문.md. 7장, 실제프롬프트, 7단계, 즉시+4일 후속순서 반영. 실제업무화면을 새로 지어내지 않음.
 - 550개·200만원: 책1장 저자사례, AIMAX스레드가이드북 무료배포2026.07, 원문상 카페24실측. 원주문 DB독립검증을 주장하지 않음.
 - 누적114.9억원: 회사전체2021.01~2024.04. 현재승인 ASIDE정본 검증기록참조; 이책단독매출로표현하지않음.
@@ -13,6 +13,6 @@
 - 헤드공식적용비교: qa/head-copy-review.json. 한글quick-rules로점검,추가윤문없이수치/주장보존게이트PASS.
 - 렌더740×20277,13PNG,전체6구간직접검수. 이미지/폰트로드·넘침0,390/740실브라우저틈0,재조립픽셀일치. qa/validation.json,preview-verification.json.
 - 편집HTML에서파생전체PNG/슬라이스/preview.html재생성. 썸네일은요청범위아님; hero.png는첫구간미리보기.
-- 이번제작에서운영상세교체안함. 실제구매·이메일수령·회원권한동선미검증.
+- 사용자승인운영교체완료:상품282기본몰PC/mobile설명PUT/freshGET일치,공개13이미지·50000원확인,390/1280실브라우저전체로드·틈0. qa/publication-verification.json;운영백업/실행기 Cafe24 launches/funnel-v2-20260930/. 실제구매·이메일수령·회원권한동선미검증.
 
 재현: node qa/render.mjs <상품폴더> → python3 qa/package.py → node qa/check-preview.mjs <상품폴더>.

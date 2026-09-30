@@ -1,0 +1,96 @@
+{
+  "source_commit": "0de0d82",
+  "operation_directory": "/Users/apple/orca/projects/cafe24/launches/funnel-v2-20260930",
+  "apply": [
+    {
+      "product_no": 282,
+      "shop_no": 1,
+      "description_verified": true,
+      "preserved_fields": [
+        "product_name",
+        "price",
+        "retail_price",
+        "selling",
+        "display",
+        "detail_image",
+        "list_image",
+        "small_image",
+        "tiny_image",
+        "shipping_fee_type",
+        "shipping_method",
+        "summary_description",
+        "category"
+      ],
+      "already_current": false
+    }
+  ],
+  "public": [
+    {
+      "host": "makefamily.kr",
+      "product_no": 282,
+      "price": 50000,
+      "all_images_present": true,
+      "images": 13,
+      "http_status": 200
+    },
+    {
+      "host": "m.makefamily.kr",
+      "product_no": 282,
+      "price": 50000,
+      "all_images_present": true,
+      "images": 13,
+      "http_status": 200
+    }
+  ],
+  "browser": [
+    {
+      "width": 390,
+      "images": 13,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "viewport": 390,
+      "mode": "live",
+      "recommendationMaskedForCapture": true
+    },
+    {
+      "width": 740,
+      "images": 13,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "viewport": 1280,
+      "mode": "live",
+      "recommendationMaskedForCapture": true
+    }
+  ],
+  "tracking": "Provider API readback succeeded, then aimax-crm-track website success emitted",
+  "shop4": "Inactive shop unchanged",
+  "customer_messages_sent": 0
+}
