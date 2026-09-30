@@ -1,0 +1,15 @@
+{
+  "requested_copy": "스레드 아무리 써도 안팔린다면 그건 100% 글 문제입니다",
+  "hero_height": 2436,
+  "dimensions": [
+    740,
+    51356
+  ],
+  "body_html_exactly_unchanged": true,
+  "body_pixels_exactly_unchanged": true,
+  "overflow": [],
+  "fonts_loaded": true,
+  "image_count": 27,
+  "punctuation": "Removed sentence periods and decorative middle dots from hero copy; retained meaningful percent and bundle plus symbols.",
+  "copy_review": "Exact user copy; quick-rules checked, no rewriting of names/numbers."
+}
