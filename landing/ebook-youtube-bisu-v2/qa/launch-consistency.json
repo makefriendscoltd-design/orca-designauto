@@ -2,7 +2,7 @@
   "excluded_files": [
     "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/launch-expected.json"
   ],
-  "files_scanned": 16,
+  "files_scanned": 17,
   "issues": [],
   "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2",
   "summary": {
@@ -21,12 +21,12 @@
       "2026-09-10": [
         {
           "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
-          "line": 196,
+          "line": 197,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
-          "line": 200,
+          "line": 201,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
         },
         {
@@ -41,22 +41,22 @@
         },
         {
           "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
-          "line": 196,
+          "line": 197,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
-          "line": 200,
+          "line": 201,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
-          "line": 196,
+          "line": 197,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
-          "line": 200,
+          "line": 201,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
         }
       ]
@@ -77,7 +77,7 @@
       "5천원": [
         {
           "context": "‘5천원 vs 꽃집’이라는 비교를",
-          "line": 17,
+          "line": 18,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
         },
         {
@@ -92,12 +92,12 @@
         },
         {
           "context": "‘5천원 vs 꽃집’이라는 비교를",
-          "line": 17,
+          "line": 18,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
         },
         {
           "context": "‘5천원 vs 꽃집’이라는 비교를",
-          "line": 17,
+          "line": 18,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
         }
       ],

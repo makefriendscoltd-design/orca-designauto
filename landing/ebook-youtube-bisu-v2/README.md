@@ -12,8 +12,10 @@
 - 결과: detail_full.png 740×20237, 안전슬라이스13장, preview.html 390/740실브라우저 로드·틈0·넘침0, 재조립픽셀일치. 6구간 직접검수.
 - 한글 quick-rules 검토와 의미·수치보존 게이트PASS. qa/humanize/.
 - 가격/날짜/상품번호 품질게이트: qa/launch-consistency.json.
-- 제작범위 완료. 이번 v2 운영교체는 실행하지 않음. 실제결제·권한부여·수령은 미검증.
+- 사용자 승인 운영교체 완료: 기본몰 상품321 PC/mobile설명·공개13이미지·가격110000원·390/1280실브라우저로드/틈0 확인. 기존판매·진열·가격보존. qa/publication-verification.json. 실제결제·권한부여·수령은 미검증.
 
 재현: node qa/render.mjs <상품폴더절대경로> → python3 qa/package.py → node qa/check-preview.mjs <상품폴더절대경로>.
 
 후속 히어로: 사용자 지정 “유튜브 1만 / AI로 만드는 비법서”. 1만을116px로 강조. 나머지 본문HTML 동일 검증. qa/hero-copy-verification.json.
+
+헤드카피 제작 기준은 `.agents/skills/ebook-detail-page/references/head-copy.md`로 공식화하고 SKILL.md 진입점에서 연결했다.

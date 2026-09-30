@@ -1,0 +1,99 @@
+{
+  "operation_directory": "/Users/apple/orca/projects/cafe24/launches/youtube-v2-20260930",
+  "source_commit": "2db1a6a",
+  "product_no": 321,
+  "shops": [
+    1
+  ],
+  "apply": [
+    {
+      "product_no": 321,
+      "shop_no": 1,
+      "description_verified": true,
+      "preserved_fields": [
+        "product_name",
+        "price",
+        "retail_price",
+        "selling",
+        "display",
+        "detail_image",
+        "list_image",
+        "small_image",
+        "tiny_image",
+        "shipping_fee_type",
+        "shipping_method",
+        "summary_description",
+        "category"
+      ],
+      "already_current": false
+    }
+  ],
+  "public": [
+    {
+      "host": "makefamily.kr",
+      "product_no": 321,
+      "price": 110000,
+      "all_images_present": true,
+      "images": 13,
+      "http_status": 200
+    },
+    {
+      "host": "m.makefamily.kr",
+      "product_no": 321,
+      "price": 110000,
+      "all_images_present": true,
+      "images": 13,
+      "http_status": 200
+    }
+  ],
+  "browser": [
+    {
+      "width": 390,
+      "images": 13,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "viewport": 390,
+      "mode": "live",
+      "recommendationMaskedForCapture": true
+    },
+    {
+      "width": 740,
+      "images": 13,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "viewport": 1280,
+      "mode": "live",
+      "recommendationMaskedForCapture": true
+    }
+  ],
+  "shop4": "Inactive 99000 variant left unchanged",
+  "tracking": "Website success metadata recorded by aimax-crm-track after API readback; no customer messages"
+}
