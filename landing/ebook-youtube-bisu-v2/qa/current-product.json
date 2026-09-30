@@ -1,0 +1,18 @@
+[
+  {
+    "product_no": 321,
+    "product_name": "내 생각을 영상으로 만드는 AI 직원 — 노트 한 장에서 유튜브 업로드까지 하나씩 따라 하기 (2권 무료 업데이트)",
+    "price": "110000.00",
+    "selling": "T",
+    "display": "T",
+    "shop_no": 1
+  },
+  {
+    "product_no": 321,
+    "product_name": "내 생각을 영상으로 만드는 AI 직원 — 노트 한 장에서 유튜브 업로드까지 하나씩 따라 하기 (2권 무료 업데이트)",
+    "price": "99000.00",
+    "selling": "F",
+    "display": "F",
+    "shop_no": 4
+  }
+]

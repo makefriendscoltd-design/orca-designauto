@@ -1,0 +1,23 @@
+{
+  "required_prices": [
+    "110000원"
+  ],
+  "allowed_prices": [
+    "110000원",
+    "99000원",
+    "5천원"
+  ],
+  "allowed_product_ids": [
+    "321"
+  ],
+  "allowed_dates": [
+    "2026-09-10",
+    "2026.09.10",
+    "2026-09-30",
+    "2026.09.30"
+  ],
+  "allowed_times": [
+    "1:02"
+  ],
+  "notes": "Main selling shop1 110000; shop4 99000 inactive and excluded from this artwork; 1:02 is filename format. 5천원 is a literal label in the book thumbnail example, not this product price."
+}

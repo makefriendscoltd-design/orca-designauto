@@ -1,0 +1,30 @@
+{
+  "pdfs": [
+    {
+      "file": "incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-video-staff/asset-28.pdf",
+      "pages": 69,
+      "sha256": "e0571052d45c751e6a54dfaebc18f2cd74ffacffd1585f0b89a0232308d611ed"
+    },
+    {
+      "file": "incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-video-staff/asset-29.pdf",
+      "pages": 43,
+      "sha256": "74a223c50ebe4b7b0fcadf8ff3bea80e9274df4c347b5c7129f6db5ddecacb00"
+    }
+  ],
+  "preserved_original_images": [
+    "assets/book-current-3d.png",
+    "assets/evidence/cafe-members.png",
+    "assets/evidence/lounge-members.png",
+    "assets/mapping.png",
+    "assets/script.png",
+    "assets/thumbnail.webp"
+  ],
+  "new_original_screenshots": [
+    "assets/001-youtube-search.webp",
+    "assets/002-icon-evidence.webp"
+  ],
+  "reference_channel": "루담하우스_일상 꽃의 시작; third-party teaching example, not own business result",
+  "revenue_source": "../ebook-aside-blog-v3/qa/cumulative-revenue-verification.json; newest user-approved cumulative format",
+  "authority_copy_basis": "User current design approval; brain-sangchul/wiki/마케팅-콘텐츠-철학.md sections 7,9,10",
+  "copy_review": "Humanize quick rules reviewed: claims/numbers/names preserved; no extra mechanical paraphrase needed."
+}

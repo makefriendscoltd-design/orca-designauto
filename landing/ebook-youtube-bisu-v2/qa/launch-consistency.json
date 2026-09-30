@@ -1,0 +1,124 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/launch-expected.json"
+  ],
+  "files_scanned": 16,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 1,
+      "prices": 3,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
+          "line": 196,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
+          "line": 200,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
+        },
+        {
+          "context": "<section class=\"community\" id=\"community\"><div class=\"eyebrow\">함께 공부하는 메이크패밀리</div><h2>배움을 이어가는<br>공간도 있습니다</h2><div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</sm",
+          "line": 18,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/detail.html"
+        },
+        {
+          "context": "<section class=\"community\" id=\"community\"><div class=\"eyebrow\">함께 공부하는 메이크패밀리</div><h2>배움을 이어가는<br>공간도 있습니다</h2><div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</sm",
+          "line": 18,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/detail.html"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
+          "line": 196,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
+          "line": 200,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 · 네이버 카페 westudyssat",
+          "line": 196,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 첫 화면 표시 인원",
+          "line": 200,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
+        }
+      ]
+    },
+    "prices": {
+      "110000원": [
+        {
+          "context": "- 정본: detail.html / design.css / youtube.css. 기본몰 상품 321 · 판매가 110,000원. 현행값은 qa/current-product.json의 실제 API조회.",
+          "line": 5,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/README.md"
+        },
+        {
+          "context": "- 별도몰 shop4는99,000원·판매/진열중지. 이110,000원 시안을 shop4에 그대로 등록하지 않는다.",
+          "line": 6,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/README.md"
+        }
+      ],
+      "5천원": [
+        {
+          "context": "‘5천원 vs 꽃집’이라는 비교를",
+          "line": 17,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/copy.md"
+        },
+        {
+          "context": "<section class=\"showcase\" id=\"result\"><div class=\"eyebrow\">책에 담긴 실제 썸네일 예시</div><h2>지시서가<br><span class=\"yellow\">이 한 장이 되기까지</span></h2><figure class=\"browser\"><div class=\"browserbar\"><i></i><i></i><i></i><span>책 속 꽃공방 실",
+          "line": 4,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/detail.html"
+        },
+        {
+          "context": "<section class=\"showcase\" id=\"result\"><div class=\"eyebrow\">책에 담긴 실제 썸네일 예시</div><h2>지시서가<br><span class=\"yellow\">이 한 장이 되기까지</span></h2><figure class=\"browser\"><div class=\"browserbar\"><i></i><i></i><i></i><span>책 속 꽃공방 실",
+          "line": 4,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/detail.html"
+        },
+        {
+          "context": "‘5천원 vs 꽃집’이라는 비교를",
+          "line": 17,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/input.txt"
+        },
+        {
+          "context": "‘5천원 vs 꽃집’이라는 비교를",
+          "line": 17,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/humanize/final.md"
+        }
+      ],
+      "99000원": [
+        {
+          "context": "- 별도몰 shop4는99,000원·판매/진열중지. 이110,000원 시안을 shop4에 그대로 등록하지 않는다.",
+          "line": 6,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/README.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-youtube-bisu-v2/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}
