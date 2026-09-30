@@ -135,3 +135,18 @@
 .book-includes p{font-size:27px;color:#5d7988;line-height:1.6;margin-top:18px}
 .book-includes .note{display:block;font-size:19px;margin-top:15px}
 .chapter p{font-size:25px;line-height:1.55}
+
+/* Cumulative authority block: user-directed replacement of annual revenue. */
+.company .authority-lead{margin:30px 0 0;line-height:1.5}
+.approved-revenue .sales-chart h3{font-size:19px;color:#587488}
+.approved-revenue .cumulative-total{font-size:70px;font-weight:800;line-height:1.12;letter-spacing:-.055em;color:#0072ee;margin-top:14px;white-space:nowrap}
+.approved-revenue .cumulative-total small{font-size:24px;letter-spacing:-.025em;margin-left:6px}
+.approved-revenue .cumulative-period{font-size:14px;color:#738391;margin-top:8px}
+.approved-revenue .annual-stats{margin:30px 0 25px;gap:23px}
+.approved-revenue .annual-row span{font-size:16px}
+.approved-revenue .annual-row em{display:block;font-size:11px;font-style:normal;font-weight:400;margin-top:3px;color:#738391}
+.approved-revenue .annual-row strong{font-size:35px}
+.approved-revenue .annual-row i{margin-top:12px}
+.approved-revenue .sales-chart .caption{font-size:11px;line-height:1.6}
+.company .authority-close{margin:38px 0 0;line-height:1.5}
+.company .authority-close strong{display:block;font-weight:700;color:#16738b;margin-top:14px}

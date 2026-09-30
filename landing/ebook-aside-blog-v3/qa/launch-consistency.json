@@ -2,7 +2,7 @@
   "excluded_files": [
     "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/launch-expected.json"
   ],
-  "files_scanned": 23,
+  "files_scanned": 24,
   "issues": [],
   "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3",
   "summary": {
@@ -21,17 +21,17 @@
       "2026-09-10": [
         {
           "context": "AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집",
-          "line": 72,
+          "line": 87,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
           "context": "2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat",
-          "line": 184,
+          "line": 229,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면에 표시된 인원",
-          "line": 186,
+          "line": 233,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
@@ -41,49 +41,49 @@
         },
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\"assets/evidence/cafe-members.png\" alt=\"2026년 9월 10일 네이버 카페 회원 12127명 캡처\"><p class=\"",
-          "line": 105,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
-        },
-        {
-          "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\"assets/evidence/lounge-members.png\" alt=\"2026년 9월 10일 라운지 공개 첫 화면에 표시된 2885명\"><p class=",
           "line": 106,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         },
         {
+          "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\"assets/evidence/lounge-members.png\" alt=\"2026년 9월 10일 라운지 공개 첫 화면에 표시된 2885명\"><p class=",
+          "line": 107,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
+        },
+        {
           "context": "AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집",
-          "line": 72,
+          "line": 87,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat",
-          "line": 184,
+          "line": 229,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면에 표시된 인원",
-          "line": 186,
+          "line": 233,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "AIXLIFE 공개사이트 자체 집계 · 2026.09.10 수집",
-          "line": 72,
+          "line": 87,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         },
         {
           "context": "2026.09.10 카페정보 화면 기준 · 네이버 카페 westudyssat",
-          "line": 184,
+          "line": 229,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         },
         {
           "context": "2026.09.10 라운지 공개 첫 화면에 표시된 인원",
-          "line": 186,
+          "line": 233,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ],
       "2026-09-22": [
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
@@ -98,12 +98,12 @@
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ],
@@ -115,7 +115,7 @@
         },
         {
           "context": "2026.09.30 공개 프로필 기준",
-          "line": 22,
+          "line": 23,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
@@ -125,24 +125,24 @@
         },
         {
           "context": "2026.09.30 공개 프로필 기준",
-          "line": 22,
+          "line": 23,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.30 공개 프로필 기준",
-          "line": 22,
+          "line": 23,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ],
       "2026년9월10일": [
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></strong></div><img src=\"assets/evidence/cafe-members.png\" alt=\"2026년 9월 10일 네이버 카페 회원 12127명 캡처\"><p class=\"",
-          "line": 105,
+          "line": 106,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         },
         {
           "context": "<div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 라운지</span><strong>2,885<small>명</small></strong></div><img src=\"assets/evidence/lounge-members.png\" alt=\"2026년 9월 10일 라운지 공개 첫 화면에 표시된 2885명\"><p class=",
-          "line": 106,
+          "line": 107,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/detail.html"
         }
       ]
@@ -151,23 +151,8 @@
       "30000원": [
         {
           "context": "- 운영값 정본: `../lounge-rebuild-20260930/catalog-audit.json`, presentationId `aside-blog`. 상품399,30,000원, 주문 이메일PDF 수령/동일이메일 라운지 재열람 유지.",
-          "line": 21,
+          "line": 23,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
-        },
-        {
-          "context": "30,000원",
-          "line": 203,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
-        },
-        {
-          "context": "30,000원",
-          "line": 203,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
-        },
-        {
-          "context": "30,000원",
-          "line": 203,
-          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ]
     },
@@ -176,12 +161,12 @@
       "00:34": [
         {
           "context": "- 09.22 실제 라이브 원본의00:34:46.5–00:35:00.5를 추출. 빈 에디터→제목·본문 입력→이미지 삽입. 재연·생성 화면 없이7초 반복(원본14초를2배속).",
-          "line": 16,
+          "line": 18,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
@@ -201,24 +186,24 @@
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ],
       "00:35": [
         {
           "context": "- 09.22 실제 라이브 원본의00:34:46.5–00:35:00.5를 추출. 빈 에디터→제목·본문 입력→이미지 삽입. 재연·생성 화면 없이7초 반복(원본14초를2배속).",
-          "line": 16,
+          "line": 18,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/copy.md"
         },
         {
@@ -238,12 +223,12 @@
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/input.txt"
         },
         {
           "context": "2026.09.22 라이브 00:34:46.5–00:35:00.5",
-          "line": 33,
+          "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/qa/humanize/final.md"
         }
       ],
@@ -273,7 +258,7 @@
       "https://m.blog.naver.com/makefamily_": [
         {
           "context": "- 블로그 원문: https://m.blog.naver.com/makefamily_ . `qa/blog-evidence.json`, `assets/evidence/blog-neighbors.png`.",
-          "line": 24,
+          "line": 26,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-aside-blog-v3/README.md"
         },
         {

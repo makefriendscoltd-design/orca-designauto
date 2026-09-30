@@ -74,24 +74,30 @@
     "type": "image",
     "file": "slices/12.png",
     "top": 16378,
-    "height": 1802
+    "height": 1032
   },
   {
     "type": "image",
     "file": "slices/13.png",
-    "top": 18180,
-    "height": 1668
+    "top": 17410,
+    "height": 1458
   },
   {
     "type": "image",
     "file": "slices/14.png",
-    "top": 19848,
-    "height": 1500
+    "top": 18868,
+    "height": 1497
   },
   {
     "type": "image",
     "file": "slices/15.png",
-    "top": 21348,
-    "height": 1798
+    "top": 20365,
+    "height": 1500
+  },
+  {
+    "type": "image",
+    "file": "slices/16.png",
+    "top": 21865,
+    "height": 1732
   }
 ]

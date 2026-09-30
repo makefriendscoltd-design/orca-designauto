@@ -62,9 +62,14 @@
       {
         "src": "slices/15.png",
         "loaded": true
+      },
+      {
+        "src": "slices/16.png",
+        "loaded": true
       }
     ],
     "gaps": [
+      0,
       0,
       0,
       0,
@@ -148,9 +153,14 @@
       {
         "src": "slices/15.png",
         "loaded": true
+      },
+      {
+        "src": "slices/16.png",
+        "loaded": true
       }
     ],
     "gaps": [
+      0,
       0,
       0,
       0,
