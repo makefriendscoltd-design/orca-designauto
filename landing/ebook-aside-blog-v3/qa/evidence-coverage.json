@@ -1,0 +1,17 @@
+{
+  "original_assets": [
+    "assets/book/crop_check8.png",
+    "assets/book/p08_img0.png",
+    "assets/book/p20_edit.png",
+    "assets/cover.png",
+    "assets/evidence/aixlife-credentials.png",
+    "assets/evidence/author.png",
+    "assets/evidence/cafe-members.png",
+    "assets/evidence/lounge-members.png"
+  ],
+  "omitted": [],
+  "hashes_unchanged": true,
+  "source_manifest": "../../lounge-rebuild-20260930/aside-blog/qa/evidence-restored.json",
+  "new_proof": "blog-evidence.json",
+  "new_motion": "live-provenance.json"
+}

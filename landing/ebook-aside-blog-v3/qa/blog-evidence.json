@@ -1,0 +1,22 @@
+{
+  "subject": "Makefamily Naver blog",
+  "blog_id": "makefamily_",
+  "source_url": "https://m.blog.naver.com/makefamily_",
+  "metric": "public blog neighbors",
+  "value": 10700,
+  "observed_at": "2026-09-30T17:13:10.503226+09:00",
+  "visible_literal": "10,700명의 이웃",
+  "raw_field": "subscriberCount:10700",
+  "evidence": [
+    "blog-original.html",
+    "blog-jina.txt",
+    "blog-visible-text.txt",
+    "blog-profile-740.png",
+    "blog-profile-header-1480.png"
+  ],
+  "limits": [
+    "This is blog audience size, not Cafe membership.",
+    "No source establishes that ASIDE generated these neighbors.",
+    "Do not attribute this count to ebook author Naminsoo personally."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "required_prices": [
+    "30000원"
+  ],
+  "allowed_prices": [
+    "30000원"
+  ],
+  "allowed_product_ids": [
+    "399"
+  ],
+  "allowed_dates": [
+    "2026-09-10",
+    "2026.09.10",
+    "2026년9월10일",
+    "2026-09-22",
+    "2026.09.22",
+    "2026-09-30",
+    "2026.09.30"
+  ],
+  "allowed_times": [
+    "00:34",
+    "00:35",
+    "09:00",
+    "17:13",
+    "1:02"
+  ],
+  "notes": "Times are video source offsets, evidence capture timestamp/timezone, and package filename format 1:02; no launch schedule."
+}

@@ -1,0 +1,36 @@
+{
+  "source_video": "/Users/apple/orca/workspaces/minsoo/SSH-원격접근/blog-lecture-20260928/source/jNzt7Ejq4bQ.mp4",
+  "source_youtube": "https://www.youtube.com/watch?v=jNzt7Ejq4bQ",
+  "source_title": "AI employee blog writing ASIDE live",
+  "source_date": "2026-09-22",
+  "source_size": [
+    1920,
+    1080
+  ],
+  "start_seconds": 2085,
+  "end_seconds": 2102,
+  "start_timecode": "00:34:45",
+  "end_timecode": "00:35:02",
+  "speed": 1,
+  "crop": {
+    "x": 292,
+    "y": 80,
+    "width": 1160,
+    "height": 940
+  },
+  "output": {
+    "file": "aside-live-writing.gif",
+    "width": 740,
+    "height": 600,
+    "fps": 10,
+    "frames": 170,
+    "duration_seconds": 17,
+    "bytes": 557920,
+    "loop": 0
+  },
+  "poster": {
+    "file": "aside-live-poster.png",
+    "source_seconds": 2097
+  },
+  "observed": "Blank editor becomes title/body and image appears. Native source recording, no typing recreation. Sidebars, account controls and presenter excluded. Editor image library remains visible because it is part of insertion."
+}

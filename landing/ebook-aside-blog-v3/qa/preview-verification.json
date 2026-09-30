@@ -1,0 +1,154 @@
+[
+  {
+    "viewport": 390,
+    "width": 390,
+    "images": [
+      {
+        "src": "slices/01.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/02.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/live/aside-live-writing.gif",
+        "loaded": true
+      },
+      {
+        "src": "slices/04.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/05.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/06.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/07.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/08.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/09.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/10.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/11.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/12.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/13.png",
+        "loaded": true
+      }
+    ],
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gif": "assets/live/aside-live-writing.gif",
+    "motion_changed": true,
+    "early_hash": "314d001c93ce30e2ec66e44e10cfe99b835dcceb2dce2195ca98b1858bc13fce",
+    "later_hash": "5bafe5221c1671bdf34be72b81283c592fc4e2d49954c73d3f735820d11b99fc"
+  },
+  {
+    "viewport": 740,
+    "width": 740,
+    "images": [
+      {
+        "src": "slices/01.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/02.png",
+        "loaded": true
+      },
+      {
+        "src": "assets/live/aside-live-writing.gif",
+        "loaded": true
+      },
+      {
+        "src": "slices/04.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/05.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/06.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/07.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/08.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/09.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/10.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/11.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/12.png",
+        "loaded": true
+      },
+      {
+        "src": "slices/13.png",
+        "loaded": true
+      }
+    ],
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gif": "assets/live/aside-live-writing.gif",
+    "motion_changed": true,
+    "early_hash": "3b7590276f3cbb4b8b37cc3aa1b13d149b5c644044e2e0db77f8f58871fcf5e5",
+    "later_hash": "d0dba6aad472e1b81b1005fd0944e964990289511d3aca77029121f368f98d75"
+  }
+]

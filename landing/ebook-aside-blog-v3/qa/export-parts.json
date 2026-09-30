@@ -1,0 +1,85 @@
+[
+  {
+    "type": "image",
+    "file": "slices/01.png",
+    "top": 0,
+    "height": 2018
+  },
+  {
+    "type": "image",
+    "file": "slices/02.png",
+    "top": 2018,
+    "height": 2003
+  },
+  {
+    "type": "motion",
+    "file": "assets/live/aside-live-writing.gif",
+    "background": "assets/live/row-poster.png",
+    "top": 4021,
+    "height": 559,
+    "image_left": 26,
+    "image_top": 0.828125,
+    "image_width": 688,
+    "image_height": 557.828125
+  },
+  {
+    "type": "image",
+    "file": "slices/04.png",
+    "top": 4580,
+    "height": 1381
+  },
+  {
+    "type": "image",
+    "file": "slices/05.png",
+    "top": 5961,
+    "height": 1576
+  },
+  {
+    "type": "image",
+    "file": "slices/06.png",
+    "top": 7537,
+    "height": 1734
+  },
+  {
+    "type": "image",
+    "file": "slices/07.png",
+    "top": 9271,
+    "height": 1982
+  },
+  {
+    "type": "image",
+    "file": "slices/08.png",
+    "top": 11253,
+    "height": 1806
+  },
+  {
+    "type": "image",
+    "file": "slices/09.png",
+    "top": 13059,
+    "height": 1500
+  },
+  {
+    "type": "image",
+    "file": "slices/10.png",
+    "top": 14559,
+    "height": 1338
+  },
+  {
+    "type": "image",
+    "file": "slices/11.png",
+    "top": 15897,
+    "height": 1503
+  },
+  {
+    "type": "image",
+    "file": "slices/12.png",
+    "top": 17400,
+    "height": 1500
+  },
+  {
+    "type": "image",
+    "file": "slices/13.png",
+    "top": 18900,
+    "height": 1662
+  }
+]
