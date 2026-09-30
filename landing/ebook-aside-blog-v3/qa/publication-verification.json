@@ -1,0 +1,123 @@
+{
+  "publication_directory": "/Users/apple/orca/projects/cafe24/launches/aside-v3-20260930",
+  "source_commit": "3df52bf",
+  "apply": [
+    {
+      "product_no": 399,
+      "shop_no": 1,
+      "description_verified": true,
+      "preserved_fields": [
+        "product_name",
+        "price",
+        "retail_price",
+        "selling",
+        "display",
+        "detail_image",
+        "list_image",
+        "small_image",
+        "tiny_image",
+        "shipping_fee_type",
+        "shipping_method",
+        "summary_description",
+        "category"
+      ],
+      "already_current": false
+    },
+    {
+      "product_no": 399,
+      "shop_no": 4,
+      "description_verified": true,
+      "preserved_fields": [
+        "product_name",
+        "price",
+        "retail_price",
+        "selling",
+        "display",
+        "detail_image",
+        "list_image",
+        "small_image",
+        "tiny_image",
+        "shipping_fee_type",
+        "shipping_method",
+        "summary_description",
+        "category"
+      ],
+      "already_current": true
+    }
+  ],
+  "public": [
+    {
+      "host": "makefamily.kr",
+      "product_no": 399,
+      "images_present": 17,
+      "price": 30000,
+      "status": 200
+    },
+    {
+      "host": "m.makefamily.kr",
+      "product_no": 399,
+      "images_present": 17,
+      "price": 30000,
+      "status": 200
+    }
+  ],
+  "browser": [
+    {
+      "width": 390,
+      "images": 16,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "motionChanged": true,
+      "viewport": 390,
+      "thirdPartyRecommendationMaskedForCapture": true,
+      "mode": "live"
+    },
+    {
+      "width": 740,
+      "images": 16,
+      "loaded": true,
+      "gaps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "withinViewport": true,
+      "motionChanged": true,
+      "viewport": 1280,
+      "thirdPartyRecommendationMaskedForCapture": true,
+      "mode": "live"
+    }
+  ],
+  "lounge_checkout_product_no": 399,
+  "gif_cdn_frames": 105,
+  "customer_messages_sent": 0
+}

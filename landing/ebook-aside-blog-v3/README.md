@@ -43,7 +43,7 @@
 - `qa/launch-consistency.json`: 불일치0. 시간검출은 영상오프셋·촬영기록·코드 포맷이며 행사 일정이 아니다.
 - `qa/gif-verification.json`:105프레임/7000ms/105개 서로 다른 프레임 검증.
 - `qa/preview-verification.json`: 실제390/740px 브라우저에서 로딩/틈/가로넘침 검사 및12초간격GIF 픽셀변화 검사.
-- 미검증: 운영몰 교체·실제 결제/수령. 이번 수정에서는 실행하지 않았다.
+- 운영 반영: 사용자 최종 승인으로 상품399 shop1/4의 PC·mobile 상세 교체, fresh API 일치·가격/판매/진열 보존. 공개 PC·mobile 이미지/가격 확인. 근거 `qa/publication-verification.json`, 운영 백업·실행기는 Cafe24 `launches/aside-v3-20260930/`. 실제 결제/수령은 미검증.
 
 ## 재현
 
