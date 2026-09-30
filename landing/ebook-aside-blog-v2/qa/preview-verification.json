@@ -1,0 +1,136 @@
+[
+  {
+    "viewport": 390,
+    "width": 390,
+    "images": [
+      {
+        "src": "slices/01.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/02.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/03.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/04.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/05.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/06.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/07.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/08.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/09.png",
+        "loaded": true,
+        "width": 390
+      },
+      {
+        "src": "slices/10.png",
+        "loaded": true,
+        "width": 390
+      }
+    ],
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "viewport": 740,
+    "width": 740,
+    "images": [
+      {
+        "src": "slices/01.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/02.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/03.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/04.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/05.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/06.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/07.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/08.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/09.png",
+        "loaded": true,
+        "width": 740
+      },
+      {
+        "src": "slices/10.png",
+        "loaded": true,
+        "width": 740
+      }
+    ],
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "required_prices": [
+    "30000원"
+  ],
+  "allowed_prices": [
+    "30000원"
+  ],
+  "allowed_product_ids": [
+    "399"
+  ],
+  "allowed_dates": [
+    "2026-09-10",
+    "2026.09.10",
+    "2026년9월10일"
+  ]
+}

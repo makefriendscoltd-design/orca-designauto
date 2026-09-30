@@ -1,0 +1,32 @@
+{
+  "old_assets": [
+    "assets/book/crop_check8.png",
+    "assets/book/p08_img0.png",
+    "assets/book/p20_edit.png",
+    "assets/cover.png",
+    "assets/evidence/aixlife-credentials.png",
+    "assets/evidence/author.png",
+    "assets/evidence/cafe-members.png",
+    "assets/evidence/lounge-members.png"
+  ],
+  "new_assets": [
+    "assets/book/crop_check8.png",
+    "assets/book/p08_img0.png",
+    "assets/book/p15_img0.png",
+    "assets/book/p20_edit.png",
+    "assets/cover.png",
+    "assets/evidence/aixlife-credentials.png",
+    "assets/evidence/author.png",
+    "assets/evidence/cafe-members.png",
+    "assets/evidence/lounge-members.png"
+  ],
+  "omitted": [],
+  "hashes_unchanged": true,
+  "annual_revenue_preserved": [
+    "2021:40.5",
+    "2022:41.3",
+    "2023:27.6"
+  ],
+  "source_manifest": "../lounge-rebuild-20260930/aside-blog/qa/evidence-restored.json",
+  "new_original_screenshot": "assets/book/p15_img0.png"
+}

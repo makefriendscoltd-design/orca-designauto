@@ -1,0 +1,587 @@
+{
+  "width": 740,
+  "height": 14672,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/p15_img0.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/author.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/aixlife-credentials.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/p08_img0.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/p20_edit.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/crop_check8.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/cafe-members.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/lounge-members.png",
+      "ok": true
+    },
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "65px",
+      "leading": "73.45px",
+      "tracking": "-2.925px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero-lead",
+      "size": "35px",
+      "leading": "54.25px",
+      "tracking": "-0.84px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "35px",
+      "leading": "54.25px",
+      "tracking": "-0.84px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "49px",
+      "leading": "60.27px",
+      "tracking": "-2.205px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "35px",
+      "leading": "54.25px",
+      "tracking": "-0.84px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 127,
+      "bottom": 198
+    },
+    {
+      "top": 196,
+      "bottom": 360
+    },
+    {
+      "top": 373,
+      "bottom": 473
+    },
+    {
+      "top": 492,
+      "bottom": 1122
+    },
+    {
+      "top": 483,
+      "bottom": 1084
+    },
+    {
+      "top": 1133,
+      "bottom": 1198
+    },
+    {
+      "top": 1345,
+      "bottom": 1482
+    },
+    {
+      "top": 1505,
+      "bottom": 1630
+    },
+    {
+      "top": 1640,
+      "bottom": 1744
+    },
+    {
+      "top": 1770,
+      "bottom": 2202
+    },
+    {
+      "top": 1829,
+      "bottom": 1885
+    },
+    {
+      "top": 1990,
+      "bottom": 2110
+    },
+    {
+      "top": 2115,
+      "bottom": 2166
+    },
+    {
+      "top": 2203,
+      "bottom": 2246
+    },
+    {
+      "top": 2456,
+      "bottom": 2594
+    },
+    {
+      "top": 2602,
+      "bottom": 2705
+    },
+    {
+      "top": 2725,
+      "bottom": 3164
+    },
+    {
+      "top": 2762,
+      "bottom": 3163
+    },
+    {
+      "top": 3168,
+      "bottom": 3208
+    },
+    {
+      "top": 3206,
+      "bottom": 3248
+    },
+    {
+      "top": 3275,
+      "bottom": 3320
+    },
+    {
+      "top": 3328,
+      "bottom": 3413
+    },
+    {
+      "top": 3622,
+      "bottom": 3760
+    },
+    {
+      "top": 3863,
+      "bottom": 3938
+    },
+    {
+      "top": 3941,
+      "bottom": 4061
+    },
+    {
+      "top": 3822,
+      "bottom": 4117
+    },
+    {
+      "top": 4100,
+      "bottom": 4279
+    },
+    {
+      "top": 4204,
+      "bottom": 4250
+    },
+    {
+      "top": 4204,
+      "bottom": 4250
+    },
+    {
+      "top": 4288,
+      "bottom": 4739
+    },
+    {
+      "top": 4288,
+      "bottom": 4669
+    },
+    {
+      "top": 4898,
+      "bottom": 4975
+    },
+    {
+      "top": 4983,
+      "bottom": 5125
+    },
+    {
+      "top": 5133,
+      "bottom": 5237
+    },
+    {
+      "top": 5257,
+      "bottom": 5673
+    },
+    {
+      "top": 5294,
+      "bottom": 5672
+    },
+    {
+      "top": 5680,
+      "bottom": 5721
+    },
+    {
+      "top": 5880,
+      "bottom": 5957
+    },
+    {
+      "top": 5965,
+      "bottom": 6108
+    },
+    {
+      "top": 6116,
+      "bottom": 6219
+    },
+    {
+      "top": 6235,
+      "bottom": 6707
+    },
+    {
+      "top": 6334,
+      "bottom": 6429
+    },
+    {
+      "top": 6461,
+      "bottom": 6555
+    },
+    {
+      "top": 6587,
+      "bottom": 6682
+    },
+    {
+      "top": 6727,
+      "bottom": 7185
+    },
+    {
+      "top": 6764,
+      "bottom": 7184
+    },
+    {
+      "top": 7186,
+      "bottom": 7253
+    },
+    {
+      "top": 7412,
+      "bottom": 7489
+    },
+    {
+      "top": 7497,
+      "bottom": 7639
+    },
+    {
+      "top": 7647,
+      "bottom": 7751
+    },
+    {
+      "top": 7767,
+      "bottom": 8239
+    },
+    {
+      "top": 7767,
+      "bottom": 8196
+    },
+    {
+      "top": 8257,
+      "bottom": 8662
+    },
+    {
+      "top": 8328,
+      "bottom": 8449
+    },
+    {
+      "top": 8456,
+      "bottom": 8586
+    },
+    {
+      "top": 8871,
+      "bottom": 9004
+    },
+    {
+      "top": 9027,
+      "bottom": 9215
+    },
+    {
+      "top": 9056,
+      "bottom": 9108
+    },
+    {
+      "top": 9104,
+      "bottom": 9187
+    },
+    {
+      "top": 9198,
+      "bottom": 9386
+    },
+    {
+      "top": 9227,
+      "bottom": 9279
+    },
+    {
+      "top": 9275,
+      "bottom": 9358
+    },
+    {
+      "top": 9369,
+      "bottom": 9557
+    },
+    {
+      "top": 9398,
+      "bottom": 9450
+    },
+    {
+      "top": 9446,
+      "bottom": 9529
+    },
+    {
+      "top": 9540,
+      "bottom": 9728
+    },
+    {
+      "top": 9569,
+      "bottom": 9621
+    },
+    {
+      "top": 9617,
+      "bottom": 9700
+    },
+    {
+      "top": 9735,
+      "bottom": 9970
+    },
+    {
+      "top": 9806,
+      "bottom": 9942
+    },
+    {
+      "top": 10179,
+      "bottom": 10317
+    },
+    {
+      "top": 10330,
+      "bottom": 10384
+    },
+    {
+      "top": 10447,
+      "bottom": 10674
+    },
+    {
+      "top": 10717,
+      "bottom": 10813
+    },
+    {
+      "top": 11023,
+      "bottom": 11160
+    },
+    {
+      "top": 11173,
+      "bottom": 11758
+    },
+    {
+      "top": 11329,
+      "bottom": 11686
+    },
+    {
+      "top": 11685,
+      "bottom": 11727
+    },
+    {
+      "top": 11771,
+      "bottom": 12278
+    },
+    {
+      "top": 11927,
+      "bottom": 12206
+    },
+    {
+      "top": 12205,
+      "bottom": 12247
+    },
+    {
+      "top": 12435,
+      "bottom": 12512
+    },
+    {
+      "top": 12525,
+      "bottom": 12704
+    },
+    {
+      "top": 12556,
+      "bottom": 12611
+    },
+    {
+      "top": 12611,
+      "bottom": 12704
+    },
+    {
+      "top": 12714,
+      "bottom": 12892
+    },
+    {
+      "top": 12745,
+      "bottom": 12799
+    },
+    {
+      "top": 12799,
+      "bottom": 12892
+    },
+    {
+      "top": 12902,
+      "bottom": 13081
+    },
+    {
+      "top": 12933,
+      "bottom": 12988
+    },
+    {
+      "top": 12988,
+      "bottom": 13081
+    },
+    {
+      "top": 13091,
+      "bottom": 13270
+    },
+    {
+      "top": 13122,
+      "bottom": 13177
+    },
+    {
+      "top": 13177,
+      "bottom": 13270
+    },
+    {
+      "top": 13479,
+      "bottom": 13612
+    },
+    {
+      "top": 13625,
+      "bottom": 14119
+    },
+    {
+      "top": 14125,
+      "bottom": 14172
+    },
+    {
+      "top": 14175,
+      "bottom": 14272
+    },
+    {
+      "top": 14282,
+      "bottom": 14384
+    },
+    {
+      "top": 14395,
+      "bottom": 14478
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1224
+    },
+    {
+      "i": 1,
+      "id": "problem",
+      "y": 1224,
+      "h": 1102
+    },
+    {
+      "i": 2,
+      "id": "demo",
+      "y": 2326,
+      "h": 1166
+    },
+    {
+      "i": 3,
+      "id": "author",
+      "y": 3492,
+      "h": 1326
+    },
+    {
+      "i": 4,
+      "id": "lesson-1",
+      "y": 4818,
+      "h": 982
+    },
+    {
+      "i": 5,
+      "id": "lesson-2",
+      "y": 5801,
+      "h": 1532
+    },
+    {
+      "i": 6,
+      "id": "lesson-3",
+      "y": 7332,
+      "h": 1409
+    },
+    {
+      "i": 7,
+      "id": "contents",
+      "y": 8741,
+      "h": 1308
+    },
+    {
+      "i": 8,
+      "id": "company",
+      "y": 10049,
+      "h": 843
+    },
+    {
+      "i": 9,
+      "id": "community",
+      "y": 10893,
+      "h": 1465
+    },
+    {
+      "i": 10,
+      "id": "faq",
+      "y": 12358,
+      "h": 991
+    },
+    {
+      "i": 11,
+      "id": "purchase",
+      "y": 13349,
+      "h": 1208
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": []
+}
