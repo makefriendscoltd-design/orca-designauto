@@ -373,5 +373,7 @@
     "publicRedactedBuyerAssetsViewed": 3,
     "sliceCount": 34
   },
-  "finalRefinement": "buyer2 incomplete quoted reply removed; actual customer review only; body wording unchanged"
+  "finalRefinement": "buyer2 incomplete quoted reply removed; actual customer review only; body wording unchanged",
+  "publication_status": "published_and_verified",
+  "publication_evidence": "landing/lounge-rebuild-20260930/publication-evidence-verification.json"
 }

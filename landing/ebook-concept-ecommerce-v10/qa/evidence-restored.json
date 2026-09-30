@@ -15,5 +15,7 @@
     "asset": "assets/evidence/cafe-members-202609.jpg",
     "source": "landing/ebook-concept-ecommerce/assets/proof/cafe_members.jpg"
   },
-  "monthly_peak_disposition": "Monthly 5.03억 omitted as redundant; explicit annual three-year figures preserve the company performance story."
+  "monthly_peak_disposition": "Monthly 5.03억 omitted as redundant; explicit annual three-year figures preserve the company performance story.",
+  "publication_status": "published_and_verified",
+  "publication_evidence": "landing/lounge-rebuild-20260930/publication-evidence-verification.json"
 }

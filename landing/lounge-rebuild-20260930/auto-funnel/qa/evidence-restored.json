@@ -98,5 +98,7 @@
     "humanize": "qa/humanize-evidence/gates.txt; exit0, goldenPASS"
   },
   "external_publication_performed": false,
-  "next": "root CDN upload; vault later same existing app manifest only replacement"
+  "next": "root CDN upload; vault later same existing app manifest only replacement",
+  "publication_status": "published_and_verified",
+  "publication_evidence": "landing/lounge-rebuild-20260930/publication-evidence-verification.json"
 }

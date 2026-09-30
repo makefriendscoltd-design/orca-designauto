@@ -91,5 +91,7 @@
     "labels_visible_after_fonts_ready": true,
     "runtime_overflow": 0,
     "safe_slice_pixel_match": true
-  }
+  },
+  "publication_status": "published_and_verified",
+  "publication_evidence": "landing/lounge-rebuild-20260930/publication-evidence-verification.json"
 }

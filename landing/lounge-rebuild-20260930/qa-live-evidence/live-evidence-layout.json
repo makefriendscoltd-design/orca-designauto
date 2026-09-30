@@ -1,0 +1,24 @@
+[
+  {
+    "product_no": 277,
+    "width": 390,
+    "images": 34,
+    "loaded": true,
+    "containerWidth": 390,
+    "left": 0,
+    "right": 390,
+    "viewport": 390,
+    "fit": true
+  },
+  {
+    "product_no": 399,
+    "width": 1280,
+    "images": 14,
+    "loaded": true,
+    "containerWidth": 740,
+    "left": 270,
+    "right": 1010,
+    "viewport": 1280,
+    "fit": true
+  }
+]
