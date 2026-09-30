@@ -1,0 +1,24 @@
+{
+  "required_prices": [
+    "50000원"
+  ],
+  "allowed_prices": [
+    "50000원",
+    "200만원",
+    "100만원"
+  ],
+  "allowed_product_ids": [
+    "282"
+  ],
+  "allowed_dates": [
+    "2026-09-10",
+    "2026.09.10",
+    "2026-09-30",
+    "2026.09.30",
+    "2026-09-29"
+  ],
+  "allowed_times": [
+    "1:02"
+  ],
+  "notes": "200만원=author case in source book, not product price;1:02=file format 100만원 is the current lounge catalog product title preserved as read-only evidence; it is not this new headline or sales price. 2026-09-29 is source archive date."
+}

@@ -1,0 +1,19 @@
+{
+  "source": "incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/원문.md",
+  "preserved_images": [
+    "assets/current-cover.png",
+    "assets/proof/cafe-members.png",
+    "assets/proof/kakao-three-rooms.png"
+  ],
+  "source_images_original_hash_match": true,
+  "author_case": {
+    "leads": 550,
+    "sales_won": 2000000,
+    "source_scope": "Book chapter1 author record, AIMAX free Threads guide distribution, July2026. Original order records not independently reconciled."
+  },
+  "company_revenue": "114.9억,2021.01~2024.04companywide; approved source ../ebook-aside-blog-v3/qa/cumulative-revenue-verification.json",
+  "followup_sequence": "immediate delivery, day1summary, day2problem, day3case, day4offer; bookchapter6",
+  "community": "2026.09.10 captures; 2977+2710+2589=8276 includes duplicate participation; cafe12127",
+  "crop": "Same cafe image, CSS source y110 through299 of380; member count visible",
+  "new_icons": "Existing licensed 3D assets; assets/3d/LICENSE.txt"
+}

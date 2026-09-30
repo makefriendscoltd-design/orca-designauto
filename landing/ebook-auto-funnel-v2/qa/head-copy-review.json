@@ -1,0 +1,14 @@
+{
+  "formula_reference": ".agents/skills/ebook-detail-page/references/head-copy.md",
+  "desired_result": "매번 직접 팔지 않아도 구매로 이어지는 것",
+  "method": "무료자료→신청→발송→후속판매 자동퍼널",
+  "format": "설계서",
+  "considered": [
+    "구매로 이어지는 자동 퍼널 설계서",
+    "무료자료는 뿌리는데 판매는 왜 다시 처음부터일까요",
+    "AI로 자료 제작·발송을 연결하는 방법"
+  ],
+  "selected": "매번 직접 팔지 않아도 / 구매로 이어지는 / 자동 퍼널 설계서",
+  "reason": "Desired purchase outcome leads; middle diagnosis is below hero; functional list stays in body.",
+  "not_new_evidence": "Headline proposal accepted for production; no invented deadline, guaranteed earnings or conversion rate."
+}

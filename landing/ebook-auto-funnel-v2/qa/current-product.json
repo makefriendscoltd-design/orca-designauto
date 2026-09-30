@@ -1,0 +1,18 @@
+[
+  {
+    "product_no": 282,
+    "product_name": "클로드코드가 24시간 만에 저지른 일 · AI 자동 퍼널 실전 플레이북 (PDF + 제 2의 뇌 파일)",
+    "price": "50000.00",
+    "selling": "T",
+    "display": "T",
+    "shop_no": 1
+  },
+  {
+    "product_no": 282,
+    "product_name": "클로드코드가 24시간 만에 저지른 일 · AI 자동 퍼널 실전 플레이북 (PDF + 제 2의 뇌 파일)",
+    "price": "50000.00",
+    "selling": "F",
+    "display": "F",
+    "shop_no": 4
+  }
+]
