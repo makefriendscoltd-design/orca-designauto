@@ -1,0 +1,140 @@
+[
+  {
+    "name": "ebook-concept-ecommerce-v10",
+    "data": {
+      ".sales-chart": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "30px 24px",
+        "width": "341.998px"
+      },
+      ".sales-chart h3": {
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "36.4px",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "294.012px"
+      },
+      ".annual-stats": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "294.012px"
+      },
+      ".annual-row span": {
+        "fontSize": "16px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "49.8592px"
+      },
+      ".annual-row strong": {
+        "fontSize": "43px",
+        "fontWeight": "800",
+        "lineHeight": "43px",
+        "letterSpacing": "-1.72px",
+        "padding": "0px",
+        "width": "123.064px"
+      },
+      ".annual-row small": {
+        "fontSize": "19px",
+        "fontWeight": "800",
+        "lineHeight": "19px",
+        "letterSpacing": "-1.72px",
+        "padding": "0px",
+        "width": "auto"
+      },
+      ".annual-row i": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "288.424px"
+      },
+      ".sales-chart .caption": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "18px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "width": "294.012px"
+      }
+    }
+  },
+  {
+    "name": "ebook-aside-blog-v3",
+    "data": {
+      ".sales-chart": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "30px 24px",
+        "width": "341.998px"
+      },
+      ".sales-chart h3": {
+        "fontSize": "28px",
+        "fontWeight": "700",
+        "lineHeight": "36.4px",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "294.012px"
+      },
+      ".annual-stats": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "294.012px"
+      },
+      ".annual-row span": {
+        "fontSize": "16px",
+        "fontWeight": "600",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "49.8592px"
+      },
+      ".annual-row strong": {
+        "fontSize": "43px",
+        "fontWeight": "800",
+        "lineHeight": "43px",
+        "letterSpacing": "-1.72px",
+        "padding": "0px",
+        "width": "123.064px"
+      },
+      ".annual-row small": {
+        "fontSize": "19px",
+        "fontWeight": "800",
+        "lineHeight": "19px",
+        "letterSpacing": "-1.72px",
+        "padding": "0px",
+        "width": "auto"
+      },
+      ".annual-row i": {
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "normal",
+        "letterSpacing": "-0.16px",
+        "padding": "0px",
+        "width": "288.424px"
+      },
+      ".sales-chart .caption": {
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "18px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "width": "294.012px"
+      }
+    }
+  }
+]

@@ -3,83 +3,83 @@
     "type": "image",
     "file": "slices/01.png",
     "top": 0,
-    "height": 2018
+    "height": 2041
   },
   {
     "type": "image",
     "file": "slices/02.png",
-    "top": 2018,
-    "height": 2003
+    "top": 2041,
+    "height": 1735
   },
   {
     "type": "motion",
     "file": "assets/live/aside-live-writing.gif",
     "background": "assets/live/row-poster.png",
-    "top": 4021,
+    "top": 3776,
     "height": 559,
     "image_left": 26,
-    "image_top": 0.828125,
+    "image_top": 0.453125,
     "image_width": 688,
     "image_height": 557.828125
   },
   {
     "type": "image",
     "file": "slices/04.png",
-    "top": 4580,
-    "height": 1381
+    "top": 4335,
+    "height": 1385
   },
   {
     "type": "image",
     "file": "slices/05.png",
-    "top": 5961,
-    "height": 1576
+    "top": 5720,
+    "height": 1596
   },
   {
     "type": "image",
     "file": "slices/06.png",
-    "top": 7537,
-    "height": 1734
+    "top": 7316,
+    "height": 1752
   },
   {
     "type": "image",
     "file": "slices/07.png",
-    "top": 9271,
-    "height": 1982
+    "top": 9068,
+    "height": 2002
   },
   {
     "type": "image",
     "file": "slices/08.png",
-    "top": 11253,
-    "height": 1806
+    "top": 11070,
+    "height": 1819
   },
   {
     "type": "image",
     "file": "slices/09.png",
-    "top": 13059,
+    "top": 12889,
     "height": 1500
   },
   {
     "type": "image",
     "file": "slices/10.png",
-    "top": 14559,
-    "height": 1338
-  },
-  {
-    "type": "image",
-    "file": "slices/11.png",
-    "top": 15897,
-    "height": 1503
-  },
-  {
-    "type": "image",
-    "file": "slices/12.png",
-    "top": 17400,
+    "top": 14389,
     "height": 1500
   },
   {
     "type": "image",
+    "file": "slices/11.png",
+    "top": 15889,
+    "height": 1579
+  },
+  {
+    "type": "image",
+    "file": "slices/12.png",
+    "top": 17468,
+    "height": 1606
+  },
+  {
+    "type": "image",
     "file": "slices/13.png",
-    "top": 18900,
-    "height": 1662
+    "top": 19074,
+    "height": 1849
   }
 ]

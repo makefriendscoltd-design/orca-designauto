@@ -125,13 +125,15 @@ AI가 쓴 글을 매번 에디터로 옮기는 분
 AIMAX · 메이크패밀리 운영사
 실제 사업을 운영하며
 쌓아 온 기록
+매년 쌓아온
+사업의 기록.
+2021년40.5억원
+2022년41.3억원
+2023년27.6억원
 (주)메이크프렌즈 연도별 매출
-40.5억2021년
-41.3억2022년
-27.6억2023년
-출처: (주)메이크프렌즈 월별 매출 원장 합산
-연도별 매출을 소수 첫째 자리로 표시
-운영사의 사업 실적으로 ASIDE 사용 성과와 구분됩니다
+2021~2023년 월별 원장 합계 · 억원 단위 반올림
+운영사의 사업 실적으로
+ASIDE 사용 성과와 구분됩니다
 함께 공부하는 공간
 메이크패밀리에서도
 배움을 이어갑니다
@@ -161,5 +163,5 @@ ASIDE로 블로그 자동화 하는 법
 사용 환경에 따라 진행 과정과 결과는 다를 수 있습니다
 
 <!-- HUMANIZE-SUMMARY
-Sales page. S1 0; six preservation checks passed. Manual review against installed quick-rules; no post-draft edits required.
+Reused approved revenue copy verbatim. Manual quick-rules review: S1 0; six preservation checks passed; no post-draft rewrite.
 -->

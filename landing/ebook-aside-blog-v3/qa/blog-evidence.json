@@ -18,5 +18,14 @@
     "This is blog audience size, not Cafe membership.",
     "No source establishes that ASIDE generated these neighbors.",
     "Do not attribute this count to ebook author Naminsoo personally."
-  ]
+  ],
+  "display_crop": {
+    "source_width": 1480,
+    "source_height": 860,
+    "x": 0,
+    "y": 560,
+    "width": 1480,
+    "height": 270,
+    "method": "CSS clip of original source; visitors above crop excluded"
+  }
 }
