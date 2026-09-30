@@ -1,0 +1,65 @@
+{
+  "size": [
+    740,
+    16180
+  ],
+  "slice_count": 11,
+  "slice_heights": [
+    1038,
+    1717,
+    1325,
+    1339,
+    1495,
+    1500,
+    1500,
+    1500,
+    1560,
+    1527,
+    1679
+  ],
+  "cuts": [
+    0,
+    1038,
+    2755,
+    4080,
+    5419,
+    6914,
+    8414,
+    9914,
+    11414,
+    12974,
+    14501,
+    16180
+  ],
+  "pixel_reassembly_exact": true,
+  "cut_strategy": "avoid DOM figures, images, text blocks and cards; smooth background rows",
+  "runtime_overflow": 0,
+  "all_images_loaded": true,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      false
+    ],
+    [
+      600,
+      false
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "visual_review": "Six regions directly inspected; long isolated heading wraps fixed in smartstore and delegation; final changed regions inspected again",
+  "source_values": "Root confirmed current Cafe24 API shop1/shop4 on 2026-09-30; prices match existing briefs",
+  "humanize": "direct current quick-rules review, verify_gates exit 0 golden PASS",
+  "last_change": "Corrected PDF original-title disclosure without asserting outdated lounge catalog title",
+  "last_visual_review": "qa/title-fix-faq.png directly inspected after final rerender; correct text, no clipping"
+}

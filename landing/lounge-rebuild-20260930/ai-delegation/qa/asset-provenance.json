@@ -1,0 +1,26 @@
+[
+  {
+    "file": "assets/cover.png",
+    "source": "/tmp/lounge-current-covers/ai-delegation.png",
+    "sha256": "ed3f200a76d17c8467ca78349561420855bfd72b27cde1aadf290266746751d3",
+    "role": "current native BookCover render"
+  },
+  {
+    "file": "assets/book/crop_check.png",
+    "source": "landing/ebook-ai-delegation/assets/book/crop_check.png",
+    "sha256": "e4d9bf1fb227c9ddfde0a74aff8bb046d58219f48ed064dce63bce34e7095dc6",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/book/crop_record.png",
+    "source": "landing/ebook-ai-delegation/assets/book/crop_record.png",
+    "sha256": "a85279952f9e535bc1317f1a52dce97a26844f439f08562cb2e1d99ae59db447",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/book/crop_four.png",
+    "source": "landing/ebook-ai-delegation/assets/book/crop_four.png",
+    "sha256": "3a1af2ecfbfeb482852dd8b727b1923b6e00a82537d613ab36eae03fd0433a14",
+    "role": "original book screenshot or photograph"
+  }
+]

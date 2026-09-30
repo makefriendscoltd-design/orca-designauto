@@ -1,0 +1,1 @@
+Source copy is the approved youtube-bisu copy. Only current shop4 price changes from 110,000 to 99,000; no prose changed. Runtime overflow 0, all images loaded, full render and price region inspected; pixel assembly passed. Existing source review remains applicable.

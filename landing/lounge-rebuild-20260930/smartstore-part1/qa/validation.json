@@ -1,0 +1,63 @@
+{
+  "size": [
+    740,
+    15876
+  ],
+  "slice_count": 11,
+  "slice_heights": [
+    1038,
+    1512,
+    1632,
+    1519,
+    1518,
+    1440,
+    1514,
+    1391,
+    1576,
+    1883,
+    853
+  ],
+  "cuts": [
+    0,
+    1038,
+    2550,
+    4182,
+    5701,
+    7219,
+    8659,
+    10173,
+    11564,
+    13140,
+    15023,
+    15876
+  ],
+  "pixel_reassembly_exact": true,
+  "cut_strategy": "avoid DOM figures, images, text blocks and cards; smooth background rows",
+  "runtime_overflow": 0,
+  "all_images_loaded": true,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      false
+    ],
+    [
+      600,
+      false
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "visual_review": "Six regions directly inspected; long isolated heading wraps fixed in smartstore and delegation; final changed regions inspected again",
+  "source_values": "Root confirmed current Cafe24 API shop1/shop4 on 2026-09-30; prices match existing briefs",
+  "humanize": "direct current quick-rules review, verify_gates exit 0 golden PASS"
+}

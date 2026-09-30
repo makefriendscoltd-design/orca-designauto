@@ -1,0 +1,36 @@
+{
+  "canonicalId": "threads-premium",
+  "title": "스레드로 월 3천만원 파는법",
+  "coverTitle": "팔로워 0이어도 팔리는 스레드",
+  "edition": "PREMIUM",
+  "price": 330000,
+  "productNos": [
+    "277",
+    "376",
+    "378",
+    "380",
+    "382",
+    "390",
+    "396"
+  ],
+  "delivery": "주문 이메일 PDF와 제2의뇌",
+  "pdfPages": {
+    "main": 61,
+    "swipe": 11,
+    "workbook": 10
+  },
+  "approvedPolicies": [
+    "매달30부한정",
+    "30일실행후성과없으면1:1피드백",
+    "평생개정판업데이트"
+  ],
+  "coverSha256": "51701f05a236b2e84fab864fcd168240b83ecab7b43c8ce275b932a660d2d0c0",
+  "coverSource": "/tmp/lounge-current-covers/threads-premium.png",
+  "factSources": [
+    "incoming/lounge-ebooks-20260929/lounge-books/threads-premium/원문.md",
+    "incoming/lounge-ebooks-20260929/pdf-books/threads-premium-supplement/asset-1.pdf",
+    "incoming/lounge-ebooks-20260929/pdf-books/threads-premium-supplement/asset-26.pdf",
+    "incoming/lounge-ebooks-20260929/pdf-books/threads-premium-supplement/asset-27.pdf",
+    "landing/aimax-threads-premium/concept4_premium.html"
+  ]
+}

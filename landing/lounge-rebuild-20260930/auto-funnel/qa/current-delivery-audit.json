@@ -1,0 +1,40 @@
+{
+  "auditedAtUtc": "2026-09-30T06:41:46.901Z",
+  "scope": "Only DigitalProduct282 and its DigitalAsset relation; no user/order/grant reads or writes",
+  "product": {
+    "id": 2,
+    "cafe24ProductNo": "282",
+    "name": "클로드코드가 24시간 만에 저지른 일",
+    "active": true,
+    "updatedAt": "2026-08-11T19:18:45.928Z",
+    "assets": [
+      {
+        "id": 3,
+        "label": "클로드코드가 24시간 만에 저지른 일 (PDF)",
+        "storageKey": "products/282/claudecode-24hours.pdf",
+        "fileName": "클로드코드가_24시간_만에_저지른_일.pdf",
+        "fileSize": 6808502,
+        "mimeType": "application/pdf",
+        "provider": "oracle"
+      },
+      {
+        "id": 15,
+        "label": "제2의 뇌 파일 사용설명서 (PDF)",
+        "storageKey": "products/282/second-brain-guide.pdf",
+        "fileName": "제2의뇌_파일_사용설명서.pdf",
+        "fileSize": 4148288,
+        "mimeType": "application/pdf",
+        "provider": "oracle"
+      },
+      {
+        "id": 16,
+        "label": "제2의 뇌 볼트 · 자동 퍼널 (.zip)",
+        "storageKey": "products/282/vault-auto-funnel.zip",
+        "fileName": "AIMAX_제2의뇌_자동퍼널.zip",
+        "fileSize": 34856,
+        "mimeType": "application/zip",
+        "provider": "oracle"
+      }
+    ]
+  }
+}

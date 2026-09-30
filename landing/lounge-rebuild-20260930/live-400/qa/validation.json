@@ -1,0 +1,24 @@
+{
+  "width": 740,
+  "height": 15981,
+  "slice_count": 11,
+  "cuts": [
+    0,
+    1766,
+    2959,
+    4459,
+    5850,
+    7350,
+    8810,
+    10332,
+    11916,
+    13022,
+    14522,
+    15981
+  ],
+  "slice_height_sum": 15981,
+  "pixel_match": true,
+  "text_overflow": 0,
+  "images_loaded": true,
+  "visual_review": "all six regions viewed, final changed typography rechecked"
+}

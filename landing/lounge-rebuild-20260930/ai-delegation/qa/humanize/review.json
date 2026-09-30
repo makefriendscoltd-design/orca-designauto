@@ -1,0 +1,18 @@
+{
+  "rulebook": "/Users/apple/.local/share/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "method": "single-call direct audit",
+  "changes": 0,
+  "claims_numbers_names_preserved": true,
+  "register_preserved": true,
+  "genre": "sales detail page",
+  "emoji_exception": "user explicitly requests reference-style visual emoji assets",
+  "checked": [
+    "C-8 repeated antithesis",
+    "C-11 ending commas",
+    "D-4 inflated claims",
+    "F-4 abstract nominalization",
+    "H-1 excess transitions",
+    "I-4 repeated commands"
+  ],
+  "gate_exit": 0
+}

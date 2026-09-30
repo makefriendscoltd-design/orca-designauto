@@ -1,0 +1,28 @@
+{
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 2,
+      "prices": 6,
+      "product_ids": 0,
+      "times": 0,
+      "urls": 0
+    }
+  },
+  "issues": [],
+  "checked": "Rendered HTML text and copy including three shop4 variants; compared with current Cafe24 source values.",
+  "price_variants": {
+    "321": {
+      "shop1": 110000,
+      "shop4": 99000
+    },
+    "286": {
+      "shop1": 20000,
+      "shop4": 99000
+    },
+    "319": {
+      "shop1": 0,
+      "shop4": 30000
+    }
+  }
+}

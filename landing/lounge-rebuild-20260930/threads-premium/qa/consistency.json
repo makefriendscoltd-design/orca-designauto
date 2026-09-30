@@ -1,0 +1,37 @@
+{
+  "excluded_files": [],
+  "files_scanned": 9,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 0,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 0,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {},
+    "prices": {
+      "330000원": [
+        {
+          "context": "\"text\": \"330,000원\"",
+          "line": 649,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/runtime.json"
+        },
+        {
+          "context": "\"text\": \"330,000원\"",
+          "line": 653,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/runtime.json"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {},
+    "urls": {}
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "verified_at": "2026-09-30T06:46:00.338961+00:00",
+  "recorded_at": "2026-09-30T06:49:53.723781+00:00",
+  "repository": "makefamily/memberapps",
+  "branch": "master",
+  "commit": "a1ec7ecb60057f1f14aa5944ec2e4259e0056bcc",
+  "deployment": "Vercel automatic deployment from master push",
+  "deployed_version_matches_origin_master": true,
+  "pages": [
+    "https://lounge.aimax.ai.kr/brain/vault-start",
+    "https://lounge.aimax.ai.kr/brain/threads-basic"
+  ],
+  "cdn_images": {
+    "vault-start": 9,
+    "threads-basic": 10,
+    "total": 19,
+    "all_decoded_in_live_browser": true
+  },
+  "live_guest_validation": {
+    "api_mocks": false,
+    "case_count": 4,
+    "viewport_widths": [
+      390,
+      1280
+    ],
+    "passed": true,
+    "checks": [
+      "original read buttons and table of contents remain",
+      "introduction initially collapsed without images in DOM",
+      "all published CDN images decode",
+      "no horizontal overflow",
+      "image activation opens login modal",
+      "login callback returns to same book"
+    ]
+  },
+  "operational_routes": {
+    "script": "scripts/verify-production.sh",
+    "route_count": 7,
+    "exit_code": 0,
+    "deployed_commit_check_passed": true,
+    "no_authorized_order_or_delivery_action": true
+  },
+  "local_validation": {
+    "production_build_exit_code": 0,
+    "existing_shelf_tests_passed": 6,
+    "changed_js_lint_exit_code": 0,
+    "mock_session_browser_cases_passed": 8,
+    "mock_cases": "2 books x guest/member fixtures x mobile390/desktop1280; real CDN images"
+  },
+  "unverified": [
+    "Actual authenticated production reader entitlement. Member reading was tested with local session/API fixtures only."
+  ],
+  "crm_ledger": {
+    "ok": true,
+    "created": true,
+    "event_id": "78e1ab3d-baae-445d-bbd5-35d5af8ef05e",
+    "source_system": "memberapps",
+    "channel": "website",
+    "stage": "sent",
+    "status": "success",
+    "campaign": "260930-lounge-ebooks",
+    "count": 2,
+    "dedupe_key": "lounge-free-introductions-a1ec7ec"
+  },
+  "evidence_files": [
+    "/tmp/lounge-introduction-production/deployment.json",
+    "/tmp/lounge-introduction-production/results.json",
+    "/tmp/lounge-intros-production-routes.log"
+  ]
+}

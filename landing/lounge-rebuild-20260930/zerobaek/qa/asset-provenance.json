@@ -1,0 +1,26 @@
+[
+  {
+    "file": "assets/cover.png",
+    "source": "/tmp/lounge-current-covers/zerobaek.png",
+    "sha256": "9c247d2fc319d5e785b0ca9ffb3810528906da4d6367b1b6200f7037dceeec69",
+    "role": "current native BookCover render"
+  },
+  {
+    "file": "assets/pages/crop_p17.png",
+    "source": "landing/ebook-zerobaek/assets/pages/crop_p17.png",
+    "sha256": "cf32ebf70d637ea76a6d14f1befb4a47389e9d228c0d8c620f16d8996b487603",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/pages/crop_p39.png",
+    "source": "landing/ebook-zerobaek/assets/pages/crop_p39.png",
+    "sha256": "47a6906aaef7c6af11c905e7ad1cde048cf85db30c00f54f422aae59fc7ba8b5",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/pages/crop_p22.png",
+    "source": "landing/ebook-zerobaek/assets/pages/crop_p22.png",
+    "sha256": "1098e599c17531cfd6897f37617b59826a168bee93799eab45f57bff39141ffe",
+    "role": "original book screenshot or photograph"
+  }
+]

@@ -1,0 +1,476 @@
+{
+  "auditedAtUtc": "2026-09-30T06:24:27.964484+00:00",
+  "scope": "read-only public API + local current catalog + handoff; no auth/customer fields saved",
+  "productionUrl": "https://lounge.aimax.ai.kr",
+  "productionCatalogEndpoint": "https://lounge.aimax.ai.kr/api/books",
+  "counts": {
+    "distinctEbooks": 12,
+    "readerBooks": 7,
+    "catalogProducts": 10,
+    "paidEbooks": 9,
+    "freeEbooks": 3,
+    "mappedCafe24ProductNumbers": 23
+  },
+  "appAuthority": {
+    "root": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps",
+    "productionEvidence": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/AGENTS.md production URL/master deploy rules; public /api/books titles/prices/ids match current local sources",
+    "parallelWorktree": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps-home-editorial",
+    "sameSourceFilesVerified": [
+      "lib/ebooks-catalog.js",
+      "lib/ebooks-shelf.js",
+      "docs/ebook-book-thumbnails/brief.json",
+      "components/BookCover.js",
+      "components/BookCover.module.css"
+    ],
+    "important": "Catalog comments about 4 books or current11 video naming are historical, not counts. Shared BookCover render composes true latest 3D; old catalog bitmap alone is not sufficient."
+  },
+  "changesSinceIncoming": "incoming 12 contained duplicate ebook-ai-video-staff product321, now consolidated with youtube-bisu; newly added ebook-live-400 replaces that count. Current distinct total 12, not 11 or13.",
+  "items": [
+    {
+      "canonicalId": "threads-basic",
+      "presentationId": "threads-basic",
+      "slug": null,
+      "currentTitle": "스레드로 월 1천만원 달성법 (무료버전)",
+      "coverTitle": "팔로워 0이어도 팔리는 스레드",
+      "edition": "BASIC",
+      "subtitle": "내가 파는 것과 고객의 고민을 적고, 첫 글의 소재와 첫 문장을 잡아보세요.",
+      "productNos": [
+        "275"
+      ],
+      "primaryProductNo": "275",
+      "productMappingEvidence": "tests/ebook-shelf.test.mjs + handoff/cafe24-thumbnail-sync-20260930/REPORT.md provider verification",
+      "priceObserved": 0,
+      "free": true,
+      "delivery": "라운지 무료 열람; 카페24 결제 불필요",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-basic",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-basic/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-basic/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-basic/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-basic/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/threads-basic.js",
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/threads-basic.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/threads-basic.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/threads-basic.webp' --out /tmp/threads-basic-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "threads-premium",
+      "presentationId": "threads-premium",
+      "slug": "ebook-threads",
+      "currentTitle": "스레드로 월 3천만원 파는법",
+      "coverTitle": "팔로워 0이어도 팔리는 스레드",
+      "edition": "PREMIUM",
+      "subtitle": "상품과 고객을 알려주고, 스레드에 올릴 판매글 초안을 만들어보세요.",
+      "productNos": [
+        "277",
+        "376",
+        "378",
+        "380",
+        "382",
+        "390",
+        "396"
+      ],
+      "primaryProductNo": "277",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 330000,
+      "free": false,
+      "delivery": "결제하면 PDF 3종(본책·별책·워크북)이 이메일로 옵니다.",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-premium",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-premium/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-premium/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-premium/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/threads-premium/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/threads-premium.js",
+      "sourceStatus": "found",
+      "sourceNotes": "PDF 3종 actual delivered originals also incoming/pdf-books/threads-premium-supplement",
+      "coverCatalogPath": "/books/covers/book-edition-benefit/threads-premium.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/threads-premium.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/threads-premium.webp' --out /tmp/threads-premium-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "youtube-bisu",
+      "presentationId": "youtube-bisu",
+      "slug": "ebook-youtube",
+      "currentTitle": "클로드로 유튜브 1만 만든 비법",
+      "coverTitle": "AI로 유튜브 정복하기",
+      "edition": "",
+      "subtitle": "채널 주제와 시청자를 알려주고, 영상 아이디어와 대본 방향을 잡아보세요.",
+      "productNos": [
+        "321"
+      ],
+      "primaryProductNo": "321",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 110000,
+      "free": false,
+      "delivery": "결제 후 같은 이메일로 라운지에 로그인하면 바로 읽을 수 있습니다.",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/youtube-bisu.js",
+      "sourceStatus": "found",
+      "sourceNotes": "321 merged old ebook-ai-video-staff; its PDF delivery originals are also in incoming/pdf-books/ebook-ai-video-staff",
+      "coverCatalogPath": "/books/covers/book-edition-benefit/youtube-bisu.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/youtube-bisu.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/youtube-bisu.webp' --out /tmp/youtube-bisu-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "ebook-aside-blog",
+      "presentationId": "aside-blog",
+      "slug": "ebook-aside-blog",
+      "currentTitle": "월 200만원 아끼는 블로그 자동화 비법서",
+      "coverTitle": "AI로 블로그 정복하기",
+      "edition": "",
+      "subtitle": "업종과 고객을 알려주고, 블로그 글감과 AI에 맡길 작성 순서를 정해보세요.",
+      "productNos": [
+        "399"
+      ],
+      "primaryProductNo": "399",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 30000,
+      "free": false,
+      "delivery": "결제하면 PDF가 이메일로 옵니다. 결제한 이메일로 라운지에 로그인하면 여기서 언제든 다시 받을 수 있습니다.",
+      "readerBodyPresent": false,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-aside-blog",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-aside-blog/출처메타.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-aside-blog/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-aside-blog/asset-35.pdf"
+      ],
+      "currentBodyCode": null,
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/aside-blog.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/aside-blog.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/aside-blog.webp' --out /tmp/ebook-aside-blog-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "concept-ecommerce",
+      "presentationId": "concept-ecommerce",
+      "slug": "ebook-concept",
+      "currentTitle": "연매출 50억 달성한 비법서",
+      "coverTitle": "팔리는 컨셉 종결서",
+      "edition": "",
+      "subtitle": "상품 특징과 고객 상황을 넣고, 구매 이유와 소개 문장을 만들어보세요.",
+      "productNos": [
+        "284",
+        "377",
+        "379",
+        "381",
+        "383",
+        "391",
+        "397"
+      ],
+      "primaryProductNo": "284",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 30000,
+      "free": false,
+      "delivery": "결제 후 같은 이메일로 라운지에 로그인하면 바로 읽을 수 있습니다.",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/concept-ecommerce.js",
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/concept-ecommerce.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/concept-ecommerce.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/concept-ecommerce.webp' --out /tmp/concept-ecommerce-3d.png",
+      "existingDetailStatus": "v10 applied on primary 284 only; 6 alias details not yet updated (coordinator context)"
+    },
+    {
+      "canonicalId": "ebook-smartstore-part1",
+      "presentationId": "smartstore-part1",
+      "slug": "ebook-smartstore-part1",
+      "currentTitle": "이 제품 팔아서 50억 벌었습니다",
+      "coverTitle": "스스학개론",
+      "edition": "PART 1",
+      "subtitle": "관심 제품과 고객 정보를 넣고, 후보를 비교할 기준과 확인할 점을 정해보세요.",
+      "productNos": [
+        "348"
+      ],
+      "primaryProductNo": "348",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 30000,
+      "free": false,
+      "delivery": "결제하면 PDF가 이메일로 옵니다. 결제한 이메일로 라운지에 로그인하면 여기서 언제든 다시 받을 수 있습니다.",
+      "readerBodyPresent": false,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-smartstore-part1",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-smartstore-part1/출처메타.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-smartstore-part1/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-smartstore-part1/asset-34.pdf"
+      ],
+      "currentBodyCode": null,
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/smartstore-part1.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/smartstore-part1.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/smartstore-part1.webp' --out /tmp/ebook-smartstore-part1-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "landing-page",
+      "presentationId": "landing-page",
+      "slug": "ebook-landing",
+      "currentTitle": "전환율 2배 높이는 전략서",
+      "coverTitle": "팔리는 랜딩페이지 종결서",
+      "edition": "",
+      "subtitle": "상품 정보와 고객의 고민을 넣고, 상세페이지 순서와 첫 문장을 잡아보세요.",
+      "productNos": [
+        "297"
+      ],
+      "primaryProductNo": "297",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 30000,
+      "free": false,
+      "delivery": "결제 후 같은 이메일로 라운지에 로그인하면 바로 읽을 수 있습니다.",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/landing-page",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/landing-page/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/landing-page/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/landing-page.js",
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/landing-page.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/landing-page.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/landing-page.webp' --out /tmp/landing-page-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "ebook-zerobaek",
+      "presentationId": "zerobaek",
+      "slug": "ebook-zerobaek",
+      "currentTitle": "백수도 3천만원 버는 실전 마케팅",
+      "coverTitle": "제로백",
+      "edition": "",
+      "subtitle": "상품과 고객을 알려주고, 먼저 시도할 홍보 방법과 실행 순서를 정해보세요.",
+      "productNos": [
+        "319"
+      ],
+      "primaryProductNo": "319",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 0,
+      "free": true,
+      "delivery": "0원 주문하면 PDF가 이메일로 옵니다. 주문한 이메일로 라운지에 로그인하면 여기서 언제든 다시 받을 수 있습니다.",
+      "readerBodyPresent": false,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-zerobaek",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-zerobaek/출처메타.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-zerobaek/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-zerobaek/asset-30.pdf"
+      ],
+      "currentBodyCode": null,
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/zerobaek.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/zerobaek.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/zerobaek.webp' --out /tmp/ebook-zerobaek-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "vault-start",
+      "presentationId": "vault-start",
+      "slug": null,
+      "currentTitle": "제2의 뇌 만들기 가이드북(무료버전)",
+      "coverTitle": "타인의 뇌 사용법",
+      "edition": "",
+      "subtitle": "책을 내 컴퓨터에 보관하고, 내 AI에 자료를 넣어 첫 결과를 남겨보세요.",
+      "productNos": [],
+      "primaryProductNo": null,
+      "productMappingEvidence": "no Cafe24 product mapping found",
+      "priceObserved": 0,
+      "free": true,
+      "delivery": "라운지 무료 열람; 카페24 결제 불필요",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/vault-start",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/vault-start/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/vault-start/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/vault-start/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/vault-start/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/vault-start.js",
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/vault-start.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/vault-start.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/vault-start.webp' --out /tmp/vault-start-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "ebook-ai-delegation",
+      "presentationId": "ai-delegation",
+      "slug": "ebook-ai-delegation",
+      "currentTitle": "상위 1% AI비서 만드는법",
+      "coverTitle": "멍청한 AI 똑똑하게 만드는 법",
+      "edition": "",
+      "subtitle": "맡길 일과 원하는 결과를 적고, AI 업무 지시서와 검수 기준을 만들어보세요.",
+      "productNos": [
+        "286"
+      ],
+      "primaryProductNo": "286",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 20000,
+      "free": false,
+      "delivery": "결제하면 PDF가 이메일로 옵니다. 결제한 이메일로 라운지에 로그인하면 여기서 언제든 다시 받을 수 있습니다.",
+      "readerBodyPresent": false,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-delegation",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-delegation/출처메타.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-delegation/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/pdf-books/ebook-ai-delegation/asset-22.pdf"
+      ],
+      "currentBodyCode": null,
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/ai-delegation.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/ai-delegation.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/ai-delegation.webp' --out /tmp/ebook-ai-delegation-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "auto-funnel",
+      "presentationId": "ai-funnel",
+      "slug": "ebook-funnel",
+      "currentTitle": "AI 딸깍으로 100만원 버는법",
+      "coverTitle": "클로드코드가 24시간만에 저지른일",
+      "edition": "",
+      "subtitle": "내 상품과 쓰는 도구를 넣고, 고객을 모으고 안내할 순서를 그려보세요.",
+      "productNos": [
+        "282"
+      ],
+      "primaryProductNo": "282",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 50000,
+      "free": false,
+      "delivery": "결제하면 PDF와 뇌 파일이 이메일로 옵니다.",
+      "readerBodyPresent": true,
+      "sourceDirectory": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/auto-funnel",
+      "sourceFiles": [
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/제작브리프.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/원문.json",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/원문.md",
+        "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/incoming/lounge-ebooks-20260929/lounge-books/auto-funnel/출처.json"
+      ],
+      "currentBodyCode": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/lib/books/auto-funnel.js",
+      "sourceStatus": "found",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/book-edition-benefit/ai-funnel.webp",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/ai-funnel.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/book-edition-benefit/ai-funnel.webp' --out /tmp/auto-funnel-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    },
+    {
+      "canonicalId": "ebook-live-400",
+      "presentationId": "live-400",
+      "slug": "ebook-live-400",
+      "currentTitle": "AI로 1시간에 영상 300개 만드는법",
+      "coverTitle": "클로드코드로 영상제작 종결하기",
+      "edition": "",
+      "subtitle": "클로드코드로 영상제작 종결하기",
+      "productNos": [
+        "400"
+      ],
+      "primaryProductNo": "400",
+      "productMappingEvidence": "live public /api/books catalog",
+      "priceObserved": 30000,
+      "free": false,
+      "delivery": "결제하면 PDF가 이메일로 옵니다. 결제한 이메일로 라운지에 로그인하면 여기서 언제든 다시 받을 수 있습니다.",
+      "readerBodyPresent": false,
+      "sourceDirectory": null,
+      "sourceFiles": [],
+      "currentBodyCode": null,
+      "sourceStatus": "not found in inherited incoming or bounded local search; need delivery-original retrieval",
+      "sourceNotes": null,
+      "coverCatalogPath": "/books/covers/live-400-1x1.png",
+      "coverArtworkSource": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/public/books/covers/restored-artwork/threads-premium.webp",
+      "coverRenderSource": [
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.js",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/components/BookCover.module.css",
+        "/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps/docs/ebook-book-thumbnails/brief.json"
+      ],
+      "renderCommand": "node scripts/render-ebook-cover.mjs --cover '/books/covers/live-400-1x1.png' --out /tmp/ebook-live-400-3d.png",
+      "existingDetailStatus": "not modified by this audit"
+    }
+  ],
+  "summary": "현재12종(유료9/무료3), 카페24 연결23개 상품번호. 무료 vault-start는 연결상품번호 미확인이라 라운지용 상세 산출물 대상으로 별도 취급. 신규400 원문 미발견. 카피는 brief copy, 표지는 brief title; 기존 원문제목과 구분."
+}

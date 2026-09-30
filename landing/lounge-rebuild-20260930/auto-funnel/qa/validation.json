@@ -1,0 +1,41 @@
+{
+  "id": "auto-funnel",
+  "render_size": [
+    740,
+    17434
+  ],
+  "six_regions_visually_reviewed": true,
+  "visual_findings": "Readable hierarchy, semantic line breaks, large native 3D cover and relevant UI/source screenshots; no text clipping found.",
+  "runtime": {
+    "overflow": [],
+    "all_fonts_loaded": true,
+    "all_images_loaded": true
+  },
+  "slice_count": 12,
+  "cuts": [
+    0,
+    1532,
+    2938,
+    4390,
+    5485,
+    6963,
+    9115,
+    10565,
+    12430,
+    13847,
+    15244,
+    16694,
+    17434
+  ],
+  "slice_pixels_match_full": true,
+  "cover_sha256": "7f774b4d75d8faa0df18e3040a536be9866f7b6f676600474f53dfab15ff29ef",
+  "price_authority": "Root agent independently queried current Cafe24 shop1/shop4: landing-page297=30000, auto-funnel282=50000. vault-start free logged-in lounge reader; no Cafe24 product.",
+  "cover_label_note": "Current native cover label differs from legacy catalogue title on landing-page/vault-start; root notified.",
+  "unverified": [
+    "External publication not performed",
+    "Paid customer actual entitlement flow not exercised"
+  ],
+  "delivery_current_verified": "2026-09-30 live DigitalProduct282 active, 3 DigitalAssets: book PDF, brain-file guide PDF, auto-funnel brain ZIP; current-delivery-audit.json",
+  "last_change": "Added both email PDF/brain-file delivery and same-email lounge reading to final section",
+  "last_visual_review": "delivery-fix.png and regenerated six-regions.jpg directly inspected, no clipping"
+}

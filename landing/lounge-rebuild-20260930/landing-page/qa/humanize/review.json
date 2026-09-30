@@ -1,0 +1,14 @@
+{
+  "manual_review": "quick-rules latest installed; read and audited source-based Korean draft",
+  "changes": 0,
+  "reason": "No meaning-preserving edit necessary after drafting; user-requested emoji/icon sales design retained.",
+  "self_check": {
+    "meaning": true,
+    "proper_nouns": true,
+    "register": true,
+    "repetition": true,
+    "rhythm": true,
+    "new_claims": false
+  },
+  "gate_exit_code": 0
+}

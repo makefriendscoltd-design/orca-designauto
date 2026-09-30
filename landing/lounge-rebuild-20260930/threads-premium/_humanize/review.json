@@ -1,0 +1,14 @@
+{
+  "rules": "/Users/apple/.local/share/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "genre": "sales detail UI copy",
+  "reviewed": true,
+  "edits": [],
+  "notes": [
+    "초안부터구어와짧은문장을사용하여강제치환없음",
+    "수치61/11/10/330000/30과고유명사보존",
+    "사용자요청한디자인이모지는UI애셋으로유지",
+    "후기성과추가없음; 사례와적용예시구분",
+    "확정기존피드백/업데이트/한정정책유지"
+  ],
+  "semanticChecklistPassed": 6
+}

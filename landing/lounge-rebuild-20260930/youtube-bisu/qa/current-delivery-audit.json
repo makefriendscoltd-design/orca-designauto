@@ -1,0 +1,36 @@
+{
+  "auditedAtUtc": "2026-09-30T06:36:57.338Z",
+  "scope": "Only DigitalProduct321 and its DigitalAsset relation; no user/order/grant reads or writes",
+  "product": {
+    "id": 28,
+    "cafe24ProductNo": "321",
+    "name": "내 생각을 영상으로 만드는 AI 직원",
+    "active": true,
+    "updatedAt": "2026-08-24T18:40:54.709Z",
+    "assets": [
+      {
+        "id": 28,
+        "label": "본책",
+        "storageKey": "products/321/AI-f4a1aa81.pdf",
+        "fileName": "내 생각을 영상으로 만드는 AI 직원 (본책).pdf",
+        "fileSize": 7990707,
+        "mimeType": "application/pdf",
+        "provider": "oracle"
+      },
+      {
+        "id": 29,
+        "label": "별책 · 제작 중 대화 원문",
+        "storageKey": "products/321/AI-88fb13ff.pdf",
+        "fileName": "내 생각을 영상으로 만드는 AI 직원 (별책·제작 중 대화 원문).pdf",
+        "fileSize": 618084,
+        "mimeType": "application/pdf",
+        "provider": "oracle"
+      }
+    ]
+  },
+  "remote_files_readonly_sha256_verified": true,
+  "sha256": {
+    "28": "e0571052d45c751e6a54dfaebc18f2cd74ffacffd1585f0b89a0232308d611ed",
+    "29": "74a223c50ebe4b7b0fcadf8ff3bea80e9274df4c347b5c7129f6db5ddecacb00"
+  }
+}

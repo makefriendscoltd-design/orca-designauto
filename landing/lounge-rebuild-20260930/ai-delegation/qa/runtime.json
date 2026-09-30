@@ -1,0 +1,418 @@
+{
+  "width": 740,
+  "height": 16180,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      false
+    ],
+    [
+      600,
+      false
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/crop_four.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/crop_check.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/crop_record.png",
+      "ok": true
+    },
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "51px",
+      "leading": "55.08px",
+      "tracking": "-2.295px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".lead",
+      "size": "25px",
+      "leading": "32px",
+      "tracking": "-0.625px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "28.12px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".q",
+      "size": "23px",
+      "leading": "29.9px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".answer",
+      "size": "17px",
+      "leading": "25.16px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 417,
+      "bottom": 639
+    },
+    {
+      "top": 674,
+      "bottom": 796
+    },
+    {
+      "top": 1039,
+      "bottom": 1984
+    },
+    {
+      "top": 1995,
+      "bottom": 2058
+    },
+    {
+      "top": 2581,
+      "bottom": 2755
+    },
+    {
+      "top": 2779,
+      "bottom": 2901
+    },
+    {
+      "top": 3248,
+      "bottom": 3422
+    },
+    {
+      "top": 3458,
+      "bottom": 4042
+    },
+    {
+      "top": 4081,
+      "bottom": 4578
+    },
+    {
+      "top": 5214,
+      "bottom": 5389
+    },
+    {
+      "top": 5420,
+      "bottom": 6295
+    },
+    {
+      "top": 6915,
+      "bottom": 7090
+    },
+    {
+      "top": 7073,
+      "bottom": 7195
+    },
+    {
+      "top": 7222,
+      "bottom": 7509
+    },
+    {
+      "top": 7270,
+      "bottom": 7347
+    },
+    {
+      "top": 7352,
+      "bottom": 7461
+    },
+    {
+      "top": 7492,
+      "bottom": 7634
+    },
+    {
+      "top": 7523,
+      "bottom": 7602
+    },
+    {
+      "top": 7617,
+      "bottom": 7760
+    },
+    {
+      "top": 7649,
+      "bottom": 7728
+    },
+    {
+      "top": 7743,
+      "bottom": 7885
+    },
+    {
+      "top": 7775,
+      "bottom": 7854
+    },
+    {
+      "top": 8221,
+      "bottom": 8396
+    },
+    {
+      "top": 8423,
+      "bottom": 9017
+    },
+    {
+      "top": 8471,
+      "bottom": 8649
+    },
+    {
+      "top": 8502,
+      "bottom": 8616
+    },
+    {
+      "top": 8632,
+      "bottom": 8810
+    },
+    {
+      "top": 8663,
+      "bottom": 8777
+    },
+    {
+      "top": 8793,
+      "bottom": 8970
+    },
+    {
+      "top": 8824,
+      "bottom": 8938
+    },
+    {
+      "top": 9056,
+      "bottom": 9553
+    },
+    {
+      "top": 9579,
+      "bottom": 9753
+    },
+    {
+      "top": 10088,
+      "bottom": 10263
+    },
+    {
+      "top": 10270,
+      "bottom": 10469
+    },
+    {
+      "top": 10370,
+      "bottom": 10428
+    },
+    {
+      "top": 10476,
+      "bottom": 10674
+    },
+    {
+      "top": 10575,
+      "bottom": 10633
+    },
+    {
+      "top": 10681,
+      "bottom": 10880
+    },
+    {
+      "top": 10780,
+      "bottom": 10839
+    },
+    {
+      "top": 10918,
+      "bottom": 11158
+    },
+    {
+      "top": 11184,
+      "bottom": 11305
+    },
+    {
+      "top": 11548,
+      "bottom": 11723
+    },
+    {
+      "top": 11706,
+      "bottom": 11849
+    },
+    {
+      "top": 11738,
+      "bottom": 11817
+    },
+    {
+      "top": 11832,
+      "bottom": 11975
+    },
+    {
+      "top": 11864,
+      "bottom": 11943
+    },
+    {
+      "top": 11958,
+      "bottom": 12101
+    },
+    {
+      "top": 11990,
+      "bottom": 12068
+    },
+    {
+      "top": 12084,
+      "bottom": 12200
+    },
+    {
+      "top": 12415,
+      "bottom": 12511
+    },
+    {
+      "top": 12550,
+      "bottom": 12727
+    },
+    {
+      "top": 12742,
+      "bottom": 12974
+    },
+    {
+      "top": 13020,
+      "bottom": 13197
+    },
+    {
+      "top": 13211,
+      "bottom": 13443
+    },
+    {
+      "top": 13489,
+      "bottom": 13666
+    },
+    {
+      "top": 13681,
+      "bottom": 13913
+    },
+    {
+      "top": 14326,
+      "bottom": 14501
+    },
+    {
+      "top": 14527,
+      "bottom": 15326
+    },
+    {
+      "top": 15352,
+      "bottom": 15473
+    },
+    {
+      "top": 15504,
+      "bottom": 15644
+    },
+    {
+      "top": 15676,
+      "bottom": 15797
+    },
+    {
+      "top": 16007,
+      "bottom": 16123
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "",
+      "y": 0,
+      "h": 2161
+    },
+    {
+      "i": 1,
+      "id": "",
+      "y": 2161,
+      "h": 872
+    },
+    {
+      "i": 2,
+      "id": "",
+      "y": 3034,
+      "h": 1967
+    },
+    {
+      "i": 3,
+      "id": "",
+      "y": 5000,
+      "h": 1496
+    },
+    {
+      "i": 4,
+      "id": "",
+      "y": 6497,
+      "h": 1510
+    },
+    {
+      "i": 5,
+      "id": "",
+      "y": 8007,
+      "h": 1868
+    },
+    {
+      "i": 6,
+      "id": "",
+      "y": 9874,
+      "h": 1552
+    },
+    {
+      "i": 7,
+      "id": "",
+      "y": 11427,
+      "h": 895
+    },
+    {
+      "i": 8,
+      "id": "",
+      "y": 12322,
+      "h": 1776
+    },
+    {
+      "i": 9,
+      "id": "",
+      "y": 14098,
+      "h": 1836
+    },
+    {
+      "i": 10,
+      "id": "",
+      "y": 15934,
+      "h": 246
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": [
+    {
+      "text": "🤔",
+      "y": 2410.515625
+    },
+    {
+      "text": "🔁",
+      "y": 6760
+    }
+  ]
+}

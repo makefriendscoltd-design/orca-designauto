@@ -1,0 +1,11 @@
+{
+  "route": "light",
+  "risk_score": 0,
+  "changes": 0,
+  "html_modified": false,
+  "gate_exit": 0,
+  "core_anchors_preserved": true,
+  "product_names_numbers_quotes_preserved": true,
+  "final_html_synced": true,
+  "root_edits": "Approved clarity/disclosure and line-break fixes reflected; reviewer did not modify HTML"
+}

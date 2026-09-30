@@ -1,0 +1,35 @@
+{
+  "id": "vault-start",
+  "render_size": [
+    740,
+    14957
+  ],
+  "six_regions_visually_reviewed": true,
+  "visual_findings": "Readable hierarchy, semantic line breaks, large native 3D cover and relevant UI/source screenshots; no text clipping found.",
+  "runtime": {
+    "overflow": [],
+    "all_fonts_loaded": true,
+    "all_images_loaded": true
+  },
+  "slice_count": 9,
+  "cuts": [
+    0,
+    1532,
+    3802,
+    5513,
+    6963,
+    8776,
+    10278,
+    11728,
+    13178,
+    14957
+  ],
+  "slice_pixels_match_full": true,
+  "cover_sha256": "e08ae09d0b0d39a951e24089ea1e99f2558b6282a288c72099cfa88e6dc6e5eb",
+  "price_authority": "Root agent independently queried current Cafe24 shop1/shop4: landing-page297=30000, auto-funnel282=50000. vault-start free logged-in lounge reader; no Cafe24 product.",
+  "cover_label_note": "Current native cover label differs from legacy catalogue title on landing-page/vault-start; root notified.",
+  "unverified": [
+    "External publication not performed",
+    "Paid customer actual entitlement flow not exercised"
+  ]
+}

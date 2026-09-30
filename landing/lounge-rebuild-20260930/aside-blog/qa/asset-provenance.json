@@ -1,0 +1,32 @@
+[
+  {
+    "file": "assets/cover.png",
+    "source": "/tmp/lounge-current-covers/aside-blog.png",
+    "sha256": "11f336e89f9f44fdf76273437c34be9205efbfaf720e22e7f4aaa88a8c3f797b",
+    "role": "current native BookCover render"
+  },
+  {
+    "file": "assets/book/p20_edit.png",
+    "source": "landing/ebook-aside-blog/assets/book/p20_edit.png",
+    "sha256": "f0cbf93299515857776dbc145f25ab5e08fa4e17df278307336d965b172c4b3b",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/book/p15_img0.png",
+    "source": "landing/ebook-aside-blog/assets/book/p15_img0.png",
+    "sha256": "f56e0045eb884b5b9ac3ee87f664a2dbea71c5422fc757a619bdeed63eeada10",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/book/crop_check8.png",
+    "source": "landing/ebook-aside-blog/assets/book/crop_check8.png",
+    "sha256": "2a119d792ce67d7a3076668d40171136df3ffdabe0bfc4d8b173915a12ebbdb9",
+    "role": "original book screenshot or photograph"
+  },
+  {
+    "file": "assets/book/p08_img0.png",
+    "source": "landing/ebook-aside-blog/assets/book/p08_img0.png",
+    "sha256": "91e88a20e7ea4c1ad1cc5969fa663d09067c715123668681b9796b65a5a3baa4",
+    "role": "original book screenshot or photograph"
+  }
+]

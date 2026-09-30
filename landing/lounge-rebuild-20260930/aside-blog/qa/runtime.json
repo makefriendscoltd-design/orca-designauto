@@ -1,0 +1,356 @@
+{
+  "width": 740,
+  "height": 14774,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      false
+    ],
+    [
+      600,
+      false
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/p08_img0.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/p20_edit.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book/crop_check8.png",
+      "ok": true
+    },
+    {
+      "src": "assets/cover.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "51px",
+      "leading": "55.08px",
+      "tracking": "-2.295px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".lead",
+      "size": "25px",
+      "leading": "32px",
+      "tracking": "-0.625px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "28.12px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".q",
+      "size": "23px",
+      "leading": "29.9px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".answer",
+      "size": "17px",
+      "leading": "25.16px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 417,
+      "bottom": 639
+    },
+    {
+      "top": 674,
+      "bottom": 796
+    },
+    {
+      "top": 1039,
+      "bottom": 1984
+    },
+    {
+      "top": 1995,
+      "bottom": 2058
+    },
+    {
+      "top": 2581,
+      "bottom": 2755
+    },
+    {
+      "top": 2779,
+      "bottom": 2901
+    },
+    {
+      "top": 3248,
+      "bottom": 3422
+    },
+    {
+      "top": 3458,
+      "bottom": 3879
+    },
+    {
+      "top": 3914,
+      "bottom": 3967
+    },
+    {
+      "top": 3950,
+      "bottom": 4071
+    },
+    {
+      "top": 4407,
+      "bottom": 4581
+    },
+    {
+      "top": 4913,
+      "bottom": 5565
+    },
+    {
+      "top": 5680,
+      "bottom": 6143
+    },
+    {
+      "top": 6178,
+      "bottom": 6231
+    },
+    {
+      "top": 6771,
+      "bottom": 6946
+    },
+    {
+      "top": 6929,
+      "bottom": 7051
+    },
+    {
+      "top": 7078,
+      "bottom": 7364
+    },
+    {
+      "top": 7126,
+      "bottom": 7203
+    },
+    {
+      "top": 7208,
+      "bottom": 7317
+    },
+    {
+      "top": 7403,
+      "bottom": 7905
+    },
+    {
+      "top": 8283,
+      "bottom": 8458
+    },
+    {
+      "top": 8488,
+      "bottom": 9188
+    },
+    {
+      "top": 9251,
+      "bottom": 9372
+    },
+    {
+      "top": 9616,
+      "bottom": 9791
+    },
+    {
+      "top": 9774,
+      "bottom": 9952
+    },
+    {
+      "top": 9805,
+      "bottom": 9919
+    },
+    {
+      "top": 9935,
+      "bottom": 10113
+    },
+    {
+      "top": 9966,
+      "bottom": 10080
+    },
+    {
+      "top": 10096,
+      "bottom": 10273
+    },
+    {
+      "top": 10127,
+      "bottom": 10241
+    },
+    {
+      "top": 10256,
+      "bottom": 10434
+    },
+    {
+      "top": 10288,
+      "bottom": 10402
+    },
+    {
+      "top": 10462,
+      "bottom": 10794
+    },
+    {
+      "top": 10510,
+      "bottom": 10587
+    },
+    {
+      "top": 10592,
+      "bottom": 10747
+    },
+    {
+      "top": 11010,
+      "bottom": 11106
+    },
+    {
+      "top": 11144,
+      "bottom": 11321
+    },
+    {
+      "top": 11336,
+      "bottom": 11568
+    },
+    {
+      "top": 11614,
+      "bottom": 11791
+    },
+    {
+      "top": 11806,
+      "bottom": 12037
+    },
+    {
+      "top": 12083,
+      "bottom": 12260
+    },
+    {
+      "top": 12275,
+      "bottom": 12507
+    },
+    {
+      "top": 12920,
+      "bottom": 13095
+    },
+    {
+      "top": 13121,
+      "bottom": 13920
+    },
+    {
+      "top": 13946,
+      "bottom": 14067
+    },
+    {
+      "top": 14098,
+      "bottom": 14238
+    },
+    {
+      "top": 14270,
+      "bottom": 14391
+    },
+    {
+      "top": 14601,
+      "bottom": 14717
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "",
+      "y": 0,
+      "h": 2161
+    },
+    {
+      "i": 1,
+      "id": "",
+      "y": 2161,
+      "h": 872
+    },
+    {
+      "i": 2,
+      "id": "",
+      "y": 3034,
+      "h": 1159
+    },
+    {
+      "i": 3,
+      "id": "",
+      "y": 4193,
+      "h": 2160
+    },
+    {
+      "i": 4,
+      "id": "",
+      "y": 6353,
+      "h": 1716
+    },
+    {
+      "i": 5,
+      "id": "",
+      "y": 8069,
+      "h": 1425
+    },
+    {
+      "i": 6,
+      "id": "",
+      "y": 9494,
+      "h": 1422
+    },
+    {
+      "i": 7,
+      "id": "",
+      "y": 10916,
+      "h": 1776
+    },
+    {
+      "i": 8,
+      "id": "",
+      "y": 12692,
+      "h": 1836
+    },
+    {
+      "i": 9,
+      "id": "",
+      "y": 14528,
+      "h": 246
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": [
+    {
+      "text": "🤔",
+      "y": 2410.515625
+    },
+    {
+      "text": "📝",
+      "y": 6615.9375
+    }
+  ]
+}

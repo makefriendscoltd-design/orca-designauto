@@ -1,0 +1,132 @@
+{
+  "dimensions": [
+    740,
+    32536
+  ],
+  "sliceCount": 22,
+  "heightSum": 32536,
+  "pixelEquality": true,
+  "allFontsLoaded": true,
+  "allImagesLoaded": true,
+  "textOverflow": [],
+  "visualReviewed": [
+    "part-1.jpg",
+    "part-2.jpg",
+    "part-3.jpg",
+    "part-4.jpg",
+    "part-5.jpg",
+    "part-6.jpg"
+  ],
+  "slices": [
+    {
+      "file": "01.png",
+      "y": 0,
+      "height": 2436
+    },
+    {
+      "file": "02.png",
+      "y": 2436,
+      "height": 1487
+    },
+    {
+      "file": "03.png",
+      "y": 3923,
+      "height": 1333
+    },
+    {
+      "file": "04.png",
+      "y": 5256,
+      "height": 1450
+    },
+    {
+      "file": "05.png",
+      "y": 6706,
+      "height": 1479
+    },
+    {
+      "file": "06.png",
+      "y": 8185,
+      "height": 1416
+    },
+    {
+      "file": "07.png",
+      "y": 9601,
+      "height": 1418
+    },
+    {
+      "file": "08.png",
+      "y": 11019,
+      "height": 1218
+    },
+    {
+      "file": "09.png",
+      "y": 12237,
+      "height": 1450
+    },
+    {
+      "file": "10.png",
+      "y": 13687,
+      "height": 1509
+    },
+    {
+      "file": "11.png",
+      "y": 15196,
+      "height": 1483
+    },
+    {
+      "file": "12.png",
+      "y": 16679,
+      "height": 1438
+    },
+    {
+      "file": "13.png",
+      "y": 18117,
+      "height": 1450
+    },
+    {
+      "file": "14.png",
+      "y": 19567,
+      "height": 1450
+    },
+    {
+      "file": "15.png",
+      "y": 21017,
+      "height": 1441
+    },
+    {
+      "file": "16.png",
+      "y": 22458,
+      "height": 1568
+    },
+    {
+      "file": "17.png",
+      "y": 24026,
+      "height": 1481
+    },
+    {
+      "file": "18.png",
+      "y": 25507,
+      "height": 1448
+    },
+    {
+      "file": "19.png",
+      "y": 26955,
+      "height": 1450
+    },
+    {
+      "file": "20.png",
+      "y": 28405,
+      "height": 1499
+    },
+    {
+      "file": "21.png",
+      "y": 29904,
+      "height": 1603
+    },
+    {
+      "file": "22.png",
+      "y": 31507,
+      "height": 1029
+    }
+  ]
+}
