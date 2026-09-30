@@ -1,0 +1,33 @@
+{
+  "restored": [
+    {
+      "id": "company-results",
+      "source": "landing/_ebook-premium-kit/proof-dossier.md:2026-09-30 confirmed amendment; 2021-2023 ledger independently re-summed by two reviewers",
+      "values": {
+        "2021": 40.5,
+        "2022": 41.3,
+        "2023": 27.6
+      },
+      "unit": "KRW 100 million",
+      "subject": "Makefriends company revenue; not ebook buyer results"
+    },
+    {
+      "id": "community-record",
+      "source": "landing/ebook-threads-basic/assets/proof/cafe.png",
+      "asset": "assets/evidence/cafe-members-202609.png",
+      "value": 12127,
+      "period": "2026-09-10 source capture",
+      "subject": "Makefamily Naver community members; not book buyers"
+    }
+  ],
+  "excluded": [
+    {
+      "source": "old 114.9 billion-style accumulated revenue card",
+      "reason": "Superseded user instruction forbids cumulative revenue wording; annual record restored instead"
+    },
+    {
+      "source": "PREMIUM customer revenue/testimonials",
+      "reason": "Basic brief explicitly limits them to premium; unrelated to the live400 guide"
+    }
+  ]
+}

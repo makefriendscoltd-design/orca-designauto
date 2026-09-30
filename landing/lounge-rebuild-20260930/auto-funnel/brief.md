@@ -16,15 +16,8 @@
 - humanize latest quick-rules 직접점검 및 verify_gates 결과 qa/humanize/gates.txt.
 - 표지해시 qa/validation.json. 실제등록 및 유료구매자 권한동선은 미검증.
 
-## 검증
-- 실제 Chrome 렌더740×17434,6구간 직접검수. 폰트5종 및 모든이미지 로드, 가로넘침0.
-- 슬라이스12장, 높이합·원본픽셀일치 확인.
-- 현재가 root 독립API교차확인 완료: 297=30000원,282=50000원;vault무료로그인.
-- humanize latest quick-rules 직접점검 및 verify_gates 결과 qa/humanize/gates.txt.
-- 표지해시 qa/validation.json. 실제등록 및 유료구매자 권한동선은 미검증.
-
-## 이메일 자료 + 라운지 본문 수령 안내 보완
-- 현재 운영 DB에서 상품282 active 및 본책 PDF(asset3), 제2의 뇌 사용설명서 PDF(asset15), 자동퍼널 브레인 ZIP(asset16) 연결을 직접 읽기 확인. 고객·주문·개인 조회 없음.
-- 최종 수령 안내에 이메일 PDF/브레인 파일 + 같은 이메일 라운지 본문 열람을 함께 명시.
-- 최종렌더740×17434, 안전슬라이스12장, 합계높이/픽셀일치, 넘침0, 폰트·이미지전부로드. 수령영역과전체6구간 직접 시각검수.
-- Copy/humanize/QA 산출 동기화, 게이트exit0. 외부발행없음.
+## 2026-09-30 성과근거 복구
+- 구형증거자료전수대조, qa/evidence-restored.json에대상·기간·교체/복원사유기록.
+- 누적매출카드→2021/2022/2023 연간40.5/41.3/27.6억정본그래프. 채널수치2026.09.10표기.
+- 최종740×22509, 15슬라이스. 6구간및근거섹션직접검수,DOM보호경계/높이합/픽셀일치.
+- humanize-evidence gateOK·goldenPASS. 기존가격/배송카피보존. 외부재등록은root담당.

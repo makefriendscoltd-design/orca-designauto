@@ -1,0 +1,377 @@
+{
+  "status": "restored; final render and visual QA passed",
+  "oldPage": "landing/aimax-threads-premium/concept4_premium.html",
+  "recoveryReport": "../evidence-recovery-threads.md",
+  "assetCount": 25,
+  "newEvidenceImages": 17,
+  "allEightProofOriginalsUsed": true,
+  "privacyMethod": "Headless rendered nickname masking/content crops stored as public derivative PNG; original raw copies removed from package; original references only in provenance.",
+  "dataSeparation": [
+    "브랜드운영",
+    "동일전자책구매자1명3단계",
+    "스레드수업수강생4명",
+    "저자/실측분석",
+    "본책사례"
+  ],
+  "items": [
+    {
+      "id": "brand1-sales",
+      "section": "brand-one",
+      "subject": "운영팀 건강식품 브랜드",
+      "period": "원본1~4월;연도미표시",
+      "asset": "assets/proof/brand1_sales_first_month.png",
+      "metrics": [
+        "첫운영달매출400만원"
+      ],
+      "status": "restored-original",
+      "reason": "기존hl/b1강조파생본대신판매차트원본사용",
+      "exists": true,
+      "sha256": "548261d43abb990e255b45b2c201686924e0c353beedbdb94bf2f647dd9e2e00"
+    },
+    {
+      "id": "brand1-profile",
+      "section": "brand-one",
+      "subject": "운영팀 건강식품 브랜드",
+      "period": "선택기간내;날짜미표시",
+      "asset": "assets/proof/brand1_threads_736878.png",
+      "metrics": [
+        "프로필조회736878",
+        "프로필클릭1804",
+        "팔로워1614"
+      ],
+      "status": "restored",
+      "reason": "기존판매페이지의증빙을원본문맥으로복원",
+      "exists": true,
+      "sha256": "b1fbe7f30b8bc68698070040118949a198314972ca44730e72ccf020b000802b"
+    },
+    {
+      "id": "brand2-sales",
+      "section": "brand-two",
+      "subject": "운영팀 화장품 브랜드",
+      "period": "미표시",
+      "asset": "assets/proof/brand2_sales_389.png",
+      "metrics": [
+        "결제3890만원"
+      ],
+      "status": "restored-original",
+      "reason": "기존hl/b2의잘린금액칸대신판매화면원본사용;3.89천만원단위보존",
+      "exists": true,
+      "sha256": "1f18df77f3189c17f59864ca8ab7d28b47cae68cdddd388c288a151d0a911129"
+    },
+    {
+      "id": "brand2-profile",
+      "section": "brand-two",
+      "subject": "운영팀 화장품 브랜드",
+      "period": "선택기간내;날짜미표시",
+      "asset": "assets/proof/brand2_threads_931840.png",
+      "metrics": [
+        "프로필조회931840",
+        "클릭4156",
+        "팔로워3362"
+      ],
+      "status": "restored",
+      "reason": "기존판매페이지의증빙을원본문맥으로복원",
+      "exists": true,
+      "sha256": "bedd12abed4d6d72a08ff5f462039e7a6faefce48c8a371f6bf78a3da9cee51b"
+    },
+    {
+      "id": "brand3-orders",
+      "section": "brand-three",
+      "subject": "운영팀 건강용품 브랜드",
+      "period": "원본최근1주일기준;달력일미표시",
+      "asset": "assets/proof/brand3_orders.png",
+      "metrics": [
+        "배송완료132",
+        "구매확정104",
+        "재생산2000개(기존설명)"
+      ],
+      "status": "restored-original",
+      "reason": "기존hl/b3잘린숫자칸대신주문화면원본",
+      "exists": true,
+      "sha256": "b81f51b51c30cc8ed28089ff7d939734434902e527a74d3a91a06e6a261f4bb9"
+    },
+    {
+      "id": "brand3-profile",
+      "section": "brand-three",
+      "subject": "운영팀 건강용품 브랜드",
+      "period": "선택기간내;날짜미표시",
+      "asset": "assets/proof/brand3_threads_1116985.png",
+      "metrics": [
+        "프로필조회1116985",
+        "클릭1864",
+        "팔로워2913"
+      ],
+      "status": "restored",
+      "reason": "기존판매페이지의증빙을원본문맥으로복원",
+      "exists": true,
+      "sha256": "f255af252b3e764581cbdd42c9b691cb4c2725c72814d93206b75ee34f84e6b4"
+    },
+    {
+      "id": "brand5-monthly",
+      "section": "brand-five",
+      "subject": "운영팀 두피샴푸 브랜드",
+      "period": "원본1~3월;연도미표시",
+      "asset": "assets/proof/brand5_sales_10m.png",
+      "metrics": [
+        "월14만원→다음달1000만원(기존설명)"
+      ],
+      "status": "restored-original",
+      "reason": "기존hl/b5파생본대신원본차트",
+      "exists": true,
+      "sha256": "3b145e40205278c69b19e182d99e00c16f3a14a61e48984b0a9100b07ded91c8"
+    },
+    {
+      "id": "brand5-july",
+      "section": "brand-five",
+      "subject": "운영팀 두피샴푸 브랜드",
+      "period": "2025-07-01~2025-07-25",
+      "asset": "assets/proof/brand5_sales_793.png",
+      "metrics": [
+        "결제793만원"
+      ],
+      "status": "restored-additional",
+      "reason": "기존보관증빙8장중미사용1장도별도기간을명시해추가;1000만원기간과합산X",
+      "exists": true,
+      "sha256": "9190aac62e559ef93212bb837f2a7a6fbe250195923a19eede82c7ef95be2a72"
+    },
+    {
+      "id": "brand-new",
+      "section": "brand-new",
+      "subject": "신규브랜드운영계정",
+      "period": "2026-06-18 대화;10일완판은기존제공설명",
+      "asset": "assets/hl/k_newacct.png",
+      "metrics": [
+        "1000개10일완판",
+        "일주일품절걱정",
+        "잔여100개후반"
+      ],
+      "status": "restored",
+      "reason": "이름가려진기존가공본;책40일330개사례와별개",
+      "exists": true,
+      "sha256": "be5da0bbc45315ea8864429cfd9f51c68d98a04b5970688dcc7625afc4331690"
+    },
+    {
+      "id": "buyer-1",
+      "section": "buyer-proof",
+      "subject": "동일전자책구매자1명",
+      "period": "책적용후/캡처시각13:29",
+      "asset": "assets/kakao/buyer_1_redacted.png",
+      "metrics": [
+        "첫적용및예약발행"
+      ],
+      "status": "restored",
+      "reason": "기존원본에서내용영역/닉네임가림을headless렌더한PNG만판매애셋에포함;원본을삭제하거나변형하지않음",
+      "exists": true,
+      "sha256": "8ca03e9abe1072e6408960baf4caff361482bca1293b424a9e2ed9fb91e11eb4",
+      "originalSource": "landing/aimax-threads-premium/assets/kakao/buyer_1.png"
+    },
+    {
+      "id": "buyer-2",
+      "section": "buyer-proof",
+      "subject": "동일전자책구매자1명",
+      "period": "같은날오후/16:09",
+      "asset": "assets/kakao/buyer_2_redacted.png",
+      "metrics": [
+        "각잡고따라하기좋다는후기"
+      ],
+      "status": "restored",
+      "reason": "원본상단인용답장전체를제외하고실제구매자의지금까지기계적으로~서비스판매에도좋을거같아요본문만headless크롭;고객원문유지/닉네임없음",
+      "exists": true,
+      "sha256": "34f32d43d500e545355d05c20dc8d6ce6ca5dcf89743028aa7452338803ece96",
+      "originalSource": "landing/aimax-threads-premium/assets/kakao/buyer_2.png"
+    },
+    {
+      "id": "buyer-3",
+      "section": "buyer-proof",
+      "subject": "동일전자책구매자1명",
+      "period": "구매3일뒤(기존페이지맥락)/11:45",
+      "asset": "assets/kakao/buyer_3_redacted.png",
+      "metrics": [
+        "수입전예약판매구매확인"
+      ],
+      "status": "restored",
+      "reason": "기존원본에서내용영역/닉네임가림을headless렌더한PNG만판매애셋에포함;원본을삭제하거나변형하지않음",
+      "exists": true,
+      "sha256": "0e8bfd0e18e649301470f7cdb0a257a93b4861ff64fd681a3c6a9a40a9e693d6",
+      "originalSource": "landing/aimax-threads-premium/assets/kakao/buyer_3.png"
+    },
+    {
+      "id": "student-3",
+      "section": "student-proof",
+      "subject": "스레드수업수강생(전자책구매자아님)",
+      "period": "첫글",
+      "asset": "assets/hl/s3.png",
+      "metrics": [
+        "조회2963회;판매직접연결안됐음보존"
+      ],
+      "status": "restored",
+      "reason": "기존익명강조캡처;전자책후기와섹션라벨분리",
+      "exists": true,
+      "sha256": "f0a4122aaf83af369a0b7967d5da96004ede406db6ffafae693388b72e0e6dd6"
+    },
+    {
+      "id": "student-4",
+      "section": "student-proof",
+      "subject": "스레드수업수강생(전자책구매자아님)",
+      "period": "10일",
+      "asset": "assets/hl/s4.png",
+      "metrics": [
+        "팔로워1000명넘음;전환대기5~6건"
+      ],
+      "status": "restored",
+      "reason": "기존익명강조캡처;전자책후기와섹션라벨분리",
+      "exists": true,
+      "sha256": "ebe01970ce26d0db3a4984b2203ae72297e30eefbac6aade2ac418e6e5dac0d2"
+    },
+    {
+      "id": "student-2",
+      "section": "student-proof",
+      "subject": "스레드수업수강생(전자책구매자아님)",
+      "period": "수업실습",
+      "asset": "assets/hl/s2.png",
+      "metrics": [
+        "첫팔로워13명"
+      ],
+      "status": "restored",
+      "reason": "기존익명강조캡처;전자책후기와섹션라벨분리",
+      "exists": true,
+      "sha256": "1f07d89a550553e259d062a1ab0de81a1eff181b391bc2497370bf96a40c3c9d"
+    },
+    {
+      "id": "student-1",
+      "section": "student-proof",
+      "subject": "스레드수업수강생(전자책구매자아님)",
+      "period": "수업후기",
+      "asset": "assets/hl/s1.png",
+      "metrics": [
+        "정보성일상구매성글방향과자신감"
+      ],
+      "status": "restored",
+      "reason": "기존익명강조캡처;전자책후기와섹션라벨분리",
+      "exists": true,
+      "sha256": "b6cf1fb1d76248e95a12884b910dd4f74f442fb5b47bd80e87ce8c2091455baa"
+    },
+    {
+      "id": "author",
+      "section": "author-evidence",
+      "subject": "그지대장·직장인C 제작자소개",
+      "period": "책출간당시자료",
+      "asset": "assets/author/jikjangin_c.jpg",
+      "metrics": [
+        "수집6000글",
+        "실측1556글",
+        "4개업종",
+        "브랜드20개이상",
+        "직접작성4000개이상",
+        "본책61페이지",
+        "단일글최고노출342749"
+      ],
+      "status": "restored",
+      "reason": "기존판매페이지의증빙을원본문맥으로복원",
+      "exists": true,
+      "sha256": "70a97c0dce3d1a647192fa7b8ab983944022cf6b56fddf92f4c6b7796e454c89"
+    },
+    {
+      "id": "old-author-instagram-48000",
+      "section": "author-evidence",
+      "subject": "기존저자소개",
+      "period": "과거소개시점",
+      "asset": null,
+      "metrics": [],
+      "status": "merged-with-reason",
+      "reason": "도시에에서4.8/5/5.3만시점혼재확인;회사계정운영경험으로통합",
+      "exists": null,
+      "sha256": null
+    },
+    {
+      "id": "old-author-youtube-13000",
+      "section": "author-evidence",
+      "subject": "기존저자소개",
+      "period": "과거소개시점",
+      "asset": null,
+      "metrics": [],
+      "status": "merged-with-reason",
+      "reason": "도시에에서주체귀속·시점혼재확인;메이크패밀리채널운영으로통합",
+      "exists": null,
+      "sha256": null
+    },
+    {
+      "id": "old-author-5years",
+      "section": "author-evidence",
+      "subject": "기존저자소개",
+      "period": "과거소개시점",
+      "asset": null,
+      "metrics": [],
+      "status": "merged-with-reason",
+      "reason": "시점의존연차를현재연차로표시하지않고책출간당시제작자소개로통합",
+      "exists": null,
+      "sha256": null
+    },
+    {
+      "id": "old-brand-account-3months10000",
+      "section": "author-evidence",
+      "subject": "기존저자소개",
+      "period": "과거소개시점",
+      "asset": null,
+      "metrics": [],
+      "status": "merged-with-reason",
+      "reason": "별도원본화면없이제작자소개문구에만있는계정성장수치;증빙원본있는20개계정운영을우선표시",
+      "exists": null,
+      "sha256": null
+    },
+    {
+      "id": "pg_real.png",
+      "section": "contrast",
+      "subject": "본책운영사례",
+      "period": "본문기록",
+      "asset": "assets/pg_real.png",
+      "metrics": [
+        "본책에수록된원문글/40일330개사례"
+      ],
+      "status": "preserved",
+      "reason": "이번복원전리빌드부터이미보존한내지",
+      "exists": true,
+      "sha256": "fa2cf67ca863e375853a1c87538e787e63633aadbfd40eee83dc230bda56bd92"
+    },
+    {
+      "id": "pg_teardown.png",
+      "section": "proof",
+      "subject": "본책운영사례",
+      "period": "본문기록",
+      "asset": "assets/pg_teardown.png",
+      "metrics": [
+        "본책에수록된원문글/40일330개사례"
+      ],
+      "status": "preserved",
+      "reason": "이번복원전리빌드부터이미보존한내지",
+      "exists": true,
+      "sha256": "cdc6510165341c6f61ecc59aad40db962dbdb980465f11072a8a95995c2653ad"
+    },
+    {
+      "id": "pg_case.png",
+      "section": "proof",
+      "subject": "본책운영사례",
+      "period": "본문기록",
+      "asset": "assets/pg_case.png",
+      "metrics": [
+        "본책에수록된원문글/40일330개사례"
+      ],
+      "status": "preserved",
+      "reason": "이번복원전리빌드부터이미보존한내지",
+      "exists": true,
+      "sha256": "165158c78d67e4f9d7f6b8ec2cd4dc99b05b5ed73d07208a1759cb8a0e363790"
+    }
+  ],
+  "render": {
+    "width": 740,
+    "height": 51356,
+    "imageElements": 27,
+    "fontsLoaded": 5,
+    "horizontalTextOverflow": 0,
+    "wholePageSixRegionsViewed": true,
+    "restoredScenesFullScaleViewed": 8,
+    "publicRedactedBuyerAssetsViewed": 3,
+    "sliceCount": 34
+  },
+  "finalRefinement": "buyer2 incomplete quoted reply removed; actual customer review only; body wording unchanged"
+}

@@ -1,24 +1,76 @@
 {
-  "width": 740,
-  "height": 16340,
-  "slice_count": 11,
+  "size": [
+    740,
+    19390
+  ],
+  "slice_count": 13,
+  "slice_heights": [
+    1644,
+    1500,
+    1500,
+    1500,
+    1470,
+    1516,
+    1523,
+    1500,
+    1608,
+    1500,
+    1480,
+    1491,
+    1158
+  ],
   "cuts": [
     0,
-    1922,
-    3373,
-    4873,
-    6175,
-    7675,
-    9072,
-    10723,
-    12223,
-    13424,
-    14924,
-    16340
+    1644,
+    3144,
+    4644,
+    6144,
+    7614,
+    9130,
+    10653,
+    12153,
+    13761,
+    15261,
+    16741,
+    18232,
+    19390
   ],
-  "slice_height_sum": 16340,
-  "pixel_match": true,
-  "text_overflow": 0,
-  "images_loaded": true,
-  "visual_review": "all six regions viewed, final changed typography rechecked"
+  "pixel_reassembly_exact": true,
+  "cut_strategy": "avoid DOM figures, images, text blocks and cards; smooth background rows",
+  "runtime_overflow": 0,
+  "all_images_loaded": true,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "visual_review": "Restored evidence early and middle scenes inspected; final full-page six-region inspection completed separately",
+  "source_values": "Existing per-shop price tokens compared bytewise before/after evidence restoration; unchanged",
+  "humanize": "qa/evidence-humanize: light, exit0, goldenPASS",
+  "render_size": [
+    740,
+    19390
+  ],
+  "render_method": "Chrome CDP; document.fonts.ready + images.decode + 2 animation frames before full-height screenshot",
+  "six_regions_visually_reviewed": true,
+  "evidence_blocks_visually_reviewed": true,
+  "evidence_manifest": "qa/evidence-restored.json",
+  "all_metrics_visible_in_final_render": true
 }

@@ -32,5 +32,21 @@
     "incoming/lounge-ebooks-20260929/pdf-books/threads-premium-supplement/asset-26.pdf",
     "incoming/lounge-ebooks-20260929/pdf-books/threads-premium-supplement/asset-27.pdf",
     "landing/aimax-threads-premium/concept4_premium.html"
-  ]
+  ],
+  "evidenceRestoration": {
+    "sources": [
+      "landing/aimax-threads-premium/concept4_premium.html",
+      "landing/_ebook-premium-kit/proof-dossier.md",
+      "../evidence-recovery-threads.md"
+    ],
+    "groups": [
+      "운영브랜드5사례",
+      "판매/프로필원본8장",
+      "같은구매자3단계",
+      "스레드수업수강생4명",
+      "저자/실측자료"
+    ],
+    "notSameCase": "신규브랜드10일1000개와본책40일330개는별도사례",
+    "privacy": "기존마스킹본+구매자닉네임CSS가림/내용크롭을headless렌더한PNG만publicasset포함;원본복사본3개제거"
+  }
 }

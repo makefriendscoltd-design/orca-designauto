@@ -1,37 +1,232 @@
 {
   "excluded_files": [],
-  "files_scanned": 9,
+  "files_scanned": 20,
   "issues": [],
   "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium",
   "summary": {
     "issues": 0,
     "value_counts": {
-      "dates": 0,
-      "prices": 1,
+      "dates": 5,
+      "prices": 7,
       "product_ids": 0,
-      "times": 0,
+      "times": 3,
       "urls": 0
     }
   },
   "unreadable": [],
   "values": {
-    "dates": {},
+    "dates": {
+      "2025-07-01": [
+        {
+          "context": "2025.07.01~07.25 · 25일 결제금액",
+          "line": 70,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/copy.md"
+        },
+        {
+          "context": "<section class=\"brand-proof alt\" id=\"brand-five\"><span class=\"pill\">두피 샴푸 브랜드 · 운영 사례</span><p class=\"lead\">월매출 14만원에서<br>스레드 운영 다음 달</p><p class=\"evidence-number\">1,000<small>만원</small></p><h3>월매출 기록</h3><figure class=\"",
+          "line": 8,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/detail.html"
+        },
+        {
+          "context": "\"period\": \"2025-07-01~2025-07-25\",",
+          "line": 127,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        },
+        {
+          "context": "2025.07.01~07.25 · 25일 결제금액",
+          "line": 70,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/before.txt"
+        },
+        {
+          "context": "2025.07.01~07.25 · 25일 결제금액",
+          "line": 70,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/final.md"
+        }
+      ],
+      "2025-07-25": [
+        {
+          "context": "\"period\": \"2025-07-01~2025-07-25\",",
+          "line": 127,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "2025년7월1일": [
+        {
+          "context": "<section class=\"brand-proof alt\" id=\"brand-five\"><span class=\"pill\">두피 샴푸 브랜드 · 운영 사례</span><p class=\"lead\">월매출 14만원에서<br>스레드 운영 다음 달</p><p class=\"evidence-number\">1,000<small>만원</small></p><h3>월매출 기록</h3><figure class=\"",
+          "line": 8,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/detail.html"
+        }
+      ],
+      "2026-06-18": [
+        {
+          "context": "2026.06.18 대화 · 입고 일주일 뒤 품절 걱정,",
+          "line": 77,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/copy.md"
+        },
+        {
+          "context": "<section class=\"brand-proof\" id=\"brand-new\"><span class=\"pill\">새로 만든 브랜드 계정 · 운영 사례</span><p class=\"lead\">입고 1,000개를</p><p class=\"evidence-number\">10<small>일 만에</small></p><h3>완판한 사례도 있습니다.</h3><figure class=\"evidence-im",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/detail.html"
+        },
+        {
+          "context": "\"period\": \"2026-06-18 대화;10일완판은기존제공설명\",",
+          "line": 141,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        },
+        {
+          "context": "2026.06.18 대화 · 입고 일주일 뒤 품절 걱정,",
+          "line": 77,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/before.txt"
+        },
+        {
+          "context": "2026.06.18 대화 · 입고 일주일 뒤 품절 걱정,",
+          "line": 77,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/final.md"
+        }
+      ],
+      "2026-09-30": [
+        {
+          "context": "# 스레드 PREMIUM 상세 리빌드 — 2026-09-30",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/README.md"
+        }
+      ]
+    },
     "prices": {
+      "1000만원": [
+        {
+          "context": "\"월14만원→다음달1000만원(기존설명)\"",
+          "line": 116,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        },
+        {
+          "context": "\"reason\": \"기존보관증빙8장중미사용1장도별도기간을명시해추가;1000만원기간과합산X\",",
+          "line": 133,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "14만원": [
+        {
+          "context": "월매출 14만원에서",
+          "line": 61,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/copy.md"
+        },
+        {
+          "context": "<section class=\"brand-proof alt\" id=\"brand-five\"><span class=\"pill\">두피 샴푸 브랜드 · 운영 사례</span><p class=\"lead\">월매출 14만원에서<br>스레드 운영 다음 달</p><p class=\"evidence-number\">1,000<small>만원</small></p><h3>월매출 기록</h3><figure class=\"",
+          "line": 8,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/detail.html"
+        },
+        {
+          "context": "\"월14만원→다음달1000만원(기존설명)\"",
+          "line": 116,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        },
+        {
+          "context": "월매출 14만원에서",
+          "line": 61,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/before.txt"
+        },
+        {
+          "context": "월매출 14만원에서",
+          "line": 61,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/final.md"
+        }
+      ],
       "330000원": [
         {
+          "context": "- 330,000원 두 슬롯 일치. 상품277과별칭6개는 같은페이지 대상. 기존30부/30일실행후피드백/평생업데이트/발송후환불불가 정책 보존. 성과보장 추가없음.",
+          "line": 10,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/README.md"
+        },
+        {
+          "context": "\"context\": \"\\\"text\\\": \\\"330,000원\\\"\",",
+          "line": 22,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"\\\"text\\\": \\\"330,000원\\\"\",",
+          "line": 27,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/consistency.json"
+        },
+        {
           "context": "\"text\": \"330,000원\"",
-          "line": 649,
+          "line": 1158,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/runtime.json"
         },
         {
           "context": "\"text\": \"330,000원\"",
-          "line": 653,
+          "line": 1162,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/runtime.json"
+        }
+      ],
+      "3890만원": [
+        {
+          "context": "\"결제3890만원\"",
+          "line": 54,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "400만원": [
+        {
+          "context": "\"첫운영달매출400만원\"",
+          "line": 24,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "793만원": [
+        {
+          "context": "\"결제793만원\"",
+          "line": 130,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "890만원": [
+        {
+          "context": "화장품 브랜드 · 결제금액 3.89천만원 = 3,890만원",
+          "line": 38,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/copy.md"
+        },
+        {
+          "context": "<section class=\"brand-proof alt\" id=\"brand-two\"><span class=\"pill\">화장품 브랜드 · 운영 사례</span><p class=\"lead\">광고비 0원으로 운영한 스레드</p><p class=\"evidence-number\">3,890<small>만원</small></p><h3>스토어 결제금액</h3><figure class=\"evidence-i",
+          "line": 6,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/detail.html"
+        },
+        {
+          "context": "화장품 브랜드 · 결제금액 3.89천만원 = 3,890만원",
+          "line": 38,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/before.txt"
+        },
+        {
+          "context": "화장품 브랜드 · 결제금액 3.89천만원 = 3,890만원",
+          "line": 38,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/_humanize/evidence-restore/final.md"
         }
       ]
     },
     "product_ids": {},
-    "times": {},
+    "times": {
+      "11:45": [
+        {
+          "context": "\"period\": \"구매3일뒤(기존페이지맥락)/11:45\",",
+          "line": 187,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "13:29": [
+        {
+          "context": "\"period\": \"책적용후/캡처시각13:29\",",
+          "line": 157,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ],
+      "16:09": [
+        {
+          "context": "\"period\": \"같은날오후/16:09\",",
+          "line": 172,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/threads-premium/qa/evidence-restored.json"
+        }
+      ]
+    },
     "urls": {}
   }
 }

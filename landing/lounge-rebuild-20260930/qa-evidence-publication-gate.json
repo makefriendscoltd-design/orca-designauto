@@ -1,0 +1,16 @@
+{
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 5,
+      "prices": 13,
+      "product_ids": 0,
+      "times": 0,
+      "urls": 0
+    }
+  },
+  "issues": [],
+  "prices": "Current product prices preserved. Brand case amounts3890/400/1000/793/14만원, author funnel200만원 and conceptual bag example79000원 are labelled source evidence/examples, not ebook prices.",
+  "date_sources": "Original screenshot capture dates and source live date; not inferred current metrics.",
+  "parser_normalization": "Comma grouping in 만원 amounts normalized in temporary plain text only; HTML/assets unchanged."
+}

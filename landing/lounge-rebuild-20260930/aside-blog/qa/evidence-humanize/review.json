@@ -1,0 +1,15 @@
+{
+  "route": "light",
+  "risk": 2,
+  "gate_exit": 0,
+  "changed_in_proofreading": 0,
+  "manual_rules_checked": [
+    "C-8 contrast repetition",
+    "C-11 ending comma",
+    "D-4 inflated performance",
+    "H-1 transitions",
+    "I-4 commands"
+  ],
+  "source_anchors": "Named company, actual yearly amounts, community snapshot date, AIXLIFE own public count retained",
+  "content_changes": "Evidence restoration already sourced separately in evidence-restored.json, not an untracked humanize change"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "vault-start",
+  "status": "ready_for_cdn_upload",
+  "sections_restored": [
+    "source-evidence"
+  ],
+  "legacy_source": "landing/ebook-vault-start/detail.html and brief.md",
+  "source_report": "../evidence-recovery-marketing.md",
+  "legacy_evidence_disposition": [
+    {
+      "id": "company-revenue",
+      "legacy_value": "114.9억 누적",
+      "disposition": "replaced",
+      "reason": "사용자의 연간표현지시. 기존누적카드를수정하지않고원장36개월을재합산한HTML/CSS연간그래프로대체",
+      "subject": "(주)메이크프렌즈",
+      "period": "2021.01~2023.12; annual periods shown separately",
+      "figures": {
+        "2021": 4049125971,
+        "2022": 4132622999,
+        "2023": 2758617931
+      },
+      "display": [
+        "2021년 40.5억",
+        "2022년 41.3억",
+        "2023년 27.6억"
+      ],
+      "source": "/Users/apple/coding/aimax_obsidian/aimax_family/04_Resources/Notion/{21~23}년 {1~12}월.md - 매출 필드",
+      "target_section": "source-evidence",
+      "render_method": "HTML/CSS proportional bars; no ascending arrow",
+      "source_inspection": "40months including2024.01~04 independently summed; only2021~2023 full years displayed"
+    },
+    {
+      "id": "cafe-members",
+      "disposition": "retained/restored",
+      "subject": "메이크패밀리 네이버카페 westudyssat 회원",
+      "period": "2026-09-10 capture",
+      "value": 12127,
+      "asset": "assets/proof/cafe-members.png",
+      "source": "landing/ebook-landing-page/assets/proof/cafe_members_crop.png",
+      "target_section": "source-evidence",
+      "reason": "구형회사신뢰블록의독립카페회원근거복원; 책구매자로부르지않음"
+    },
+    {
+      "id": "lounge-home",
+      "disposition": "retained/restored",
+      "subject": "메이크패밀리 라운지 홈에 표시된 함께배우는사람",
+      "period": "2026-09-10 capture",
+      "value": 2885,
+      "asset": "assets/proof/lounge-home.jpg",
+      "source": "landing/ebook-vault-start/assets/proof/lounge_hero_2885.jpg",
+      "target_section": "source-evidence",
+      "reason": "기존라운지화면의운영규모근거복원; 현재값/완주자로확대하지않음"
+    }
+  ],
+  "unaccounted_legacy_evidence": [],
+  "annual_not_cumulative": true,
+  "assets": [
+    {
+      "path": "assets/proof/cafe-members.png",
+      "sha256": "6e89533c545b9bfdad13fd5e4b946f31f5c0c9c4272422bb38433ee8dea4f93d"
+    },
+    {
+      "path": "assets/proof/lounge-home.jpg",
+      "sha256": "3d58887daf69381cd64e30861d8eb047e5007a63394f6fc3798faf6cd0d9d8f4"
+    }
+  ],
+  "validation": {
+    "width": 740,
+    "height": 18781,
+    "slices": 12,
+    "safe_dom_boundaries": true,
+    "pixel_match": true,
+    "horizontal_text_overflow": 0,
+    "fonts_and_images_loaded": true,
+    "six_regions_visually_reviewed": true,
+    "evidence_sections_visually_reviewed": true,
+    "humanize": "qa/humanize-evidence/gates.txt; exit0, goldenPASS"
+  },
+  "external_publication_performed": false,
+  "next": "root CDN upload; vault later same existing app manifest only replacement"
+}

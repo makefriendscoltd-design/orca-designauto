@@ -1,35 +1,41 @@
 {
   "size": [
     740,
-    14774
+    19318
   ],
-  "slice_count": 11,
+  "slice_count": 14,
   "slice_heights": [
     1038,
-    1717,
-    1500,
-    1424,
-    1398,
-    1410,
-    1128,
+    1492,
+    1206,
+    1297,
+    1455,
     1500,
     1500,
-    1482,
-    677
+    1500,
+    1578,
+    1500,
+    1487,
+    1500,
+    1558,
+    707
   ],
   "cuts": [
     0,
     1038,
-    2755,
-    4255,
-    5679,
-    7077,
-    8487,
-    9615,
-    11115,
-    12615,
-    14097,
-    14774
+    2530,
+    3736,
+    5033,
+    6488,
+    7988,
+    9488,
+    10988,
+    12566,
+    14066,
+    15553,
+    17053,
+    18611,
+    19318
   ],
   "pixel_reassembly_exact": true,
   "cut_strategy": "avoid DOM figures, images, text blocks and cards; smooth background rows",
@@ -46,7 +52,7 @@
     ],
     [
       600,
-      false
+      true
     ],
     [
       700,
@@ -57,7 +63,16 @@
       true
     ]
   ],
-  "visual_review": "Six regions directly inspected; long isolated heading wraps fixed in smartstore and delegation; final changed regions inspected again",
-  "source_values": "Root confirmed current Cafe24 API shop1/shop4 on 2026-09-30; prices match existing briefs",
-  "humanize": "direct current quick-rules review, verify_gates exit 0 golden PASS"
+  "visual_review": "Restored evidence early and middle scenes inspected; final full-page six-region inspection completed separately",
+  "source_values": "Existing per-shop price tokens compared bytewise before/after evidence restoration; unchanged",
+  "humanize": "qa/evidence-humanize: light, exit0, goldenPASS",
+  "render_size": [
+    740,
+    19318
+  ],
+  "render_method": "Chrome CDP; document.fonts.ready + images.decode + 2 animation frames before full-height screenshot",
+  "six_regions_visually_reviewed": true,
+  "evidence_blocks_visually_reviewed": true,
+  "evidence_manifest": "qa/evidence-restored.json",
+  "all_metrics_visible_in_final_render": true
 }

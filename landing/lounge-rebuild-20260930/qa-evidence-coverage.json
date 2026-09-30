@@ -1,0 +1,96 @@
+{
+  "pages": 15,
+  "pass": true,
+  "results": [
+    {
+      "book": "ai-delegation",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "ai-delegation-shop4",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "aside-blog",
+      "evidence_images": 4,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "auto-funnel",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "landing-page",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "live-400",
+      "evidence_images": 1,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "smartstore-part1",
+      "evidence_images": 3,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "threads-basic",
+      "evidence_images": 1,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "threads-premium",
+      "evidence_images": 20,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "vault-start",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "youtube-bisu",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "youtube-bisu-shop4",
+      "evidence_images": 2,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "zerobaek",
+      "evidence_images": 3,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "zerobaek-shop4",
+      "evidence_images": 3,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    },
+    {
+      "book": "ebook-concept-ecommerce-v10",
+      "evidence_images": 1,
+      "manifest_present": true,
+      "all_referenced_assets_in_page": true
+    }
+  ]
+}

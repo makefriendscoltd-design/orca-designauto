@@ -3,9 +3,9 @@
 승인된 컨셉 v10의 다크·라이트 전환, 큰 타이포 대비, 그라데이션 스포트라이트, 이모지, 광원 CTA를 스레드 내용에 맞춰 재구성했습니다. 최신 공유 3D표지를 상단·구성·마지막 모두 같은 파일로 사용합니다. 본책 실제 내지 4종, 별책·워크북 표지로 텍스트 연속 구간을 나눴습니다. AI 채팅 카드는 사용 예시로 표시했습니다.
 
 - 정본: detail.html / design.css / brief.json. 운영값 근거는 brief.json의 기존 상품·원문 경로.
-- 전체: detail_full.png 740×32623. hero.png / copy.md.
+- 전체: detail_full.png 740×51356. hero.png / copy.md.
 - 안전 슬라이스: slices/*.png. qa/validation.json에서 개수·좌표·높이합·픽셀일치 확인.
-- QA: 실제 Chrome headless, 폰트5굵기/이미지10개 로드, 가로 넘침0. 전체6구간을 직접 검수했습니다. qa/overview.jpg는 한눈에 보는 판이며 원본은 전체PNG.
+- QA: 실제 Chrome headless, 폰트5굵기/이미지27개 로드, 가로 넘침0. 전체6구간을 직접 검수했습니다. qa/overview.jpg는 한눈에 보는 판이며 원본은 전체PNG.
 - 본책61p/별책11p/워크북10p는 배송원본PDF를 PyMuPDF로 검증했습니다.
 - 330,000원 두 슬롯 일치. 상품277과별칭6개는 같은페이지 대상. 기존30부/30일실행후피드백/평생업데이트/발송후환불불가 정책 보존. 성과보장 추가없음.
 - humanize: 최신 quick-rules 직접검수, verify_gates.py gate OK, 0% 불필요윤문없음. 원고작성과최종윤문단계를분리. qa/consistency.json 가격1종 issues0.
@@ -13,3 +13,14 @@
 - 외부발행·Git·상품가격·대표이미지 변경 없음. root가 등록전실제상품상태/정책을최종대조해야 합니다.
 
 재렌더: `python3 /Users/apple/.agents/skills/detail-page/scripts/render_detail.py detail.html detail_full.png --width 740 --maxh 50000` (현재폴더에서실행).
+
+## 성과 증빙 복원 완료
+- 브랜드 판매/프로필 원본8장, 신규브랜드톡1장, 같은전자책구매자3단계, 스레드수업수강생4건, 저자사진·실측자료. `qa/evidence-restored.json`에 실제사용/통합사유·대상·기간·해시를 기록했습니다.
+- 10일1000개 신규브랜드 운영사례와 본책40일330개 사례는 별개로 표기합니다. 프로필조회수와 단일글노출342749도 구분합니다.
+- 구매자3장은 닉네임 가림/해당내용 영역을 headless로 렌더한 `buyer_*_redacted.png`만 포함합니다. 기존 원본 경로는 증빙 JSON에 남겼으며 배치에 복사했던 원본3장은 제거했습니다.
+- 원본 차트에 있던 주석·화살표는 캡처의 일부로 보존했습니다. 임의 매출 그래프를 새로 그리지 않았습니다.
+- 최종 6구간 전체와 복원8장면 원본크기 확인, 개인정보 가림 파생PNG3장 직접 확인. `_humanize/evidence-restore/gates.json` gate OK.
+- 안전슬라이스34장(1116~2436px), 합계51356px, 전체와픽셀동일.
+- `qa/before-evidence-restore/`는 누락확인용 작업중백업이며 배포/패키지 정본이 아닙니다.
+
+- 최종추가검수: 구매자후기02는 위의잘린인용답장을제외하고실제구매자후기본문만원본그대로노출하도록PNG재생성. 전체·QA·슬라이스재생성.

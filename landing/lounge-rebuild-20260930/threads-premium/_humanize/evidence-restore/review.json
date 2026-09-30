@@ -1,0 +1,15 @@
+{
+  "reviewed": true,
+  "rules": "/Users/apple/.local/share/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "genre": "sales-detail",
+  "stage": "증빙복원후마지막윤문",
+  "edits": [],
+  "notes": [
+    "사용자제공기존성과·후기를대상별라벨로복구",
+    "근거숫자·원문인용·시점보존",
+    "번역투/상투어과잉없어기계적치환없음",
+    "한고객3단계·수강생4명·브랜드운영수치구분",
+    "동일결과보장없음한번안내후주체라벨사용"
+  ],
+  "semanticChecklistPassed": 6
+}

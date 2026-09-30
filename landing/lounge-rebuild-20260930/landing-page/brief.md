@@ -15,3 +15,9 @@
 - 현재가 root 독립API교차확인 완료: 297=30000원,282=50000원;vault무료로그인.
 - humanize latest quick-rules 직접점검 및 verify_gates 결과 qa/humanize/gates.txt.
 - 표지해시 qa/validation.json. 실제등록 및 유료구매자 권한동선은 미검증.
+
+## 2026-09-30 성과근거 복구
+- 구형증거자료전수대조, qa/evidence-restored.json에대상·기간·교체/복원사유기록.
+- 누적매출카드→2021/2022/2023 연간40.5/41.3/27.6억정본그래프. 채널수치2026.09.10표기.
+- 최종740×19410, 14슬라이스. 6구간및근거섹션직접검수,DOM보호경계/높이합/픽셀일치.
+- humanize-evidence gateOK·goldenPASS. 기존가격/배송카피보존. 외부재등록은root담당.

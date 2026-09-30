@@ -35,3 +35,15 @@
 - `PROGRESS.md`: 현재 완료 상태와 미검증 범위.
 
 운영 백업과 실행 스크립트는 Cafe24 작업공간의 `launches/lounge-all-20260930/`에 보관합니다. 원본 PDF 전문이나 고객 정보는 이 폴더에 포함하지 않습니다.
+
+## 성과 증빙 복원 — 사용자 지적 후 수정
+
+첫 리빌드에서 기존 성과·후기·회사 신뢰 자료를 누락했습니다. 자료는 기존 프로젝트에 남아 있었으며, 책 본문 소개만으로 새 흐름을 만들면서 놓친 오류입니다.
+
+기존 `proof`·`reviews`·`kakao`·저자 자료와 과거 승인 지시를 다시 대조했습니다. 스레드에는 브랜드별 매출·프로필 조회수, 구매자 한 명의 후기 3단계, 수강생 4명의 후기와 저자 실측을 복원했습니다. 다른 책에도 원래의 저자·회사 실적과 커뮤니티 캡처를 복원했습니다.
+
+회사 매출은 최신 승인에 따라 누적 대신 2021년 40.5억·2022년 41.3억·2023년 27.6억을 표시합니다. 월별 원장을 독립적으로 재합산했고, 커뮤니티는 2026.09.10 캡처라는 시점을 붙였습니다. 각 책 `qa/evidence-restored.json`에 원래 자료의 유지·대체·통합 이유를 남겼습니다.
+
+`python3 scripts/check-evidence.py`는 15개 렌더 정본(12종+몰별 변형3종)의 증빙 목록과 실제 이미지 참조를 대조합니다. 사진을 직접 보는 검수를 대체하지는 않습니다.
+
+추가 근거: `evidence-recovery-threads.md`, `evidence-recovery-books.md`, `evidence-recovery-marketing.md`, `qa-evidence-coverage.json`, `qa-app-evidence-production.json`. 새 운영 백업·실행 기록은 Cafe24 작업공간의 `launches/lounge-evidence-20260930/`에 있습니다.

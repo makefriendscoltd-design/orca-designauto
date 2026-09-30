@@ -1,0 +1,8 @@
+{
+  "review": "Humanize quick-rules A-J checked on final source copy; new evidence captions state source and period directly; no invented outcome added",
+  "numbers_and_names_preserved": true,
+  "rewrite_change_rate": 0,
+  "gate_exit": 0,
+  "scope": "final HTML including restored evidence",
+  "source_check": "ledger aggregates and original cafe screenshot; existing source decisions"
+}

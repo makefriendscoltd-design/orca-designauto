@@ -1,0 +1,14 @@
+{
+  "manual_review": "quick-rules latest installed; read and audited source-based Korean draft",
+  "changes": 0,
+  "reason": "Evidence restoration draft reviewed against installed quick-rules; proper nouns, annual figures, dates and source captions preserved.",
+  "self_check": {
+    "meaning": true,
+    "proper_nouns": true,
+    "register": true,
+    "repetition": true,
+    "rhythm": true,
+    "new_claims": false
+  },
+  "gate_exit_code": 0
+}

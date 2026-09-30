@@ -1,0 +1,32 @@
+{
+  "updated": "2026-09-30",
+  "company_revenue_owner": "(주)메이크프렌즈",
+  "annual_won": {
+    "2021": 4049125971,
+    "2022": 4132622999,
+    "2023": 2758617931
+  },
+  "annual_display_eok": {
+    "2021": 40.5,
+    "2022": 41.3,
+    "2023": 27.6
+  },
+  "monthly_ledgers_checked": 40,
+  "community_snapshot_date": "2026-09-10",
+  "cafe_members": 12127,
+  "lounge_public_display": 2885,
+  "not_book_buyer_outcomes": true,
+  "scope": "HTML/CSS/local assets only, no publication",
+  "assets": [
+    {
+      "file": "assets/evidence/cafe-members.png",
+      "source": "landing/ebook-ai-delegation/assets/proof/cafe_12127.png",
+      "sha256": "9c532f545d8e1ff508e1190237640b9b31c12b0393e420096d0b799eb15b6ae4"
+    },
+    {
+      "file": "assets/evidence/lounge-members.png",
+      "source": "landing/ebook-ai-delegation/assets/proof/lounge_2885.png",
+      "sha256": "176c775971395a90fe4bac0392e27bd2858c4bd7cd6c7834e0b21642f6e5adb2"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "vault-start",
   "render_size": [
     740,
-    14957
+    18781
   ],
   "six_regions_visually_reviewed": true,
   "visual_findings": "Readable hierarchy, semantic line breaks, large native 3D cover and relevant UI/source screenshots; no text clipping found.",
@@ -11,7 +11,7 @@
     "all_fonts_loaded": true,
     "all_images_loaded": true
   },
-  "slice_count": 9,
+  "slice_count": 12,
   "cuts": [
     0,
     1532,
@@ -20,9 +20,12 @@
     6963,
     8776,
     10278,
-    11728,
-    13178,
-    14957
+    11681,
+    13190,
+    14640,
+    16090,
+    17221,
+    18781
   ],
   "slice_pixels_match_full": true,
   "cover_sha256": "e08ae09d0b0d39a951e24089ea1e99f2558b6282a288c72099cfa88e6dc6e5eb",

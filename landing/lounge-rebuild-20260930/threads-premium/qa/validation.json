@@ -1,10 +1,10 @@
 {
   "dimensions": [
     740,
-    32536
+    51356
   ],
-  "sliceCount": 22,
-  "heightSum": 32536,
+  "sliceCount": 34,
+  "heightSum": 51356,
   "pixelEquality": true,
   "allFontsLoaded": true,
   "allImagesLoaded": true,
@@ -26,107 +26,167 @@
     {
       "file": "02.png",
       "y": 2436,
-      "height": 1487
+      "height": 1563
     },
     {
       "file": "03.png",
-      "y": 3923,
-      "height": 1333
+      "y": 3999,
+      "height": 1549
     },
     {
       "file": "04.png",
-      "y": 5256,
-      "height": 1450
+      "y": 5548,
+      "height": 1541
     },
     {
       "file": "05.png",
-      "y": 6706,
-      "height": 1479
-    },
-    {
-      "file": "06.png",
-      "y": 8185,
-      "height": 1416
-    },
-    {
-      "file": "07.png",
-      "y": 9601,
-      "height": 1418
-    },
-    {
-      "file": "08.png",
-      "y": 11019,
-      "height": 1218
-    },
-    {
-      "file": "09.png",
-      "y": 12237,
+      "y": 7089,
       "height": 1450
     },
     {
+      "file": "06.png",
+      "y": 8539,
+      "height": 1471
+    },
+    {
+      "file": "07.png",
+      "y": 10010,
+      "height": 1450
+    },
+    {
+      "file": "08.png",
+      "y": 11460,
+      "height": 1415
+    },
+    {
+      "file": "09.png",
+      "y": 12875,
+      "height": 1446
+    },
+    {
       "file": "10.png",
-      "y": 13687,
-      "height": 1509
+      "y": 14321,
+      "height": 1491
     },
     {
       "file": "11.png",
-      "y": 15196,
-      "height": 1483
+      "y": 15812,
+      "height": 1407
     },
     {
       "file": "12.png",
-      "y": 16679,
-      "height": 1438
+      "y": 17219,
+      "height": 2377
     },
     {
       "file": "13.png",
-      "y": 18117,
+      "y": 19596,
       "height": 1450
     },
     {
       "file": "14.png",
-      "y": 19567,
-      "height": 1450
+      "y": 21046,
+      "height": 1264
     },
     {
       "file": "15.png",
-      "y": 21017,
-      "height": 1441
+      "y": 22310,
+      "height": 1142
     },
     {
       "file": "16.png",
-      "y": 22458,
-      "height": 1568
+      "y": 23452,
+      "height": 1487
     },
     {
       "file": "17.png",
-      "y": 24026,
-      "height": 1481
+      "y": 24939,
+      "height": 1440
     },
     {
       "file": "18.png",
-      "y": 25507,
-      "height": 1448
+      "y": 26379,
+      "height": 1577
     },
     {
       "file": "19.png",
-      "y": 26955,
+      "y": 27956,
       "height": 1450
     },
     {
       "file": "20.png",
-      "y": 28405,
-      "height": 1499
+      "y": 29406,
+      "height": 1526
     },
     {
       "file": "21.png",
-      "y": 29904,
-      "height": 1603
+      "y": 30932,
+      "height": 1450
     },
     {
       "file": "22.png",
-      "y": 31507,
-      "height": 1029
+      "y": 32382,
+      "height": 1548
+    },
+    {
+      "file": "23.png",
+      "y": 33930,
+      "height": 1483
+    },
+    {
+      "file": "24.png",
+      "y": 35413,
+      "height": 1438
+    },
+    {
+      "file": "25.png",
+      "y": 36851,
+      "height": 1450
+    },
+    {
+      "file": "26.png",
+      "y": 38301,
+      "height": 1450
+    },
+    {
+      "file": "27.png",
+      "y": 39751,
+      "height": 1441
+    },
+    {
+      "file": "28.png",
+      "y": 41192,
+      "height": 1567
+    },
+    {
+      "file": "29.png",
+      "y": 42759,
+      "height": 1481
+    },
+    {
+      "file": "30.png",
+      "y": 44240,
+      "height": 1449
+    },
+    {
+      "file": "31.png",
+      "y": 45689,
+      "height": 1450
+    },
+    {
+      "file": "32.png",
+      "y": 47139,
+      "height": 1499
+    },
+    {
+      "file": "33.png",
+      "y": 48638,
+      "height": 1602
+    },
+    {
+      "file": "34.png",
+      "y": 50240,
+      "height": 1116
     }
   ]
 }

@@ -1,0 +1,91 @@
+{
+  "id": "ai-delegation",
+  "status": "complete_local_verified_pending_publication",
+  "source_inventory": "../evidence-recovery-books.md",
+  "latest_direction": "2026-09-30 no cumulative revenue; exact yearly figures, named owners and snapshot dates adjacent to every metric",
+  "items": [
+    {
+      "key": "annual_company_revenue",
+      "previous_evidence": "landing/_ebook-premium-kit/proof-dossier.md C1-C4; prior company revenue card",
+      "current_section": "[data-evidence=\"company-annual-revenue\"]",
+      "used_assets": [],
+      "visual": "native HTML/CSS bar chart; no rising arrow",
+      "subject": "(주)메이크프렌즈",
+      "period": "2021.01-12 / 2022.01-12 / 2023.01-12",
+      "values_won": [
+        4049125971,
+        4132622999,
+        2758617931
+      ],
+      "values_display": [
+        "40.5억",
+        "41.3억",
+        "27.6억"
+      ],
+      "evidence_type": "monthly ledgers independently summed, 40 input files checked; no ledgers copied into repository",
+      "source_root": "/Users/apple/coding/aimax_obsidian/aimax_family/04_Resources/Notion",
+      "previous_image_directly_viewed": true
+    },
+    {
+      "key": "cafe_members",
+      "previous_evidence": "H1/assets/results/assets/captures/cafe_members.png; prior ebook detail cafe metric",
+      "current_section": "[data-evidence=\"community-snapshot\"]",
+      "used_assets": [
+        "assets/evidence/cafe-members.png"
+      ],
+      "subject": "메이크패밀리 네이버 카페 westudyssat",
+      "period": "2026.09.10 screenshot",
+      "values_display": [
+        "12,127명"
+      ],
+      "evidence_type": "actual public cafe UI screenshot; not current member database count",
+      "original_directly_viewed": true
+    },
+    {
+      "key": "lounge_public_participants",
+      "previous_evidence": "H1/assets/results/assets/captures/lounge_hero.png; prior ebook detail lounge metric",
+      "current_section": "[data-evidence=\"community-snapshot\"]",
+      "used_assets": [
+        "assets/evidence/lounge-members.png"
+      ],
+      "subject": "메이크패밀리 라운지 public homepage displayed population",
+      "period": "2026.09.10 screenshot",
+      "values_display": [
+        "2,885명"
+      ],
+      "evidence_type": "actual historical homepage screenshot",
+      "original_directly_viewed": true
+    }
+  ],
+  "exclusions": [
+    {
+      "item": "114.9억 cumulative headline/card",
+      "reason": "Later confirmed instruction in proof-dossier.md dated2026-09-30 says do not use cumulative revenue language; replaced by exact2021/22/23 annual values."
+    },
+    {
+      "item": "2021.12 monthly5.03억",
+      "reason": "True source monthly value but not necessary beside the stronger annual revenue evidence; no total added to annual values."
+    },
+    {
+      "item": "current community count / book buyer success count",
+      "reason": "Captures show historical community scale on2026-09-10, not present totals or book outcomes."
+    }
+  ],
+  "prices_and_delivery_unchanged": true,
+  "raw_ledger_copied": false,
+  "personal_or_customer_data_added": false,
+  "copy_gate": {
+    "required_anchors_present": true,
+    "cumulative_114_9_absent": true,
+    "price_tokens_unchanged": true,
+    "humanize_exit": 0,
+    "route": "light"
+  },
+  "visual_validation": {
+    "full_page_six_regions": true,
+    "new_early_and_middle_blocks": true,
+    "labels_visible_after_fonts_ready": true,
+    "runtime_overflow": 0,
+    "safe_slice_pixel_match": true
+  }
+}

@@ -1,6 +1,6 @@
 {
   "width": 740,
-  "height": 12913,
+  "height": 16363,
   "fonts": [
     [
       400,
@@ -12,7 +12,7 @@
     ],
     [
       600,
-      false
+      true
     ],
     [
       700,
@@ -38,6 +38,18 @@
     },
     {
       "src": "assets/pages/crop_p39.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/author.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/cafe-members.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/lounge-members.png",
       "ok": true
     },
     {
@@ -69,16 +81,16 @@
       "font": "P, sans-serif"
     },
     {
-      "selector": ".q",
-      "size": "23px",
-      "leading": "29.9px",
-      "tracking": "-0.16px",
+      "selector": "h2",
+      "size": "34px",
+      "leading": "40.8px",
+      "tracking": "-1.02px",
       "font": "P, sans-serif"
     },
     {
-      "selector": ".answer",
-      "size": "17px",
-      "leading": "25.16px",
+      "selector": "p",
+      "size": "19px",
+      "leading": "28.12px",
       "tracking": "-0.16px",
       "font": "P, sans-serif"
     }
@@ -101,136 +113,184 @@
       "bottom": 2058
     },
     {
-      "top": 2375,
-      "bottom": 2550
+      "top": 2333,
+      "bottom": 2502
     },
     {
       "top": 2533,
-      "bottom": 2676
+      "bottom": 3292
     },
     {
-      "top": 2565,
-      "bottom": 2643
+      "top": 3612,
+      "bottom": 3787
     },
     {
-      "top": 2659,
-      "bottom": 2802
+      "top": 3770,
+      "bottom": 3913
     },
     {
-      "top": 2691,
-      "bottom": 2769
+      "top": 3802,
+      "bottom": 3881
     },
     {
-      "top": 2785,
-      "bottom": 2928
+      "top": 3896,
+      "bottom": 4039
     },
     {
-      "top": 2817,
-      "bottom": 2895
+      "top": 3928,
+      "bottom": 4007
     },
     {
-      "top": 2911,
-      "bottom": 3032
+      "top": 4022,
+      "bottom": 4165
     },
     {
-      "top": 3573,
-      "bottom": 3748
+      "top": 4054,
+      "bottom": 4132
     },
     {
-      "top": 3772,
-      "bottom": 3894
+      "top": 4148,
+      "bottom": 4270
     },
     {
-      "top": 4240,
-      "bottom": 4415
+      "top": 4810,
+      "bottom": 4985
     },
     {
-      "top": 4454,
-      "bottom": 4889
+      "top": 5009,
+      "bottom": 5131
     },
     {
-      "top": 4915,
-      "bottom": 5089
+      "top": 5477,
+      "bottom": 5652
     },
     {
-      "top": 5120,
-      "bottom": 5724
+      "top": 5691,
+      "bottom": 6127
     },
     {
-      "top": 6140,
-      "bottom": 6315
+      "top": 5691,
+      "bottom": 6050
     },
     {
-      "top": 6353,
-      "bottom": 6726
+      "top": 6152,
+      "bottom": 6326
     },
     {
-      "top": 7070,
-      "bottom": 7191
+      "top": 6357,
+      "bottom": 6962
     },
     {
-      "top": 7731,
-      "bottom": 7906
+      "top": 7377,
+      "bottom": 7552
     },
     {
-      "top": 7945,
-      "bottom": 8309
+      "top": 7591,
+      "bottom": 7964
     },
     {
-      "top": 8344,
-      "bottom": 8929
+      "top": 7591,
+      "bottom": 7887
     },
     {
-      "top": 9196,
-      "bottom": 9292
+      "top": 8307,
+      "bottom": 8429
     },
     {
-      "top": 9331,
-      "bottom": 9508
+      "top": 8969,
+      "bottom": 9144
     },
     {
-      "top": 9522,
-      "bottom": 9707
+      "top": 9182,
+      "bottom": 9546
     },
     {
-      "top": 9754,
-      "bottom": 9931
+      "top": 9182,
+      "bottom": 9469
     },
     {
-      "top": 9945,
-      "bottom": 10177
+      "top": 9581,
+      "bottom": 10166
     },
     {
-      "top": 10223,
-      "bottom": 10400
+      "top": 10522,
+      "bottom": 10876
     },
     {
-      "top": 10415,
-      "bottom": 10646
+      "top": 10522,
+      "bottom": 10876
     },
     {
-      "top": 11060,
-      "bottom": 11235
+      "top": 10911,
+      "bottom": 11079
     },
     {
-      "top": 11261,
-      "bottom": 12060
+      "top": 11109,
+      "bottom": 11801
     },
     {
-      "top": 12085,
-      "bottom": 12206
+      "top": 11337,
+      "bottom": 11673
     },
     {
-      "top": 12238,
-      "bottom": 12378
+      "top": 11825,
+      "bottom": 12445
     },
     {
-      "top": 12409,
-      "bottom": 12531
+      "top": 12053,
+      "bottom": 12317
     },
     {
-      "top": 12741,
-      "bottom": 12857
+      "top": 12646,
+      "bottom": 12742
+    },
+    {
+      "top": 12781,
+      "bottom": 12958
+    },
+    {
+      "top": 12972,
+      "bottom": 13157
+    },
+    {
+      "top": 13203,
+      "bottom": 13380
+    },
+    {
+      "top": 13395,
+      "bottom": 13627
+    },
+    {
+      "top": 13673,
+      "bottom": 13850
+    },
+    {
+      "top": 13864,
+      "bottom": 14096
+    },
+    {
+      "top": 14510,
+      "bottom": 14685
+    },
+    {
+      "top": 14710,
+      "bottom": 15509
+    },
+    {
+      "top": 15535,
+      "bottom": 15656
+    },
+    {
+      "top": 15687,
+      "bottom": 15828
+    },
+    {
+      "top": 15859,
+      "bottom": 15981
+    },
+    {
+      "top": 16190,
+      "bottom": 16306
     }
   ],
   "sections": [
@@ -244,48 +304,60 @@
       "i": 1,
       "id": "",
       "y": 2161,
-      "h": 993
+      "h": 1237
     },
     {
       "i": 2,
       "id": "",
-      "y": 3154,
-      "h": 872
+      "y": 3399,
+      "h": 993
     },
     {
       "i": 3,
       "id": "",
-      "y": 4026,
-      "h": 1900
+      "y": 4391,
+      "h": 872
     },
     {
       "i": 4,
       "id": "",
-      "y": 5926,
-      "h": 1387
+      "y": 5264,
+      "h": 1900
     },
     {
       "i": 5,
       "id": "",
-      "y": 7313,
-      "h": 1789
+      "y": 7163,
+      "h": 1387
     },
     {
       "i": 6,
       "id": "",
-      "y": 9102,
-      "h": 1729
+      "y": 8550,
+      "h": 1789
     },
     {
       "i": 7,
       "id": "",
-      "y": 10831,
-      "h": 1836
+      "y": 10340,
+      "h": 2213
     },
     {
       "i": 8,
       "id": "",
-      "y": 12667,
+      "y": 12552,
+      "h": 1729
+    },
+    {
+      "i": 9,
+      "id": "",
+      "y": 14281,
+      "h": 1836
+    },
+    {
+      "i": 10,
+      "id": "",
+      "y": 16117,
       "h": 246
     }
   ],
@@ -296,11 +368,11 @@
   "emoji": [
     {
       "text": "🌱",
-      "y": 3403.171875
+      "y": 4640.390625
     },
     {
       "text": "🤝",
-      "y": 7576.296875
+      "y": 8813.515625
     }
   ]
 }
