@@ -1,0 +1,19 @@
+{
+  "cover": {
+    "source": "/Users/apple/orca/workspaces/minsoo/패밀리라운지/handoff/cafe24-thumbnail-sync-20260930/after.html",
+    "native_component": "memberapps-home-editorial/components/BookCover.js",
+    "cover_title": "팔리는 컨셉 종결서",
+    "method": "Headless screenshot of existing native 3D component; transparent backdrop; no repaint",
+    "sha256": "95ede14d241048f4a0be1f79849a3bd3c2b1f417153cc329529d754866297403"
+  },
+  "photos": {
+    "towel": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/002-p006-1.webp",
+    "cocoa": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/008-p025-1.webp",
+    "seller": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/012-p043-1.webp",
+    "sunscreen": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/024-p089-1.webp",
+    "purchase": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/044-p177-1.webp",
+    "product-work": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/010-p032-1.webp",
+    "shooting": "incoming/lounge-ebooks-20260929/lounge-books/concept-ecommerce/assets/059-p237-1.webp"
+  },
+  "photo_note": "Book-source illustrative images; not evidence of performance or verified original photography."
+}

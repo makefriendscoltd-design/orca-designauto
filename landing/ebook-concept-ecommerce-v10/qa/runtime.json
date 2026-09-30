@@ -1,0 +1,255 @@
+{
+  "width": 740,
+  "height": 50441,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    },
+    {
+      "src": "assets/towel.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/cocoa.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/product-work.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/seller.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/sunscreen.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/purchase.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/yoon_cut_v2.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    },
+    {
+      "src": "assets/shooting.webp",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "53px",
+      "leading": "59.36px",
+      "tracking": "-1.06px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".lead",
+      "size": "29px",
+      "leading": "33.64px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".body",
+      "size": "18px",
+      "leading": "25.56px",
+      "tracking": "-0.18px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".faq-question",
+      "size": "27px",
+      "leading": "35.64px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".answer",
+      "size": "18px",
+      "leading": "26.1px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 3605
+    },
+    {
+      "i": 1,
+      "id": "results",
+      "y": 3605,
+      "h": 4289
+    },
+    {
+      "i": 2,
+      "id": "reframe",
+      "y": 7894,
+      "h": 2698
+    },
+    {
+      "i": 3,
+      "id": "methods",
+      "y": 10592,
+      "h": 10190
+    },
+    {
+      "i": 4,
+      "id": "practice",
+      "y": 20782,
+      "h": 3840
+    },
+    {
+      "i": 5,
+      "id": "author",
+      "y": 24622,
+      "h": 3627
+    },
+    {
+      "i": 6,
+      "id": "apply",
+      "y": 28249,
+      "h": 4409
+    },
+    {
+      "i": 7,
+      "id": "deliver",
+      "y": 32657,
+      "h": 5980
+    },
+    {
+      "i": 8,
+      "id": "fit",
+      "y": 38637,
+      "h": 2694
+    },
+    {
+      "i": 9,
+      "id": "price-thought",
+      "y": 41332,
+      "h": 1539
+    },
+    {
+      "i": 10,
+      "id": "price",
+      "y": 42870,
+      "h": 1497
+    },
+    {
+      "i": 11,
+      "id": "faq",
+      "y": 44367,
+      "h": 4634
+    },
+    {
+      "i": 12,
+      "id": "final",
+      "y": 49001,
+      "h": 734
+    },
+    {
+      "i": 13,
+      "id": "notes",
+      "y": 49735,
+      "h": 706
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": [
+      63,
+      128,
+      171,
+      180
+    ]
+  },
+  "emoji": [
+    {
+      "text": "🫧",
+      "y": 5685.78125
+    },
+    {
+      "text": "🤔",
+      "y": 8527.9375
+    },
+    {
+      "text": "⚙️",
+      "y": 11844.1875
+    },
+    {
+      "text": "🧑‍💼",
+      "y": 14321.28125
+    },
+    {
+      "text": "🎭",
+      "y": 15786.59375
+    },
+    {
+      "text": "⏰",
+      "y": 17568.328125
+    },
+    {
+      "text": "🪜",
+      "y": 19219.59375
+    },
+    {
+      "text": "✍️",
+      "y": 21003.15625
+    },
+    {
+      "text": "🧭",
+      "y": 27633.09375
+    },
+    {
+      "text": "🚀",
+      "y": 28824.140625
+    },
+    {
+      "text": "🤔",
+      "y": 29260.109375
+    },
+    {
+      "text": "📄",
+      "y": 37878.53125
+    },
+    {
+      "text": "💡",
+      "y": 41468.40625
+    }
+  ]
+}

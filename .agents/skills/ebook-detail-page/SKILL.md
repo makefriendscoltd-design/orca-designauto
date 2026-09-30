@@ -24,6 +24,8 @@ description: 무료·유료 전자책, PDF 가이드, 프롬프트북의 상세�
 
 ## 2. 디자인 문법을 고른다
 
+레퍼런스 이미지 기반 재구현·고급화 요청에는 [재구현 기준](references/reference-rebuild.md)을 먼저 적용한다. 승인 사례는 `landing/ebook-concept-ecommerce-v10/`이다.
+
 | 조건 | 문법 | 폭 | 도구 |
 |---|---|---:|---|
 | 별도 스타일 지시 없음 | 범용 전자책 상세 | 1080px | `$detail-page`, `$detail-launch` |
