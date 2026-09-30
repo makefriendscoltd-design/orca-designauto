@@ -20,3 +20,6 @@ section{background:transparent;padding:76px 48px}.opening{background:radial-grad
 .fit{background:transparent;box-shadow:none;border-radius:0;padding-left:0;padding-right:0}
 .qa-item h3 span{display:inline-block;margin-bottom:0}
 .lesson p.note{font-size:20px;line-height:1.5;color:#8faab8}
+
+/* User-specified hero copy: 유튜브 1만 AI로 만드는 비법서. */
+.hero .hero-million{font-size:78px;line-height:1.16}.hero-million>strong{font-size:116px;line-height:1;font-weight:800;letter-spacing:-.07em;color:#fff}.hero-million>.metal{display:inline-block;margin-top:14px}

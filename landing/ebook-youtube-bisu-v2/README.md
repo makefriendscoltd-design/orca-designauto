@@ -9,9 +9,11 @@
 - 누적매출카드는 최신 사용자 승인 ASIDE 정본을 재사용. 2021.01~2024.04 회사전체114.9억원. 과거 annual-only 메모보다 현재 승인누적형식을 우선한다.
 - 라운지 가이드와 영상 제작 본책69쪽/별책43쪽을 구분. PDF페이지수 실제재확인; qa/content-evidence.json.
 - 원문: incoming/lounge-ebooks-20260929/lounge-books/youtube-bisu/원문.md 및 pdf-books/ebook-ai-video-staff/asset-28.pdf,asset-29.pdf.
-- 결과: detail_full.png 740×20193, 안전슬라이스13장, preview.html 390/740실브라우저 로드·틈0·넘침0, 재조립픽셀일치. 6구간 직접검수.
+- 결과: detail_full.png 740×20237, 안전슬라이스13장, preview.html 390/740실브라우저 로드·틈0·넘침0, 재조립픽셀일치. 6구간 직접검수.
 - 한글 quick-rules 검토와 의미·수치보존 게이트PASS. qa/humanize/.
 - 가격/날짜/상품번호 품질게이트: qa/launch-consistency.json.
 - 제작범위 완료. 이번 v2 운영교체는 실행하지 않음. 실제결제·권한부여·수령은 미검증.
 
 재현: node qa/render.mjs <상품폴더절대경로> → python3 qa/package.py → node qa/check-preview.mjs <상품폴더절대경로>.
+
+후속 히어로: 사용자 지정 “유튜브 1만 / AI로 만드는 비법서”. 1만을116px로 강조. 나머지 본문HTML 동일 검증. qa/hero-copy-verification.json.
