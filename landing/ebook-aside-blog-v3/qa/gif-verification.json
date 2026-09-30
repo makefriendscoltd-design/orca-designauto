@@ -1,10 +1,11 @@
 {
-  "frames": 170,
-  "duration_ms": 17000,
+  "frames": 105,
+  "duration_ms": 7000,
   "loop": 0,
-  "unique_frames": 111,
+  "unique_frames": 105,
   "size": [
     740,
     600
-  ]
+  ],
+  "speed": 2
 }

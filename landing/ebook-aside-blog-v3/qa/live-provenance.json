@@ -1,36 +1,44 @@
 {
   "source_video": "/Users/apple/orca/workspaces/minsoo/SSH-원격접근/blog-lecture-20260928/source/jNzt7Ejq4bQ.mp4",
-  "source_youtube": "https://www.youtube.com/watch?v=jNzt7Ejq4bQ",
-  "source_title": "AI employee blog writing ASIDE live",
-  "source_date": "2026-09-22",
-  "source_size": [
-    1920,
-    1080
-  ],
-  "start_seconds": 2085,
-  "end_seconds": 2102,
-  "start_timecode": "00:34:45",
-  "end_timecode": "00:35:02",
-  "speed": 1,
+  "source_start_seconds": 2086.5,
+  "source_end_seconds": 2100.5,
+  "source_timecode": "00:34:46.500–00:35:00.500",
+  "speed": 2,
   "crop": {
     "x": 292,
     "y": 80,
     "width": 1160,
     "height": 940
   },
-  "output": {
-    "file": "aside-live-writing.gif",
-    "width": 740,
-    "height": 600,
-    "fps": 10,
-    "frames": 170,
-    "duration_seconds": 17,
-    "bytes": 557920,
-    "loop": 0
-  },
-  "poster": {
-    "file": "aside-live-poster.png",
-    "source_seconds": 2097
-  },
-  "observed": "Blank editor becomes title/body and image appears. Native source recording, no typing recreation. Sidebars, account controls and presenter excluded. Editor image library remains visible because it is part of insertion."
+  "output_size": [
+    740,
+    600
+  ],
+  "duration_seconds": 7.0,
+  "gif_frames": 105,
+  "unique_decoded_gif_frames": 105,
+  "gif_loop": 0,
+  "gif_bytes": 1284488,
+  "mp4_bytes": 128198,
+  "audio": "removed",
+  "editing": "Single continuous source segment, 2x speed. Crop and scale only. No recreated actions.",
+  "observed_stages": [
+    {
+      "output_seconds": 0,
+      "description": "Empty blog editor"
+    },
+    {
+      "output_seconds": 1,
+      "description": "Title and first body paragraph inserted"
+    },
+    {
+      "output_seconds": 4.5,
+      "description": "Sofa image inserted below body"
+    },
+    {
+      "output_seconds": 6.5,
+      "description": "Title, paragraph and sofa image visible together"
+    }
+  ],
+  "poster_source_seconds": 2099.5
 }

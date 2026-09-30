@@ -1,0 +1,18 @@
+{
+  "pdf_pages": 28,
+  "source": "incoming/lounge-ebooks-20260929/pdf-books/ebook-aside-blog/asset-35.pdf",
+  "anchors": {
+    "ASIDE를 설치할 맥 또는 윈도우 컴퓨터": true,
+    "복사해서 쓸 프롬프트": true,
+    "중단된 작업 다시 이어가기": true,
+    "필요할 때 ASIDE CLI 사용하기": true
+  },
+  "verbatim_prompt_match": true,
+  "pc_scope": "Book installation guidance for Mac/Windows; no current OS version guarantee",
+  "screenshot_explanations": [
+    "Ask Aside input field",
+    "Title and first paragraph entered",
+    "Eight verification checks"
+  ],
+  "motion": "Source 2086.5–2100.5 seconds at 2x, not reenacted"
+}
