@@ -1,0 +1,66 @@
+{
+  "product_no": 284,
+  "version": "v10",
+  "date": "2026-09-30",
+  "shop_numbers": [
+    1,
+    4
+  ],
+  "updated_fields": [
+    "description",
+    "mobile_description"
+  ],
+  "image_count": 34,
+  "api_readback": [
+    {
+      "product_no": 284,
+      "shop_no": 1,
+      "description_exact": true,
+      "mobile_exact": true,
+      "other_fields_unchanged": true
+    },
+    {
+      "product_no": 284,
+      "shop_no": 4,
+      "description_exact": true,
+      "mobile_exact": true,
+      "other_fields_unchanged": true
+    }
+  ],
+  "public_readback": [
+    {
+      "shop_no": 1,
+      "mobile": false,
+      "status": 200,
+      "images": 34,
+      "price": "30,000",
+      "ok": true
+    },
+    {
+      "shop_no": 1,
+      "mobile": true,
+      "status": 200,
+      "images": 34,
+      "price": "30,000",
+      "ok": true
+    },
+    {
+      "shop_no": 4,
+      "mobile": false,
+      "status": 200,
+      "images": 34,
+      "price": "30,000",
+      "ok": true
+    },
+    {
+      "shop_no": 4,
+      "mobile": true,
+      "status": 200,
+      "images": 34,
+      "price": "30,000",
+      "ok": true
+    }
+  ],
+  "tracking": "provider readback succeeded; website ledger recorded",
+  "rollback_directory": "/Users/apple/orca/projects/cafe24/launches/concept-v10-20260930/backup"
+}
