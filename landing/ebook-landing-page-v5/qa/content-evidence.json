@@ -1,0 +1,25 @@
+{
+  "source": "incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.md 30장",
+  "image_source": "OpenAI image_gen, newly generated explanation triptych",
+  "image_use": "fictional skincare case illustration, marked AI-generated in page; not customer/product/results photography",
+  "cover_sha256": "72b9973e413da9d5f0ff7a875fd578cde4c5e62f2f9a47ecbf47ee8e3ae30e3c",
+  "retention": {
+    "cover": "same original",
+    "cumulative_revenue": "114.9억 and40.5/81.8/109.4/114.9 unchanged, smaller company-experience block",
+    "cafe_and_lounge_members": "removed per explicit user approval; not relevant to landing competence"
+  },
+  "reference": "local creatus capture + concept-v10/qa/compare-methods.jpg; same-width comparison reviewed at /tmp/landing-v5-reference.jpg; third-party reference image excluded from deliverables",
+  "measurements": {
+    "canvas": 740,
+    "case_heading": 72,
+    "body": 34,
+    "leading": 1.45,
+    "tracking_em": -0.022,
+    "photo_widths": [
+      644,
+      740
+    ],
+    "heading_to_image": 37
+  },
+  "qa": "all6regions inspected;390/740loaded nooverflow nogaps; assembled pixelmatch"
+}
