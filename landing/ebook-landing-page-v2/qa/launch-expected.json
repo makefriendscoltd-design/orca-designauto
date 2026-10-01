@@ -1,0 +1,21 @@
+{
+  "required_prices": [
+    "30000\uc6d0"
+  ],
+  "allowed_prices": [
+    "30000\uc6d0"
+  ],
+  "allowed_product_ids": [
+    "297"
+  ],
+  "allowed_dates": [
+    "2026-09-10",
+    "2026.09.10",
+    "2026-09-29",
+    "2026-09-30",
+    "2026-10-01"
+  ],
+  "allowed_times": [
+    "1:02"
+  ]
+}

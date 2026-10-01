@@ -1,0 +1,37 @@
+{
+  "source_directory": "/Users/apple/coding/aimax_obsidian/aimax_family/04_Resources/Notion",
+  "source_files": 40,
+  "points": [
+    {
+      "year": 2021,
+      "through": "12",
+      "annual_won": 4049125971,
+      "cumulative_won": 4049125971,
+      "display_eok": "40.5"
+    },
+    {
+      "year": 2022,
+      "through": "12",
+      "annual_won": 4132622999,
+      "cumulative_won": 8181748970,
+      "display_eok": "81.8"
+    },
+    {
+      "year": 2023,
+      "through": "12",
+      "annual_won": 2758617931,
+      "cumulative_won": 10940366901,
+      "display_eok": "109.4"
+    },
+    {
+      "year": 2024,
+      "through": "04",
+      "annual_won": 546721361,
+      "cumulative_won": 11487088262,
+      "display_eok": "114.9"
+    }
+  ],
+  "total_won": 11487088262,
+  "blog_marketing_context": "Current user confirms blog marketing contributed to company sales; no channel-specific attribution or claim that all revenue came from blog marketing.",
+  "supersedes": "Current user explicitly requests cumulative revenue, superseding earlier annual-only instruction for ASIDE v3."
+}

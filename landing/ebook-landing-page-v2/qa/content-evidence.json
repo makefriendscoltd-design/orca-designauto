@@ -1,0 +1,19 @@
+{
+  "source": "incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.md",
+  "chapters": [
+    "ch13: hero five elements",
+    "ch25: proof placement",
+    "ch28: reviews",
+    "ch32: post-action guidance",
+    "ch38: all-in-one cosmetics hero example"
+  ],
+  "original_asset_sha256": {
+    "current-cover.png": "72b9973e413da9d5f0ff7a875fd578cde4c5e62f2f9a47ecbf47ee8e3ae30e3c",
+    "proof/cafe-members.png": "6e89533c545b9bfdad13fd5e4b946f31f5c0c9c4272422bb38433ee8dea4f93d",
+    "proof/lounge-home.jpg": "3d58887daf69381cd64e30861d8eb047e5007a63394f6fc3798faf6cd0d9d8f4"
+  },
+  "reconstructed_examples": "before/after hero and exercise notes are labeled editorial examples, not customer results",
+  "revenue": "company cumulative; qa/cumulative-revenue-verification.json",
+  "visual_review": "all six regions directly inspected; source cover and screenshots retained",
+  "publication": "new description not published; product titles synced separately"
+}
