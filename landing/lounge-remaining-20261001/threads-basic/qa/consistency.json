@@ -1,0 +1,64 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/qa/launch-expected.json"
+  ],
+  "files_scanned": 17,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 2,
+      "prices": 0,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>threads-basic 상세페이지</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/detail.html"
+        },
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/qa/humanize/final.md"
+        }
+      ],
+      "2026-09-30": [
+        {
+          "context": "/* Existing operating evidence restored after the 2026-09-30 source audit. */",
+          "line": 37,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/design.css"
+        }
+      ]
+    },
+    "prices": {},
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/threads-basic/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}

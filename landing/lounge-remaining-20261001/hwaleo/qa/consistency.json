@@ -1,0 +1,145 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/launch-expected.json"
+  ],
+  "files_scanned": 18,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 1,
+      "prices": 1,
+      "product_ids": 1,
+      "times": 1,
+      "urls": 3
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-29": [
+        {
+          "context": "/* 전자책 프리미엄 키트 — aimax-threads-premium/concept4_premium.html 에서 추출 (2026-09-29). 폰트·에셋 경로는 책 폴더 기준 ../_ebook-premium-kit/ 로 바꿔 쓴다 */",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/premium.css"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "\"display_price\": \"30,000원\",",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/brief.json"
+        },
+        {
+          "context": "30,000원",
+          "line": 11,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/copy.md"
+        },
+        {
+          "context": "30,000원",
+          "line": 93,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "30,000원",
+          "line": 11,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/humanize/input.txt"
+        },
+        {
+          "context": "30,000원",
+          "line": 93,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/humanize/input.txt"
+        },
+        {
+          "context": "30,000원",
+          "line": 11,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/humanize/final.md"
+        },
+        {
+          "context": "30,000원",
+          "line": 93,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/humanize/final.md"
+        }
+      ]
+    },
+    "product_ids": {
+      "403": [
+        {
+          "context": "\"purchase_url\": \"https://makefamily.kr/product/detail.html?product_no=403&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-hwaleo\"",
+          "line": 10,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/brief.json"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        }
+      ]
+    },
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/qa/package.py"
+        }
+      ]
+    },
+    "urls": {
+      "http://www.w3.org/2000/svg": [
+        {
+          "context": "background-image:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><fe",
+          "line": 29,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/premium.css"
+        }
+      ],
+      "https://makefamily.kr/product/detail.html?product_no=403&amp;utm_source=lounge&amp;utm_medium=referral&amp;utm_campaign=261001-ebooks&amp;utm_content=ebook-hwaleo": [
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>실패로 배우는 100가지 마인드셋</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><st",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/detail.html"
+        }
+      ],
+      "https://makefamily.kr/product/detail.html?product_no=403&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-hwaleo": [
+        {
+          "context": "\"purchase_url\": \"https://makefamily.kr/product/detail.html?product_no=403&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-hwaleo\"",
+          "line": 10,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/hwaleo/brief.json"
+        }
+      ]
+    }
+  }
+}

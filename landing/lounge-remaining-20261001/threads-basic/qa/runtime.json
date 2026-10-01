@@ -1,0 +1,319 @@
+{
+  "motion": [],
+  "width": 740,
+  "height": 16200,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/cafe-members-202609.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "49px",
+      "leading": "55.86px",
+      "tracking": "-2.205px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "24px",
+      "leading": "28.8px",
+      "tracking": "-0.84px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 173,
+      "bottom": 293
+    },
+    {
+      "top": 317,
+      "bottom": 542
+    },
+    {
+      "top": 627,
+      "bottom": 1502
+    },
+    {
+      "top": 1530,
+      "bottom": 1583
+    },
+    {
+      "top": 1798,
+      "bottom": 1922
+    },
+    {
+      "top": 1996,
+      "bottom": 2054
+    },
+    {
+      "top": 2207,
+      "bottom": 2260
+    },
+    {
+      "top": 2744,
+      "bottom": 2817
+    },
+    {
+      "top": 3293,
+      "bottom": 3475
+    },
+    {
+      "top": 3570,
+      "bottom": 3622
+    },
+    {
+      "top": 3984,
+      "bottom": 4114
+    },
+    {
+      "top": 4419,
+      "bottom": 4684
+    },
+    {
+      "top": 6223,
+      "bottom": 6297
+    },
+    {
+      "top": 6310,
+      "bottom": 6492
+    },
+    {
+      "top": 7204,
+      "bottom": 7255
+    },
+    {
+      "top": 7298,
+      "bottom": 7428
+    },
+    {
+      "top": 7828,
+      "bottom": 8010
+    },
+    {
+      "top": 9596,
+      "bottom": 9779
+    },
+    {
+      "top": 9873,
+      "bottom": 9925
+    },
+    {
+      "top": 9940,
+      "bottom": 10127
+    },
+    {
+      "top": 10216,
+      "bottom": 10346
+    },
+    {
+      "top": 10574,
+      "bottom": 10645
+    },
+    {
+      "top": 10701,
+      "bottom": 10880
+    },
+    {
+      "top": 11092,
+      "bottom": 11165
+    },
+    {
+      "top": 11197,
+      "bottom": 11585
+    },
+    {
+      "top": 11197,
+      "bottom": 11513
+    },
+    {
+      "top": 11813,
+      "bottom": 11871
+    },
+    {
+      "top": 11884,
+      "bottom": 11984
+    },
+    {
+      "top": 12069,
+      "bottom": 12908
+    },
+    {
+      "top": 13394,
+      "bottom": 13546
+    },
+    {
+      "top": 13650,
+      "bottom": 13772
+    },
+    {
+      "top": 13814,
+      "bottom": 14001
+    },
+    {
+      "top": 14307,
+      "bottom": 14406
+    },
+    {
+      "top": 14614,
+      "bottom": 14688
+    },
+    {
+      "top": 14705,
+      "bottom": 14958
+    },
+    {
+      "top": 15166,
+      "bottom": 15240
+    },
+    {
+      "top": 15256,
+      "bottom": 15509
+    },
+    {
+      "top": 15816,
+      "bottom": 15876
+    },
+    {
+      "top": 15896,
+      "bottom": 16086
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1663
+    },
+    {
+      "i": 1,
+      "id": "",
+      "y": 1663,
+      "h": 1344
+    },
+    {
+      "i": 2,
+      "id": "starting-point",
+      "y": 3008,
+      "h": 1220
+    },
+    {
+      "i": 3,
+      "id": "formats",
+      "y": 4228,
+      "h": 1851
+    },
+    {
+      "i": 4,
+      "id": "readability",
+      "y": 6079,
+      "h": 1463
+    },
+    {
+      "i": 5,
+      "id": "sales-post",
+      "y": 7542,
+      "h": 1863
+    },
+    {
+      "i": 6,
+      "id": "record",
+      "y": 9405,
+      "h": 1055
+    },
+    {
+      "i": 7,
+      "id": "community-record",
+      "y": 10460,
+      "h": 1239
+    },
+    {
+      "i": 8,
+      "id": "offer",
+      "y": 11699,
+      "h": 2416
+    },
+    {
+      "i": 9,
+      "id": "faq",
+      "y": 14115,
+      "h": 1587
+    },
+    {
+      "i": 10,
+      "id": "notes",
+      "y": 15702,
+      "h": 498
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": [
+    {
+      "text": "💬",
+      "y": 3130.234375
+    },
+    {
+      "text": "🧩",
+      "y": 7664.765625
+    }
+  ]
+}

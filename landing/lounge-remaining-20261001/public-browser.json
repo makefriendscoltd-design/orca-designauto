@@ -1,0 +1,420 @@
+[
+  {
+    "slug": "ai-delegation",
+    "width": 390,
+    "images": 13,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 20000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "ai-delegation",
+    "width": 1280,
+    "images": 13,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 20000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "hwaleo",
+    "width": 390,
+    "images": 6,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "hwaleo",
+    "width": 1280,
+    "images": 6,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "landing-page",
+    "width": 390,
+    "images": 9,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "landing-page",
+    "width": 1280,
+    "images": 9,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "live-400",
+    "width": 390,
+    "images": 12,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "live-400",
+    "width": 1280,
+    "images": 12,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "naver-search",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "naver-search",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "smartstore-part1",
+    "width": 390,
+    "images": 13,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "smartstore-part1",
+    "width": 1280,
+    "images": 13,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "smartstore-part2",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "smartstore-part2",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "smartstore-part3",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "smartstore-part3",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "threads-basic",
+    "width": 390,
+    "images": 11,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 0,
+    "boxWidth": 390
+  },
+  {
+    "slug": "threads-basic",
+    "width": 1280,
+    "images": 11,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 0,
+    "boxWidth": 740
+  },
+  {
+    "slug": "zerobaek",
+    "width": 390,
+    "images": 11,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 0,
+    "boxWidth": 390
+  },
+  {
+    "slug": "zerobaek",
+    "width": 1280,
+    "images": 11,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 0,
+    "boxWidth": 740
+  }
+]

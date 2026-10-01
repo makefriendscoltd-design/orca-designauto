@@ -1,0 +1,449 @@
+{
+  "motion": [],
+  "width": 740,
+  "height": 18102,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/current-cover.png",
+      "ok": true
+    },
+    {
+      "src": "assets/003-02-win-documents.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/004-03-mac-documents.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/002-05-obsidian-open.webp",
+      "ok": true
+    },
+    {
+      "src": "assets/proof/lounge-home.jpg",
+      "ok": true
+    },
+    {
+      "src": "assets/proof/cafe-members.png",
+      "ok": true
+    },
+    {
+      "src": "assets/current-cover.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "46px",
+      "leading": "52.44px",
+      "tracking": "-2.07px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "39px",
+      "leading": "46.8px",
+      "tracking": "-1.365px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 159,
+      "bottom": 278
+    },
+    {
+      "top": 304,
+      "bottom": 516
+    },
+    {
+      "top": 564,
+      "bottom": 1422
+    },
+    {
+      "top": 583,
+      "bottom": 1381
+    },
+    {
+      "top": 1498,
+      "bottom": 1625
+    },
+    {
+      "top": 1858,
+      "bottom": 2136
+    },
+    {
+      "top": 2376,
+      "bottom": 2725
+    },
+    {
+      "top": 2413,
+      "bottom": 2459
+    },
+    {
+      "top": 2465,
+      "bottom": 2533
+    },
+    {
+      "top": 2542,
+      "bottom": 2645
+    },
+    {
+      "top": 2376,
+      "bottom": 2725
+    },
+    {
+      "top": 2413,
+      "bottom": 2459
+    },
+    {
+      "top": 2465,
+      "bottom": 2533
+    },
+    {
+      "top": 2542,
+      "bottom": 2688
+    },
+    {
+      "top": 2768,
+      "bottom": 3168
+    },
+    {
+      "top": 2814,
+      "bottom": 2860
+    },
+    {
+      "top": 2866,
+      "bottom": 2999
+    },
+    {
+      "top": 3008,
+      "bottom": 3122
+    },
+    {
+      "top": 3453,
+      "bottom": 3644
+    },
+    {
+      "top": 3682,
+      "bottom": 4170
+    },
+    {
+      "top": 3682,
+      "bottom": 4067
+    },
+    {
+      "top": 4201,
+      "bottom": 4326
+    },
+    {
+      "top": 4365,
+      "bottom": 4852
+    },
+    {
+      "top": 4365,
+      "bottom": 4750
+    },
+    {
+      "top": 5136,
+      "bottom": 5327
+    },
+    {
+      "top": 5366,
+      "bottom": 5854
+    },
+    {
+      "top": 5366,
+      "bottom": 5751
+    },
+    {
+      "top": 5896,
+      "bottom": 6287
+    },
+    {
+      "top": 5942,
+      "bottom": 5988
+    },
+    {
+      "top": 5994,
+      "bottom": 6069
+    },
+    {
+      "top": 6078,
+      "bottom": 6240
+    },
+    {
+      "top": 6608,
+      "bottom": 6799
+    },
+    {
+      "top": 6842,
+      "bottom": 7336
+    },
+    {
+      "top": 7378,
+      "bottom": 7933
+    },
+    {
+      "top": 7491,
+      "bottom": 7577
+    },
+    {
+      "top": 7590,
+      "bottom": 7749
+    },
+    {
+      "top": 7964,
+      "bottom": 8143
+    },
+    {
+      "top": 8465,
+      "bottom": 8656
+    },
+    {
+      "top": 8698,
+      "bottom": 9215
+    },
+    {
+      "top": 9257,
+      "bottom": 9648
+    },
+    {
+      "top": 9303,
+      "bottom": 9349
+    },
+    {
+      "top": 9355,
+      "bottom": 9430
+    },
+    {
+      "top": 9439,
+      "bottom": 9601
+    },
+    {
+      "top": 9942,
+      "bottom": 10124
+    },
+    {
+      "top": 10266,
+      "bottom": 10324
+    },
+    {
+      "top": 10477,
+      "bottom": 10530
+    },
+    {
+      "top": 11015,
+      "bottom": 11087
+    },
+    {
+      "top": 11477,
+      "bottom": 12008
+    },
+    {
+      "top": 11524,
+      "bottom": 12007
+    },
+    {
+      "top": 12022,
+      "bottom": 12112
+    },
+    {
+      "top": 12147,
+      "bottom": 12285
+    },
+    {
+      "top": 12311,
+      "bottom": 12432
+    },
+    {
+      "top": 12726,
+      "bottom": 13495
+    },
+    {
+      "top": 12774,
+      "bottom": 13494
+    },
+    {
+      "top": 13510,
+      "bottom": 13599
+    },
+    {
+      "top": 13886,
+      "bottom": 14054
+    },
+    {
+      "top": 14260,
+      "bottom": 14341
+    },
+    {
+      "top": 14445,
+      "bottom": 14698
+    },
+    {
+      "top": 14904,
+      "bottom": 14985
+    },
+    {
+      "top": 15088,
+      "bottom": 15342
+    },
+    {
+      "top": 15548,
+      "bottom": 15692
+    },
+    {
+      "top": 15796,
+      "bottom": 16049
+    },
+    {
+      "top": 16296,
+      "bottom": 16400
+    },
+    {
+      "top": 16439,
+      "bottom": 16586
+    },
+    {
+      "top": 16640,
+      "bottom": 17476
+    },
+    {
+      "top": 17459,
+      "bottom": 17579
+    },
+    {
+      "top": 17618,
+      "bottom": 17743
+    },
+    {
+      "top": 17882,
+      "bottom": 17955
+    },
+    {
+      "top": 17972,
+      "bottom": 18066
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1706
+    },
+    {
+      "i": 1,
+      "id": "roles",
+      "y": 1706,
+      "h": 1602
+    },
+    {
+      "i": 2,
+      "id": "unzip",
+      "y": 3308,
+      "h": 1647
+    },
+    {
+      "i": 3,
+      "id": "open-folder",
+      "y": 4955,
+      "h": 1472
+    },
+    {
+      "i": 4,
+      "id": "attach",
+      "y": 6427,
+      "h": 1856
+    },
+    {
+      "i": 5,
+      "id": "verify",
+      "y": 8283,
+      "h": 1505
+    },
+    {
+      "i": 6,
+      "id": "source-evidence",
+      "y": 9788,
+      "h": 3924
+    },
+    {
+      "i": 7,
+      "id": "faq",
+      "y": 13712,
+      "h": 2440
+    },
+    {
+      "i": 8,
+      "id": "purchase",
+      "y": 16152,
+      "h": 1694
+    },
+    {
+      "i": 9,
+      "id": "notes",
+      "y": 17846,
+      "h": 257
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": [
+    {
+      "text": "🧠",
+      "y": 2154.984375
+    },
+    {
+      "text": "📎",
+      "y": 6923.953125
+    }
+  ]
+}

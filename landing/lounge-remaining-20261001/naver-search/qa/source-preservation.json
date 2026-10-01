@@ -1,0 +1,8 @@
+{
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-naver-search-20261001",
+  "existing_images_preserved": 4,
+  "changes": "Existing composition refined; newer book copy and assets unchanged",
+  "cover_hashes": {
+    "assets/book-current-3d.png": "a86a329e49d35eccbf63b5dd6f4cfbd38e4f9105486678838e9ea1556a069f7a"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/live-400",
+  "existing_images_preserved": 6,
+  "changes": "Existing source preserved; stronger headline and cumulative chart; measured type/spacing",
+  "cover_hashes": {
+    "assets/book-current-3d.png": "66a9425b39f4fb7f29a4c0c45b1c9702014a1c4741ebf87ad831a45bbea92082"
+  }
+}

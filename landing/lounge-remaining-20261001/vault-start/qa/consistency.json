@@ -1,0 +1,109 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/launch-expected.json"
+  ],
+  "files_scanned": 17,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 2,
+      "prices": 0,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "메이크패밀리 라운지 홈 · 2026.09.10",
+          "line": 98,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/copy.md"
+        },
+        {
+          "context": "2026.09.10 첫 화면 캡처 기준.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/copy.md"
+        },
+        {
+          "context": "2026.09.10 캡처 기준.",
+          "line": 110,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>내 뇌 사용법</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><bod",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>내 뇌 사용법</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><bod",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>내 뇌 사용법</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><bod",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>내 뇌 사용법</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><bod",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/detail.html"
+        },
+        {
+          "context": "메이크패밀리 라운지 홈 · 2026.09.10",
+          "line": 98,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 첫 화면 캡처 기준.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 캡처 기준.",
+          "line": 110,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/input.txt"
+        },
+        {
+          "context": "메이크패밀리 라운지 홈 · 2026.09.10",
+          "line": 98,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 첫 화면 캡처 기준.",
+          "line": 100,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 캡처 기준.",
+          "line": 110,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/humanize/final.md"
+        }
+      ],
+      "2026-09-30": [
+        {
+          "context": "/* 2026-09-30: restore attributed source evidence; yearly revenue, never cumulative. */",
+          "line": 36,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/design.css"
+        }
+      ]
+    },
+    "prices": {},
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/vault-start/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}

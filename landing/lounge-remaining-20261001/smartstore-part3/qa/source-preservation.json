@@ -1,0 +1,8 @@
+{
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-smartstore-part3-20261001",
+  "existing_images_preserved": 4,
+  "changes": "Existing composition refined; newer book copy and assets unchanged",
+  "cover_hashes": {
+    "assets/book-current-3d.png": "020b30cfb25da0130570a59cd9b8bedc0b0def3b2aaf25d86fd0a38d55311393"
+  }
+}

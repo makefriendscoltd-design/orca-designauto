@@ -1,0 +1,11 @@
+{
+  "slug": "smartstore-part3",
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-smartstore-part3-20261001",
+  "source_operating_record": "/Users/apple/orca/projects/cafe24/launches/ebooks-remaining-20261001/inventory.json",
+  "product_no": 402,
+  "shop": 1,
+  "price": 30000.0,
+  "status": "design-ready; publication pending",
+  "display_price": "30,000원",
+  "purchase_url": "https://makefamily.kr/product/detail.html?product_no=402&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part3"
+}

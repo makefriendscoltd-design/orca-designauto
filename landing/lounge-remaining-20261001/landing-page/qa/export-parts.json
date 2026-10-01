@@ -1,0 +1,56 @@
+[
+  {
+    "type": "image",
+    "file": "slices/01.png",
+    "top": 0,
+    "height": 1485
+  },
+  {
+    "type": "image",
+    "file": "slices/02.png",
+    "top": 1485,
+    "height": 1096
+  },
+  {
+    "type": "image",
+    "file": "slices/03.png",
+    "top": 2581,
+    "height": 1392
+  },
+  {
+    "type": "image",
+    "file": "slices/04.png",
+    "top": 3973,
+    "height": 1284
+  },
+  {
+    "type": "image",
+    "file": "slices/05.png",
+    "top": 5257,
+    "height": 1397
+  },
+  {
+    "type": "image",
+    "file": "slices/06.png",
+    "top": 6654,
+    "height": 1962
+  },
+  {
+    "type": "image",
+    "file": "slices/07.png",
+    "top": 8616,
+    "height": 1500
+  },
+  {
+    "type": "image",
+    "file": "slices/08.png",
+    "top": 10116,
+    "height": 1721
+  },
+  {
+    "type": "image",
+    "file": "slices/09.png",
+    "top": 11837,
+    "height": 1368
+  }
+]

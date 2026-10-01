@@ -1,0 +1,8 @@
+{
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-rebuild-20260930/zerobaek",
+  "existing_images_preserved": 8,
+  "changes": "Existing source preserved; stronger headline and cumulative chart; measured type/spacing",
+  "cover_hashes": {
+    "assets/cover.png": "dc6263cc3f92bf785ca280f35b0747555859805e761e9b574560bb0634bc41ee"
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "motion": [],
+  "width": 740,
+  "height": 10775,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/source-01.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/source-02.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "64px",
+      "leading": "75.52px",
+      "tracking": "-3.072px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero p",
+      "size": "25px",
+      "leading": "36.25px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "25px",
+      "leading": "36.25px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "58px",
+      "leading": "69.02px",
+      "tracking": "-2.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "25px",
+      "leading": "36.25px",
+      "tracking": "-0.16px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 141,
+      "bottom": 364
+    },
+    {
+      "top": 369,
+      "bottom": 422
+    },
+    {
+      "top": 425,
+      "bottom": 1198
+    },
+    {
+      "top": 425,
+      "bottom": 1198
+    },
+    {
+      "top": 1185,
+      "bottom": 1332
+    },
+    {
+      "top": 1809,
+      "bottom": 1871
+    },
+    {
+      "top": 1871,
+      "bottom": 2026
+    },
+    {
+      "top": 2041,
+      "bottom": 2193
+    },
+    {
+      "top": 2483,
+      "bottom": 2532
+    },
+    {
+      "top": 2532,
+      "bottom": 2687
+    },
+    {
+      "top": 2702,
+      "bottom": 2853
+    },
+    {
+      "top": 2919,
+      "bottom": 3892
+    },
+    {
+      "top": 2919,
+      "bottom": 3839
+    },
+    {
+      "top": 3960,
+      "bottom": 4934
+    },
+    {
+      "top": 3960,
+      "bottom": 4881
+    },
+    {
+      "top": 4947,
+      "bottom": 4985
+    },
+    {
+      "top": 5144,
+      "bottom": 5193
+    },
+    {
+      "top": 5193,
+      "bottom": 5348
+    },
+    {
+      "top": 5403,
+      "bottom": 5462
+    },
+    {
+      "top": 5454,
+      "bottom": 5510
+    },
+    {
+      "top": 5544,
+      "bottom": 5603
+    },
+    {
+      "top": 5595,
+      "bottom": 5651
+    },
+    {
+      "top": 5685,
+      "bottom": 5744
+    },
+    {
+      "top": 5736,
+      "bottom": 5831
+    },
+    {
+      "top": 5865,
+      "bottom": 5924
+    },
+    {
+      "top": 5916,
+      "bottom": 5972
+    },
+    {
+      "top": 6157,
+      "bottom": 6206
+    },
+    {
+      "top": 6206,
+      "bottom": 6361
+    },
+    {
+      "top": 6413,
+      "bottom": 6469
+    },
+    {
+      "top": 6460,
+      "bottom": 6516
+    },
+    {
+      "top": 6550,
+      "bottom": 6606
+    },
+    {
+      "top": 6597,
+      "bottom": 6653
+    },
+    {
+      "top": 6687,
+      "bottom": 6743
+    },
+    {
+      "top": 6734,
+      "bottom": 6790
+    },
+    {
+      "top": 6909,
+      "bottom": 7086
+    },
+    {
+      "top": 7325,
+      "bottom": 7375
+    },
+    {
+      "top": 7375,
+      "bottom": 7530
+    },
+    {
+      "top": 7691,
+      "bottom": 7743
+    },
+    {
+      "top": 7741,
+      "bottom": 7830
+    },
+    {
+      "top": 7691,
+      "bottom": 7743
+    },
+    {
+      "top": 7741,
+      "bottom": 7902
+    },
+    {
+      "top": 7938,
+      "bottom": 8022
+    },
+    {
+      "top": 8073,
+      "bottom": 8129
+    },
+    {
+      "top": 8140,
+      "bottom": 8234
+    },
+    {
+      "top": 8245,
+      "bottom": 8340
+    },
+    {
+      "top": 8351,
+      "bottom": 8445
+    },
+    {
+      "top": 8516,
+      "bottom": 9528
+    },
+    {
+      "top": 8604,
+      "bottom": 8654
+    },
+    {
+      "top": 8974,
+      "bottom": 9025
+    },
+    {
+      "top": 9022,
+      "bottom": 9075
+    },
+    {
+      "top": 9109,
+      "bottom": 9159
+    },
+    {
+      "top": 9156,
+      "bottom": 9245
+    },
+    {
+      "top": 9279,
+      "bottom": 9329
+    },
+    {
+      "top": 9326,
+      "bottom": 9415
+    },
+    {
+      "top": 9599,
+      "bottom": 9648
+    },
+    {
+      "top": 9648,
+      "bottom": 9734
+    },
+    {
+      "top": 9737,
+      "bottom": 10286
+    },
+    {
+      "top": 10275,
+      "bottom": 10332
+    },
+    {
+      "top": 10677,
+      "bottom": 10718
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1729
+    },
+    {
+      "i": 1,
+      "id": "problem",
+      "y": 1729,
+      "h": 674
+    },
+    {
+      "i": 2,
+      "id": "inside",
+      "y": 2404,
+      "h": 2661
+    },
+    {
+      "i": 3,
+      "id": "topics",
+      "y": 5065,
+      "h": 1013
+    },
+    {
+      "i": 4,
+      "id": "apply",
+      "y": 6077,
+      "h": 1169
+    },
+    {
+      "i": 5,
+      "id": "formats",
+      "y": 7246,
+      "h": 1279
+    },
+    {
+      "i": 6,
+      "id": "fit",
+      "y": 8525,
+      "h": 994
+    },
+    {
+      "i": 7,
+      "id": "closing",
+      "y": 9519,
+      "h": 1256
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": []
+}

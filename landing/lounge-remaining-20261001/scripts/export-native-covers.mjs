@@ -1,0 +1,12 @@
+import fs from 'node:fs/promises';import path from 'node:path';
+const app='/Users/apple/orca/workspaces/minsoo/패밀리라운지/memberapps-home-editorial';
+let s=await fs.readFile(app+'/scripts/render-ebook-cover.mjs','utf8');
+s=s.replace("const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');",`const root = ${JSON.stringify(app)};`).replace('createRequire(import.meta.url)',`createRequire(${JSON.stringify(app+'/scripts/render-ebook-cover.mjs')})`).replaceAll("'../lib/",`'${app}/lib/`);
+s=s.replace("const png = await page.locator('[data-book-cover]').screenshot({ type: 'png', animations: 'disabled' });",`await page.addStyleTag({content:'html,body,[data-book-cover]{background:transparent!important}[data-book-cover]::before{display:none}'});const clip=await page.locator('[data-book-cover]').evaluate(el=>{const r=[...el.querySelectorAll('.front,.back,.pages,.bottom')].map(x=>x.getBoundingClientRect());const x=Math.max(0,Math.min(...r.map(a=>a.left))-14),y=Math.max(0,Math.min(...r.map(a=>a.top))-12);return {x,y,width:Math.max(...r.map(a=>a.right))-x+14,height:Math.max(...r.map(a=>a.bottom))-y+16}});const png=await page.screenshot({type:'png',omitBackground:true,clip});`);
+s=s.replace("import('playwright')","import('/Users/apple/orca/projects/1000project/videos/personal-branding-final-01/node_modules/playwright/index.mjs')");
+await fs.writeFile('/tmp/current-native-renderer.mjs',s);
+const {renderEbookCover}=await import('file:///tmp/current-native-renderer.mjs');
+const {EBOOKS}=await import(app+'/lib/ebooks-catalog.js');
+const R=path.resolve('landing/lounge-remaining-20261001');
+for(const name of await fs.readdir(R)){let brief;try{brief=JSON.parse(await fs.readFile(path.join(R,name,'brief.json'),'utf8'))}catch{continue}if(name==='landing-page')continue;
+const source=await fs.readFile(path.join(R,name,'detail.html'),'utf8');const match=source.match(/src="(assets\/(?:book-current-3d|cover|current-cover)\.png)"/);if(!match)throw Error(name+' cover missing');const base=name.replace('-shop4','');const entry=EBOOKS.find(x=>x.productNos?.map(String).includes(String(brief.product_no)));const cover=entry?.cover||`/books/covers/book-edition-benefit/${base}.webp`;const result=await renderEbookCover({cover,output:path.join(R,name,match[1])});await fs.writeFile(path.join(R,name,'qa/current-cover.json'),JSON.stringify({cover,sourceHash:result.sourceHash,mode:result.mode,transparentExport:true}));console.log(name,'native transparent exported');}

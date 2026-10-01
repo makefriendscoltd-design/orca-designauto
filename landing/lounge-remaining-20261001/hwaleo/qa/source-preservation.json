@@ -1,0 +1,8 @@
+{
+  "source": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-hwaleo-20261001",
+  "existing_images_preserved": 4,
+  "changes": "Existing composition refined; newer book copy and assets unchanged",
+  "cover_hashes": {
+    "assets/book-current-3d.png": "12275e0f13da39cdb0894d50e20f237a35f1b8ce28e1cb6c8ab14388d9e35337"
+  }
+}

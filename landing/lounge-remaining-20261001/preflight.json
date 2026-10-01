@@ -1,0 +1,41 @@
+{
+  "authorization": "2026-10-01 user explicitly requested all remaining ebook replacements and registration, including recent products; existing individually replaced books excluded",
+  "largest_risk": "Wrong book or wrong shop price image mapped to a product; concurrent change overwritten",
+  "non_destructive_checks": [
+    "Fresh provider backups for 10 product IDs × shops 1/4",
+    "13 source variants validated; existing sale/status fields compared before PUT",
+    "CDN downloaded bytes SHA256 and image dimensions equal local slices",
+    "26 actual browser views of exact deployment HTML before apply"
+  ],
+  "excluded_product_ids": [
+    277,
+    376,
+    378,
+    380,
+    382,
+    390,
+    396,
+    284,
+    377,
+    379,
+    381,
+    383,
+    391,
+    397,
+    399,
+    321,
+    282
+  ],
+  "mutations": [
+    "description",
+    "mobile_description"
+  ],
+  "not_changed": [
+    "price",
+    "selling",
+    "display",
+    "thumbnail",
+    "shipping",
+    "digital delivery"
+  ]
+}

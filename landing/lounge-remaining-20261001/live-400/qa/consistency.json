@@ -1,0 +1,136 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/launch-expected.json"
+  ],
+  "files_scanned": 17,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 4,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>live-400 상세페이지</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></he",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/detail.html"
+        },
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 수집한 메이크패밀리 카페 회원 화면.",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/final.md"
+        }
+      ],
+      "2026-09-29": [
+        {
+          "context": "2026.09.29 라이브 따라하기 PDF",
+          "line": 104,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>live-400 상세페이지</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></he",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/detail.html"
+        },
+        {
+          "context": "2026.09.29 라이브 따라하기 PDF",
+          "line": 104,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.29 라이브 따라하기 PDF",
+          "line": 104,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/final.md"
+        }
+      ],
+      "2026-09-30": [
+        {
+          "context": "/* Existing operating evidence restored after the 2026-09-30 source audit. */",
+          "line": 37,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/design.css"
+        }
+      ],
+      "2026년9월29일": [
+        {
+          "context": "2026년 9월 29일 라이브에서 설명한",
+          "line": 45,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>live-400 상세페이지</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></he",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/detail.html"
+        },
+        {
+          "context": "2026년 9월 29일 라이브에서 설명한",
+          "line": 45,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026년 9월 29일 라이브에서 설명한",
+          "line": 45,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/final.md"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "\"display_price\": \"30,000원\"",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/brief.json"
+        },
+        {
+          "context": "30,000원",
+          "line": 106,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>live-400 상세페이지</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></he",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/detail.html"
+        },
+        {
+          "context": "30,000원",
+          "line": 106,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/input.txt"
+        },
+        {
+          "context": "30,000원",
+          "line": 106,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/humanize/final.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/live-400/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}

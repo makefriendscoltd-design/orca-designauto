@@ -1,0 +1,377 @@
+{
+  "motion": [],
+  "width": 740,
+  "height": 17436,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      true
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    },
+    {
+      "src": "assets/source-planning.png",
+      "ok": true
+    },
+    {
+      "src": "assets/source-instruction.png",
+      "ok": true
+    },
+    {
+      "src": "assets/source-feedback.png",
+      "ok": true
+    },
+    {
+      "src": "assets/evidence/cafe-members-202609.png",
+      "ok": true
+    },
+    {
+      "src": "assets/book-current-3d.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "49px",
+      "leading": "55.86px",
+      "tracking": "-2.205px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "24px",
+      "leading": "28.8px",
+      "tracking": "-0.84px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "19px",
+      "leading": "27.55px",
+      "tracking": "-0.32px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 173,
+      "bottom": 293
+    },
+    {
+      "top": 317,
+      "bottom": 542
+    },
+    {
+      "top": 627,
+      "bottom": 1502
+    },
+    {
+      "top": 1530,
+      "bottom": 1583
+    },
+    {
+      "top": 1798,
+      "bottom": 1922
+    },
+    {
+      "top": 1996,
+      "bottom": 2054
+    },
+    {
+      "top": 2207,
+      "bottom": 2260
+    },
+    {
+      "top": 2744,
+      "bottom": 2817
+    },
+    {
+      "top": 3293,
+      "bottom": 3367
+    },
+    {
+      "top": 3380,
+      "bottom": 3562
+    },
+    {
+      "top": 3610,
+      "bottom": 3775
+    },
+    {
+      "top": 3818,
+      "bottom": 3948
+    },
+    {
+      "top": 4254,
+      "bottom": 4436
+    },
+    {
+      "top": 4530,
+      "bottom": 4583
+    },
+    {
+      "top": 4931,
+      "bottom": 5306
+    },
+    {
+      "top": 4931,
+      "bottom": 5306
+    },
+    {
+      "top": 5330,
+      "bottom": 5380
+    },
+    {
+      "top": 5686,
+      "bottom": 5868
+    },
+    {
+      "top": 6398,
+      "bottom": 6585
+    },
+    {
+      "top": 6890,
+      "bottom": 7073
+    },
+    {
+      "top": 7102,
+      "bottom": 7477
+    },
+    {
+      "top": 7102,
+      "bottom": 7477
+    },
+    {
+      "top": 7571,
+      "bottom": 7623
+    },
+    {
+      "top": 7970,
+      "bottom": 8101
+    },
+    {
+      "top": 8406,
+      "bottom": 8589
+    },
+    {
+      "top": 8618,
+      "bottom": 8993
+    },
+    {
+      "top": 8618,
+      "bottom": 8993
+    },
+    {
+      "top": 9431,
+      "bottom": 9562
+    },
+    {
+      "top": 9962,
+      "bottom": 10144
+    },
+    {
+      "top": 11343,
+      "bottom": 11414
+    },
+    {
+      "top": 11469,
+      "bottom": 11648
+    },
+    {
+      "top": 11860,
+      "bottom": 11934
+    },
+    {
+      "top": 11965,
+      "bottom": 12353
+    },
+    {
+      "top": 11965,
+      "bottom": 12282
+    },
+    {
+      "top": 12582,
+      "bottom": 12640
+    },
+    {
+      "top": 12653,
+      "bottom": 12752
+    },
+    {
+      "top": 12837,
+      "bottom": 13676
+    },
+    {
+      "top": 14035,
+      "bottom": 14187
+    },
+    {
+      "top": 14291,
+      "bottom": 14412
+    },
+    {
+      "top": 14455,
+      "bottom": 14642
+    },
+    {
+      "top": 14947,
+      "bottom": 15047
+    },
+    {
+      "top": 15255,
+      "bottom": 15329
+    },
+    {
+      "top": 15346,
+      "bottom": 15599
+    },
+    {
+      "top": 15807,
+      "bottom": 15881
+    },
+    {
+      "top": 15897,
+      "bottom": 16150
+    },
+    {
+      "top": 16358,
+      "bottom": 16432
+    },
+    {
+      "top": 16449,
+      "bottom": 16702
+    },
+    {
+      "top": 17008,
+      "bottom": 17068
+    },
+    {
+      "top": 17089,
+      "bottom": 17322
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1663
+    },
+    {
+      "i": 1,
+      "id": "",
+      "y": 1663,
+      "h": 1344
+    },
+    {
+      "i": 2,
+      "id": "start",
+      "y": 3008,
+      "h": 1055
+    },
+    {
+      "i": 3,
+      "id": "purpose",
+      "y": 4062,
+      "h": 1432
+    },
+    {
+      "i": 4,
+      "id": "sources",
+      "y": 5495,
+      "h": 1204
+    },
+    {
+      "i": 5,
+      "id": "instruction",
+      "y": 6699,
+      "h": 1516
+    },
+    {
+      "i": 6,
+      "id": "feedback",
+      "y": 8215,
+      "h": 1461
+    },
+    {
+      "i": 7,
+      "id": "check",
+      "y": 9676,
+      "h": 1552
+    },
+    {
+      "i": 8,
+      "id": "community-record",
+      "y": 11228,
+      "h": 1239
+    },
+    {
+      "i": 9,
+      "id": "offer",
+      "y": 12467,
+      "h": 2289
+    },
+    {
+      "i": 10,
+      "id": "faq",
+      "y": 14756,
+      "h": 2138
+    },
+    {
+      "i": 11,
+      "id": "notes",
+      "y": 16894,
+      "h": 542
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": [
+    {
+      "text": "🎞️",
+      "y": 3130.234375
+    },
+    {
+      "text": "✅",
+      "y": 9798.609375
+    }
+  ]
+}

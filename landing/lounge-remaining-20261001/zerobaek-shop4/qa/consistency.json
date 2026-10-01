@@ -1,0 +1,117 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/launch-expected.json"
+  ],
+  "files_scanned": 17,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 2,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/copy.md"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 화면에 표시된 인원",
+          "line": 105,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><title>0에서 1을 만드는 마케팅 비법서 제로백</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><body><main class=\"page\"><secti",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><title>0에서 1을 만드는 마케팅 비법서 제로백</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><body><main class=\"page\"><secti",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/detail.html"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 화면에 표시된 인원",
+          "line": 105,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 101,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 라운지 공개 화면에 표시된 인원",
+          "line": 105,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/final.md"
+        }
+      ],
+      "2026년9월10일": [
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><title>0에서 1을 만드는 마케팅 비법서 제로백</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><body><main class=\"page\"><secti",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/detail.html"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><title>0에서 1을 만드는 마케팅 비법서 제로백</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><body><main class=\"page\"><secti",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/detail.html"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "\"display_price\": \"30,000원\"",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/brief.json"
+        },
+        {
+          "context": "30,000원",
+          "line": 117,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/copy.md"
+        },
+        {
+          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><title>0에서 1을 만드는 마케팅 비법서 제로백</title><link rel=\"stylesheet\" href=\"design.css\"><link rel=\"stylesheet\" href=\"refinement.css\"></head><body><main class=\"page\"><secti",
+          "line": 1,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/detail.html"
+        },
+        {
+          "context": "30,000원",
+          "line": 117,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/input.txt"
+        },
+        {
+          "context": "30,000원",
+          "line": 117,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/humanize/final.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/zerobaek-shop4/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}
