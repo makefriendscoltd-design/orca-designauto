@@ -1,0 +1,85 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/launch-expected.json"
+  ],
+  "files_scanned": 18,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 1,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 136,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/copy.md"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 140,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/copy.md"
+        },
+        {
+          "context": "<p class=\"authority-close\">고객을 모으는 데서 끝나지 않고<br><strong>구매로 연결해 온 사업의 경험</strong></p></section><section class=\"lesson\" id=\"hero-example\"><div class=\"step\"><b>01</b> 첫 화면 · 고객이 멈추는 문장</div><h2>상품 자랑을<br><span class=\"blue\"",
+          "line": 2,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/detail.html"
+        },
+        {
+          "context": "<p class=\"authority-close\">고객을 모으는 데서 끝나지 않고<br><strong>구매로 연결해 온 사업의 경험</strong></p></section><section class=\"lesson\" id=\"hero-example\"><div class=\"step\"><b>01</b> 첫 화면 · 고객이 멈추는 문장</div><h2>상품 자랑을<br><span class=\"blue\"",
+          "line": 2,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/detail.html"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 136,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 140,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 136,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 140,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/humanize/final.md"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "- 상품 297 · 판매가 30,000원. 운영 상세 미등록.",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/README.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v4/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "book_source": "incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.md",
+  "quote_sections": [
+    "30장 제품 제안",
+    "30장 가격과 구매 수량",
+    "30장 완성 페이지 초안"
+  ],
+  "authority": "월별 원장40개 누적, QA cumulative-revenue-verification.json. 이전 연간만 사용 결정은 후속 사용자 누적요청으로 대체됨",
+  "retention": {
+    "current-cover": "retained",
+    "cafe-members": "retained",
+    "lounge-home": "retained",
+    "revenue": "moved directly after hero"
+  },
+  "verification": "6 regions visual review; 390/740 passed",
+  "limits": "no independently verified landing-page conversion lift evidence; no invented performance screenshots",
+  "brain": "마케팅-콘텐츠-철학.md 7번",
+  "asset_hashes": {
+    "current-cover.png": "72b9973e413da9d5f0ff7a875fd578cde4c5e62f2f9a47ecbf47ee8e3ae30e3c",
+    "proof/cafe-members.png": "6e89533c545b9bfdad13fd5e4b946f31f5c0c9c4272422bb38433ee8dea4f93d",
+    "proof/lounge-home.jpg": "3d58887daf69381cd64e30861d8eb047e5007a63394f6fc3798faf6cd0d9d8f4"
+  },
+  "design_revision": {
+    "previous_height": 20931,
+    "current_height": 14231,
+    "reduction_percent": 32.0,
+    "source_css": "single newly authored design.css; approved cumulative chart retained",
+    "removed": "repeated problem/question lists; core full-page example retained",
+    "cafe_crop": "original y~231..356 at644px width, shows12127; CSS only, original unchanged"
+  }
+}
