@@ -1,0 +1,72 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/qa/launch-expected.json"
+  ],
+  "files_scanned": 18,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 1,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 3
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-10-01": [
+        {
+          "context": "2026-10-01, Chrome headless에서 공개 HTML/CSS와 계산된 스타일을 확인했다. 제3자 이미지·강사 사진·성과·강의 혜택은 가져오지 않았다.",
+          "line": 3,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/REFERENCES.md"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "상품297·판매가30,000원. 740×11064px, PNG8개. preview.html·detail_full.png·slices/ 제공.",
+          "line": 7,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/README.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/qa/package.py"
+        }
+      ]
+    },
+    "urls": {
+      "https://coloso.co.kr/products/graphicdesign-jeonghaneul": [
+        {
+          "context": "| [콜로소 상세페이지 디자인](https://coloso.co.kr/products/graphicdesign-jeonghaneul) | 본문980px, 2열480px+20px+480px. `.fc-layout-206 .container__body` flex row-reverse, `.catalog-curriculum__list` 이미지480×270 | 사례 이미지와 설명을 분리한 2열, 결",
+          "line": 7,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/REFERENCES.md"
+        }
+      ],
+      "https://fastcampus.co.kr/mktg_online_pages": [
+        {
+          "context": "| [패스트캠퍼스 상세페이지 절대공식](https://fastcampus.co.kr/mktg_online_pages) | 실습 결과물 중심, 본문980px. 주요 헤드라인은 이미지여서 글꼴 수치를 DOM에서 얻을 수 없음 | 먼저 완성 예제를 보여주고 구성 방법을 설명하는 순서 |",
+          "line": 8,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/REFERENCES.md"
+        }
+      ],
+      "https://www.flux-academy.com/courses/the-framer-masterclass": [
+        {
+          "context": "| [Flux Framer Masterclass](https://www.flux-academy.com/courses/the-framer-masterclass) | 실제 제작 화면 중심 히어로. DOM h1 72/76.8px, h2 56/67.2px | 자체 HTML을 렌더한 작업 화면 히어로, 큰 헤드라인과 얇은 보조 설명 |",
+          "line": 9,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v6/REFERENCES.md"
+        }
+      ]
+    }
+  }
+}
