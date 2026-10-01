@@ -1,0 +1,18 @@
+{
+  "book_source": "incoming/lounge-ebooks-20260929/lounge-books/landing-page/원문.md",
+  "quote_sections": [
+    "30장 제품 제안",
+    "30장 가격과 구매 수량",
+    "30장 완성 페이지 초안"
+  ],
+  "authority": "월별 원장40개 누적, QA cumulative-revenue-verification.json. 이전 연간만 사용 결정은 후속 사용자 누적요청으로 대체됨",
+  "retention": {
+    "current-cover": "retained",
+    "cafe-members": "retained",
+    "lounge-home": "retained",
+    "revenue": "moved directly after hero"
+  },
+  "verification": "6 regions visual review; 390/740 passed",
+  "limits": "no independently verified landing-page conversion lift evidence; no invented performance screenshots",
+  "brain": "마케팅-콘텐츠-철학.md 7번"
+}

@@ -1,0 +1,85 @@
+{
+  "excluded_files": [
+    "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/launch-expected.json"
+  ],
+  "files_scanned": 20,
+  "issues": [],
+  "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3",
+  "summary": {
+    "issues": 0,
+    "value_counts": {
+      "dates": 1,
+      "prices": 1,
+      "product_ids": 0,
+      "times": 1,
+      "urls": 0
+    }
+  },
+  "unreadable": [],
+  "values": {
+    "dates": {
+      "2026-09-10": [
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 199,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/copy.md"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 203,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/copy.md"
+        },
+        {
+          "context": "<section class=\"community\" id=\"community\"><div class=\"eyebrow\">직접 운영하는 채널</div><h2>고객을 만나며<br>쌓아온 접점</h2><div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></s",
+          "line": 12,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/detail.html"
+        },
+        {
+          "context": "<section class=\"community\" id=\"community\"><div class=\"eyebrow\">직접 운영하는 채널</div><h2>고객을 만나며<br>쌓아온 접점</h2><div class=\"community-card\"><div class=\"metric-heading\"><span>메이크패밀리 네이버 카페</span><strong>12,127<small>명</small></s",
+          "line": 12,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/detail.html"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 199,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 203,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/humanize/input.txt"
+        },
+        {
+          "context": "2026.09.10 카페정보 화면 기준",
+          "line": 199,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/humanize/final.md"
+        },
+        {
+          "context": "2026.09.10 화면 기준 · 라운지 회원 수",
+          "line": 203,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/humanize/final.md"
+        }
+      ]
+    },
+    "prices": {
+      "30000원": [
+        {
+          "context": "- 상품 297 · 판매가 30,000원. 운영 상세 미교체.",
+          "line": 5,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/README.md"
+        }
+      ]
+    },
+    "product_ids": {},
+    "times": {
+      "1:02": [
+        {
+          "context": "name = f'slices/{len(parts)+1:02}.png'",
+          "line": 35,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/ebook-landing-page-v3/qa/package.py"
+        }
+      ]
+    },
+    "urls": {}
+  }
+}
