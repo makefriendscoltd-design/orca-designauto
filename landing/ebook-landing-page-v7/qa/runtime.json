@@ -1,0 +1,688 @@
+{
+  "motion": [],
+  "width": 740,
+  "height": 13205,
+  "fonts": [
+    [
+      400,
+      true
+    ],
+    [
+      500,
+      false
+    ],
+    [
+      600,
+      true
+    ],
+    [
+      700,
+      true
+    ],
+    [
+      800,
+      true
+    ]
+  ],
+  "images": [
+    {
+      "src": "assets/current-cover.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/skincare-scenes.png",
+      "ok": true
+    },
+    {
+      "src": "assets/current-cover.png",
+      "ok": true
+    }
+  ],
+  "textOverflow": [],
+  "typeSamples": [
+    {
+      "selector": ".hero h1",
+      "size": "96px",
+      "leading": "101.76px",
+      "tracking": "-5.28px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": ".hero-lead",
+      "size": "42px",
+      "leading": "62.16px",
+      "tracking": "-0.352px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "42px",
+      "leading": "62.16px",
+      "tracking": "-0.352px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "h2",
+      "size": "52px",
+      "leading": "65px",
+      "tracking": "-2.496px",
+      "font": "P, sans-serif"
+    },
+    {
+      "selector": "p",
+      "size": "42px",
+      "leading": "62.16px",
+      "tracking": "-0.352px",
+      "font": "P, sans-serif"
+    }
+  ],
+  "protected": [
+    {
+      "top": 40,
+      "bottom": 108
+    },
+    {
+      "top": 123,
+      "bottom": 202
+    },
+    {
+      "top": 202,
+      "bottom": 524
+    },
+    {
+      "top": 537,
+      "bottom": 639
+    },
+    {
+      "top": 640,
+      "bottom": 1397
+    },
+    {
+      "top": 611,
+      "bottom": 1426
+    },
+    {
+      "top": 1380,
+      "bottom": 1446
+    },
+    {
+      "top": 1574,
+      "bottom": 1621
+    },
+    {
+      "top": 1624,
+      "bottom": 1771
+    },
+    {
+      "top": 1782,
+      "bottom": 2383
+    },
+    {
+      "top": 1782,
+      "bottom": 2383
+    },
+    {
+      "top": 1811,
+      "bottom": 1856
+    },
+    {
+      "top": 1963,
+      "bottom": 2006
+    },
+    {
+      "top": 2014,
+      "bottom": 2083
+    },
+    {
+      "top": 2081,
+      "bottom": 2150
+    },
+    {
+      "top": 2148,
+      "bottom": 2217
+    },
+    {
+      "top": 2215,
+      "bottom": 2284
+    },
+    {
+      "top": 2292,
+      "bottom": 2354
+    },
+    {
+      "top": 2514,
+      "bottom": 2574
+    },
+    {
+      "top": 2582,
+      "bottom": 2644
+    },
+    {
+      "top": 2643,
+      "bottom": 2826
+    },
+    {
+      "top": 2847,
+      "bottom": 3595
+    },
+    {
+      "top": 2847,
+      "bottom": 3595
+    },
+    {
+      "top": 2847,
+      "bottom": 3304
+    },
+    {
+      "top": 2756,
+      "bottom": 3395
+    },
+    {
+      "top": 3413,
+      "bottom": 3467
+    },
+    {
+      "top": 2847,
+      "bottom": 3595
+    },
+    {
+      "top": 2847,
+      "bottom": 3304
+    },
+    {
+      "top": 2756,
+      "bottom": 3395
+    },
+    {
+      "top": 3354,
+      "bottom": 3595
+    },
+    {
+      "top": 3412,
+      "bottom": 3595
+    },
+    {
+      "top": 3611,
+      "bottom": 3727
+    },
+    {
+      "top": 3734,
+      "bottom": 3805
+    },
+    {
+      "top": 3906,
+      "bottom": 3966
+    },
+    {
+      "top": 3974,
+      "bottom": 4036
+    },
+    {
+      "top": 4035,
+      "bottom": 4217
+    },
+    {
+      "top": 4238,
+      "bottom": 4805
+    },
+    {
+      "top": 4238,
+      "bottom": 4805
+    },
+    {
+      "top": 4123,
+      "bottom": 4920
+    },
+    {
+      "top": 4420,
+      "bottom": 4576
+    },
+    {
+      "top": 4582,
+      "bottom": 4674
+    },
+    {
+      "top": 4820,
+      "bottom": 4957
+    },
+    {
+      "top": 4859,
+      "bottom": 4957
+    },
+    {
+      "top": 4973,
+      "bottom": 5089
+    },
+    {
+      "top": 5190,
+      "bottom": 5250
+    },
+    {
+      "top": 5258,
+      "bottom": 5320
+    },
+    {
+      "top": 5319,
+      "bottom": 5501
+    },
+    {
+      "top": 5522,
+      "bottom": 6089
+    },
+    {
+      "top": 5522,
+      "bottom": 6089
+    },
+    {
+      "top": 5427,
+      "bottom": 6184
+    },
+    {
+      "top": 5692,
+      "bottom": 5785
+    },
+    {
+      "top": 5919,
+      "bottom": 6011
+    },
+    {
+      "top": 6104,
+      "bottom": 6241
+    },
+    {
+      "top": 6143,
+      "bottom": 6241
+    },
+    {
+      "top": 6257,
+      "bottom": 6373
+    },
+    {
+      "top": 6380,
+      "bottom": 6424
+    },
+    {
+      "top": 6587,
+      "bottom": 6647
+    },
+    {
+      "top": 6655,
+      "bottom": 6717
+    },
+    {
+      "top": 6716,
+      "bottom": 6891
+    },
+    {
+      "top": 6899,
+      "bottom": 7006
+    },
+    {
+      "top": 7052,
+      "bottom": 7112
+    },
+    {
+      "top": 7095,
+      "bottom": 7647
+    },
+    {
+      "top": 7152,
+      "bottom": 7313
+    },
+    {
+      "top": 7318,
+      "bottom": 7625
+    },
+    {
+      "top": 6960,
+      "bottom": 8041
+    },
+    {
+      "top": 7630,
+      "bottom": 7992
+    },
+    {
+      "top": 7687,
+      "bottom": 7782
+    },
+    {
+      "top": 7783,
+      "bottom": 7970
+    },
+    {
+      "top": 7302,
+      "bottom": 8383
+    },
+    {
+      "top": 7975,
+      "bottom": 8150
+    },
+    {
+      "top": 8032,
+      "bottom": 8128
+    },
+    {
+      "top": 8133,
+      "bottom": 8307
+    },
+    {
+      "top": 8190,
+      "bottom": 8285
+    },
+    {
+      "top": 8290,
+      "bottom": 8464
+    },
+    {
+      "top": 8347,
+      "bottom": 8442
+    },
+    {
+      "top": 8447,
+      "bottom": 8616
+    },
+    {
+      "top": 8504,
+      "bottom": 8594
+    },
+    {
+      "top": 8648,
+      "bottom": 8693
+    },
+    {
+      "top": 8877,
+      "bottom": 8923
+    },
+    {
+      "top": 8932,
+      "bottom": 9089
+    },
+    {
+      "top": 9072,
+      "bottom": 9224
+    },
+    {
+      "top": 9096,
+      "bottom": 9153
+    },
+    {
+      "top": 9147,
+      "bottom": 9199
+    },
+    {
+      "top": 9207,
+      "bottom": 9360
+    },
+    {
+      "top": 9231,
+      "bottom": 9289
+    },
+    {
+      "top": 9283,
+      "bottom": 9335
+    },
+    {
+      "top": 9343,
+      "bottom": 9496
+    },
+    {
+      "top": 9367,
+      "bottom": 9425
+    },
+    {
+      "top": 9419,
+      "bottom": 9471
+    },
+    {
+      "top": 9479,
+      "bottom": 9632
+    },
+    {
+      "top": 9503,
+      "bottom": 9560
+    },
+    {
+      "top": 9554,
+      "bottom": 9607
+    },
+    {
+      "top": 9615,
+      "bottom": 9768
+    },
+    {
+      "top": 9639,
+      "bottom": 9696
+    },
+    {
+      "top": 9690,
+      "bottom": 9743
+    },
+    {
+      "top": 9751,
+      "bottom": 9904
+    },
+    {
+      "top": 9775,
+      "bottom": 9832
+    },
+    {
+      "top": 9826,
+      "bottom": 9879
+    },
+    {
+      "top": 9916,
+      "bottom": 10111
+    },
+    {
+      "top": 9916,
+      "bottom": 9968
+    },
+    {
+      "top": 9966,
+      "bottom": 10111
+    },
+    {
+      "top": 10195,
+      "bottom": 10242
+    },
+    {
+      "top": 10251,
+      "bottom": 10412
+    },
+    {
+      "top": 10421,
+      "bottom": 10551
+    },
+    {
+      "top": 10421,
+      "bottom": 10477
+    },
+    {
+      "top": 10471,
+      "bottom": 10525
+    },
+    {
+      "top": 10560,
+      "bottom": 10691
+    },
+    {
+      "top": 10560,
+      "bottom": 10616
+    },
+    {
+      "top": 10610,
+      "bottom": 10665
+    },
+    {
+      "top": 10704,
+      "bottom": 11040
+    },
+    {
+      "top": 10782,
+      "bottom": 10883
+    },
+    {
+      "top": 10909,
+      "bottom": 11010
+    },
+    {
+      "top": 11051,
+      "bottom": 11149
+    },
+    {
+      "top": 11233,
+      "bottom": 11307
+    },
+    {
+      "top": 11290,
+      "bottom": 11484
+    },
+    {
+      "top": 11315,
+      "bottom": 11369
+    },
+    {
+      "top": 11366,
+      "bottom": 11458
+    },
+    {
+      "top": 11467,
+      "bottom": 11660
+    },
+    {
+      "top": 11492,
+      "bottom": 11545
+    },
+    {
+      "top": 11542,
+      "bottom": 11634
+    },
+    {
+      "top": 11643,
+      "bottom": 11837
+    },
+    {
+      "top": 11668,
+      "bottom": 11722
+    },
+    {
+      "top": 11719,
+      "bottom": 11811
+    },
+    {
+      "top": 11925,
+      "bottom": 11971
+    },
+    {
+      "top": 11980,
+      "bottom": 12224
+    },
+    {
+      "top": 12235,
+      "bottom": 12765
+    },
+    {
+      "top": 12776,
+      "bottom": 12830
+    },
+    {
+      "top": 12834,
+      "bottom": 12966
+    },
+    {
+      "top": 12975,
+      "bottom": 13084
+    },
+    {
+      "top": 13089,
+      "bottom": 13137
+    }
+  ],
+  "sections": [
+    {
+      "i": 0,
+      "id": "hero",
+      "y": 0,
+      "h": 1488
+    },
+    {
+      "i": 1,
+      "id": "company",
+      "y": 1488,
+      "h": 977
+    },
+    {
+      "i": 2,
+      "id": "hero-example",
+      "y": 2465,
+      "h": 1392
+    },
+    {
+      "i": 3,
+      "id": "proof-placement",
+      "y": 3856,
+      "h": 1284
+    },
+    {
+      "i": 4,
+      "id": "price-method",
+      "y": 5140,
+      "h": 1335
+    },
+    {
+      "i": 5,
+      "id": "assembly",
+      "y": 6475,
+      "h": 2285
+    },
+    {
+      "i": 6,
+      "id": "contents",
+      "y": 8761,
+      "h": 1418
+    },
+    {
+      "i": 7,
+      "id": "deliver",
+      "y": 10179,
+      "h": 1037
+    },
+    {
+      "i": 8,
+      "id": "faq",
+      "y": 11216,
+      "h": 662
+    },
+    {
+      "i": 9,
+      "id": "closing",
+      "y": 11878,
+      "h": 1327
+    }
+  ],
+  "chart": {
+    "arrowCount": 0,
+    "heights": []
+  },
+  "emoji": []
+}
