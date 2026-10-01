@@ -1,0 +1,12 @@
+프로덕션 점검: https://lounge.aimax.ai.kr
+  ok    메인 페이지       200
+  ok    가격 인상 크론   401
+  ok    카페24 웹훅 (GET)  405
+  ok    전자책 클레임    404
+  ok    파트너 API          401
+  ok    운영 조회 API      401
+  ok    전자책 등록 API   401
+
+  ok    배포 커밋          e4b7ab6 = origin/master
+
+전부 살아 있습니다.

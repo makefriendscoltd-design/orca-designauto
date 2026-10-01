@@ -1,0 +1,65 @@
+{
+  "completed_at": "2026-10-01T10:28:33.377300+00:00",
+  "scope": {
+    "catalog_total": 16,
+    "excluded_individually_replaced_books": 5,
+    "books_updated": 11,
+    "newly_registered_books_included": [
+      401,
+      402,
+      403,
+      404
+    ],
+    "artwork_variants": 13,
+    "slices": 135
+  },
+  "cafe24": {
+    "product_ids": [
+      275,
+      286,
+      297,
+      319,
+      348,
+      400,
+      401,
+      402,
+      403,
+      404
+    ],
+    "shop_ids": [
+      1,
+      4
+    ],
+    "verified_updates": 20,
+    "public_pc_mobile_views": 20,
+    "descriptions_and_mobile_descriptions_match": true,
+    "operating_fields_preserved": true
+  },
+  "lounge": {
+    "changed_file": "lib/ebook-introductions.json",
+    "books": [
+      "threads-basic",
+      "vault-start"
+    ],
+    "production_commit": "e4b7ab63908296dc0908376b80448fb72a5b3eb1",
+    "guest_views_verified": 4,
+    "images_initially_collapsed": true,
+    "read_buttons_retained": true,
+    "existing_tests_passed": 12,
+    "webpack_build_passed": true,
+    "required_routes_passed": true
+  },
+  "checks": {
+    "all_cdn_bytes_equal_local": true,
+    "all_slices_reassemble": true,
+    "price_variants_verified": true,
+    "local_390_740_and_deployment_390_1280_passed": true,
+    "humanize_and_launch_gates_passed": true
+  },
+  "not_tested": [
+    "Actual new payment and customer email receipt; delivery settings unchanged",
+    "Non-public shop4 storefront pages; administrator API verified"
+  ],
+  "ops_evidence": "/Users/apple/orca/projects/cafe24/launches/ebooks-remaining-20261001",
+  "customer_messages_sent": 0
+}
