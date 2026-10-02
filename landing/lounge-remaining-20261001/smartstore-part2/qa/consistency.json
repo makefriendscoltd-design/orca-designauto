@@ -2,7 +2,7 @@
   "excluded_files": [
     "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/launch-expected.json"
   ],
-  "files_scanned": 18,
+  "files_scanned": 21,
   "issues": [],
   "root": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2",
   "summary": {
@@ -12,7 +12,7 @@
       "prices": 1,
       "product_ids": 1,
       "times": 1,
-      "urls": 3
+      "urls": 4
     }
   },
   "unreadable": [],
@@ -23,6 +23,16 @@
           "context": "/* 전자책 프리미엄 키트 — aimax-threads-premium/concept4_premium.html 에서 추출 (2026-09-29). 폰트·에셋 경로는 책 폴더 기준 ../_ebook-premium-kit/ 로 바꿔 쓴다 */",
           "line": 1,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/premium.css"
+        },
+        {
+          "context": "\"2026-09-29\": [",
+          "line": 21,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"/* 전자책 프리미엄 키트 — aimax-threads-premium/concept4_premium.html 에서 추출 (2026-09-29). 폰트·에셋 경로는 책 폴더 기준 ../_ebook-premium-kit/ 로 바꿔 쓴다 */\",",
+          "line": 23,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ]
     },
@@ -40,7 +50,7 @@
         },
         {
           "context": "30,000원",
-          "line": 96,
+          "line": 121,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/copy.md"
         },
         {
@@ -49,9 +59,44 @@
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
         },
         {
-          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>이 블로그 방법으로 50억 벌었습니다</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><",
-          "line": 1,
+          "context": "</section><section class=\"intro paper\" id=\"problem\"><p class=\"kicker\">이 책이 필요한 순간</p><h2>글은 계속 쓰는데<br>내 고객은 어디에 있을까요?</h2><p class=\"body-copy\">무슨 글을 쓸지 정하기 전에, 누구를 모을지부터 생각해보세요. 이 책은 블로그에 정보를 쌓고 잠재 고객과 관계를 만드는 방법을 다룹니다.<",
+          "line": 2,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
+        },
+        {
+          "context": "\"context\": \"\\\"display_price\\\": \\\"30,000원\\\",\",",
+          "line": 32,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 37,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 42,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 57,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 62,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 67,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"30,000원\",",
+          "line": 72,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         },
         {
           "context": "30,000원",
@@ -60,7 +105,7 @@
         },
         {
           "context": "30,000원",
-          "line": 96,
+          "line": 121,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/humanize/input.txt"
         },
         {
@@ -70,7 +115,7 @@
         },
         {
           "context": "30,000원",
-          "line": 96,
+          "line": 121,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/humanize/final.md"
         }
       ]
@@ -93,14 +138,34 @@
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
         },
         {
-          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>이 블로그 방법으로 50억 벌었습니다</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><",
-          "line": 1,
+          "context": "</section><section class=\"intro paper\" id=\"problem\"><p class=\"kicker\">이 책이 필요한 순간</p><h2>글은 계속 쓰는데<br>내 고객은 어디에 있을까요?</h2><p class=\"body-copy\">무슨 글을 쓸지 정하기 전에, 누구를 모을지부터 생각해보세요. 이 책은 블로그에 정보를 쌓고 잠재 고객과 관계를 만드는 방법을 다룹니다.<",
+          "line": 2,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
         },
         {
-          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>이 블로그 방법으로 50억 벌었습니다</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><",
-          "line": 1,
+          "context": "</section><section class=\"intro paper\" id=\"problem\"><p class=\"kicker\">이 책이 필요한 순간</p><h2>글은 계속 쓰는데<br>내 고객은 어디에 있을까요?</h2><p class=\"body-copy\">무슨 글을 쓸지 정하기 전에, 누구를 모을지부터 생각해보세요. 이 책은 블로그에 정보를 쌓고 잠재 고객과 관계를 만드는 방법을 다룹니다.<",
+          "line": 2,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
+        },
+        {
+          "context": "\"context\": \"\\\"purchase_url\\\": \\\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\\\"\",",
+          "line": 81,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"https://makefamily.kr/product/detail.html?product_no=401&amp;utm_source=lounge&amp;utm_medium=referral&amp;utm_campaign=261001-ebooks&amp;utm_content=ebook-smartstore-part2\": [",
+          "line": 124,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\": [",
+          "line": 136,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"\\\"purchase_url\\\": \\\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\\\"\",",
+          "line": 138,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ]
     },
@@ -110,6 +175,16 @@
           "context": "name = f'slices/{len(parts)+1:02}.png'",
           "line": 35,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/package.py"
+        },
+        {
+          "context": "\"1:02\": [",
+          "line": 108,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"name = f'slices/{len(parts)+1:02}.png'\",",
+          "line": 110,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ]
     },
@@ -119,6 +194,16 @@
           "context": "background-image:url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><fe",
           "line": 29,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/premium.css"
+        },
+        {
+          "context": "\"http://www.w3.org/2000/svg\": [",
+          "line": 117,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"background-image:url(\\\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles=",
+          "line": 119,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ],
       "https://makefamily.kr/product/detail.html?product_no=401&amp;utm_source=lounge&amp;utm_medium=referral&amp;utm_campaign=261001-ebooks&amp;utm_content=ebook-smartstore-part2": [
@@ -128,9 +213,14 @@
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
         },
         {
-          "context": "<!doctype html><html lang=\"ko\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=740\"><title>이 블로그 방법으로 50억 벌었습니다</title><link rel=\"stylesheet\" href=\"premium.css\"><link rel=\"stylesheet\" href=\"detail.css\"><",
-          "line": 1,
+          "context": "</section><section class=\"intro paper\" id=\"problem\"><p class=\"kicker\">이 책이 필요한 순간</p><h2>글은 계속 쓰는데<br>내 고객은 어디에 있을까요?</h2><p class=\"body-copy\">무슨 글을 쓸지 정하기 전에, 누구를 모을지부터 생각해보세요. 이 책은 블로그에 정보를 쌓고 잠재 고객과 관계를 만드는 방법을 다룹니다.<",
+          "line": 2,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/detail.html"
+        },
+        {
+          "context": "\"https://makefamily.kr/product/detail.html?product_no=401&amp;utm_source=lounge&amp;utm_medium=referral&amp;utm_campaign=261001-ebooks&amp;utm_content=ebook-smartstore-part2\": [",
+          "line": 124,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ],
       "https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2": [
@@ -138,6 +228,23 @@
           "context": "\"purchase_url\": \"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\"",
           "line": 10,
           "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/brief.json"
+        },
+        {
+          "context": "\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\": [",
+          "line": 136,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        }
+      ],
+      "https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\\": [
+        {
+          "context": "\"context\": \"\\\"purchase_url\\\": \\\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\\\"\",",
+          "line": 81,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
+        },
+        {
+          "context": "\"context\": \"\\\"purchase_url\\\": \\\"https://makefamily.kr/product/detail.html?product_no=401&utm_source=lounge&utm_medium=referral&utm_campaign=261001-ebooks&utm_content=ebook-smartstore-part2\\\"\",",
+          "line": 138,
+          "path": "/Users/apple/orca/workspaces/designauto/전자책-상세페이지/landing/lounge-remaining-20261001/smartstore-part2/qa/consistency.json"
         }
       ]
     }

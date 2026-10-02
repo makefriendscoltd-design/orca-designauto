@@ -1,0 +1,97 @@
+{
+  "completed_at": "2026-10-02T01:13:27.388045+00:00",
+  "audited_book_count": 11,
+  "audited_variant_count": 13,
+  "audit": [
+    {
+      "slug": "ai-delegation",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "ai-delegation-shop4",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "hwaleo",
+      "authority_present": true,
+      "restored_this_revision": true
+    },
+    {
+      "slug": "landing-page",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "live-400",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "naver-search",
+      "authority_present": true,
+      "restored_this_revision": true
+    },
+    {
+      "slug": "smartstore-part1",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "smartstore-part2",
+      "authority_present": true,
+      "restored_this_revision": true
+    },
+    {
+      "slug": "smartstore-part3",
+      "authority_present": true,
+      "restored_this_revision": true
+    },
+    {
+      "slug": "threads-basic",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "vault-start",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "zerobaek",
+      "authority_present": true,
+      "restored_this_revision": false
+    },
+    {
+      "slug": "zerobaek-shop4",
+      "authority_present": true,
+      "restored_this_revision": false
+    }
+  ],
+  "restored_books": [
+    "smartstore-part2",
+    "smartstore-part3",
+    "hwaleo",
+    "naver-search"
+  ],
+  "authority": {
+    "label": "운영사 전체 누적 매출",
+    "amount_krw": 11487088262,
+    "display": "114.9억 원",
+    "period": "2021.01–2024.04",
+    "source": "landing/ebook-aside-blog-v3/qa/cumulative-revenue-verification.json",
+    "placement": "immediately after hero"
+  },
+  "verified_product_shop_updates": 8,
+  "public_pc_mobile_views": 8,
+  "all_cdn_bytes_match": true,
+  "operating_fields_preserved": true,
+  "humanize_and_launch_checks_passed": true,
+  "ops_evidence": "/Users/apple/orca/projects/cafe24/launches/ebooks-authority-20261002",
+  "not_tested": [
+    "Non-public shop4 storefront; API readback verified",
+    "New payment or customer email delivery"
+  ],
+  "customer_messages_sent": 0
+}

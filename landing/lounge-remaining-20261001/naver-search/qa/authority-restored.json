@@ -1,0 +1,9 @@
+{
+  "source": "landing/ebook-landing-page-v7/detail.html#company",
+  "revenue_source": "landing/ebook-aside-blog-v3/qa/cumulative-revenue-verification.json",
+  "scope": "Company cumulative revenue, not revenue of this individual ebook",
+  "period": "2021.01–2024.04",
+  "total_display": "114.9억원",
+  "position": "Immediately after hero",
+  "all_previous_images_preserved": true
+}

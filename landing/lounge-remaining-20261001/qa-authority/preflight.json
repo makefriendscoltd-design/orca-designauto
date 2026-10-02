@@ -1,0 +1,11 @@
+{
+  "authorization": "사용자 요청: 바꾼 상세페이지에 누락된 기존 매출 권위 복원",
+  "risk": "잘못된 상품 연결 또는 운영값 동시 변경",
+  "non_destructive_checks": [
+    "8개 상품/몰 최신 백업",
+    "업로드 CDN 바이트 일치",
+    "공개 적용 전 PC/mobile 이미지 렌더",
+    "변경 직전 API 동시 수정 검사"
+  ],
+  "scope": "401–404, shop1/4 description and mobile_description"
+}

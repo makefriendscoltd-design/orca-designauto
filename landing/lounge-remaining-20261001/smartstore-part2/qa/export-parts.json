@@ -9,42 +9,42 @@
     "type": "image",
     "file": "slices/02.png",
     "top": 1498,
-    "height": 1313
+    "height": 1449
   },
   {
     "type": "image",
     "file": "slices/03.png",
-    "top": 2811,
-    "height": 1042
+    "top": 2947,
+    "height": 1809
   },
   {
     "type": "image",
     "file": "slices/04.png",
-    "top": 3853,
-    "height": 1551
-  },
-  {
-    "type": "image",
-    "file": "slices/05.png",
-    "top": 5404,
+    "top": 4756,
     "height": 1500
   },
   {
     "type": "image",
+    "file": "slices/05.png",
+    "top": 6256,
+    "height": 1477
+  },
+  {
+    "type": "image",
     "file": "slices/06.png",
-    "top": 6904,
-    "height": 1426
+    "top": 7733,
+    "height": 1500
   },
   {
     "type": "image",
     "file": "slices/07.png",
-    "top": 8330,
-    "height": 1773
+    "top": 9233,
+    "height": 1244
   },
   {
     "type": "image",
     "file": "slices/08.png",
-    "top": 10103,
-    "height": 443
+    "top": 10477,
+    "height": 1039
   }
 ]

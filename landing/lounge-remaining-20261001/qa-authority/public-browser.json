@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "hwaleo",
+    "width": 390,
+    "images": 7,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "hwaleo",
+    "width": 1280,
+    "images": 7,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "naver-search",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "naver-search",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "smartstore-part2",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "smartstore-part2",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  },
+  {
+    "slug": "smartstore-part3",
+    "width": 390,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 390
+  },
+  {
+    "slug": "smartstore-part3",
+    "width": 1280,
+    "images": 8,
+    "loaded": true,
+    "urlsMatch": true,
+    "gaps": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "withinViewport": true,
+    "price": 30000,
+    "boxWidth": 740
+  }
+]

@@ -2,9 +2,10 @@
   {
     "width": 390,
     "documentWidth": 390,
-    "images": 6,
+    "images": 7,
     "loaded": true,
     "gaps": [
+      0,
       0,
       0,
       0,
@@ -15,9 +16,10 @@
   {
     "width": 740,
     "documentWidth": 740,
-    "images": 6,
+    "images": 7,
     "loaded": true,
     "gaps": [
+      0,
       0,
       0,
       0,

@@ -1,7 +1,7 @@
 {
   "motion": [],
   "width": 740,
-  "height": 10546,
+  "height": 11516,
   "fonts": [
     [
       400,
@@ -67,9 +67,9 @@
     },
     {
       "selector": "h2",
-      "size": "58px",
-      "leading": "69.02px",
-      "tracking": "-2.32px",
+      "size": "55px",
+      "leading": "67.1px",
+      "tracking": "-2.2px",
       "font": "P, sans-serif"
     },
     {
@@ -103,219 +103,263 @@
     },
     {
       "top": 1746,
-      "bottom": 1808
+      "bottom": 1794
     },
     {
-      "top": 1808,
-      "bottom": 1963
+      "top": 1799,
+      "bottom": 1950
     },
     {
-      "top": 1978,
-      "bottom": 2130
+      "top": 1961,
+      "bottom": 2557
     },
     {
-      "top": 2420,
-      "bottom": 2470
+      "top": 1961,
+      "bottom": 2557
     },
     {
-      "top": 2470,
-      "bottom": 2625
+      "top": 1990,
+      "bottom": 2036
     },
     {
-      "top": 2640,
-      "bottom": 2746
+      "top": 2142,
+      "bottom": 2180
     },
     {
-      "top": 2812,
-      "bottom": 3786
+      "top": 2188,
+      "bottom": 2257
     },
     {
-      "top": 2812,
-      "bottom": 3733
+      "top": 2255,
+      "bottom": 2324
     },
     {
-      "top": 3854,
-      "bottom": 4828
+      "top": 2322,
+      "bottom": 2391
     },
     {
-      "top": 3854,
-      "bottom": 4775
+      "top": 2389,
+      "bottom": 2458
     },
     {
-      "top": 4841,
-      "bottom": 4879
+      "top": 2466,
+      "bottom": 2528
     },
     {
-      "top": 5038,
-      "bottom": 5087
+      "top": 2716,
+      "bottom": 2778
     },
     {
-      "top": 5087,
-      "bottom": 5242
+      "top": 2778,
+      "bottom": 2933
     },
     {
-      "top": 5297,
-      "bottom": 5356
+      "top": 2948,
+      "bottom": 3100
     },
     {
-      "top": 5348,
-      "bottom": 5404
+      "top": 3390,
+      "bottom": 3440
     },
     {
-      "top": 5438,
-      "bottom": 5497
+      "top": 3440,
+      "bottom": 3595
     },
     {
-      "top": 5489,
-      "bottom": 5545
+      "top": 3610,
+      "bottom": 3716
     },
     {
-      "top": 5579,
-      "bottom": 5638
+      "top": 3782,
+      "bottom": 4756
     },
     {
-      "top": 5630,
-      "bottom": 5686
+      "top": 3782,
+      "bottom": 4702
     },
     {
-      "top": 5720,
-      "bottom": 5779
+      "top": 4824,
+      "bottom": 5798
     },
     {
-      "top": 5771,
-      "bottom": 5827
+      "top": 4824,
+      "bottom": 5744
     },
     {
-      "top": 6012,
-      "bottom": 6061
+      "top": 5811,
+      "bottom": 5849
     },
     {
-      "top": 6061,
-      "bottom": 6216
+      "top": 6008,
+      "bottom": 6057
     },
     {
-      "top": 6268,
-      "bottom": 6324
+      "top": 6057,
+      "bottom": 6212
     },
     {
-      "top": 6315,
-      "bottom": 6371
+      "top": 6267,
+      "bottom": 6326
     },
     {
-      "top": 6405,
-      "bottom": 6461
+      "top": 6318,
+      "bottom": 6374
     },
     {
-      "top": 6452,
-      "bottom": 6508
+      "top": 6408,
+      "bottom": 6467
     },
     {
-      "top": 6542,
-      "bottom": 6598
+      "top": 6459,
+      "bottom": 6515
     },
     {
-      "top": 6589,
-      "bottom": 6645
+      "top": 6549,
+      "bottom": 6608
     },
     {
-      "top": 6764,
-      "bottom": 6901
+      "top": 6600,
+      "bottom": 6656
     },
     {
-      "top": 7140,
-      "bottom": 7189
+      "top": 6690,
+      "bottom": 6748
     },
     {
-      "top": 7189,
-      "bottom": 7344
+      "top": 6740,
+      "bottom": 6796
     },
     {
-      "top": 7505,
-      "bottom": 7558
+      "top": 6981,
+      "bottom": 7031
     },
     {
-      "top": 7556,
-      "bottom": 7645
+      "top": 7031,
+      "bottom": 7186
     },
     {
-      "top": 7505,
-      "bottom": 7558
+      "top": 7238,
+      "bottom": 7294
     },
     {
-      "top": 7556,
-      "bottom": 7717
+      "top": 7285,
+      "bottom": 7341
     },
     {
-      "top": 7753,
-      "bottom": 7837
+      "top": 7375,
+      "bottom": 7431
     },
     {
-      "top": 7888,
-      "bottom": 7944
+      "top": 7422,
+      "bottom": 7478
     },
     {
-      "top": 7955,
-      "bottom": 8049
+      "top": 7512,
+      "bottom": 7568
     },
     {
-      "top": 8060,
-      "bottom": 8155
+      "top": 7559,
+      "bottom": 7615
     },
     {
-      "top": 8166,
-      "bottom": 8260
+      "top": 7734,
+      "bottom": 7871
     },
     {
-      "top": 8331,
-      "bottom": 9299
+      "top": 8110,
+      "bottom": 8159
     },
     {
-      "top": 8419,
-      "bottom": 8469
+      "top": 8159,
+      "bottom": 8314
     },
     {
-      "top": 8746,
-      "bottom": 8796
+      "top": 8475,
+      "bottom": 8527
     },
     {
-      "top": 8793,
-      "bottom": 8846
+      "top": 8525,
+      "bottom": 8614
     },
     {
-      "top": 8880,
-      "bottom": 8931
+      "top": 8475,
+      "bottom": 8527
     },
     {
-      "top": 8928,
-      "bottom": 9016
+      "top": 8525,
+      "bottom": 8686
     },
     {
-      "top": 9050,
-      "bottom": 9101
+      "top": 8722,
+      "bottom": 8807
     },
     {
-      "top": 9098,
-      "bottom": 9186
+      "top": 8858,
+      "bottom": 8914
     },
     {
-      "top": 9370,
-      "bottom": 9419
+      "top": 8925,
+      "bottom": 9019
     },
     {
-      "top": 9419,
-      "bottom": 9505
+      "top": 9030,
+      "bottom": 9125
     },
     {
-      "top": 9508,
-      "bottom": 10057
+      "top": 9136,
+      "bottom": 9230
     },
     {
-      "top": 10046,
-      "bottom": 10103
+      "top": 9301,
+      "bottom": 10269
     },
     {
-      "top": 10449,
-      "bottom": 10490
+      "top": 9389,
+      "bottom": 9438
+    },
+    {
+      "top": 9715,
+      "bottom": 9766
+    },
+    {
+      "top": 9763,
+      "bottom": 9816
+    },
+    {
+      "top": 9850,
+      "bottom": 9901
+    },
+    {
+      "top": 9898,
+      "bottom": 9986
+    },
+    {
+      "top": 10020,
+      "bottom": 10071
+    },
+    {
+      "top": 10068,
+      "bottom": 10156
+    },
+    {
+      "top": 10340,
+      "bottom": 10389
+    },
+    {
+      "top": 10389,
+      "bottom": 10475
+    },
+    {
+      "top": 10478,
+      "bottom": 11027
+    },
+    {
+      "top": 11016,
+      "bottom": 11073
+    },
+    {
+      "top": 11419,
+      "bottom": 11460
     }
   ],
   "sections": [
@@ -327,44 +371,50 @@
     },
     {
       "i": 1,
-      "id": "problem",
+      "id": "company",
       "y": 1667,
-      "h": 674
+      "h": 970
     },
     {
       "i": 2,
-      "id": "inside",
-      "y": 2341,
-      "h": 2618
+      "id": "problem",
+      "y": 2637,
+      "h": 674
     },
     {
       "i": 3,
-      "id": "topics",
-      "y": 4958,
-      "h": 974
+      "id": "inside",
+      "y": 3311,
+      "h": 2618
     },
     {
       "i": 4,
-      "id": "apply",
-      "y": 5932,
-      "h": 1129
+      "id": "topics",
+      "y": 5928,
+      "h": 974
     },
     {
       "i": 5,
-      "id": "formats",
-      "y": 7061,
-      "h": 1279
+      "id": "apply",
+      "y": 6902,
+      "h": 1129
     },
     {
       "i": 6,
-      "id": "fit",
-      "y": 8340,
-      "h": 951
+      "id": "formats",
+      "y": 8031,
+      "h": 1279
     },
     {
       "i": 7,
+      "id": "fit",
+      "y": 9310,
+      "h": 951
+    },
+    {
+      "i": 8,
       "id": "closing",
-      "y": 9291,
+      "y": 10260,
       "h": 1256
     }
   ],
