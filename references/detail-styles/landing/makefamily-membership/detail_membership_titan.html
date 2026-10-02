@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>메이크패밀리 패밀리회원 — Titan style v2</title>
+<style>
+@font-face{font-family:Wanted;font-weight:600;src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2")}
+@font-face{font-family:Wanted;font-weight:700;src:url("assets/fonts/WantedSans-Bold.woff2") format("woff2")}
+@font-face{font-family:Wanted;font-weight:800;src:url("assets/fonts/WantedSans-ExtraBold.woff2") format("woff2")}
+@font-face{font-family:Wanted;font-weight:900;src:url("assets/fonts/WantedSans-Black.woff2") format("woff2")}
+@font-face{font-family:Wanted;font-weight:950;src:url("assets/fonts/WantedSans-ExtraBlack.woff2") format("woff2")}
+*{box-sizing:border-box;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{width:740px;background:#fff;font-family:Wanted,sans-serif;color:#111;word-break:keep-all}
+img{display:block;width:100%}
+:root{--red:#2f68ea;--black:#030813;--ink:#0b1630;--muted:#657089;--cyan:#70c5ff;--blue:#174ecf;--cream:#edf4ff}
+.top{padding:36px 38px 26px;background:#fff}
+.brand{font-size:34px;font-weight:950;letter-spacing:-.04em;display:flex;align-items:center;gap:12px}
+.brand:before{content:"";display:block;width:34px;height:22px;background:var(--red);clip-path:polygon(0 0,100% 0,62% 50%,100% 100%,0 100%,36% 50%)}
+.top,.course,.notice{display:none}
+.video{padding:0;background:#030813}
+.videoBox{position:relative;height:690px;background:radial-gradient(circle at 82% 58%,#174ecf,#071a3d 46%,#030813 76%);overflow:hidden}
+.videoBox .face{position:absolute;right:18px;bottom:28px;width:300px;height:410px;object-fit:contain;object-position:center;filter:drop-shadow(-24px 12px 34px rgba(0,0,0,.6))}
+.videoBox .play{position:absolute;left:28px;top:26px;width:58px;height:58px;border-radius:50%;background:#fff}
+.videoBox .play:after{content:"";position:absolute;left:24px;top:17px;border-left:18px solid var(--red);border-top:12px solid transparent;border-bottom:12px solid transparent}
+.videoBox .label{position:absolute;left:38px;top:44px;color:#70c5ff;font-size:22px;font-weight:950;letter-spacing:.12em}
+.videoBox h1{position:absolute;left:38px;top:100px;width:590px;color:#fff;font-size:72px;line-height:1.02;letter-spacing:-.07em;font-weight:950}
+.videoBox h1 b{color:var(--cyan)}
+.videoBox .sub{position:absolute;left:38px;bottom:42px;width:350px;color:#c4d2e8;font-size:23px;line-height:1.5;font-weight:800;letter-spacing:-.035em}
+.course{padding:0 38px 34px;background:#fff}
+.chips{display:flex;gap:8px;margin:18px 0 16px}
+.chip{font-size:20px;font-weight:900;color:var(--red);border:2px solid var(--red);padding:9px 13px;border-radius:4px}
+.course h2{font-size:33px;line-height:1.28;letter-spacing:-.045em;font-weight:950}
+.info{margin-top:24px;border:2px solid var(--red)}
+.row{display:grid;grid-template-columns:1fr auto;align-items:center;padding:22px 22px;border-bottom:2px solid var(--red);font-size:23px;font-weight:900}
+.row:last-child{border-bottom:0}
+.row span:first-child{color:#555}
+.btn{margin-top:14px;height:70px;background:var(--red);color:#fff;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:950;border-radius:4px}
+.livePill{margin:12px 0 0 auto;width:max-content;background:#fff;border:2px solid var(--red);color:#111;border-radius:40px;padding:10px 18px;font-size:18px;font-weight:900}
+.notice{background:#050505;color:#fff;padding:28px 42px;text-align:center;font-size:20px;font-weight:800;line-height:1.5}
+.manifesto{min-height:820px;padding:104px 54px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center}
+.manifesto.dark{background:#030813;color:#fff}
+.manifesto.light{background:#fff;color:#0b1630}
+.manifesto.blue{background:linear-gradient(145deg,#174ecf,#3478ff);color:#fff}
+.manifesto .index{font-size:19px;font-weight:950;letter-spacing:.16em;color:#70c5ff}
+.manifesto.light .index{color:#2f68ea}
+.manifesto .hook{margin-top:28px;font-size:66px;line-height:1.08;letter-spacing:-.067em;font-weight:950}
+.manifesto .hook b{color:#70c5ff}
+.manifesto.light .hook b{color:#2f68ea}
+.manifesto .copy{margin-top:42px;font-size:31px;line-height:1.76;letter-spacing:-.035em;font-weight:750;color:rgba(255,255,255,.74)}
+.manifesto.light .copy{color:#5d687f}
+.manifesto .copy strong{color:#fff;font-weight:950}
+.manifesto.light .copy strong{color:#0b1630}
+.manifesto .punch{margin-top:48px;padding-top:34px;border-top:2px solid rgba(255,255,255,.18);font-size:42px;line-height:1.34;letter-spacing:-.052em;font-weight:950}
+.manifesto.light .punch{border-color:#d8e2f1}
+.manifesto .ghost{position:absolute;right:20px;top:18px;font-size:180px;line-height:1;font-weight:950;color:rgba(47,104,234,.08);letter-spacing:-.1em}
+.black{background:#08090d;color:#fff;padding:82px 38px}
+.headline{font-size:55px;line-height:1.08;letter-spacing:-.06em;font-weight:950}
+.headline b{color:var(--cyan)}
+.lead{margin-top:24px;font-size:24px;line-height:1.62;font-weight:700;color:rgba(255,255,255,.72)}
+.screenCard{margin-top:34px;background:#fff;color:#111;padding:12px}
+.screenCard img{height:360px;object-fit:cover}
+.screenCard .meta{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:20px 10px 6px}
+.screenCard .t{font-size:28px;line-height:1.18;font-weight:950;letter-spacing:-.045em}
+.free{background:var(--red);color:#fff;font-size:18px;font-weight:950;padding:12px 14px}
+.teacherGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.teacher{position:relative;height:310px;overflow:hidden;padding:22px;color:#fff}
+.teacher.n{background:linear-gradient(135deg,#1268ff,#10dbe1)}
+.teacher.y{background:linear-gradient(135deg,#061a40,#2f68ea)}
+.teacher .role{font-size:18px;font-weight:950;opacity:.7}
+.teacher .name{margin-top:8px;font-size:31px;font-weight:950;letter-spacing:-.04em}
+.teacher .desc{margin-top:10px;font-size:18px;line-height:1.35;font-weight:800;max-width:160px;opacity:.82}
+.teacher img{position:absolute;right:2px;bottom:0;width:158px;height:238px;object-fit:contain;object-position:center bottom}
+.teacher.y img{width:150px;height:220px;object-fit:contain;object-position:center bottom;right:5px;bottom:10px}
+.proof{background:#fff;color:#111;padding:78px 38px}
+.proofTop{display:grid;grid-template-columns:1fr auto;align-items:end;gap:10px}
+.proofTop .k{font-size:19px;color:var(--red);font-weight:950}
+.proofTop h2{margin-top:8px;font-size:43px;line-height:1.1;letter-spacing:-.055em;font-weight:950}
+.proofTop .num{font-size:112px;color:var(--red);font-weight:950;letter-spacing:-.08em;line-height:.78}
+.proofDesc{margin-top:18px;font-size:22px;line-height:1.55;font-weight:800;color:#4d4a52}
+.proofWall{display:grid;grid-template-columns:1fr;gap:18px;margin-top:38px}
+.proofWall .p{background:#0b0c10;padding:12px;min-height:420px;display:flex;align-items:center}
+.proofWall img{height:100%;object-fit:cover}
+.quote{margin-top:16px;background:#08090d;color:#fff;border-left:8px solid var(--red);padding:30px 26px;font-size:29px;line-height:1.46;font-weight:950;letter-spacing:-.035em}
+.redBand{background:linear-gradient(145deg,#174ecf,#3478ff);color:#fff;padding:82px 38px;text-align:center}
+.redBand .num{font-size:168px;font-weight:950;letter-spacing:-.1em;line-height:.85}
+.redBand h2{font-size:46px;line-height:1.14;letter-spacing:-.055em;font-weight:950}
+.benefits{background:#fff;padding:76px 38px}
+.benefits h2{font-size:50px;line-height:1.12;letter-spacing:-.055em;font-weight:950}
+.cards{display:grid;grid-template-columns:1fr;gap:14px;margin-top:38px}
+.card{background:#111;color:#fff;padding:34px 30px;min-height:190px}
+.card:nth-child(2),.card:nth-child(5){background:var(--blue)}
+.card:last-child:nth-child(odd){grid-column:auto;min-height:190px;background:linear-gradient(120deg,#071a3d,#174ecf)}
+.card .no{font-size:20px;color:rgba(255,255,255,.5);font-weight:950}
+.card .t{margin-top:18px;font-size:36px;line-height:1.2;font-weight:950;letter-spacing:-.045em}
+.card .d{margin-top:14px;font-size:23px;line-height:1.5;font-weight:800;color:rgba(255,255,255,.72)}
+.library{background:#08090d;color:#fff;padding:82px 38px}
+.sticker{display:inline-block;background:#fff;color:var(--red);border:2px solid var(--red);font-size:20px;font-weight:950;padding:10px 14px;transform:rotate(-2deg)}
+.libGrid{margin-top:34px;display:grid;gap:14px}
+.lib{background:#fff;color:#111;padding:30px 26px}
+.lib.red{background:var(--red);color:#fff}.lib.blue{background:var(--blue);color:#fff}
+.lib .cat{font-size:18px;font-weight:950;opacity:.62}
+.lib .title{margin-top:10px;font-size:34px;font-weight:950;letter-spacing:-.045em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{background:#eee;color:#111;padding:8px 10px;font-size:17px;font-weight:850}
+.lib.red .tag,.lib.blue .tag{background:rgba(255,255,255,.2);color:#fff}
+.allCourses{margin-top:22px;background:#fff;color:#111;padding:30px 26px}
+.allCourses h3{font-size:29px;font-weight:950;letter-spacing:-.04em}
+.allCourses ul{margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:11px 14px;list-style:none;padding:0}
+.allCourses li{position:relative;padding-left:17px;font-size:19px;line-height:1.35;font-weight:850}
+.allCourses li:before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;background:var(--red)}
+.reason{background:#edf4ff;padding:86px 38px}
+.reason .eyebrow,.track .eyebrow{font-size:19px;font-weight:950;letter-spacing:.12em;color:var(--red)}
+.reason h2{margin-top:18px;font-size:58px;line-height:1.08;letter-spacing:-.065em;font-weight:950}
+.reason h2 b{color:var(--red)}
+.reason .intro{margin-top:28px;font-size:27px;line-height:1.55;font-weight:800;color:#526079}
+.reasonMap{margin-top:42px;border-top:4px solid #0b1630}
+.reasonRow{padding:30px 0;border-bottom:2px solid #bfcde5}
+.reasonRow .pain{font-size:24px;font-weight:850;color:#66738a}
+.reasonRow .answer{margin-top:10px;font-size:35px;line-height:1.25;font-weight:950;letter-spacing:-.045em}
+.reasonRow .answer b{color:var(--red)}
+.track{padding:92px 38px 110px;min-height:850px;background:#fff;position:relative;overflow:hidden}
+.track.darkTrack{background:#08090d;color:#fff}
+.track.blueTrack{background:linear-gradient(145deg,#174ecf,#3478ff);color:#fff}
+.track.darkTrack .eyebrow,.track.blueTrack .eyebrow{color:#70c5ff}
+.track h2{margin-top:20px;font-size:57px;line-height:1.08;letter-spacing:-.065em;font-weight:950}
+.trackVisual{position:relative;margin:42px -38px 8px;height:430px;overflow:hidden;background:#dfe9ff}
+.trackVisual img{width:100%;height:100%;object-fit:cover}
+.trackVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(5,12,28,.5))}
+.track.darkTrack .trackVisual{margin-left:34px;border-radius:220px 0 0 220px;box-shadow:-28px 28px 0 #174ecf}
+.track.blueTrack .trackVisual{margin-right:34px;border-radius:0 220px 220px 0;box-shadow:28px 28px 0 #071a3d}
+.trackStamp{position:absolute;right:24px;bottom:22px;z-index:2;background:#fff;color:#0b1630;padding:13px 18px;font-size:18px;font-weight:950;transform:rotate(-2deg)}
+.track .promise{margin-top:27px;font-size:29px;line-height:1.5;font-weight:850;color:#58657c}
+.darkTrack .promise,.blueTrack .promise{color:rgba(255,255,255,.76)}
+.lessonList{margin-top:40px;border-top:3px solid currentColor}
+.lesson{padding:24px 0;border-bottom:1px solid rgba(80,96,125,.35)}
+.darkTrack .lesson,.blueTrack .lesson{border-color:rgba(255,255,255,.2)}
+.lesson .name{font-size:28px;line-height:1.28;font-weight:950}
+.lesson .use{margin-top:8px;font-size:20px;line-height:1.45;font-weight:750;color:#69758b}
+.darkTrack .lesson .use,.blueTrack .lesson .use{color:rgba(255,255,255,.68)}
+.output{margin-top:34px;background:#0b1630;color:#fff;padding:30px}
+.darkTrack .output{background:#174ecf}.blueTrack .output{background:#fff;color:#0b1630}
+.output .small{font-size:17px;font-weight:950;letter-spacing:.1em;opacity:.65}
+.output .big{margin-top:10px;font-size:31px;line-height:1.35;font-weight:950;letter-spacing:-.04em}
+.bundle{background:#fff;padding:90px 38px}
+.bundle h2{font-size:56px;line-height:1.08;letter-spacing:-.065em;font-weight:950}
+.bundle .vs{margin-top:42px;display:grid;gap:14px}
+.bundle .side{padding:32px 28px;background:#edf1f7}
+.bundle .side.on{background:#0b1630;color:#fff;border-bottom:12px solid var(--red)}
+.bundle .side .label{font-size:18px;font-weight:950;color:#71809a}
+.bundle .side.on .label{color:#70c5ff}
+.bundle .side .big{margin-top:14px;font-size:34px;line-height:1.28;font-weight:950}
+.bundle .side p{margin-top:14px;font-size:21px;line-height:1.55;font-weight:750;color:#68758a}
+.bundle .side.on p{color:rgba(255,255,255,.72)}
+.bundleVisual{margin:40px -38px 0;height:440px;position:relative;overflow:hidden;background:#09152e}
+.bundleVisual img{height:100%;width:100%;object-fit:cover}
+.bundleVisual:after{content:"상품부터 자동화까지, 하나의 흐름";position:absolute;left:38px;right:38px;bottom:28px;background:#fff;color:#0b1630;padding:20px 22px;font-size:26px;line-height:1.3;font-weight:950}
+.tools{background:#08090d;color:#fff;padding:80px 30px}
+.toolShot{margin-top:28px;border:10px solid #fff;transform:rotate(-1deg)}
+.toolShot:nth-of-type(2){transform:rotate(1deg)}
+.toolShot img{height:245px;object-fit:cover}
+.offline{background:var(--cream);padding:78px 38px}
+.offline h2{font-size:50px;line-height:1.12;letter-spacing:-.055em;font-weight:950}
+.offline p{margin-top:22px;font-size:24px;line-height:1.62;font-weight:750;color:#5c5660}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:30px}
+.photos img{height:220px;object-fit:cover}
+.photos img:first-child{grid-column:1/3;height:320px}
+.zero{margin-top:26px;background:#111;color:#fff;padding:34px 30px;display:grid;grid-template-columns:1fr auto;align-items:end}
+.zero .l{font-size:25px;font-weight:950;line-height:1.35}.zero .r{font-size:66px;color:var(--cyan);font-weight:950}
+.live{background:#fff;padding:78px 38px}
+.live h2{font-size:48px;line-height:1.12;letter-spacing:-.055em;font-weight:950}
+.program{display:grid;grid-template-columns:140px 1fr;gap:16px;border-top:3px solid #111;padding:26px 0}
+.program:first-of-type{margin-top:34px}
+.program .label{color:var(--red);font-size:20px;font-weight:950}
+.program .name{font-size:28px;font-weight:950;letter-spacing:-.04em}
+.program .desc{margin-top:8px;font-size:20px;line-height:1.45;font-weight:700;color:#69656d}
+.sale{margin-top:24px;background:var(--red);color:#fff;padding:40px;text-align:center}
+.sale .n{font-size:110px;line-height:.88;font-weight:950;letter-spacing:-.08em}.sale .d{font-size:26px;font-weight:950}
+.partner{background:#08090d;color:#fff;padding:82px 38px}
+.partner h2{font-size:50px;line-height:1.12;letter-spacing:-.055em;font-weight:950}.partner h2 b{color:var(--cyan)}
+.partner p{margin-top:22px;font-size:23px;line-height:1.62;color:rgba(255,255,255,.74);font-weight:700}
+.partner .proofImg{margin-top:30px;background:#fff;padding:14px}.partner .proofImg img{height:430px;object-fit:cover;object-position:top}
+.partnerList{display:grid;gap:10px;margin-top:22px}.partnerList div{border:2px solid #333;padding:22px;font-size:23px;font-weight:950}
+.fit{background:var(--cream);padding:78px 38px}
+.fit h2{font-size:49px;line-height:1.12;letter-spacing:-.055em;font-weight:950}
+.fitList{display:grid;gap:10px;margin-top:32px}.fitList div{background:#fff;border-left:8px solid var(--red);padding:24px;font-size:23px;line-height:1.38;font-weight:900}
+.final{background:linear-gradient(145deg,#174ecf,#3478ff);color:#fff;text-align:center;padding:86px 38px}
+.final h2{font-size:52px;line-height:1.12;letter-spacing:-.055em;font-weight:950}.final p{margin-top:22px;font-size:23px;line-height:1.58;font-weight:750;color:rgba(255,255,255,.82)}
+.final .whiteBtn{margin:38px auto 0;background:#fff;color:var(--red);height:76px;display:flex;align-items:center;justify-content:center;max-width:520px;border-radius:5px;font-size:26px;font-weight:950}
+</style>
+</head>
+<body>
+<section class="top"><div class="brand">MAKEFAMILY <span style="font-size:18px;color:#777">MEMBERSHIP</span></div></section>
+<section class="video">
+  <div class="videoBox">
+    <div class="play"></div><div class="label">실행 멤버십</div>
+    <h1>상품도 콘텐츠도<br><b>혼자 만들다</b><br>또 멈췄나요?</h1>
+    <img class="face" src="assets/site/yoon_ceo_v2.jpg" alt="윤동규 대표">
+    <div class="sub">무엇을 팔지부터 어떻게 알릴지까지. 사업에 필요한 순서를 한 멤버십 안에 연결했습니다.</div>
+  </div>
+</section>
+<section class="course">
+  <div class="chips"><div class="chip">BEST</div><div class="chip">MEMBERSHIP</div></div>
+  <h2>메이크패밀리 정규 강의와 실행 환경을 함께 쓰는 패밀리회원</h2>
+  <div class="info">
+    <div class="row"><span>멤버십 구성</span><b>강의 + 커뮤니티 + 혜택</b></div>
+    <div class="row"><span>오프라인</span><b>패밀리데이 무료</b></div>
+  </div>
+  <div class="btn">패밀리회원 신청하기</div>
+  <div class="livePill">AI와 마케팅을 내 사업에 적용하고 싶은 분들을 위한 멤버십</div>
+</section>
+<div class="notice">수익을 보장하는 상품이 아닙니다.<br>강의, 실습, 커뮤니티, 협업 기회는 개인의 실행 정도와 상황에 따라 결과가 달라질 수 있습니다.</div>
+
+<section class="manifesto light">
+  <div class="ghost">WHY</div>
+  <div class="index">01 · THE REAL PROBLEM</div>
+  <div class="hook">당신이 부족해서<br>실행하지 못한 게<br><b>아닙니다</b></div>
+  <div class="copy">블로그도 배웠고, 인스타도 봤고, 유튜브와 숏폼 강의도 저장해뒀습니다. AI가 중요하다는 말도 이미 수십 번 들었습니다.</div>
+  <div class="punch">그런데 내일이 되면<br>또 같은 자리에서 시작합니다.</div>
+</section>
+
+<section class="manifesto dark">
+  <div class="ghost">STOP</div>
+  <div class="index">02 · WHY YOU STOP</div>
+  <div class="hook">정보가 없어서가 아니라<br><b>혼자 끊기는 구조</b>가<br>문제였습니다</div>
+  <div class="copy">무엇을 먼저 해야 하는지, 내 사업에는 무엇을 적용해야 하는지, 이 콘텐츠가 어떻게 매출로 이어지는지 판단해 줄 구조가 없었습니다. <strong>강의를 더 사는 것만으로는 이 문제가 해결되지 않습니다.</strong></div>
+  <div class="punch">필요한 건 또 하나의 강의가 아니라<br>다시 움직이게 만드는 환경입니다.</div>
+</section>
+
+<section class="black">
+  <div class="headline">강의만 더 보는<br>멤버십이 아닙니다.<br><b>사업을 움직이는 시스템입니다</b></div>
+  <div class="lead">패밀리회원은 강의 목록만 쌓아두는 자료실이 아닙니다. 상품과 마케팅을 설계하고, AI 툴로 실행하고, 오프라인 현장에서 다시 움직이는 환경입니다.</div>
+  <div class="screenCard"><img src="assets/site/live_speaker.jpg"><div class="meta"><div class="t">매월 오프라인 패밀리데이<br>실제 강의 현장</div><div class="free">FREE</div></div></div>
+  <div class="teacherGrid">
+    <div class="teacher y"><div class="role">COMMERCE · MARKETING</div><div class="name">윤동규 대표</div><div class="desc">사업 구조, 상품 기획, 고객과 판매 전략</div><img src="assets/site/yoon_ceo_v2.jpg"></div>
+    <div class="teacher n"><div class="role">AI · AUTOMATION</div><div class="name">나민수 대표</div><div class="desc">AI 실무, 반복 업무 자동화, 실행 도구</div><img src="assets/site/namin_ad_cut.png"></div>
+  </div>
+</section>
+
+<section class="proof">
+  <div class="proofTop"><div><div class="k">REAL PROOF</div><h2>이미 실행한 사람들의<br>화면을 먼저 보세요</h2></div><div class="num">30+</div></div>
+  <div class="proofDesc">실제 메이크패밀리 강의와 실행 프로그램에서 나온 카페 후기, 카톡 기록, 결과물 화면입니다. 설명보다 먼저 실행의 흔적을 확인하세요.</div>
+  <div class="proofWall">
+    <div class="p"><img src="assets/review/kt1.png"></div>
+    <div class="p"><img src="assets/review/p2_apply.png"></div>
+    <div class="p"><img src="assets/review/p3_apply2.png"></div>
+    <div class="p"><img src="assets/proof/p4_pay.png"></div>
+    <div class="p"><img src="assets/proof/p1_works.png"></div>
+  </div>
+  <div class="quote">“다시보기 돌려보면서 기록하는데, 재미있어서 점심 먹는 것도 스킵하고 봤네요.”</div>
+  <div class="quote">“보이스 다이어리도 괜찮은데요? 하루를 정리하면서 저녁마다 누워서 말로 기록하는 일기장.”</div>
+  <div class="quote">수강생 결과물은 카페 글과 실제 화면으로 남아 있습니다.</div>
+</section>
+
+<section class="manifesto blue">
+  <div class="ghost">MOVE</div>
+  <div class="index">03 · WHAT CHANGES</div>
+  <div class="hook">배우는 순간부터<br>내 사업에 <b style="color:#fff">붙이기 시작합니다</b></div>
+  <div class="copy">사업 구조를 잡고, 팔릴 상품을 기획하고, 콘텐츠로 알리고, 반복 업무는 AI로 줄입니다. 막히면 사람을 만나고, 다시 실행합니다.</div>
+  <div class="punch">강의 → 적용 → 피드백 → 연결<br>이 흐름이 끊기지 않게 만듭니다.</div>
+</section>
+
+<section class="reason">
+  <div class="eyebrow">WHY THIS MEMBERSHIP</div>
+  <h2>지금 막힌 일을 고르면<br><b>다음에 볼 강의가</b><br>바로 보입니다</h2>
+  <div class="intro">강의를 많이 주는 게 핵심이 아닙니다. 사업의 막힌 지점마다 필요한 강의와 도구가 이어져 있다는 게 핵심입니다.</div>
+  <div class="reasonMap">
+    <div class="reasonRow"><div class="pain">“대체 뭘 팔아야 할지 모르겠습니다”</div><div class="answer"><b>제품 소싱</b>부터 시작합니다</div></div>
+    <div class="reasonRow"><div class="pain">“상품은 있는데 아무도 클릭하지 않습니다”</div><div class="answer"><b>상품명·컨셉·구매심리</b>를 고칩니다</div></div>
+    <div class="reasonRow"><div class="pain">“매일 뭘 올려야 할지 막힙니다”</div><div class="answer"><b>블로그·숏폼·스레드</b>로 풉니다</div></div>
+    <div class="reasonRow"><div class="pain">“반복 작업에 하루가 다 갑니다”</div><div class="answer"><b>AI 제작툴</b>로 작업 시간을 줄입니다</div></div>
+    <div class="reasonRow"><div class="pain">“혼자서는 또 흐지부지됩니다”</div><div class="answer"><b>패밀리데이</b>에서 다시 움직입니다</div></div>
+  </div>
+</section>
+
+<section class="track">
+  <div class="eyebrow">TRACK 01 · 무엇을 팔 것인가</div>
+  <h2>아이템 찾다가<br>몇 달 보내지 마세요</h2>
+  <div class="promise">감으로 고르는 대신, 팔릴 가능성을 따져 상품 후보를 좁힙니다.</div>
+  <div class="trackVisual"><img src="assets/visual/product_planning.png"><div class="trackStamp">상품 후보를 고르는 기준부터</div></div>
+  <div class="lessonList">
+    <div class="lesson"><div class="name">팔리는 제품 소싱</div><div class="use">시장과 고객을 보고 상품 후보를 찾는 기준</div></div>
+    <div class="lesson"><div class="name">제품 소싱 기초편</div><div class="use">처음 시작할 때 확인해야 할 소싱 순서</div></div>
+    <div class="lesson"><div class="name">제품 소싱 응용편</div><div class="use">후보를 비교하고 판매 구조까지 연결하는 방법</div></div>
+  </div>
+  <div class="output"><div class="small">이 트랙을 보고 남는 것</div><div class="big">막연한 아이디어가 아니라<br>검토할 수 있는 상품 후보</div></div>
+</section>
+
+<section class="track darkTrack">
+  <div class="eyebrow">TRACK 02 · 왜 이걸 사야 하는가</div>
+  <h2>좋은 상품도<br>설명이 구리면<br>안 팔립니다</h2>
+  <div class="promise">고객이 한 번에 이해하는 이름과 컨셉으로 상품의 첫인상을 바꿉니다.</div>
+  <div class="trackVisual"><img src="assets/visual/business_structure.png"><div class="trackStamp">고객이 이해하는 판매 구조</div></div>
+  <div class="lessonList">
+    <div class="lesson"><div class="name">팔리는 상품명 만드는 법</div><div class="use">무엇을 파는지 바로 꽂히는 이름 설계</div></div>
+    <div class="lesson"><div class="name">팔리는 컨셉 만들기</div><div class="use">고객이 비교할 이유를 만드는 컨셉 설계</div></div>
+    <div class="lesson"><div class="name">상품명·컨셉 AI 제작툴</div><div class="use">빈 화면에서 초안을 빠르게 뽑고 다듬는 실무 도구</div></div>
+  </div>
+  <div class="output"><div class="small">이 트랙을 보고 남는 것</div><div class="big">상품명 한 줄과<br>판매 페이지의 핵심 컨셉</div></div>
+</section>
+
+<section class="track">
+  <div class="eyebrow">TRACK 03 · 어떻게 알릴 것인가</div>
+  <h2>매일 새로 만들지 말고<br>하나를 여러 채널로<br>돌리세요</h2>
+  <div class="promise">블로그 글 하나를 숏폼과 스레드까지 이어 쓰는 콘텐츠 운영 방식을 익힙니다.</div>
+  <div class="trackVisual"><img src="assets/visual/content_channels.png"><div class="trackStamp">한 소재를 여러 채널로</div></div>
+  <div class="lessonList">
+    <div class="lesson"><div class="name">블로그 마케팅 기초·중급·고급</div><div class="use">검색되는 글의 기초부터 판매로 연결하는 운영까지</div></div>
+    <div class="lesson"><div class="name">팔리는 숏폼·스레드 마케팅</div><div class="use">짧은 콘텐츠에서 관심과 행동을 만드는 법</div></div>
+    <div class="lesson"><div class="name">원소스멀티유즈·SNS 3대장</div><div class="use">하나의 소재를 여러 채널에 맞게 다시 쓰는 방식</div></div>
+    <div class="lesson"><div class="name">네이버 검색광고 자료</div><div class="use">검색 수요를 광고와 연결할 때 필요한 실무 자료</div></div>
+  </div>
+  <div class="output"><div class="small">이 트랙을 보고 남는 것</div><div class="big">오늘 올릴 콘텐츠와<br>다음 채널로 확장할 운영 방식</div></div>
+</section>
+
+<section class="track blueTrack">
+  <div class="eyebrow">TRACK 04 · 어떻게 덜 일할 것인가</div>
+  <h2>사장님이 반복할 일,<br>AI에게 먼저<br>넘기세요</h2>
+  <div class="promise">AI를 구경하는 데서 끝내지 않고 상품 기획과 콘텐츠 제작에 바로 씁니다.</div>
+  <div class="trackVisual"><img src="assets/visual/ai_automation.png"><div class="trackStamp">반복 작업은 AI에게</div></div>
+  <div class="lessonList">
+    <div class="lesson"><div class="name">상품명 AI 생성툴</div><div class="use">상품의 특징과 고객을 바탕으로 이름 초안 생성</div></div>
+    <div class="lesson"><div class="name">컨셉 AI 제작툴</div><div class="use">판매 포인트와 컨셉 방향을 빠르게 정리</div></div>
+    <div class="lesson"><div class="name">블로그 자동화 툴</div><div class="use">콘텐츠 기획과 초안 작성의 반복을 줄이는 도구</div></div>
+    <div class="lesson"><div class="name">숏폼 자동화 툴</div><div class="use">짧은 영상 콘텐츠 제작 흐름을 단순화하는 도구</div></div>
+  </div>
+  <div class="output"><div class="small">이 트랙을 보고 남는 것</div><div class="big">매번 처음부터 하지 않아도 되는<br>나만의 반복 작업 흐름</div></div>
+</section>
+
+<section class="bundle">
+  <h2>결국 사는 건<br>강의 개수가 아닙니다</h2>
+  <div class="bundleVisual"><img src="assets/visual/curriculum_ecosystem.png"></div>
+  <div class="vs">
+    <div class="side"><div class="label">따로 배우면</div><div class="big">소싱 따로, 마케팅 따로,<br>AI 따로</div><p>각 강의는 끝났는데 내 사업에서는 어디부터 연결할지 다시 혼자 고민합니다.</p></div>
+    <div class="side on"><div class="label">패밀리회원은</div><div class="big">상품 → 컨셉 → 콘텐츠 → 자동화</div><p>사업의 순서대로 배우고, 막히면 오프라인에서 다시 실행할 환경까지 함께 가져갑니다.</p></div>
+  </div>
+</section>
+
+<section class="redBand"><div class="num">3</div><h2>강의 밖에서도<br>실행이 끊기지 않는 이유</h2></section>
+<section class="benefits">
+  <div class="cards">
+    <div class="card"><div class="no">01 · MEET</div><div class="t">패밀리데이 무료</div><div class="d">온라인에서 식은 실행력을 오프라인 현장에서 다시 끌어올립니다.</div></div>
+    <div class="card"><div class="no">02 · DEEP DIVE</div><div class="t">라이브 과정 30% 혜택</div><div class="d">더 깊은 실습이 필요할 때 심화 과정으로 이어집니다.</div></div>
+    <div class="card"><div class="no">03 · PARTNER</div><div class="t">함께 만들 기회</div><div class="d">조건과 방향이 맞으면 콘텐츠, 상품, 서비스, 공동 판매 프로젝트로 연결됩니다.</div></div>
+  </div>
+</section>
+
+<section class="library">
+  <div class="sticker">강의 자료실이 아닙니다</div>
+  <div class="headline" style="margin-top:34px">내 사업에 붙일<br>실행 라이브러리입니다</div>
+  <div class="libGrid">
+    <div class="lib"><div class="cat">BUSINESS</div><div class="title">돈 벌리는 사업 구조</div><div class="tags"><span class="tag">사업 이론</span><span class="tag">서비스 기획</span><span class="tag">고객 구매심리</span></div></div>
+    <div class="lib red"><div class="cat">PRODUCT</div><div class="title">팔리는 아이템과 컨셉</div><div class="tags"><span class="tag">제품 소싱</span><span class="tag">상품명</span><span class="tag">컨셉 제작</span><span class="tag">AI 기획툴</span></div></div>
+    <div class="lib blue"><div class="cat">MARKETING</div><div class="title">블로그, 숏폼, 스레드, 유튜브</div><div class="tags"><span class="tag">블로그</span><span class="tag">숏폼</span><span class="tag">스레드</span><span class="tag">원소스멀티유즈</span></div></div>
+  </div>
+  <div class="allCourses"><h3>함께 활용하는 실행 자료</h3><ul><li>마케팅 비법서 PDF</li><li>실무 웨비나 강의</li><li>네이버 검색광고 자료</li><li>콘텐츠 채널 운영 자료</li></ul></div>
+</section>
+
+<section class="tools">
+  <div class="headline">AI를 신기한 도구가 아니라<br><b>일하는 방식</b>으로 바꿉니다</div>
+  <div class="lead">상품명, 컨셉, 블로그, 숏폼. 반복되는 마케팅 작업을 더 빠르게 만드는 실무형 툴과 강의를 함께 봅니다.</div>
+  <div class="toolShot"><img src="assets/tool/t1_naming.png"></div>
+  <div class="toolShot"><img src="assets/tool/t2_concept.png"></div>
+  <div class="toolShot"><img src="assets/tool/t3_blog.png"></div>
+</section>
+
+<section class="offline">
+  <div class="sticker" style="background:#111;color:#fff;border:0">매월 오프라인</div>
+  <h2 style="margin-top:30px">온라인 강의만 보면<br>쉽게 식습니다</h2>
+  <p><b>패밀리회원은 매월 패밀리데이에 무료 참석</b>할 수 있습니다. 일반 참가자는 3만원으로 참여하는 오프라인 강연을 회원 혜택으로 이용합니다.</p>
+  <div class="photos"><img src="assets/site/f0.jpg"><img src="assets/site/f1.jpg"><img src="assets/site/f2.jpg"><img src="assets/site/f3.jpg"><img src="assets/site/f4.jpg"></div>
+  <div class="zero"><div class="l">패밀리데이<br>회원 혜택</div><div class="r">0원</div></div>
+</section>
+
+<section class="live">
+  <div class="k" style="font-size:19px;color:var(--red);font-weight:950">LIVE BENEFIT</div>
+  <h2>더 깊게 들어가고 싶을 때<br>30% 혜택으로 이어집니다</h2>
+  <div class="program"><div class="label">LIVE</div><div><div class="name">제2의 뇌 만들기</div><div class="desc">내 데이터와 업무 흐름을 AI 비서 구조로 바꾸는 심화 과정</div></div></div>
+  <div class="program"><div class="label">STARTUP</div><div><div class="name">AI 창업 프로그램</div><div class="desc">아이템 제작부터 판매 가능한 서비스까지 함께 만드는 프로그램</div></div></div>
+  <div class="program"><div class="label">CLASS</div><div><div class="name">실시간 라이브 특강</div><div class="desc">마케팅, 자동화, 콘텐츠 실무를 실시간으로 다루는 강의</div></div></div>
+  <div class="sale"><div class="n">30%</div><div class="d">패밀리회원 혜택가</div></div>
+</section>
+
+<section class="partner">
+  <div class="sticker">PARTNERS</div>
+  <h2 style="margin-top:34px">배우는 사람에서<br><b>함께 만드는 사람</b>으로</h2>
+  <p>조건과 방향이 맞으면 패밀리 파트너스 참여 기회가 열립니다. 추천 제도가 아니라 콘텐츠, 상품, 서비스, 공동 프로젝트로 확장될 수 있는 협업 구조입니다.</p>
+  <div class="proofImg"><img src="assets/proof/p1_works.png"></div>
+  <div class="partnerList"><div>강의/교육 공동 홍보</div><div>콘텐츠 공동 제작</div><div>AI 자동화 서비스 협업</div><div>공동 판매 프로젝트 참여</div><div>수익 쉐어 기반 협업 기회</div></div>
+</section>
+
+<section class="fit">
+  <div class="k" style="font-size:19px;color:var(--red);font-weight:950">FOR WHO</div>
+  <h2>이런 분에게<br>필요합니다</h2>
+  <div class="fitList"><div>AI를 배워야 한다는 건 알지만 어디서부터 해야 할지 모르는 분</div><div>강의는 많이 봤지만 내 사업에 적용하지 못한 분</div><div>블로그, 인스타, 유튜브, 숏폼을 시작하고 싶은데 계속 막히는 분</div><div>내 지식과 서비스를 콘텐츠와 매출로 연결하고 싶은 분</div><div>온라인 강의뿐 아니라 오프라인 커뮤니티 안에서 함께 성장하고 싶은 분</div></div>
+</section>
+
+<section class="final">
+  <h2>혼자 배우는 단계에서<br>끝내고 싶지 않다면</h2>
+  <p>패밀리회원은 사업을 배우고, 마케팅을 익히고, AI로 실행하고, 사람들과 연결되고, 함께 기회를 만들어가는 메이크패밀리의 실행 커뮤니티입니다.</p>
+  <div class="whiteBtn">패밀리회원 신청하기</div>
+  <p style="font-size:18px;margin-top:20px">가격과 이용 조건은 결제창에서 최종 확인해 주세요.</p>
+</section>
+</body>
+</html>

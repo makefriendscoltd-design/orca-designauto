@@ -1,0 +1,220 @@
+/* ============================================================
+   PUDUFU KIT — 프드프(pudufu.co.kr) 문법 상세페이지
+   레퍼런스: https://pudufu.co.kr/home/pdf_detail_page/637 (2026 일반인을 위한 AI 올인원)
+            733px × 34,018px · 편집기 이미지 34장(GIF 9장 포함)
+
+   와디즈 포스터 문법(poster.css)과 다른 계열이다. 섞지 말 것.
+   - 폭 733(우리는 740) vs 860
+   - 결론 제목 66px vs 92px — 프드프가 더 작다. 대신 "리드→결론" 2단이 계속 반복된다
+   - 어휘: ❝인용부호 · 빨간 화살표 · 빨간 밑줄/동그라미 · 노란 형광 · 흰↔인디고 곡선 전환
+
+   실측 팔레트(원본 픽셀 샘플링)
+   #080655 인디고 면 / #13115c 잉크 / #5b7488 회색 리드 / #f3f3f1 연회색 카드
+   #e10e26 레드(화살표·밑줄·수치) / #e8f000 옐로(다크면 형광어·CTA)
+   ============================================================ */
+
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-Regular.woff2");font-weight:400}
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-Medium.woff2");font-weight:500}
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-SemiBold.woff2");font-weight:600}
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-Bold.woff2");font-weight:700}
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-ExtraBold.woff2");font-weight:800}
+@font-face{font-family:Wanted;src:url("assets/fonts/WantedSans-Black.woff2");font-weight:900}
+/* 손글씨 말풍선 전용. 본문에 쓰지 않는다 */
+@font-face{font-family:Hanna;src:url("assets/fonts/BMHANNA_11yrs_ttf.ttf")}
+
+:root{
+  --ink0:#080655;   /* 인디고 풀블리드 면 */
+  --ink:#13115c;    /* 제목 잉크 */
+  --lead:#5b7488;   /* 회색 리드 */
+  --body:#333a52;   /* 본문 */
+  --mute:#8b93a8;   /* 캡션 */
+  --gray:#f3f3f1;   /* 연회색 카드 */
+  --red:#e10e26;
+  --yl:#e8f000;
+  --line:#e2e4ec;
+}
+*{box-sizing:border-box;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{width:740px;font-family:Wanted,sans-serif;color:var(--body);word-break:keep-all;background:#fff}
+img{display:block;width:100%}
+
+/* ===== 면 ===== */
+.sec{padding:104px 46px;text-align:center;background:#fff}
+.sec.gray{background:var(--gray)}
+.sec.ink{background:var(--ink0);color:#fff}
+.sec.tight{padding-top:70px}
+.sec.pb0{padding-bottom:0}
+
+/* 흰 면 아래를 큰 원호로 깎아 인디고 면으로 넘긴다 (레퍼런스의 전환 장치) */
+.curve{border-radius:0 0 50% 50%/0 0 88px 88px}
+.curve-up{border-radius:88px 88px 0 0/50% 50% 0 0}
+
+/* ===== 타입 — 리드(회색 작게) → 결론(굵게 크게) 2단이 이 문법의 뼈대 ===== */
+.qm{font-size:56px;line-height:.9;font-weight:900;color:#c3c7d2;letter-spacing:-.06em}
+.ink .qm{color:#6e74a8}
+.lead{font-size:46px;line-height:1.5;font-weight:700;color:var(--lead);letter-spacing:.005em;margin-top:14px}
+.ink .lead{color:#b9c0e2}
+.h{font-size:66px;line-height:1.34;font-weight:900;color:var(--ink);letter-spacing:-.035em;margin-top:8px}
+.ink .h{color:#fff}
+.h.s{font-size:52px}
+.h.xs{font-size:44px}
+.h.xl{font-size:82px}
+.p{font-size:34px;line-height:1.62;color:var(--body);margin-top:26px}
+.ink .p{color:#c8cdea}
+.cap{font-size:26px;line-height:1.6;color:var(--mute);margin-top:22px}
+.ink .cap{color:#8f97c4}
+
+/* ===== 강조 어휘 ===== */
+/* 빨간 밑줄 — 형광펜처럼 글자 아래를 지른다 */
+.u{background:linear-gradient(var(--red),var(--red)) no-repeat 0 100%/100% 7px}
+/* 노란 형광 — 다크 면 전용 */
+.yl{color:var(--yl)}
+.ylbg{background:var(--yl);color:var(--ink);padding:.02em .18em}
+/* 빨간 손그림 동그라미 — 글자를 감싼다 */
+.circ{position:relative;display:inline-block;padding:0 .18em;z-index:1}
+.circ:after{content:"";position:absolute;left:-.08em;right:-.08em;top:-.14em;bottom:-.12em;
+  border:5px solid var(--red);border-radius:50%;transform:rotate(-2.5deg);z-index:-1}
+.rd{color:var(--red)}
+
+/* 빨간 화살표 — 섹션 전환. clip-path 로 그린다(글리프는 존재감이 없다) */
+.arw{width:106px;height:132px;margin:52px auto;
+  background:linear-gradient(180deg,#f04a3a,#c40b1f);
+  clip-path:polygon(34% 0,66% 0,66% 56%,100% 56%,50% 100%,0 56%,34% 56%)}
+.arw.sm{width:74px;height:92px;margin:36px auto}
+
+/* · · · + 자간 벌린 전환어 */
+.dots{font-size:36px;letter-spacing:.5em;color:#fff;margin-top:8px}
+.sec:not(.ink) .dots{color:#b6bbcb}
+.but{font-size:44px;font-weight:700;letter-spacing:.42em;margin-top:22px;color:#fff}
+.sec:not(.ink) .but{color:var(--ink)}
+
+/* ===== 카드 · 박스 ===== */
+.card{background:var(--gray);border-radius:34px;padding:56px 34px;margin-top:38px}
+.ink .card{background:#100e6e}
+.card .h{margin-top:6px}
+/* 네이비 수치 박스 — 흰 라벨 + 노란 숫자 + 하단 빨간 라인 */
+.nbox{background:var(--ink0);border-radius:18px;padding:38px 32px 30px;margin-top:30px;text-align:left;color:#fff}
+.nbox .t{font-size:32px;font-weight:700}
+.nbox .v{font-size:52px;font-weight:900;color:var(--yl);margin-top:10px;letter-spacing:-.02em}
+.nbox .v em{font-style:normal;font-size:30px;color:#fff;font-weight:700;margin-left:8px}
+.nbox .ft{display:flex;justify-content:space-between;font-size:20px;color:#9aa0c8;margin-top:26px}
+.nbox .bar{height:5px;background:var(--red);border-radius:3px;margin-top:12px}
+/* 점선 박스 — 서사 블록을 묶는다 */
+.dash{border:2px dashed #b9bfd0;border-radius:22px;padding:52px 30px;margin-top:40px}
+.ink .dash{border-color:#3c3a90}
+/* 점선 구분선 */
+.hr{border-top:2px dotted #cfd4e0;margin:64px 0}
+
+/* ===== CTA — 노란 버튼(주) · 네이비 알약(보조) ===== */
+.btn{display:flex;align-items:center;justify-content:center;gap:22px;
+  background:var(--yl);border:3px solid var(--ink);border-radius:16px;
+  padding:30px;margin-top:32px;font-size:44px;font-weight:900;color:var(--ink);letter-spacing:-.02em}
+.btn i{width:52px;height:52px;border:3px solid var(--ink);border-radius:50%;position:relative;flex:none}
+.btn i:after{content:"";position:absolute;left:16px;top:15px;width:16px;height:16px;
+  border-right:3px solid var(--ink);border-bottom:3px solid var(--ink);transform:rotate(-45deg)}
+.btn.navy{background:var(--ink);border-color:var(--ink);color:#fff;border-radius:999px;font-size:36px;padding:26px}
+.btn.navy i{border-color:#fff}
+.btn.navy i:after{border-right-color:#fff;border-bottom-color:#fff}
+.fine{font-size:24px;line-height:1.65;color:var(--mute);margin-top:24px}
+.ink .fine{color:#8f97c4}
+
+/* ===== 챕터 목록 ===== */
+.chip{display:inline-block;background:var(--ink);color:#fff;border-radius:999px;
+  font-size:30px;font-weight:700;padding:13px 38px}
+.shot{margin-top:36px;border-radius:16px;overflow:hidden;background:#000}
+.scap{font-size:30px;line-height:1.5;color:var(--ink);font-weight:700;margin-top:20px}
+.scap b{color:var(--red);margin-right:8px}
+
+/* ===== 증거 캡처 ===== */
+.frame{margin-top:36px;border:10px solid var(--ink0);border-radius:20px;overflow:hidden;
+  box-shadow:0 24px 50px rgba(8,6,85,.18)}
+.kk{max-width:470px;margin:36px auto 0}
+.kk img{border-radius:16px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.tile{background:#fff;border-radius:20px;overflow:hidden;text-align:left;border:1px solid var(--line)}
+.ink .tile{background:#100e6e;border-color:#2f2d86}
+.tile .b{padding:22px 20px 26px}
+.tile .t{font-size:20px;font-weight:900;color:var(--red);letter-spacing:.04em}
+.tile h3{font-size:30px;line-height:1.25;margin-top:9px;color:var(--ink)}
+.ink .tile h3{color:#fff}
+.tile p{font-size:21px;line-height:1.5;color:var(--mute);margin-top:9px}
+
+/* 성과 카드 — 사진 + 인용 + 빨간 수치 */
+.pf{background:var(--gray);border-radius:26px;padding:40px 32px;margin-top:22px;text-align:left}
+.pf .who{font-size:26px;font-weight:900;color:var(--ink)}
+.pf .q{font-size:34px;line-height:1.55;font-weight:700;color:var(--ink);margin-top:16px}
+.pf .num{display:inline-block;background:#fff;border:3px solid var(--red);border-radius:12px;
+  color:var(--red);font-size:34px;font-weight:900;padding:12px 22px;margin-top:20px}
+
+/* 큰 수치 2칸 */
+.stat{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:36px}
+.stat>div{background:var(--gray);border-radius:22px;padding:44px 18px;text-align:center}
+.ink .stat>div{background:#100e6e}
+.stat b{display:block;font-size:60px;font-weight:900;color:var(--ink);line-height:1;letter-spacing:-.03em}
+.ink .stat b{color:var(--yl)}
+.stat span{display:block;font-size:22px;line-height:1.45;color:var(--mute);margin-top:16px}
+.ink .stat span{color:#9aa0c8}
+
+/* 비교 행 */
+.rows{margin-top:40px;text-align:left}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:26px 0;border-top:2px solid var(--line)}
+.rows .row:last-child{border-bottom:2px solid var(--line)}
+.row .k{grid-column:1/3;font-size:30px;font-weight:900;color:var(--ink)}
+.row .f,.row .pm{font-size:24px;line-height:1.45;border-radius:12px;padding:16px 18px}
+.row .f{background:var(--fbg);color:var(--mute)}
+.row .pm{background:var(--pmbg);color:var(--ink);font-weight:700}
+
+/* 말풍선 — 속말은 한나체 */
+.bub{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;text-align:left;margin-top:40px}
+.bub.rev{grid-template-columns:1fr 150px}
+.bub img{width:150px}
+.bub .say{background:#fff;border:3px solid var(--ink);color:var(--ink);border-radius:22px;padding:28px 30px;
+  font-family:Hanna,Wanted,sans-serif;font-size:34px;line-height:1.45;position:relative}
+.ink .bub .say{background:#fff}
+.bub .say:before{content:"";position:absolute;left:-15px;top:38px;border:10px solid transparent;border-right-color:var(--ink)}
+.bub .say:after{content:"";position:absolute;left:-10px;top:38px;border:10px solid transparent;border-right-color:#fff}
+.bub.rev .say:before{left:auto;right:-15px;border-right-color:transparent;border-left-color:var(--ink)}
+.bub.rev .say:after{left:auto;right:-10px;border-right-color:transparent;border-left-color:#fff}
+
+/* 별점 */
+.stars{font-size:54px;font-weight:900;color:var(--ink);margin-top:10px}
+.stars em{font-style:normal;font-size:30px;color:var(--mute);font-weight:700;margin-left:10px}
+
+/* HERO */
+.hero{background:var(--ink0);color:#fff;padding:78px 46px 0;text-align:center;position:relative;overflow:hidden}
+.hero .bd{font-size:24px;font-weight:900;letter-spacing:.1em;color:var(--yl)}
+.hero h1{font-size:104px;line-height:1.24;font-weight:900;letter-spacing:-.045em;margin-top:34px}
+.hero .sub{font-size:32px;line-height:1.6;color:#b9c0e2;margin-top:28px}
+.hero .book{width:330px;margin:44px auto 0;border:1px solid rgba(255,255,255,.24);
+  border-radius:4px;box-shadow:0 40px 70px rgba(0,0,0,.6)}
+.hero .tags{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:36px;padding-bottom:74px}
+.hero .tags span{border:2px solid rgba(255,255,255,.34);border-radius:999px;padding:12px 20px;font-size:22px;font-weight:700}
+
+/* 사실 4칸 */
+.strip{display:grid;grid-template-columns:1fr 1fr;background:#fff}
+.strip>div{padding:44px 18px;text-align:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.strip b{font-size:34px;color:var(--ink)}
+.strip span{display:block;font-size:22px;color:var(--mute);margin-top:10px}
+
+/* 가격 계단 */
+.ladder{margin-top:38px;display:grid;gap:14px}
+.ladder .st{border-radius:18px;padding:28px 32px;display:grid;grid-template-columns:1fr auto;align-items:center;
+  background:var(--gray);text-align:left}
+.ladder .st .l{font-size:24px;font-weight:700;color:var(--mute)}
+.ladder .st .v{font-size:44px;font-weight:900;color:var(--ink);letter-spacing:-.03em}
+.ladder .st.now{background:var(--ink0)}
+.ladder .st.now .l{color:#9aa0c8}
+.ladder .st.now .v{font-size:32px;color:var(--yl)}
+
+/* ===== 가격 슬롯 — 숫자는 이미지에 굽지 않는다 =====
+   빈 칸으로 렌더하고 그 위에 HTML 텍스트를 얹는다(build_description_pudufu.py).
+   판매 1건마다 윈도우 price_loop.py 가 data-mfp 안 숫자만 갈아끼운다.
+   body 에 mk-measure 를 붙여 렌더하면 칸이 마젠타로 칠해져 좌표를 실측할 수 있다. */
+.mk-slot{display:inline-block;width:300px;height:66px;vertical-align:middle}
+.mk-slot.big{display:block;width:100%;height:104px;margin:0}
+.mk-slot.mid{width:270px;height:48px}
+.mk-measure .mk-slot{background:#ff00ff}
+/* 히어로·CTA 의 '지금 가격' 줄 */
+.prow{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:30px}
+.prow .lb{font-size:26px;font-weight:900;letter-spacing:.06em;color:var(--yl);
+  border:2px solid rgba(232,240,0,.5);border-radius:999px;padding:9px 20px;flex:none}

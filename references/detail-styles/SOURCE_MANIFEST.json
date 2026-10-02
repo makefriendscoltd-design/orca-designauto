@@ -1,0 +1,252 @@
+{
+  "entries": [
+    "landing/aimax-threads-premium/detail_threads_premium_pudufu.html",
+    "landing/makefamily-membership/detail_membership_titan.html"
+  ],
+  "file_count": 60,
+  "bytes": 23213074,
+  "files": {
+    "landing/aimax-threads-premium/detail_threads_premium_pudufu.html": {
+      "sha256": "237fab0ffc39e4f9ceeda60aa5ed065b066f882d527cad3e6d15aa51d242e69a",
+      "bytes": 25042
+    },
+    "landing/makefamily-membership/detail_membership_titan.html": {
+      "sha256": "29a1e7710887c1b424a76238dfa5d57e76245b63f4912e607641c9ffedb6cdd5",
+      "bytes": 34515
+    },
+    "landing/aimax-threads-premium/pudufu.css": {
+      "sha256": "4d2c96dd7c206609b14fb0ae16d47e700c1a56b9e4e72392e57c9aaec5ec56d3",
+      "bytes": 12727
+    },
+    "landing/aimax-threads-premium/assets/book/cover.png": {
+      "sha256": "74c3d261e472b0b403daf292647242f15320697306017cf193f52ca1a5ee0f9d",
+      "bytes": 158784
+    },
+    "landing/aimax-threads-premium/assets/kakao/buyer_3.png": {
+      "sha256": "e10a1bbfda632df9861cea4a4f6bdfbe5f5cdd246924f5fc7a063f1d8ffb8e04",
+      "bytes": 21796
+    },
+    "landing/aimax-threads-premium/assets/proof/brand1_threads_736878.png": {
+      "sha256": "b1fbe7f30b8bc68698070040118949a198314972ca44730e72ccf020b000802b",
+      "bytes": 30381
+    },
+    "landing/aimax-threads-premium/assets/proof/brand1_sales_first_month.png": {
+      "sha256": "548261d43abb990e255b45b2c201686924e0c353beedbdb94bf2f647dd9e2e00",
+      "bytes": 9334
+    },
+    "landing/aimax-threads-premium/assets/proof/brand2_threads_931840.png": {
+      "sha256": "bedd12abed4d6d72a08ff5f462039e7a6faefce48c8a371f6bf78a3da9cee51b",
+      "bytes": 31363
+    },
+    "landing/aimax-threads-premium/assets/proof/brand2_sales_389.png": {
+      "sha256": "1f18df77f3189c17f59864ca8ab7d28b47cae68cdddd388c288a151d0a911129",
+      "bytes": 7879
+    },
+    "landing/aimax-threads-premium/assets/proof/brand3_threads_1116985.png": {
+      "sha256": "f255af252b3e764581cbdd42c9b691cb4c2725c72814d93206b75ee34f84e6b4",
+      "bytes": 31610
+    },
+    "landing/aimax-threads-premium/assets/proof/brand3_orders.png": {
+      "sha256": "b81f51b51c30cc8ed28089ff7d939734434902e527a74d3a91a06e6a261f4bb9",
+      "bytes": 10523
+    },
+    "landing/aimax-threads-premium/assets/proof/brand5_sales_10m.png": {
+      "sha256": "3b145e40205278c69b19e182d99e00c16f3a14a61e48984b0a9100b07ded91c8",
+      "bytes": 8513
+    },
+    "landing/aimax-threads-premium/assets/proof/brand5_sales_793.png": {
+      "sha256": "9190aac62e559ef93212bb837f2a7a6fbe250195923a19eede82c7ef95be2a72",
+      "bytes": 24487
+    },
+    "landing/aimax-threads-premium/assets/char/m_cut.png": {
+      "sha256": "ca7539fc649d0c60c133e62169f855228ca519b3e4d31a80c688240780bc4f1c",
+      "bytes": 543467
+    },
+    "landing/aimax-threads-premium/assets/book/pg_ssa.png": {
+      "sha256": "bb6d24f41baba1b7c5004341e70769a08fabd5a34771725b85f0b94eeae79525",
+      "bytes": 152143
+    },
+    "landing/aimax-threads-premium/assets/book/pg_real.png": {
+      "sha256": "fa2cf67ca863e375853a1c87538e787e63633aadbfd40eee83dc230bda56bd92",
+      "bytes": 137885
+    },
+    "landing/aimax-threads-premium/assets/book/pg_teardown.png": {
+      "sha256": "cdc6510165341c6f61ecc59aad40db962dbdb980465f11072a8a95995c2653ad",
+      "bytes": 129197
+    },
+    "landing/aimax-threads-premium/assets/book/pg_case.png": {
+      "sha256": "165158c78d67e4f9d7f6b8ec2cd4dc99b05b5ed73d07208a1759cb8a0e363790",
+      "bytes": 164323
+    },
+    "landing/aimax-threads-premium/assets/char/w_cut.png": {
+      "sha256": "e32e8cac07beae983b96459c8c962ee4a3ea5272787ab48b6c7c04345f6b841f",
+      "bytes": 407895
+    },
+    "landing/aimax-threads-premium/assets/book/pg_play.png": {
+      "sha256": "865c03f0a4b8f909261e5380d9ce342c1e679472f26dc663106b539d6316cd51",
+      "bytes": 182807
+    },
+    "landing/aimax-threads-premium/assets/book/pg_swipe.png": {
+      "sha256": "2cbb5a060bff56df7ed88828721a08ce63e23215fa08736331fbf346f98cbce5",
+      "bytes": 157154
+    },
+    "landing/aimax-threads-premium/assets/book/pg_cal.png": {
+      "sha256": "dd37358f10f96f8bed6fa11c7866af40c34eac40f9fc1da3c249f2b9cb2bf9ca",
+      "bytes": 187407
+    },
+    "landing/aimax-threads-premium/assets/brain/brain_blue.png": {
+      "sha256": "b9668bcc803c52a17e1303469b8fc8616e932ae8f83fcbce03342b022f551e38",
+      "bytes": 2152901
+    },
+    "landing/aimax-threads-premium/assets/book/bonus1.png": {
+      "sha256": "cfce31f04ac076cf43b1e64f88632d51cf643b9da7ba22e59e8c430b8627b4cf",
+      "bytes": 91019
+    },
+    "landing/aimax-threads-premium/assets/book/bonus2.png": {
+      "sha256": "69e64b7c224ac34b9d7bd8854a62b86d5c1ccc55294e387f510d3011530cd40a",
+      "bytes": 89598
+    },
+    "landing/aimax-threads-premium/assets/book/bonus3.png": {
+      "sha256": "24f01d0aefd7e616397c49a2b5778e5ff8b9b17f886b7bf82f773824642fbf40",
+      "bytes": 388263
+    },
+    "landing/aimax-threads-premium/assets/kakao/wait_all.png": {
+      "sha256": "64fa3fb7d4195464b0f4c2f712c93ab4623b080abe9b9ec842286da96a654334",
+      "bytes": 17523
+    },
+    "landing/makefamily-membership/assets/site/yoon_ceo_v2.jpg": {
+      "sha256": "df2663f73313d83181d706161a1953da86d8a2c3286b95be9fbb364ba732364c",
+      "bytes": 15994
+    },
+    "landing/makefamily-membership/assets/site/live_speaker.jpg": {
+      "sha256": "0ecc483516cbdac7add8e9e8ecbdc46b2f0566eaecb91e69cf34b19f02dfd236",
+      "bytes": 77895
+    },
+    "landing/makefamily-membership/assets/site/namin_ad_cut.png": {
+      "sha256": "c4ad3596fb84b941ed0051b75abd099a79f040f2a38a4f9e4d370d94160bed48",
+      "bytes": 152509
+    },
+    "landing/makefamily-membership/assets/review/kt1.png": {
+      "sha256": "c26c8025b7db0329edc9b4bad88b8a3f0cfb9277688924d6ea6e7c8de869cc5c",
+      "bytes": 20791
+    },
+    "landing/makefamily-membership/assets/review/p2_apply.png": {
+      "sha256": "2abef9bce7a56ad9b276d062295f4807253a305cd9ffedbd0ce730dad3a79115",
+      "bytes": 40837
+    },
+    "landing/makefamily-membership/assets/review/p3_apply2.png": {
+      "sha256": "ddf0e1a89599034509d78fd8b89d0fd99a1a3db01f1948fe9bbea20e5f5b18ed",
+      "bytes": 35239
+    },
+    "landing/makefamily-membership/assets/proof/p4_pay.png": {
+      "sha256": "c4f645b8fd92f4d381627d8c52b54fe50828b0b32889c0597c9ccee409349524",
+      "bytes": 38692
+    },
+    "landing/makefamily-membership/assets/proof/p1_works.png": {
+      "sha256": "041243eaa419f8f21e4ffa7c2eccaf196ba88fd3fad192e986be25cf6e7cadec",
+      "bytes": 67089
+    },
+    "landing/makefamily-membership/assets/visual/product_planning.png": {
+      "sha256": "c499eeac1f621bbbabd0ab51124d2eda613700e6d89833a866554c388f33ba19",
+      "bytes": 1705662
+    },
+    "landing/makefamily-membership/assets/visual/business_structure.png": {
+      "sha256": "999b0e7edb7526ac77e9b5dc1affcca020769a0037c0f75e83172a6463cba145",
+      "bytes": 1735496
+    },
+    "landing/makefamily-membership/assets/visual/content_channels.png": {
+      "sha256": "d061d969c0796efbfc3ca3856437a9ed7f3ecb81d0205599da5289a685dcee2d",
+      "bytes": 1493962
+    },
+    "landing/makefamily-membership/assets/visual/ai_automation.png": {
+      "sha256": "62bdc4aed03508fc63278058f01a6ecc18bd20d645261cfb5793a9eb42f4969f",
+      "bytes": 1522073
+    },
+    "landing/makefamily-membership/assets/visual/curriculum_ecosystem.png": {
+      "sha256": "d747566eb767870037a8ae5e3f76c1e317f61c8036c7a5ed7ce2f7e5441dd227",
+      "bytes": 1463276
+    },
+    "landing/makefamily-membership/assets/tool/t1_naming.png": {
+      "sha256": "183f58e5b3f441333f7e6240bfa666a2dfd996743d6aaaee580128662568a039",
+      "bytes": 105290
+    },
+    "landing/makefamily-membership/assets/tool/t2_concept.png": {
+      "sha256": "2e3880991e3c60b6b984e67b9465ac64c2a87d675b47e9f97fb24b6fdf7f3138",
+      "bytes": 51043
+    },
+    "landing/makefamily-membership/assets/tool/t3_blog.png": {
+      "sha256": "b3ed7affd4df85a0bab1ceef5439cb4229675b00a4c6e45d68320ec9cd031b78",
+      "bytes": 262865
+    },
+    "landing/makefamily-membership/assets/site/f0.jpg": {
+      "sha256": "93d7537cc331cc8f1447d793a0305ef9960ea64cbb562647cc08fa8a6e74dca9",
+      "bytes": 118755
+    },
+    "landing/makefamily-membership/assets/site/f1.jpg": {
+      "sha256": "216e39ab20a4b03bba68ba467a810c379eb1cca87e48ac284cbed33bde66beb8",
+      "bytes": 111774
+    },
+    "landing/makefamily-membership/assets/site/f2.jpg": {
+      "sha256": "b6d7d42b866723462aba310ad26fbb8de8cc2eca1997789728e7366d1e28db2b",
+      "bytes": 139654
+    },
+    "landing/makefamily-membership/assets/site/f3.jpg": {
+      "sha256": "0ecc483516cbdac7add8e9e8ecbdc46b2f0566eaecb91e69cf34b19f02dfd236",
+      "bytes": 77895
+    },
+    "landing/makefamily-membership/assets/site/f4.jpg": {
+      "sha256": "cd045f96b4d355b69294375be6787f97edf1b33b6cdbdb0376b539817602183f",
+      "bytes": 126135
+    },
+    "landing/makefamily-membership/assets/fonts/WantedSans-SemiBold.woff2": {
+      "sha256": "47a87e135dae2e6a99e817dece2d30fb9b0421aea1556730b4a55009efabf546",
+      "bytes": 673076
+    },
+    "landing/makefamily-membership/assets/fonts/WantedSans-Bold.woff2": {
+      "sha256": "9bc972594033a3f1cc3e4d2ba3269cf047238f7ca7904c0a8ce14f37e5127722",
+      "bytes": 667140
+    },
+    "landing/makefamily-membership/assets/fonts/WantedSans-ExtraBold.woff2": {
+      "sha256": "5b9b4cc43445644047143f9ecd48091161e6a200c0ef809101d97bcea9b8ae7e",
+      "bytes": 665476
+    },
+    "landing/makefamily-membership/assets/fonts/WantedSans-Black.woff2": {
+      "sha256": "ab55c5c92e2e59d9bc8ae53c9bbc3fe75bff9b021cc3085822831a7befad1d02",
+      "bytes": 666872
+    },
+    "landing/makefamily-membership/assets/fonts/WantedSans-ExtraBlack.woff2": {
+      "sha256": "43cee58c4efa460bd3da8cb7b61548831c2b9f03ee50ca55bc9906fd3ac18cd6",
+      "bytes": 677372
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-Regular.woff2": {
+      "sha256": "3807d0f338c51619251be68140a3a61a35904817be9296900588ef662967843f",
+      "bytes": 656692
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-Medium.woff2": {
+      "sha256": "163d71065870987bd5664975ab9758323fafcadad5af927204ac6250c91853e0",
+      "bytes": 669148
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-SemiBold.woff2": {
+      "sha256": "47a87e135dae2e6a99e817dece2d30fb9b0421aea1556730b4a55009efabf546",
+      "bytes": 673076
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-Bold.woff2": {
+      "sha256": "9bc972594033a3f1cc3e4d2ba3269cf047238f7ca7904c0a8ce14f37e5127722",
+      "bytes": 667140
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-ExtraBold.woff2": {
+      "sha256": "5b9b4cc43445644047143f9ecd48091161e6a200c0ef809101d97bcea9b8ae7e",
+      "bytes": 665476
+    },
+    "landing/aimax-threads-premium/assets/fonts/WantedSans-Black.woff2": {
+      "sha256": "ab55c5c92e2e59d9bc8ae53c9bbc3fe75bff9b021cc3085822831a7befad1d02",
+      "bytes": 666872
+    },
+    "landing/aimax-threads-premium/assets/fonts/BMHANNA_11yrs_ttf.ttf": {
+      "sha256": "7abaedf3f61f1613ff8833ad6319115ea1def5a2d1b5a1203a957d6abd2f8f18",
+      "bytes": 1293272
+    }
+  },
+  "external_refs": [],
+  "zip": "/Users/apple/orca/projects/팀자동화/.local/requests/detail-style-package-windows-20261002/legacy-styles.zip"
+}
