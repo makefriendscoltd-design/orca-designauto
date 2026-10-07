@@ -1,0 +1,12 @@
+# 재생성 가능한 산출물 — 커밋하지 않는다
+# out/        : 롱이미지 PNG + 슬라이스 (build + render 로 다시 나옴)
+# _preview.html: 아티팩트용 인라인본 (8MB+)
+# _up_lms.json : 카페24 업로드 URL 캐시
+out/
+_preview.html
+_up_lms.json
+_uploaded*.json
+gifs/_old/
+gifs/_banned/
+_org.html
+_workspace/

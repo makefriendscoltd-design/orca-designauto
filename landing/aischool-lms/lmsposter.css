@@ -1,0 +1,376 @@
+/* ============================================================
+   AIxSCHOOL 입학 상세 — 이상한마케팅 LMS 구조 + 검증된 포스터 타입 스케일
+   폭 740px.
+
+   구조(이상한마케팅 LMS 강의상세): 흰 상단바 → 커버 카드 → 제목·배지
+     → 탭 위 증거 → 스티키 탭 → 다크 포스터 연작 → 아코디언 커리큘럼
+     → 강사 → 가격 → 푸터
+
+   타입 스케일은 family-ai-school 실측 확정값을 그대로 쓴다.
+     xl 108 / lg 80 / md 60 / sm 44 / cap2 28 / cap 24 · 면 패딩 150px
+     ** 이보다 줄이면 다시 웹페이지가 된다 **
+
+   표기 규칙(확정): 브랜드는 AIxSCHOOL 하나 · 가격은 월 275,000원만 1회
+     · 성과 캡션에 기간·날짜 금지 · 나민수 외 식별 인물 사진 금지
+   ============================================================ */
+
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Regular.woff2");font-weight:400}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Medium.woff2");font-weight:500}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-SemiBold.woff2");font-weight:600}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Bold.woff2");font-weight:700}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-ExtraBold.woff2");font-weight:800}
+
+:root{
+  --blue:#3b82f6; --blue2:#60a5fa; --pri:#2563eb;
+  --ink:#000; --g900:#111827; --g700:#374151; --g500:#6b7280;
+  --g400:#9ca3af; --g300:#d1d5db; --g200:#e5e7eb; --g100:#f3f4f6; --g50:#f9fafb;
+}
+*{box-sizing:border-box;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{width:740px;background:#fff;font-family:Pretendard,sans-serif;color:var(--g900);
+  line-height:1.6;word-break:keep-all}
+img{display:block;max-width:100%}
+
+/* ===== 타입 스케일 (확정값) ===== */
+.xl{font-size:108px;line-height:1.08;font-weight:800;letter-spacing:-.07em}
+.lg{font-size:80px;line-height:1.12;font-weight:800;letter-spacing:-.065em}
+.md{font-size:60px;line-height:1.2;font-weight:800;letter-spacing:-.06em}
+.sm2{font-size:44px;line-height:1.3;font-weight:700;letter-spacing:-.05em;opacity:.9}
+.cap2{font-size:28px;line-height:1.5;font-weight:700;letter-spacing:-.04em;opacity:.8}
+.cap{font-size:24px;line-height:1.55;font-weight:500;opacity:.68;letter-spacing:-.03em}
+.bl{color:var(--blue2)}
+.gap1{height:34px}.gap2{height:64px}.gap3{height:110px}
+
+/* ===== 흰 상단 크롬 ===== */
+.topbar{height:62px;border-bottom:1px solid var(--g200);display:flex;align-items:center;
+  justify-content:space-between;padding:0 20px}
+.topbar .brand{display:flex;align-items:center;gap:9px;font-size:19px;font-weight:800;letter-spacing:-.02em}
+.topbar .brand i{width:26px;height:26px;border-radius:7px;background:var(--pri);display:block}
+.topbar .ic{display:flex;gap:15px;align-items:center}
+.topbar .ic s{width:18px;height:18px;border:2px solid var(--g400);border-radius:50%;display:block}
+.topbar .ic u{width:19px;height:2px;background:var(--g400);display:block;
+  box-shadow:0 6px 0 var(--g400),0 -6px 0 var(--g400)}
+.back{padding:13px 20px;font-size:14px;color:var(--g500)}
+
+.cover{margin:0 14px;border-radius:14px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#1d4ed8 0%,#2563eb 46%,#172554 100%)}
+.cover .in{padding:34px 28px 30px;min-height:330px;display:flex;flex-direction:column;
+  justify-content:flex-end;color:#fff;position:relative;z-index:2}
+.cover .yr{display:inline-block;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.34);
+  border-radius:9px;padding:6px 15px;font-size:19px;font-weight:800;align-self:flex-start}
+.cover h2{font-size:52px;font-weight:800;line-height:1.2;letter-spacing:-.055em;margin-top:16px}
+.cover .faces{position:absolute;right:0;top:0;height:100%;width:312px;display:flex;align-items:flex-end;z-index:1;opacity:.95}
+.cover .faces img{width:104px;height:252px;object-fit:cover;object-position:center 12%}
+.cover .play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:3;
+  width:68px;height:68px;border-radius:50%;background:rgba(0,0,0,.42);border:2px solid rgba(255,255,255,.82)}
+.cover .play:after{content:"";position:absolute;left:27px;top:20px;border-left:20px solid #fff;
+  border-top:13px solid transparent;border-bottom:13px solid transparent}
+
+.head{padding:22px 20px 6px}
+.head h1{font-size:25px;font-weight:800;letter-spacing:-.03em;line-height:1.4}
+.head .rate{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:15px;color:var(--g500)}
+.head .rate b{color:var(--g900);font-weight:800}
+.head .rate em{font-style:normal;color:var(--g300)}
+.tagrow{display:flex;gap:6px;padding:11px 20px 20px}
+.tagrow span{font-size:12px;font-weight:800;letter-spacing:.04em;border-radius:5px;padding:5px 9px;color:#fff}
+.tagrow .n{background:#16a34a}.tagrow .h{background:#ef4444}.tagrow .b{background:var(--pri)}
+
+.topproof{padding:0 20px 22px}
+.topproof .ttl{font-size:18px;font-weight:800;margin-bottom:12px}
+.pf{border:1px solid var(--g200);border-radius:11px;padding:16px;margin-bottom:9px}
+.pf .n{font-size:15px;font-weight:800;color:var(--pri)}
+.pf .n em{font-style:normal;color:var(--g500);font-weight:600;font-size:13px;margin-left:8px}
+.pf p{font-size:14px;color:var(--g700);margin-top:7px;line-height:1.65}
+
+.tabs{position:sticky;top:0;z-index:30;background:#fff;border-top:1px solid var(--g200);
+  border-bottom:1px solid var(--g200);display:flex}
+.tabs a{flex:1;text-align:center;padding:15px 3px;font-size:15px;font-weight:600;color:var(--g500);
+  text-decoration:none;border-bottom:3px solid transparent}
+.tabs a.on{color:var(--pri);border-bottom-color:var(--pri);font-weight:800}
+
+/* ===== 다크 포스터 연작 ===== */
+.p{padding:150px 40px;text-align:center;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.p.navy{background:linear-gradient(180deg,#13203c 0%,#0b1424 100%)}
+.p.t{padding-top:110px;padding-bottom:110px}
+.p.pb0{padding-bottom:0}
+.p:before{content:"";position:absolute;left:50%;top:-12%;width:120%;height:70%;
+  transform:translateX(-50%);z-index:0;pointer-events:none;
+  background:radial-gradient(58% 54% at 50% 42%, rgba(59,130,246,.24) 0%, rgba(59,130,246,0) 70%)}
+.p.navy:before{background:radial-gradient(60% 56% at 50% 34%, rgba(96,165,250,.3) 0%, rgba(96,165,250,0) 72%)}
+.p > *{position:relative;z-index:1}
+.ghost{position:absolute;right:4px;top:40px;font-size:320px;font-weight:800;line-height:.78;
+  color:rgba(255,255,255,.065);letter-spacing:-.07em;z-index:0}
+.rule{width:1px;height:70px;background:rgba(255,255,255,.3);margin:40px auto}
+
+.num{font-size:150px;font-weight:800;letter-spacing:-.07em;line-height:1}
+.num small{font-size:60px;font-weight:800;margin-left:4px}
+.numlb{font-size:28px;font-weight:700;color:var(--blue2)}
+.dash{border-top:1px dashed rgba(255,255,255,.24);margin:56px 0}
+
+.team{margin-top:46px}
+.team .tn{font-size:26px;font-weight:800;color:var(--blue2);text-align:left;
+  border-left:4px solid var(--blue);padding-left:13px;margin-bottom:16px}
+.faces4{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.fc{position:relative;border-radius:11px;overflow:hidden;background:#111}
+.fc img{width:100%;height:190px;object-fit:cover;object-position:center 18%}
+.fc .ov{position:absolute;left:0;right:0;bottom:0;padding:30px 9px 11px;text-align:left;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.9) 62%)}
+.fc .ov b{display:block;font-size:14px;font-weight:800;color:#fff;line-height:1.3}
+.fc .ov span{display:block;font-size:11.5px;color:#9fb4d4;margin-top:4px;line-height:1.4}
+
+.oc{background:#0d0d0d;border:1px solid #232323;border-radius:14px;padding:34px 26px;text-align:left;margin-top:14px}
+.oc .who{font-size:22px;font-weight:800;color:var(--blue2)}
+.oc .v{font-size:96px;font-weight:800;letter-spacing:-.06em;line-height:1.05;margin-top:10px}
+.oc .v small{font-size:40px;font-weight:800;margin-left:4px}
+.oc .what{font-size:24px;color:#cfd9e8;margin-top:8px;line-height:1.45}
+
+.casegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:46px}
+.cc{background:#0d0d0d;border:1px solid #232323;border-radius:13px;padding:24px 13px;text-align:center}
+.cc .br{font-size:16px;font-weight:800;color:var(--blue2);line-height:1.35;min-height:44px}
+.cc .v{font-size:40px;font-weight:800;letter-spacing:-.04em;margin-top:12px;line-height:1.15}
+.cc .u{font-size:15px;color:#9fb4d4;margin-top:6px}
+
+.ev{background:#000;padding:0 0 90px}
+.ev .lbl{padding:110px 40px 34px;text-align:center}
+.ev .shot{margin:0 22px;border:1px solid #242424;border-radius:13px;overflow:hidden;background:#0d0d0d}
+.ev .shot + .shot{margin-top:10px}
+.bleed img{width:100%;display:block}
+.bleed .cap3{background:#000;color:#7f93b2;font-size:22px;padding:26px 30px;text-align:center;line-height:1.55}
+
+/* ===== 밝은 본문 ===== */
+.w{background:#fff;padding:96px 24px}
+.w .eb{font-size:15px;font-weight:800;color:var(--pri);letter-spacing:.09em;text-align:center}
+.w h2{font-size:52px;font-weight:800;line-height:1.26;letter-spacing:-.055em;margin-top:14px;text-align:center}
+.w h2 em{font-style:normal;color:var(--pri)}
+.w .lead{font-size:22px;color:var(--g500);margin-top:20px;line-height:1.7;text-align:center}
+
+.acc{border:1px solid var(--g200);border-radius:12px;overflow:hidden;margin-top:12px}
+.acc .hd{background:var(--g50);padding:20px 18px;display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid var(--g200);text-align:left}
+.acc .hd .t{font-size:22px;font-weight:800;line-height:1.35}
+.acc .hd .t small{display:block;font-size:15px;color:var(--g500);font-weight:500;margin-top:5px;line-height:1.5}
+.acc .hd .n{font-size:15px;color:var(--g500);font-weight:700;flex:none;margin-left:12px}
+.acc .rw{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  border-bottom:1px solid var(--g100);text-align:left}
+.acc .rw:last-child{border-bottom:0}
+.acc .rw .l{display:flex;align-items:center;gap:11px;flex:1;min-width:0}
+.acc .rw .ix{font-size:14px;font-weight:800;color:var(--g300);width:26px;flex:none}
+.acc .rw .nm{font-size:18px;font-weight:500;color:var(--g700);line-height:1.45}
+.acc .rw .k{font-size:13px;color:var(--g500);background:var(--g100);border-radius:5px;padding:4px 9px;flex:none;font-weight:700}
+
+.tutor{display:flex;gap:20px;align-items:flex-start;margin-top:34px;text-align:left;
+  border:1px solid var(--g200);border-radius:14px;padding:24px}
+.tutor img{width:140px;height:172px;object-fit:cover;object-position:center 16%;border-radius:11px;flex:none}
+.tutor .nm{font-size:28px;font-weight:800}
+.tutor .ro{font-size:17px;color:var(--pri);font-weight:700;margin-top:5px}
+.tutor ul{margin:16px 0 0;padding:0;list-style:none;display:grid;gap:9px}
+.tutor li{font-size:18px;color:var(--g700);line-height:1.55;padding-left:14px;position:relative}
+.tutor li:before{content:"";position:absolute;left:0;top:11px;width:5px;height:5px;border-radius:50%;background:var(--g300)}
+
+/* 가격 — 월 할부가만, 페이지에 한 번 */
+.price{background:#fff;padding:90px 24px}
+.opt{border:3px solid var(--pri);border-radius:16px;padding:34px 26px;background:#eff6ff;text-align:center}
+.opt .nm{font-size:24px;font-weight:800}
+.opt .v{font-size:76px;font-weight:800;letter-spacing:-.05em;margin-top:14px;line-height:1.1}
+.opt .v small{font-size:34px;font-weight:800}
+.opt .nt{font-size:18px;color:var(--g500);margin-top:14px;line-height:1.6}
+.cta{display:flex;align-items:center;justify-content:center;gap:11px;background:var(--pri);color:#fff;
+  border-radius:12px;padding:26px;margin-top:18px;font-size:28px;font-weight:800;letter-spacing:-.03em}
+.cta i{width:9px;height:9px;border-right:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(-45deg);display:block;margin-top:-2px}
+.fine{font-size:17px;color:var(--g400);text-align:center;margin-top:14px;line-height:1.6}
+
+.notice{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:22px;margin-top:26px;text-align:left}
+.notice b{font-size:19px;font-weight:800;color:#b45309}
+.notice ul{margin:12px 0 0;padding-left:18px;display:grid;gap:7px}
+.notice li{font-size:16px;color:#78350f;line-height:1.6}
+
+/* GIF 슬롯 마커 — 렌더 후 이 마젠타 띠의 y 를 찾아 그 자리에 GIF 를 끼운다 */
+.gifslot,.gifmark{height:60px;background:#ff00ff}
+
+.footer{background:var(--g900);color:var(--g400);padding:34px 24px;font-size:16px;line-height:1.8}
+.footer b{color:#fff;font-size:19px;display:block;margin-bottom:9px}
+
+/* 입학 절차 3단계 */
+.steps3{display:grid;gap:12px;margin-top:34px;text-align:left}
+.steps3 .st{display:flex;gap:18px;align-items:flex-start;border:1px solid var(--g200);
+  border-radius:13px;padding:24px 22px;background:#fff}
+.steps3 .st b{font-size:34px;font-weight:800;color:var(--pri);flex:none;line-height:1;letter-spacing:-.04em}
+.steps3 .st h3{font-size:24px;font-weight:800;line-height:1.35}
+.steps3 .st p{font-size:17px;color:var(--g500);margin-top:7px;line-height:1.6}
+
+/* FAQ */
+.qa{border-top:1px solid var(--g200);padding:24px 0;text-align:left}
+.qa .q{font-size:22px;font-weight:800;line-height:1.45}
+.qa .a{font-size:18px;color:var(--g500);margin-top:10px;line-height:1.7}
+
+/* 하단 상품명 재노출 (레퍼런스가 하단에 h1 을 다시 띄운다) */
+.reprise{font-size:26px;font-weight:800;letter-spacing:-.03em;text-align:center;margin-bottom:24px;line-height:1.4}
+
+/* ============================================================
+   COMPOSITION LAYER — 웹 UI 어휘(1px 테두리 카드·가운데 정렬)를 걷어내고
+   포스터 구성 어휘로 바꾼다. 글자·숫자·사진을 한 면 안에서 겹쳐 앉힌다.
+   ============================================================ */
+
+/* 1. 사진 위에 글자를 얹는 면 (사진을 박스에 넣지 않는다) */
+.hero-shot{position:relative;background:#000;overflow:hidden}
+.hero-shot img{width:100%;display:block;opacity:.52}
+.hero-shot .on{position:absolute;left:44px;right:44px;bottom:72px;text-align:left}
+.hero-shot .on .k{font-size:26px;font-weight:800;color:var(--blue2);letter-spacing:-.02em}
+.hero-shot .on .t{font-size:72px;font-weight:800;line-height:1.12;letter-spacing:-.065em;color:#fff;margin-top:14px}
+.hero-shot:after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,.2) 42%,rgba(0,0,0,.92) 100%)}
+.hero-shot .on{z-index:2}
+
+/* 2. 숫자가 글자 뒤로 겹쳐 들어가는 구성 */
+.stack{position:relative;padding:120px 40px;background:#000;overflow:hidden;text-align:left}
+.stack .big{position:absolute;right:-26px;top:38px;font-size:300px;font-weight:800;line-height:.76;
+  letter-spacing:-.08em;color:#1b57c9;opacity:.26;z-index:0}
+.stack .fore{position:relative;z-index:1}
+.stack .lb{font-size:24px;font-weight:800;color:var(--blue2)}
+.stack .hd{font-size:66px;font-weight:800;line-height:1.16;letter-spacing:-.065em;color:#fff;margin-top:16px}
+.stack .bd{font-size:24px;line-height:1.65;color:#aebdd4;margin-top:24px;max-width:560px}
+
+/* 3. 실적 — 카드가 아니라 구분선만 둔 좌측 정렬 행, 숫자가 화면을 먹는다 */
+.recs{text-align:left;margin-top:10px}
+.rec{padding:46px 0;border-top:1px solid #1d1d1d;display:grid;grid-template-columns:1fr auto;
+  align-items:end;gap:20px}
+.rec:last-child{border-bottom:1px solid #1d1d1d}
+.rec .who{font-size:23px;font-weight:800;color:var(--blue2)}
+.rec .what{font-size:21px;color:#9fb0c7;margin-top:9px;line-height:1.5}
+.rec .v{font-size:104px;font-weight:800;letter-spacing:-.07em;line-height:.9;color:#fff;white-space:nowrap}
+.rec .v small{font-size:38px;font-weight:800;margin-left:3px}
+
+/* 4. 사례 — 테두리 없이 색면으로 끊는다 */
+.cases{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:56px}
+.case{padding:40px 16px;text-align:center;background:#0a0a0a}
+.case:nth-child(2){background:#0f1626}
+.case .b{font-size:17px;font-weight:800;color:var(--blue2);line-height:1.35;min-height:46px}
+.case .v{font-size:44px;font-weight:800;letter-spacing:-.05em;margin-top:14px;line-height:1.1;color:#fff}
+.case .u{font-size:16px;color:#8fa3bd;margin-top:8px}
+
+/* 5. 얼굴 그리드 — 테두리·라운드 제거, 꽉 붙여 타일로 */
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:20px}
+.tile2{position:relative;overflow:hidden;background:#111}
+.tile2 img{width:100%;height:196px;object-fit:cover;object-position:center 16%;display:block}
+.tile2 .ov{position:absolute;left:0;right:0;bottom:0;padding:34px 10px 12px;text-align:left;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.93) 58%)}
+.tile2 .ov b{display:block;font-size:14.5px;font-weight:800;color:#fff;line-height:1.3}
+.tile2 .ov span{display:block;font-size:11.5px;color:#9fb4d4;margin-top:4px;line-height:1.4}
+.tmlb{text-align:left;font-size:22px;font-weight:800;color:#fff;margin:40px 0 12px;letter-spacing:-.03em}
+.tmlb em{font-style:normal;color:var(--blue2);margin-right:10px}
+
+/* 6. 커리큘럼 — 아코디언 UI 대신 좌측 정렬 타임라인 표 */
+.mon{border-top:2px solid var(--g900);padding:34px 0 30px;text-align:left}
+.mon .mh{display:flex;align-items:baseline;gap:16px}
+.mon .mh .no{font-size:42px;font-weight:800;color:var(--pri);letter-spacing:-.05em;line-height:1;flex:none}
+.mon .mh .ti{font-size:27px;font-weight:800;letter-spacing:-.035em;line-height:1.3}
+.mon .go{font-size:18px;color:var(--g500);margin-top:10px;line-height:1.6}
+.mon .ls{margin-top:18px;display:grid;gap:9px}
+.mon .ls div{font-size:17px;color:var(--g700);line-height:1.5;padding-left:16px;position:relative}
+.mon .ls div:before{content:"";position:absolute;left:0;top:11px;width:6px;height:1.5px;background:var(--g300)}
+
+/* ── 연출컷 슬롯 ─────────────────────────────────────────
+   파일이 있으면 사진/영상 프레임, 없으면 촬영 지시가 보이는 빈 슬롯.
+   레퍼런스는 전체 면적의 94%가 소재다. 슬롯이 채워져야 그 밀도가 난다. */
+.slot{position:relative;background:#07090d;overflow:hidden}
+.slot img{width:100%;display:block}
+.slot .on{position:absolute;left:44px;right:44px;bottom:70px;text-align:left;z-index:2}
+.slot .on .k{font-size:25px;font-weight:800;color:var(--blue2)}
+.slot .on .t{font-size:68px;font-weight:800;line-height:1.14;letter-spacing:-.065em;color:#fff;margin-top:13px}
+.slot.has:after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(0,0,0,.2) 0%,rgba(0,0,0,.18) 40%,rgba(0,0,0,.93) 100%)}
+/* 빈 슬롯 — 촬영 지시판 */
+.slot.empty{display:flex;flex-direction:column;justify-content:center;padding:44px;
+  border:2px dashed #2b3750;border:2px dashed #2b3750;background:
+  repeating-linear-gradient(45deg,#0a0d14 0 18px,#0c1019 18px 36px)}
+.slot.empty .tag{font-size:19px;font-weight:800;color:#ff5470;letter-spacing:.04em}
+.slot.empty .ttl{font-size:40px;font-weight:800;color:#fff;margin-top:14px;letter-spacing:-.05em;line-height:1.24}
+.slot.empty .dir{font-size:21px;color:#8fa3bd;margin-top:18px;line-height:1.65}
+.slot.empty .meta{font-size:17px;color:#5d708c;color:#5d708c;margin-top:22px;
+  border-top:1px solid #223049;padding-top:16px}
+
+/* 밸류 스택 */
+.vstack{margin-top:40px;text-align:left}
+.vs{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:end;
+  padding:26px 0;border-top:1px solid #1d1d1d}
+.vs .l b{display:block;font-size:26px;font-weight:800;color:#fff;letter-spacing:-.03em}
+.vs .l span{display:block;font-size:17px;color:#8fa3bd;margin-top:7px;line-height:1.5}
+.vs .r{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.05em;white-space:nowrap}
+.vs .r em{font-style:normal;font-size:19px;color:#8fa3bd;font-weight:700;margin-right:12px}
+.vs.total{border-top:2px solid #3b82f6;margin-top:8px}
+.vs.total .r{color:var(--blue2);font-size:48px}
+.vs.now{border-top:1px solid #1d1d1d;background:transparent}
+.vs.now .l b{color:var(--blue2)}
+.vs.now .r{font-size:62px;color:#fff}
+
+/* 계산식 블록 */
+.calc{margin-top:34px;border-top:1px solid #1d1d1d}
+.calc .cl{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
+  padding:22px 0;border-bottom:1px solid #1d1d1d}
+.calc .cl span{font-size:21px;color:#8fa3bd}
+.calc .cl b{font-size:40px;font-weight:800;color:#fff;letter-spacing:-.045em}
+.calc .cl.eq{border-bottom:2px solid var(--blue)}
+.calc .cl.eq span{color:var(--blue2);font-weight:800}
+.calc .cl.eq b{font-size:56px;color:var(--blue2)}
+.src{font-size:16px;color:#5d708c;margin-top:26px;line-height:1.65;border-top:1px solid #1d1d1d;padding-top:20px}
+
+/* 역할 꼬리표 — 겹쳐 보이는 직군을 한눈에 구분 */
+.tile2 .rtag{position:absolute;left:8px;top:8px;z-index:3;font-size:11px;font-weight:800;
+  color:#0b1424;background:var(--blue2);border-radius:4px;padding:3px 7px;letter-spacing:-.01em}
+
+/* 조직도 그래픽 */
+
+
+.org{position:relative;padding:120px 40px 130px;background:
+  radial-gradient(70% 50% at 50% 0%, rgba(37,99,235,.38) 0%, rgba(0,0,0,0) 62%),
+  radial-gradient(50% 40% at 12% 78%, rgba(96,165,250,.16) 0%, rgba(0,0,0,0) 70%), #000;
+  overflow:hidden}
+.org .lb{font-size:24px;font-weight:800;color:var(--blue2);text-align:center}
+.org h3{font-size:62px;font-weight:800;color:#fff;text-align:center;letter-spacing:-.065em;
+  line-height:1.18;margin-top:16px}
+.org h3 em{font-style:normal;color:var(--blue2)}
+/* 사장 노드 */
+.boss{width:150px;margin:58px auto 0;text-align:center;position:relative;z-index:2}
+.boss .ph{width:120px;height:120px;margin:0 auto;border-radius:50%;overflow:hidden;
+  border:3px solid #fff;box-shadow:0 0 0 10px rgba(255,255,255,.08),0 20px 46px rgba(0,0,0,.6)}
+.boss .ph img{width:100%;height:100%;object-fit:cover;object-position:center 15%}
+.boss b{display:block;font-size:22px;font-weight:800;color:#fff;margin-top:14px}
+.boss span{display:block;font-size:15px;color:#9fb4d4;margin-top:4px}
+/* 연결선 */
+.trunk{width:2px;height:62px;margin:22px auto 0;background:linear-gradient(#60a5fa,rgba(96,165,250,.15))}
+.rail{height:2px;background:linear-gradient(90deg,rgba(96,165,250,.1),rgba(96,165,250,.55),rgba(96,165,250,.1));
+  margin:0 54px}
+/* 팀 6열 */
+.cols{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin-top:0;padding:0 36px}
+.col{text-align:center}
+.col .drop{width:2px;height:30px;margin:0 auto;background:rgba(96,165,250,.45)}
+.col .cap4{font-size:13.5px;font-weight:800;color:var(--blue2);line-height:1.35;min-height:38px;
+  display:flex;align-items:center;justify-content:center}
+.col .mem{display:grid;gap:5px;margin-top:9px}
+.col .mem figure{margin:0;position:relative;border-radius:8px;overflow:hidden;background:#111}
+.col .mem img{width:100%;height:68px;object-fit:cover;object-position:center 16%;display:block;opacity:.92}
+.col .mem figcaption{position:absolute;left:0;right:0;bottom:0;font-size:9.5px;font-weight:700;color:#fff;
+  padding:14px 3px 4px;line-height:1.2;
+  background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.92) 62%)}
+.foot{font-size:20px;color:#9fb4d4;text-align:center;margin-top:52px;line-height:1.65}
+.foot b{color:#fff}
+
+/* 주차별 상세 */
+.mon .mgif{margin:20px 0 6px;border-radius:12px;overflow:hidden;border:1px solid var(--g200)}
+.mon .mgif img{width:100%;display:block}
+.mon .ls{margin-top:18px;display:grid;gap:0}
+.mon .wk{padding:18px 0;border-top:1px solid var(--g200)}
+.mon .wk:first-child{border-top:0}
+.mon .wt{font-size:19px;font-weight:800;color:var(--g900);line-height:1.4;
+  display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.mon .wt .kk{font-size:12px;font-weight:800;color:#fff;background:var(--pri);border-radius:4px;padding:3px 8px}
+.mon .wd{font-size:16.5px;color:var(--g500);margin-top:7px;line-height:1.6}
+.mon .wo{font-size:14.5px;color:var(--pri);font-weight:700;margin-top:7px}
+
+/* 연출영상 띠 */
+.gb{position:relative;background:#000;overflow:hidden}
+.gb img{width:100%;display:block}
+.gb.has:after{content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.14) 44%,rgba(0,0,0,.93) 100%)}
+.gb .on{position:absolute;left:40px;right:40px;bottom:54px;text-align:left;z-index:2}
+.gb .on .k{font-size:23px;font-weight:800;color:var(--blue2)}
+.gb .on .t{font-size:58px;font-weight:800;line-height:1.16;letter-spacing:-.06em;color:#fff;margin-top:12px}

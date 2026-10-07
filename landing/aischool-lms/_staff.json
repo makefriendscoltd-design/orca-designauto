@@ -1,0 +1,146 @@
+[
+ {
+  "team": "영상 콘텐츠 자동화팀",
+  "file": "content-planner.jpg",
+  "title": "콘텐츠 기획자",
+  "does": "잘된 영상·광고를 모아 왜 잘됐는지 정리해요"
+ },
+ {
+  "team": "영상 콘텐츠 자동화팀",
+  "file": "video-editor.jpg",
+  "title": "영상편집자",
+  "does": "촬영본에서 군더더기를 자르고 자막을 달아요"
+ },
+ {
+  "team": "영상 콘텐츠 자동화팀",
+  "file": "shortform-editor.png",
+  "title": "숏폼 영상편집자",
+  "does": "긴 글·영상을 세로 짧은 영상으로 만들어요"
+ },
+ {
+  "team": "영상 콘텐츠 자동화팀",
+  "file": "youtube-channel-manager.jpg",
+  "title": "유튜브 채널 관리자",
+  "does": "정해둔 댓글에 답글을 달아요"
+ },
+ {
+  "team": "글쓰기 자동화팀",
+  "file": "content-editor.png",
+  "title": "콘텐츠 에디터",
+  "does": "오늘 쓸 만한 소식을 모아 글감으로 정리해요"
+ },
+ {
+  "team": "글쓰기 자동화팀",
+  "file": "blog-marketer.png",
+  "title": "블로그 마케터",
+  "does": "상품 글을 쓰고 블로그에 올려요"
+ },
+ {
+  "team": "글쓰기 자동화팀",
+  "file": "cafe-viral-marketer.jpg",
+  "title": "카페 바이럴 마케터",
+  "does": "준비한 글을 시간 맞춰 카페에 올려요"
+ },
+ {
+  "team": "글쓰기 자동화팀",
+  "file": "publishing-editor.jpg",
+  "title": "출판 편집자",
+  "does": "모아둔 자료를 전자책 원고로 묶어요"
+ },
+ {
+  "team": "SNS 자동화팀",
+  "file": "sns-marketer.jpg",
+  "title": "SNS 마케터",
+  "does": "스레드에 글을 올리고 댓글에 답해요"
+ },
+ {
+  "team": "SNS 자동화팀",
+  "file": "reels-pd.jpg",
+  "title": "릴스 PD",
+  "does": "영상에 자막·음성을 붙여 릴스로 올려요"
+ },
+ {
+  "team": "SNS 자동화팀",
+  "file": "naver-cafe-manager.jpg",
+  "title": "네이버 카페 관리자",
+  "does": "새로 가입한 회원에게 환영 댓글을 달아요"
+ },
+ {
+  "team": "SNS 자동화팀",
+  "file": "kakao-channel-manager.jpg",
+  "title": "카카오톡 오픈채팅방 관리자",
+  "does": "오픈채팅방에 공지·홍보를 제시간에 올려요"
+ },
+ {
+  "team": "디자인 자동화팀",
+  "file": "graphic-designer.jpg",
+  "title": "그래픽 디자이너",
+  "does": "브랜드 이름으로 로고 시안을 만들어요"
+ },
+ {
+  "team": "디자인 자동화팀",
+  "file": "sns-content-designer.jpg",
+  "title": "SNS 콘텐츠 디자이너",
+  "does": "글을 카드뉴스 이미지로 만들어요"
+ },
+ {
+  "team": "디자인 자동화팀",
+  "file": "ppt-designer.png",
+  "title": "PPT 디자이너",
+  "does": "내용을 발표 자료로 정리해요"
+ },
+ {
+  "team": "디자인 자동화팀",
+  "file": "detail-page-designer.png",
+  "title": "상세페이지 디자이너",
+  "does": "원고와 사진으로 판매 페이지를 만들어요"
+ },
+ {
+  "team": "고객·주문 자동화팀",
+  "file": "shop-cs.jpg",
+  "title": "쇼핑몰 CS 담당자",
+  "does": "주문이 들어오면 상품별 안내를 보내요"
+ },
+ {
+  "team": "고객·주문 자동화팀",
+  "file": "shop-ops-manager.png",
+  "title": "쇼핑몰 운영 관리자",
+  "does": "주문·매출을 모아 매일 보고해요"
+ },
+ {
+  "team": "고객·주문 자동화팀",
+  "file": "performance-marketer.jpg",
+  "title": "퍼포먼스 마케터",
+  "does": "어느 링크에서 팔렸는지 기록해요"
+ },
+ {
+  "team": "고객·주문 자동화팀",
+  "file": "shipping-manager.jpg",
+  "title": "출고·배송 관리 담당자",
+  "does": "배송 준비 주문을 배송 완료로 처리해요"
+ },
+ {
+  "team": "업무관리 자동화팀",
+  "file": "secretary.png",
+  "title": "비서",
+  "does": "회의·대화에서 할 일을 뽑아 정리해요"
+ },
+ {
+  "team": "업무관리 자동화팀",
+  "file": "operations-manager.jpg",
+  "title": "운영 매니저",
+  "does": "담당자에게 할 일을 알리고 완료를 챙겨요"
+ },
+ {
+  "team": "업무관리 자동화팀",
+  "file": "system-monitor.jpg",
+  "title": "시스템 모니터링 요원",
+  "does": "다른 AI 직원이 멈췄는지 지켜봐요"
+ },
+ {
+  "team": "업무관리 자동화팀",
+  "file": "it-operations.jpg",
+  "title": "IT 운영 담당자",
+  "does": "멈춘 AI 직원을 다시 일하게 만들어요"
+ }
+]

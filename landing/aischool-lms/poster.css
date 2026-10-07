@@ -1,0 +1,226 @@
+/* ============================================================
+   AIxSCHOOL 입학 상세 — 다크 포스터 연작
+   벤치마크: 이상한마케팅 아카데미 LMS course/25 (740px 실측 렌더 기준)
+
+   가져온 것 — 레이아웃 문법과 강조 장치:
+     흰 상단바 → 썸네일 커버 카드 → 제목+별점+배지 → 상단 사회적 증거
+     → 스티키 탭 → 여기서부터 풀블리드 다크 포스터 연작
+     장치: 중앙정렬 대형 선언 / 초대형 숫자 / 배경 고스트 숫자 /
+          풀블리드 실사 / 얼굴 카드 그리드 / 네이비 띠 / 파란 강조어 1구절
+   가져오지 않은 것 — 문구·사진·로고·사례·수치. 전부 AI학교 자체 자산이다.
+   ============================================================ */
+
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Regular.woff2");font-weight:400}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Medium.woff2");font-weight:500}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-SemiBold.woff2");font-weight:600}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-Bold.woff2");font-weight:700}
+@font-face{font-family:Pretendard;src:url("assets/pretendard/Pretendard-ExtraBold.woff2");font-weight:800}
+
+:root{
+  --blue:#3b82f6; --blue2:#60a5fa; --blue3:#93c5fd; --primary:#2563eb;
+  --ink:#000; --navy:#0e1a2e; --navy2:#17264a;
+  --g900:#111827; --g700:#374151; --g500:#6b7280; --g400:#9ca3af;
+  --g300:#d1d5db; --g200:#e5e7eb; --g100:#f3f4f6; --g50:#f9fafb;
+}
+*{box-sizing:border-box;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{width:740px;background:#fff;font-family:Pretendard,sans-serif;color:var(--g900);
+  line-height:1.6;word-break:keep-all}
+img{display:block;max-width:100%}
+
+/* ===== 상단 — 흰 영역 ===== */
+.topbar{height:58px;border-bottom:1px solid var(--g200);display:flex;align-items:center;
+  justify-content:space-between;padding:0 18px}
+.topbar .lg{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:800;letter-spacing:-.02em}
+.topbar .lg i{width:24px;height:24px;border-radius:6px;background:var(--primary);display:block}
+.topbar .ic{display:flex;gap:14px}
+.topbar .ic s{width:17px;height:17px;border:2px solid var(--g400);border-radius:50%;display:block;text-decoration:none}
+.topbar .ic u{width:18px;height:2px;background:var(--g400);display:block;margin-top:8px;
+  box-shadow:0 5px 0 var(--g400),0 -5px 0 var(--g400)}
+.back{padding:12px 18px;font-size:13px;color:var(--g500)}
+
+/* 커버 카드 — 레퍼런스의 영상 썸네일 자리 */
+.cover{margin:0 14px;border-radius:12px;overflow:hidden;position:relative;
+  background:linear-gradient(135deg,#1d4ed8 0%,#2563eb 45%,#1e3a8a 100%)}
+.cover .in{padding:30px 26px 26px;min-height:300px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;position:relative;z-index:2}
+.cover .yr{display:inline-block;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.35);
+  border-radius:8px;padding:5px 13px;font-size:17px;font-weight:800;align-self:flex-start}
+.cover h2{font-size:42px;font-weight:800;line-height:1.26;letter-spacing:-.04em;margin-top:14px}
+.cover .faces{position:absolute;right:0;top:0;height:100%;width:300px;display:flex;align-items:flex-end;z-index:1;opacity:.95}
+.cover .faces img{width:100px;height:230px;object-fit:cover;object-position:center 12%}
+.cover .play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);z-index:3;
+  width:62px;height:62px;border-radius:50%;background:rgba(0,0,0,.45);border:2px solid rgba(255,255,255,.8)}
+.cover .play:after{content:"";position:absolute;left:24px;top:18px;border-left:19px solid #fff;
+  border-top:12px solid transparent;border-bottom:12px solid transparent}
+
+/* 제목·별점·배지 */
+.head{padding:20px 18px 6px}
+.head h1{font-size:23px;font-weight:800;letter-spacing:-.03em;line-height:1.4}
+.head .rate{display:flex;align-items:center;gap:8px;margin-top:11px;font-size:14px;color:var(--g500)}
+.head .rate b{color:#f59e0b;font-weight:700}
+.head .rate em{font-style:normal;color:var(--g300)}
+.tagrow{display:flex;gap:6px;padding:10px 18px 18px}
+.tagrow span{font-size:11.5px;font-weight:800;letter-spacing:.04em;border-radius:4px;padding:4px 8px;color:#fff}
+.tagrow .n{background:#16a34a}.tagrow .h{background:#ef4444}.tagrow .b{background:var(--primary)}
+
+/* 상단 사회적 증거 — 레퍼런스의 BEST 후기 자리 */
+.topproof{padding:0 18px 20px}
+.topproof .ttl{font-size:17px;font-weight:800;margin-bottom:11px}
+.pf{border:1px solid var(--g200);border-radius:10px;padding:14px 15px;margin-bottom:8px}
+.pf .n{font-size:14px;font-weight:700;color:var(--primary)}
+.pf .n em{font-style:normal;color:var(--g500);font-weight:600;font-size:12.5px;margin-left:7px}
+.pf p{font-size:13.5px;color:var(--g700);margin-top:6px;line-height:1.65}
+
+/* 스티키 탭 */
+.tabs{position:sticky;top:0;z-index:30;background:#fff;border-top:1px solid var(--g200);
+  border-bottom:1px solid var(--g200);display:flex}
+.tabs a{flex:1;text-align:center;padding:14px 3px;font-size:14px;font-weight:600;color:var(--g500);
+  text-decoration:none;border-bottom:3px solid transparent}
+.tabs a.on{color:var(--primary);border-bottom-color:var(--primary);font-weight:800}
+
+/* ===== 다크 포스터 연작 ===== */
+.p{padding:112px 36px;text-align:center;background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.p.navy{background:linear-gradient(180deg,#152445 0%,#0e1a2e 100%)}
+.p.tight{padding-top:80px;padding-bottom:80px}
+.p.pb0{padding-bottom:0}
+.p .sm{font-size:24px;font-weight:700;color:#9fb4d4;line-height:1.75}
+.p .dec{font-size:52px;font-weight:800;line-height:1.46;letter-spacing:-.04em;margin-top:14px}
+.p .dec.s{font-size:42px}
+.p .dec.xl{font-size:64px}
+.p .bl{color:var(--blue2)}
+.p .note{font-size:17px;color:#8aa0bf;margin-top:18px;line-height:1.7}
+.p .rule{width:1px;height:58px;background:rgba(255,255,255,.3);margin:30px auto}
+
+/* 초대형 숫자 */
+.bignum{margin-top:34px}
+.bignum .lb{font-size:22px;font-weight:700;color:var(--blue2)}
+.bignum .v{font-size:108px;font-weight:800;letter-spacing:-.05em;line-height:1.12;margin-top:6px}
+.bignum .v small{font-size:44px;font-weight:800}
+.dash{border-top:1px dashed rgba(255,255,255,.26);margin:40px 0}
+
+/* 배경 고스트 숫자 */
+.ghost{position:absolute;right:6px;top:10px;font-size:280px;font-weight:800;line-height:.8;
+  color:rgba(255,255,255,.07);letter-spacing:-.06em;z-index:0}
+.p .z{position:relative;z-index:1}
+
+/* 풀블리드 실사 */
+.bleed img{width:100%;display:block}
+.bleed .cap{background:var(--ink);color:#7f93b2;font-size:12.5px;padding:12px 20px;text-align:center;line-height:1.6}
+
+/* 얼굴 카드 그리드 — 레퍼런스의 성공사례 그리드 자리 */
+.team{margin-top:34px}
+.team .tn{font-size:17px;font-weight:800;color:var(--blue2);text-align:left;
+  border-left:3px solid var(--blue);padding-left:10px;margin-bottom:12px}
+.faces4{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.fc{position:relative;border-radius:10px;overflow:hidden;background:#111}
+.fc img{width:100%;height:178px;object-fit:cover;object-position:center 18%}
+.fc .ov{position:absolute;left:0;right:0;bottom:0;padding:26px 8px 9px;text-align:left;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.88) 62%)}
+.fc .ov b{display:block;font-size:12.5px;font-weight:800;color:#fff;line-height:1.3}
+.fc .ov span{display:block;font-size:10.5px;color:#9fb4d4;margin-top:3px;line-height:1.4}
+
+/* 밝은 본문 영역 (커리큘럼·교장) */
+.w{background:#fff;padding:54px 22px}
+.w .eb{font-size:12.5px;font-weight:800;color:var(--primary);letter-spacing:.07em;text-align:center}
+.w h2{font-size:29px;font-weight:800;line-height:1.4;letter-spacing:-.035em;margin-top:9px;text-align:center}
+.w h2 em{font-style:normal;color:var(--primary)}
+.w .lead{font-size:15px;color:var(--g500);margin-top:12px;line-height:1.78;text-align:center}
+
+.acc{border:1px solid var(--g200);border-radius:10px;overflow:hidden;margin-top:10px}
+.acc .hd{background:var(--g50);padding:14px 15px;display:flex;justify-content:space-between;
+  align-items:center;border-bottom:1px solid var(--g200);text-align:left}
+.acc .hd .t{font-size:15.5px;font-weight:800;line-height:1.4}
+.acc .hd .t small{display:block;font-size:12px;color:var(--g500);font-weight:500;margin-top:3px}
+.acc .hd .n{font-size:12px;color:var(--g500);font-weight:700;flex:none;margin-left:10px}
+.acc .rw{padding:12px 15px;display:flex;align-items:center;justify-content:space-between;gap:9px;
+  border-bottom:1px solid var(--g100);text-align:left}
+.acc .rw:last-child{border-bottom:0}
+.acc .rw .l{display:flex;align-items:center;gap:9px;flex:1;min-width:0}
+.acc .rw .ix{font-size:11.5px;font-weight:800;color:var(--g300);width:22px;flex:none}
+.acc .rw .nm{font-size:14px;font-weight:500;color:var(--g700);line-height:1.45}
+.acc .rw .k{font-size:11px;color:var(--g500);background:var(--g100);border-radius:4px;padding:3px 7px;flex:none;font-weight:700}
+
+/* 교장 */
+.tutor{display:flex;gap:15px;align-items:flex-start;margin-top:22px;text-align:left;
+  border:1px solid var(--g200);border-radius:12px;padding:17px}
+.tutor img{width:98px;height:120px;object-fit:cover;object-position:center 16%;border-radius:9px;flex:none}
+.tutor .nm{font-size:18px;font-weight:800}
+.tutor .ro{font-size:12.5px;color:var(--primary);font-weight:700;margin-top:3px}
+.tutor ul{margin:10px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.tutor li{font-size:13px;color:var(--g700);line-height:1.55;padding-left:11px;position:relative}
+.tutor li:before{content:"";position:absolute;left:0;top:8px;width:4px;height:4px;border-radius:50%;background:var(--g300)}
+
+/* 단계 */
+.steps{margin-top:22px;border-left:2px solid var(--g200);padding-left:17px;display:grid;gap:17px;text-align:left}
+.steps .s{position:relative}
+.steps .s:before{content:"";position:absolute;left:-24px;top:4px;width:11px;height:11px;border-radius:50%;
+  background:#fff;border:3px solid var(--primary)}
+.steps .s .y{font-size:11.5px;font-weight:800;color:var(--primary)}
+.steps .s b{font-size:15.5px;font-weight:700}
+.steps .s p{font-size:13px;color:var(--g500);margin-top:4px;line-height:1.65}
+
+/* 가격 / CTA */
+.price{background:#fff;padding:40px 22px}
+.opt{border:2px solid var(--primary);border-radius:12px;padding:18px;background:#eff6ff}
+.opt .top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.opt .nm{font-size:16px;font-weight:800}
+.opt .tag{font-size:11.5px;font-weight:800;color:#fff;background:var(--primary);border-radius:5px;padding:4px 8px;flex:none}
+.opt .row{display:flex;align-items:flex-end;justify-content:space-between;margin-top:13px}
+.opt .row .mo{font-size:13px;color:var(--g500);font-weight:500}
+.opt .row .mo b{display:block;font-size:25px;color:var(--g900);font-weight:800;letter-spacing:-.02em;margin-top:2px}
+.opt .row .tot{text-align:right;font-size:12.5px;color:var(--g500)}
+.opt .row .tot b{display:block;font-size:20px;color:var(--g900);font-weight:800;margin-top:2px}
+.opt .nt{font-size:12px;color:var(--g500);margin-top:11px;padding-top:10px;border-top:1px dashed var(--g300)}
+.cta{display:flex;align-items:center;justify-content:center;gap:9px;background:var(--primary);color:#fff;
+  border-radius:10px;padding:17px;margin-top:12px;font-size:18px;font-weight:800;letter-spacing:-.02em}
+.cta i{width:7px;height:7px;border-right:2.5px solid #fff;border-bottom:2.5px solid #fff;transform:rotate(-45deg);display:block;margin-top:-1px}
+.fine{font-size:12px;color:var(--g400);text-align:center;margin-top:9px;line-height:1.6}
+
+/* 주의사항 */
+.notice{background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:15px;margin-top:16px;text-align:left}
+.notice b{font-size:14px;font-weight:800;color:#b45309}
+.notice ul{margin:8px 0 0;padding-left:15px;display:grid;gap:5px}
+.notice li{font-size:12.5px;color:#78350f;line-height:1.6}
+
+/* 하단 바 · 푸터 */
+.bottombar{border-top:2px solid var(--g200);padding:15px 20px;display:flex;align-items:center;gap:13px}
+.bottombar .p2{flex:1}
+.bottombar .p2 s{font-size:12px;color:var(--g500);text-decoration:none;display:block}
+.bottombar .p2 b{display:block;font-size:21px;font-weight:800;letter-spacing:-.02em}
+.bottombar .btn{background:var(--primary);color:#fff;border-radius:9px;padding:15px 28px;font-size:16px;font-weight:800;flex:none}
+.footer{background:var(--g900);color:var(--g400);padding:24px 20px;font-size:12px;line-height:1.8}
+.footer b{color:#fff;font-size:13.5px;display:block;margin-bottom:6px}
+
+/* 운영 실적 카드 (다크) */
+.opsgrid{display:grid;gap:10px;margin-top:30px}
+.oc{background:#0d0d0d;border:1px solid #232323;border-radius:12px;padding:20px 18px;text-align:left}
+.oc .who{font-size:13px;font-weight:800;color:var(--blue2);letter-spacing:.02em}
+.oc .v{font-size:66px;font-weight:800;letter-spacing:-.04em;line-height:1.1;margin-top:7px}
+.oc .v small{font-size:24px;font-weight:800;margin-left:3px}
+.oc .what{font-size:15px;color:#cfd9e8;margin-top:5px;line-height:1.5}
+.oc .when{font-size:12.5px;color:#7f93b2;margin-top:7px}
+
+/* 수강생 사례 카드 (다크) */
+.casegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:28px}
+.cc{background:#0d0d0d;border:1px solid #232323;border-radius:12px;padding:18px 12px;text-align:center}
+.cc .br{font-size:12.5px;font-weight:800;color:var(--blue2);line-height:1.35;min-height:34px}
+.cc .v{font-size:32px;font-weight:800;letter-spacing:-.03em;margin-top:9px;line-height:1.2}
+.cc .u{font-size:12px;color:#9fb4d4;margin-top:4px}
+.cc .sub{font-size:11px;color:#6f8099;margin-top:9px;padding-top:9px;border-top:1px solid #232323;line-height:1.45}
+
+
+/* 다크 면 글로우 — 평평한 검정을 깊이 있게 */
+.p:before{content:"";position:absolute;left:50%;top:-10%;width:118%;height:72%;
+  transform:translateX(-50%);z-index:0;pointer-events:none;
+  background:radial-gradient(60% 55% at 50% 40%, rgba(59,130,246,.22) 0%, rgba(59,130,246,0) 70%)}
+.p.navy:before{background:radial-gradient(62% 58% at 50% 32%, rgba(96,165,250,.28) 0%, rgba(96,165,250,0) 72%)}
+.p > *{position:relative;z-index:1}
+
+/* 증거 띠 — 캡처를 풀블리드 가까이 깔고 라벨만 얹는다 */
+.ev{background:#000;padding:0 0 64px}
+.ev .lbl{padding:52px 36px 20px;text-align:center}
+.ev .lbl b{display:block;font-size:34px;font-weight:800;letter-spacing:-.035em;line-height:1.4;color:#fff}
+.ev .lbl b em{font-style:normal;color:var(--blue2)}
+.ev .lbl span{display:block;font-size:15px;color:#8aa0bf;margin-top:11px;line-height:1.65}
+.ev .shot{margin:0 20px;border:1px solid #242424;border-radius:12px;overflow:hidden;background:#0d0d0d}
+.ev .shot + .shot{margin-top:9px}
+.ev .cp{font-size:12.5px;color:#6f8099;text-align:center;padding:14px 32px 0;line-height:1.65}
