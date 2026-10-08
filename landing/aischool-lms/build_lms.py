@@ -92,9 +92,11 @@ OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여�
         ("revenue-dashboard-card-masked", "자동으로 만들어지는 세일즈 리포트. 금액은 가렸습니다", 1),
     ]),
     ("쇼핑몰 CS 담당자", "3,694", "건", "주문 안내 메일·문자 발송", "2026.07.31 ~ 09.17", [
-        ("l15-send-log", "누구에게 언제 나갔는지 기록이 남는 화면", 0),
+        ("ops-cs-summary", "하루 평균 75.4건. 사람이 보낸 건 0건", 2),
     ]),
-    ("운영 매니저 · 비서", "441", "건", "카톡·회의에서 뽑아낸 할 일 · 298건 완료", "2026.09.06 ~ 09.17", []),
+    ("운영 매니저 · 비서", "441", "건", "카톡·회의에서 뽑아낸 할 일 · 298건 완료", "2026.09.06 ~ 09.17", [
+        ("ops-task-board", "담당자 5명에게 배정. 그중 298건이 완료로 넘어갔습니다", 2),
+    ]),
 ]
 CASES = [  # 수강생 사례 — 학교 개설 전 기존 교육 참여자
     ("화장품 브랜드", "3.89천만원", "실제 결제금액"),
@@ -209,17 +211,18 @@ def opsblocks():
         for f, c, real in shots:
             if not (ROOT / "assets/shots" / f"{f}.webp").exists():
                 continue
-            bg = ('<span class="bg ok">실제 화면</span>' if real
-                  else '<span class="bg re">재현 화면</span>')
+            bg = {1: '<span class="bg ok">실제 화면</span>',
+                  2: '<span class="bg sum">집계 화면 · 고객 정보 가림</span>',
+                  }.get(real, '<span class="bg re">재현 화면</span>')
             imgs += (f'<figure class="ev2"><img src="assets/shots/{f}.webp" alt="">'
                      f'<figcaption>{bg}{c}</figcaption></figure>')
         note = ""
         if not shots:
             note = ('<div class="noev">업무 카드에는 직원 이름과 거래처가 그대로 들어 있어 '
                     '화면을 공개하지 않습니다. 건수와 집계 기간만 밝힙니다.</div>')
-        elif not any(r for _, _, r in shots):
-            note = ('<div class="noev">실제 발송 내용은 고객 주문 정보라 공개하지 않습니다. '
-                    '아래는 같은 흐름을 샘플 데이터로 다시 돌려본 화면입니다.</div>')
+        elif all(r == 2 for _, _, r in shots):
+            note = ('<div class="noev">건수·기간·완료 수는 내부 집계 그대로입니다. '
+                    '고객 정보와 직원 이름이 들어가는 칸만 가렸습니다.</div>')
         body = (f'<div class="evs">{imgs}</div>' if imgs else "")
         out.append(
             f'<div class="rec2"><div class="rh"><div><div class="who">{who}</div>'
