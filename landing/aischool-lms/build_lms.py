@@ -77,6 +77,8 @@ PROOF2 = [
     ("revenue-dashboard-card-masked","매일 아침 리포트","자동으로 만들어지는 세일즈 리포트 카드"),
 ]
 
+ROW_NOTE = {'유튜브 채널 관리자': '구독자 수·영상 수·기간은 내부 집계 그대로입니다. 영상 제목과 썸네일만 가렸습니다.', '쇼핑몰 CS 담당자': '건수·기간·채널은 내부 집계 그대로입니다. 수신자와 주문 내용만 가렸습니다.', '운영 매니저 · 비서': '건수·완료 수·담당자 수는 내부 집계 그대로입니다. 카드 제목과 이름만 가렸습니다.', '시스템 모니터링 요원': '점검 주기와 감시 대상 24개 직군은 내부 운영 설정 그대로입니다.'}
+
 OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여부)])
     ("스레드 운영", "1,681", "건", "스레드에서 들어온 방문이 결제로 이어진 건수", "2025년 집계 · 결제금액 31,688,900원", [
         ("perf2025-threads-revenue-01", "방문 34,671 · 결제 1,681건 · 결제금액 31,688,900원", 1),
@@ -84,6 +86,9 @@ OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여�
     ]),
     ("릴스 PD", "0 → 2만", "명", "인스타그램 팔로워", "2개월 · 릴스 39개", [
         ("perf2025-insta-comments", "달린 댓글마다 답글이 하나씩 달려 있는 화면", 1),
+    ]),
+    ("유튜브 채널 관리자", "0 → 1만", "명", "나민수 AI 채널 구독자", "3개월 · 영상 177개", [
+        ("ops-yt-channel", "영상 177개를 올렸고 댓글은 5분마다 확인해 답글을 답니다", 2),
     ]),
     ("글감 수집 · 블로그 담당자", "매일", "", "사람이 쓰지 않은 네이버 블로그 글", "현재도 운영 중", [
         ("perf2025-blog-published", "AI 직원이 직접 써서 올린 글. 발행 시각이 찍혀 있습니다", 1),
@@ -96,6 +101,9 @@ OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여�
     ]),
     ("운영 매니저 · 비서", "441", "건", "카톡·회의에서 뽑아낸 할 일 · 298건 완료", "2026.09.06 ~ 09.17", [
         ("ops-task-board", "담당자 5명에게 배정. 그중 298건이 완료로 넘어갔습니다", 2),
+    ]),
+    ("시스템 모니터링 요원", "5분", "마다", "다른 AI 직원이 멈췄는지 확인하고 다시 돌립니다", "매일 운영 중", [
+        ("ops-sys-monitor", "24개 직군을 한 번에 점검한 화면. 멈추면 알리고 재시작합니다", 2),
     ]),
 ]
 CASES = [  # 수강생 사례 — 학교 개설 전 기존 교육 참여자
@@ -212,17 +220,15 @@ def opsblocks():
             if not (ROOT / "assets/shots" / f"{f}.webp").exists():
                 continue
             bg = {1: '<span class="bg ok">실제 화면</span>',
-                  2: '<span class="bg sum">집계 화면 · 고객 정보 가림</span>',
+                  2: '<span class="bg sum">집계 화면</span>',
                   }.get(real, '<span class="bg re">재현 화면</span>')
             imgs += (f'<figure class="ev2"><img src="assets/shots/{f}.webp" alt="">'
                      f'<figcaption>{bg}{c}</figcaption></figure>')
-        note = ""
+        note = ROW_NOTE.get(who, "")
         if not shots:
-            note = ('<div class="noev">업무 카드에는 직원 이름과 거래처가 그대로 들어 있어 '
-                    '화면을 공개하지 않습니다. 건수와 집계 기간만 밝힙니다.</div>')
-        elif all(r == 2 for _, _, r in shots):
-            note = ('<div class="noev">건수·기간·완료 수는 내부 집계 그대로입니다. '
-                    '고객 정보와 직원 이름이 들어가는 칸만 가렸습니다.</div>')
+            note = ("업무 카드에는 직원 이름과 거래처가 그대로 들어 있어 "
+                    "화면을 공개하지 않습니다. 건수와 집계 기간만 밝힙니다.")
+        note = f'<div class="noev">{note}</div>' if note else ""
         body = (f'<div class="evs">{imgs}</div>' if imgs else "")
         out.append(
             f'<div class="rec2"><div class="rh"><div><div class="who">{who}</div>'
@@ -379,6 +385,20 @@ HTML = f"""<!doctype html>
   <div class="recs">{opsblocks()}</div>
   <div class="gap2"></div>
   <div class="cap">전부 저희 회사 내부 운영 화면입니다.<br>수강생의 동일한 결과를 보장하지 않습니다.</div>
+</section>
+
+<section class="p t">
+  <div class="numlb">도입처 기록 · 우리 회사 밖</div>
+  <div class="gap1"></div>
+  <div class="md">같은 일을<br><span class="bl">15시간에서 5분으로.</span></div>
+  <div class="gap1"></div>
+  <div class="bd">병의원에 같은 방식을 적용한 곳이 측정한 기록입니다. 예약 안내·차트 정리·매출 관리를 묶어서 쟀습니다.</div>
+  <div class="recs"><div class="rec2"><div class="evs">
+    <figure class="ev2"><img src="assets/shots/case-clinic-time.webp" alt="">
+    <figcaption><span class="bg sum">집계 화면 · 도입처 측정</span>도입 전 15시간 → 도입 후 5분. 측정 기간 1개월</figcaption></figure>
+  </div></div></div>
+  <div class="gap2"></div>
+  <div class="cap">도입처가 직접 측정한 수치입니다.<br>저희 내부 기록이 아니며 동일한 결과를 보장하지 않습니다.</div>
 </section>
 
 {slot("s04_cs")}

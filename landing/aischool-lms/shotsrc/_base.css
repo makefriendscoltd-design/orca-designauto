@@ -43,3 +43,64 @@ body{font-family:Pretendard,sans-serif;background:#eef1f5;padding:26px;color:#0f
   repeating-linear-gradient(135deg,#dde3ec 0 7px,#e9eef5 7px 14px)}
 .c:last-child{margin-bottom:0}
 .k strong.sm{font-size:23px;letter-spacing:-.03em}
+/* 실사감 — 탭 + 주소줄 */
+.tabs{display:flex;align-items:flex-end;gap:6px;padding:9px 14px 0;background:#dfe4ec}
+.tab{display:flex;align-items:center;gap:8px;background:#f3f5f9;border-radius:9px 9px 0 0;
+  padding:9px 15px;font-size:13px;font-weight:600;color:#475569;max-width:280px}
+.tab i{width:13px;height:13px;border-radius:3px;background:#1d4ed8;display:block;flex:0 0 auto}
+.tab.b{background:#cfd6e2;color:#8591a5;width:120px}
+.url{display:flex;align-items:center;gap:11px;padding:10px 16px;background:#f3f5f9;
+  border-bottom:1px solid #e2e7ef}
+.url .nav{display:flex;gap:9px;color:#94a3b8;font-size:14px}
+.url .box{flex:1;background:#fff;border:1px solid #e2e7ef;border-radius:999px;
+  padding:7px 15px;font-size:13px;color:#64748b}
+.url .box b{color:#0f172a;font-weight:600}
+.grow{display:flex;align-items:center;gap:13px;margin-bottom:22px}
+.grow .t{font-size:14px;font-weight:700;color:#64748b;white-space:nowrap}
+.grow .rail{flex:1;height:11px;border-radius:999px;background:#e6ebf3;overflow:hidden}
+.grow .rail i{display:block;height:100%;border-radius:999px;
+  background:linear-gradient(90deg,#60a5fa,#1d4ed8)}
+.vlist{border:1px solid #e6ebf3;border-radius:11px;overflow:hidden}
+.vrow{display:grid;grid-template-columns:78px 1fr 96px 84px;gap:14px;align-items:center;
+  padding:11px 15px;border-top:1px solid #eef2f7}
+.vrow:first-child{border-top:0;background:#f7f9fc;font-size:12px;color:#8b99ae;font-weight:700}
+.thumb{height:44px;border-radius:6px;background:
+  repeating-linear-gradient(135deg,#dde3ec 0 7px,#e9eef5 7px 14px)}
+.vrow:first-child .thumb{height:auto;background:none}
+/* 모니터링 — 다크 */
+body.dk{background:#0b1220}
+.win.dk{background:#101827;box-shadow:0 10px 34px rgba(0,0,0,.5)}
+.win.dk .bar{background:#172234;border-bottom-color:#243147}
+.win.dk .bar b{color:#9fb0c7}.win.dk .bar span{color:#5b6b85}
+.win.dk .bd{color:#e6edf7}
+.win.dk .hd h1{color:#fff}
+.win.dk .hd em{background:#1b2840;color:#8fa6c4}
+.win.dk .sub{color:#8094b0}
+.win.dk .k{background:#162134;border-color:#24334c}
+.win.dk .k small{color:#7d90ad}.win.dk .k strong{color:#fff}
+.win.dk .k strong i{color:#9fb0c7}
+.win.dk .k.hi{background:#12294d;border-color:#1f4479}
+.win.dk .k.hi strong{color:#6ea8ff}
+.win.dk .sec{color:#7d90ad}
+.win.dk .foot{color:#6b7e9a}
+.mon{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.m{display:flex;align-items:center;gap:9px;background:#162134;border:1px solid #24334c;
+  border-radius:9px;padding:11px 12px;font-size:13px;font-weight:600;color:#cfdcee}
+.m i{width:8px;height:8px;border-radius:50%;background:#2fd36b;flex:0 0 auto;
+  box-shadow:0 0 0 3px rgba(47,211,107,.16)}
+.m u{margin-left:auto;font-style:normal;text-decoration:none;font-size:11px;color:#6b7e9a;
+  font-weight:700;white-space:nowrap}
+/* 전후 비교 */
+.ba{border:1px solid #e6ebf3;border-radius:11px;padding:20px 22px;background:#f7f9fc}
+.barow{display:grid;grid-template-columns:104px 1fr 128px;gap:16px;align-items:center;
+  margin-bottom:14px}
+.barow:last-child{margin-bottom:0}
+.barow .lb{font-size:14px;font-weight:700;color:#64748b}
+.barow .tr{height:28px;border-radius:7px;background:#e6ebf3;overflow:hidden}
+.barow .tr i{display:block;height:100%;border-radius:7px;background:#94a3b8}
+.barow.af .tr i{background:#1d4ed8}
+.barow .vv{font-size:22px;font-weight:800;letter-spacing:-.04em;text-align:right}
+.barow.af .vv{color:#1d4ed8}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.tags span{font-size:13px;font-weight:600;color:#475569;background:#eef2f8;
+  border:1px solid #e2e8f2;border-radius:999px;padding:7px 13px}
