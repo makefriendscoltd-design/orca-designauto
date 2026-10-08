@@ -17,7 +17,7 @@ FULL = HERE / "out/lms_poster.png"
 SEQ  = json.loads((HERE / "_gifseq.json").read_text())
 OUT  = HERE / "out/sl"
 CACHE = HERE / "_up_lms.json"
-NO, YT = 395, "Y1k44op1ZLk"
+NO, YT = 395, "e2Jp0D3jwOU"   # 「제가 교장입니다」. 옛 Y1k44op1ZLk 는 비공개(403)라 접근 오류가 났다
 BAND = "/web/upload/NNEditor/20260914/a3d64c7498e1d8c27ee53c495322d748.jpg"
 SUMMARY = "3개월 정규과정 · 6팀 24직군 · AI 빌드데이 · 정원 30명 · 월 275,000원"
 
@@ -102,7 +102,15 @@ for shop in (1, 4):
     c.put(f"/api/v2/admin/products/{NO}", {"shop_no": shop, "request":
           {"description": html, "mobile_description": html, "summary_description": SUMMARY}})
 time.sleep(3)
+# 대표이미지 교체 — 스킨 상단에 뜨는 썸네일. 상세만 바꾸면 옛 디자인이 그대로 남는다
+THUMB = HERE / "out/thumb_lms.png"
+if THUMB.exists():
+    r = c.post(f"/api/v2/admin/products/{NO}/images",
+               {"shop_no": 1, "request": {"image_upload_type": "A", "detail_image": b64(THUMB)}})
+    print("대표이미지 교체:", (r.get("image") or {}).get("detail_image", r))
+    time.sleep(2)
+
 for shop in (1, 4):
     p = c.get(f"/api/v2/admin/products/{NO}", shop_no=shop)["product"]
     d = p.get("description") or ""
-    print(f"shop{shop} img={d.count('<img')} gif={d.count('.gif')} iframe={'youtube.com/embed' in d}")
+    print(f"shop{shop} img={d.count(chr(60)+chr(105)+chr(109)+chr(103))} gif={d.count('.gif')} yt={YT in d} thumb={(p.get('detail_image') or '')[-12:]}")

@@ -53,6 +53,30 @@ PRICE_MAN = 300     # 수강료 300만원
 HIRE_MONTH = 2156880
 HIRE_TOTAL = HIRE_MONTH * MONTHS_TOTAL
 
+# 사람으로 채우면 — 채용 공고 기준 월급 (학교 자체 조사)
+WAGE = [
+    ("shop-cs",                 "쇼핑몰 CS 담당자",   "월 240만 원부터",  "주문 안내 문자·메일을 하루 종일 내보내는 일"),
+    ("shop-ops-manager",        "매출 기록 담당자",   "월 210만 원부터",  "주문과 매출을 모아 매일 정리해 보고하는 일"),
+    ("naver-cafe-manager",      "네이버 카페 관리자", "월 240~280만 원",  "새 회원을 맞고 댓글을 관리하는 일"),
+    ("youtube-channel-manager", "유튜브 채널 관리자", "월 250만 원",      "영상을 올리고 달린 댓글에 답하는 일"),
+    ("content-editor",          "글감 수집 담당자",   "월 260~300만 원",  "오늘 쓸 만한 소식을 모아 글감으로 정리하는 일"),
+    ("system-monitor",          "시스템 모니터링 요원", "월 230~300만 원", "멈춘 게 없는지 계속 지켜보는 일"),
+]
+
+# 증명 화면 — 공개 사이트가 쓰는 실제 캡처
+PROOF = [
+    ("l15-order-intake",   "01 주문 접수",   "주문이 들어오면 바로 목록에 잡힙니다"),
+    ("l15-run-result",     "02 안내문 생성", "상품에 맞는 안내문이 만들어집니다"),
+    ("l15-send-log",       "03 발송 기록",   "누구에게 언제 나갔는지 기록이 남습니다"),
+]
+PROOF2 = [
+    ("perf2025-threads-revenue-01", "스레드 유입 결제", "방문 34,671 · 결제 1,681건 · 결제금액 31,688,900원"),
+    ("perf2025-threads-to-blog",    "스레드 → 블로그", "글 조회 1.2만 · 댓글 431건. 댓글에서 블로그로 넘기는 화면"),
+    ("perf2025-blog-published",     "자동 발행",       "AI 직원이 직접 써서 올린 네이버 블로그 글"),
+    ("perf2025-insta-comments",     "자동 답글",       "인스타그램 댓글마다 답글이 하나씩 달린 화면"),
+    ("revenue-dashboard-card-masked","매일 아침 리포트","자동으로 만들어지는 세일즈 리포트 카드"),
+]
+
 OPS = [  # 운영 실적 — 날짜 없이 수치만
     ("쇼핑몰 CS 담당자", "3,694", "건", "주문 안내 메일·문자 발송"),
     ("운영 매니저·비서", "441", "건", "회의·대화에서 뽑아낸 할 일 · 298건 완료"),
@@ -128,6 +152,31 @@ def faces(team, idx=0):
     vid = gifband(f"g_t{idx + 1}")
     return (f'<div class="tmlb"><em>//</em>{team}</div>{vid}'
             f'<div class="tiles">{cards}</div>')
+
+
+def wagepanels():
+    out = []
+    for f, title, pay, what in WAGE:
+        img = next((r["file"] for r in ROWS if r["file"].startswith(f + ".")), None)
+        if not img:
+            continue
+        out.append(
+            f'<section class="wg"><div class="wgin">'
+            f'<img src="assets/staff/{img}" alt="">'
+            f'<div class="wgt">{title}</div>'
+            f'<div class="wgw">{what}</div>'
+            f'<div class="wgp"><span>사람으로 채우면</span><b>{pay}</b></div>'
+            f'<div class="wga">지금 이 자리는 AI 직원이 일합니다</div>'
+            f'</div></section>')
+    return "".join(out)
+
+
+def proofshots(rows, lead=""):
+    cards = "".join(
+        f'<figure class="ps"><img src="assets/shots/{f}.webp" alt="">'
+        f'<figcaption><b>{t}</b><span>{c}</span></figcaption></figure>'
+        for f, t, c in rows if (ROOT / "assets/shots" / f"{f}.webp").exists())
+    return f'<div class="psw">{lead}{cards}</div>' if cards else ""
 
 
 def opsblocks():
@@ -218,36 +267,6 @@ HTML = f"""<!doctype html>
 </head>
 <body>
 
-<div class="topbar">
-  <div class="brand"><i></i>AIxSCHOOL</div>
-  <div class="ic"><s></s><div><u></u></div></div>
-</div>
-<div class="back">← 학교 소개로 돌아가기</div>
-
-<div class="head">
-  <h1>[AIxSCHOOL] AI 학교 입학 신청하기</h1>
-  <div class="rate"><b>1년 과정</b> · 12개월 40강 <em>|</em> 6팀 24직군 <em>|</em> 나민수 대표 직강</div>
-</div>
-<div class="tagrow"><span class="n">1기</span><span class="h">모집중</span><span class="b">정원 30명</span></div>
-
-<div class="topproof">
-  <div class="ttl">가르치기 전에, 우리가 먼저 씁니다</div>
-  <div class="pf"><div class="n">주문 안내 3,694건<em>쇼핑몰 CS 담당</em></div>
-    <p>주문이 들어오면 안내 문자와 메일을 내보내는 일을 AI 직원이 처리한 건수입니다.</p></div>
-  <div class="pf"><div class="n">할 일 441건 자동 배정<em>운영 매니저·비서 · 298건 완료</em></div>
-    <p>카톡·회의에서 할 일을 알아서 뽑아 담당자에게 넘긴 건수입니다. 사람이 받아적지 않았습니다.</p></div>
-  <div class="pf"><div class="n">AI 직원 24직군<em>6개 자동화팀</em></div>
-    <p>영상·글쓰기·SNS·디자인·고객주문·업무관리 여섯 팀을 실제 운영에 붙여 쓰고 있습니다.</p></div>
-</div>
-
-<div class="tabs">
-  <a href="#intro" class="on">소개</a>
-  <a href="#staff">AI 직원</a>
-  <a href="#curriculum">전체목차</a>
-  <a href="#master">교장소개</a>
-  <a href="#apply">신청</a>
-</div>
-
 {slot("s01_hook","AIxSCHOOL","직원 뽑기 전에,<br>AI 직원부터.")}
 
 <section class="stack" id="intro">
@@ -263,6 +282,17 @@ HTML = f"""<!doctype html>
 {slot("s02_hire")}
 
 {gifband("g_wage","사람 vs AI 직원","같은 일을<br>누가 더 싸게 하나.")}
+
+<section class="p t">
+  <div class="cap2">이 자리를 사람으로 채우면</div>
+  <div class="gap1"></div>
+  <div class="md">한 명씩<br><span class="bl">얼마인지 보겠습니다.</span></div>
+</section>
+{wagepanels()}
+<section class="p t">
+  <div class="cap">월급은 채용 공고에 적힌 금액 기준입니다.<br>
+    여섯 자리를 사람으로 채우면 월 1,430만원부터 시작합니다.</div>
+</section>
 
 <section class="p navy t">
   <div class="md">그래서 사람 대신<br><span class="bl">직원을 만들었습니다.</span></div>
@@ -301,8 +331,24 @@ HTML = f"""<!doctype html>
     <div class="lb">우리 회사가 돌린 기록</div>
     <div class="hd">말로 하면 길어서,<br>숫자만 적습니다.</div>
     <div class="recs">{opsblocks()}</div>
-    <div class="bd" style="margin-top:34px">전부 저희 회사 내부 기록입니다. 수강생의 동일한 결과를 보장하지 않습니다.</div>
+    <div class="bd" style="margin-top:34px">숫자만으로는 안 믿기실 겁니다. 아래가 그 화면입니다.</div>
   </div>
+</section>
+
+<section class="p t">
+  <div class="numlb">증명 · 주문 안내가 나가는 과정</div>
+  <div class="gap1"></div>
+  <div class="md">사람이 한 번도<br><span class="bl">손대지 않았습니다.</span></div>
+  {proofshots(PROOF)}
+</section>
+
+<section class="p t">
+  <div class="numlb">증명 · 유입에서 결제까지</div>
+  <div class="gap1"></div>
+  <div class="md">글이 돌고,<br><span class="bl">결제가 찍혔습니다.</span></div>
+  {proofshots(PROOF2)}
+  <div class="gap2"></div>
+  <div class="cap">전부 저희 회사 내부 운영 화면입니다.<br>수강생의 동일한 결과를 보장하지 않습니다.</div>
 </section>
 
 {slot("s04_cs")}
@@ -480,12 +526,6 @@ HTML = f"""<!doctype html>
     </ul>
   </div>
 </section>
-
-<div class="footer">
-  <b>AIxSCHOOL</b>
-  AI 직원 양성 1년 정규과정 · 6팀 24직군 · 기수 정원 30명<br>
-  과목과 운영 기준은 학교 운영 정책에 따라 갱신됩니다.
-</div>
 
 </body>
 </html>

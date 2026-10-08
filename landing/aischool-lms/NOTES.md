@@ -73,6 +73,47 @@ ffmpeg -ss 2 -i <영상>.mp4 -frames:v 1 -vf "crop=iw:ih*0.14:0:0" /tmp/chk.jpg
 grep -c "메이크패밀리\|AIMAX\|3,300,000\|SHOT\|후킹\|업무 카드" detail_lms.html   # 0 이어야 한다
 ```
 
+## ⚠️ 가짜 UI 를 그리지 않는다
+
+카페24가 이미 헤더·상품명·탭·푸터를 그린다. 이미지 안에 또 그리면 중복이고 **눌리지도 않는다.**
+상단바·뒤로가기·상품명·배지·스티키 탭·푸터를 넣었다가 전부 뺐다.
+(`family-ai-school/CLAUDE.md` 에 이미 있던 규칙 — "이미지 안에서 눌리지 않는 UI 는 넣지 않는다")
+
+## 유튜브 ID 와 대표이미지
+
+- 영상 ID 정본은 `aixschool/public/admission/assets/video.generated.js` → **`e2Jp0D3jwOU`**
+  옛 `Y1k44op1ZLk` 는 **비공개(403)** 라 상단에 접근 권한 오류가 떴다. 스크립트를 물려받을 때 확인할 것
+- **대표이미지도 같이 갱신한다.** 상세만 바꾸면 스킨 상단에 옛 썸네일이 그대로 남는다.
+  `thumb_lms.html` → `out/thumb_lms.png` → `update_lms.py` 가 자동 교체.
+  나민수는 **누끼본**(`assets/char/namin_cut.png`)을 쓴다. 원본 jpg 는 흰 배경이 네모로 박힌다
+
+## GIF 는 전체 길이 + 배속으로 뽑는다
+
+앞부분만 잘라 쓰면 **애니메이션이 중간에 끊긴다.** 팀 영상은 13.3초짜리인데 3초만 써서
+네 단계 중 둘까지만 보였다. 전체를 담고 `setpts=PTS/배속` 으로 5초 안에 한 바퀴가 끝나게 한다.
+
+```bash
+ffmpeg -y -nostdin -v error -i IN.mp4   -vf "setpts=PTS/2.66,fps=10,scale=700:-2:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=${cols}[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5" OUT.gif
+```
+
+**두 번 조용히 실패했다. 둘 다 기억할 것:**
+1. **`-nostdin` 없으면** ffmpeg 이 `while read` 루프의 stdin 을 먹어 루프가 깨진다
+2. **zsh 는 `$cols[p]` 를 배열 첨자로 해석한다.** `${cols}` 로 감싸야 `max_colors` 가 빈 값이 안 된다
+   (`2>/dev/null` 로 에러를 가리면 옛 파일이 그대로 남아 성공한 것처럼 보인다 — 용량·프레임수로 검증할 것)
+
+## 증명자료 — 숫자만 적지 않는다
+
+운영 수치 뒤에는 **실제 운영 화면**을 붙인다. 캡처 정본은 `aixschool/public/media/shots/*.webp`
+(`l15-*` 주문 안내 3단계, `perf2025-*` 유입·결제, `revenue-dashboard-card-masked`).
+
+**주석이 그려진 캡처는 쓰지 않는다.** 빨간 화살표·형광 박스가 구워진 내부 검토본이 섞여 있다
+(`assets/_annotated/` 에 격리). 쓰기 전에 빨강·시안 픽셀 비율로 걸러낼 것.
+
+## 고관여 페이지 — 크게, 하나씩
+
+리뷰 피드백(2026-10-08): **작은 그리드로 여러 개 보여주지 말고 한 면에 하나씩 크게.**
+임금 비교 6개를 6칸 그리드에서 6면으로 풀었다(`.wg`). 인물 190px · 직무 46px · 월급 58px 취소선.
+
 ## 데이터 출처 (빌드마다 직접 읽는다)
 
 | 파일 | 경로 |

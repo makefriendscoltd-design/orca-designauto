@@ -374,3 +374,26 @@ img{display:block;max-width:100%}
 .gb .on{position:absolute;left:40px;right:40px;bottom:54px;text-align:left;z-index:2}
 .gb .on .k{font-size:23px;font-weight:800;color:var(--blue2)}
 .gb .on .t{font-size:58px;font-weight:800;line-height:1.16;letter-spacing:-.06em;color:#fff;margin-top:12px}
+
+/* 사람 월급 — 한 면에 한 명씩 크게 */
+.wg{background:#fff;padding:86px 40px;border-top:1px solid var(--g200)}
+.wgin{max-width:620px;margin:0 auto;text-align:center}
+.wgin img{width:190px;height:190px;object-fit:cover;object-position:center 14%;
+  border-radius:50%;margin:0 auto 30px;border:5px solid #fff;box-shadow:0 14px 40px rgba(17,24,39,.18)}
+.wgt{font-size:46px;font-weight:800;letter-spacing:-.05em;line-height:1.25}
+.wgw{font-size:21px;color:var(--g500);margin-top:14px;line-height:1.6}
+.wgp{margin-top:34px;padding:26px;border-radius:16px;background:var(--g50);border:1px solid var(--g200)}
+.wgp span{display:block;font-size:19px;color:var(--g500);font-weight:700}
+.wgp b{display:block;font-size:58px;font-weight:800;color:#dc2626;letter-spacing:-.05em;
+  margin-top:10px;text-decoration:line-through;text-decoration-thickness:4px}
+.wga{margin-top:20px;font-size:23px;font-weight:800;color:#16a34a}
+.wga:before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;
+  background:#16a34a;margin-right:10px;vertical-align:middle}
+
+/* 증명 화면 */
+.psw{display:grid;gap:18px;margin-top:46px}
+.ps{margin:0;background:#0d0d0d;border:1px solid #232323;border-radius:14px;overflow:hidden}
+.ps img{width:100%;display:block}
+.ps figcaption{padding:20px 22px;text-align:left}
+.ps figcaption b{display:block;font-size:24px;font-weight:800;color:var(--blue2);letter-spacing:-.03em}
+.ps figcaption span{display:block;font-size:18px;color:#aebdd4;margin-top:8px;line-height:1.55}
