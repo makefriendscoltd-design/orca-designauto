@@ -6,7 +6,7 @@
 
 표기 규칙(확정 · family-ai-school/CLAUDE.md)
   · 브랜드는 AIxSCHOOL 하나. "메이크패밀리"·"AIMAX" 쓰지 않는다
-  · 가격은 월 275,000원만, 페이지에 한 번. 총액 3,300,000 은 쓰지 않는다
+  · 가격은 월 결제액만, 페이지에 한 번. PRICE_MAN(총액)에서 12로 나눠 자동 계산한다
   · 성과 캡션에 기간·일수·날짜 범위를 적지 않는다 (개인정보)
   · 나민수 외 식별 가능한 인물 사진을 넣지 않는다 (현장은 청중·실습 테이블만)
 
@@ -48,7 +48,8 @@ VALUE = [
     ("커뮤니티 · 월례 오프라인 강연", "12회", 10, "회당 10만원 기준", 12),
 ]
 VALUE_SUM = sum(unit*cnt for _, _, unit, _, cnt in VALUE)
-PRICE_MAN = 300     # 수강료 300만원
+PRICE_MAN = 300                      # 수강료 300만원 — 카페24 판매가와 세트로 바꾼다
+PRICE_MON = PRICE_MAN * 10000 // 12  # 월 결제액. 손으로 적지 않는다
 # 사람을 뽑았을 때 — 2026 최저임금 시급 10,320원 · 월 209시간 = 2,156,880원
 HIRE_MONTH = 2156880
 HIRE_TOTAL = HIRE_MONTH * MONTHS_TOTAL
@@ -571,7 +572,7 @@ HTML = f"""<!doctype html>
   <div class="reprise">[AIxSCHOOL] AI 학교 입학 신청하기</div>
   <div class="opt">
     <div class="nm">AI 학교 정규과정 · 1년</div>
-    <div class="v">월 275,000<small>원</small></div>
+    <div class="v">월 {PRICE_MON:,}<small>원</small></div>
     <div class="nt">1년 과정 · 12개월 할부 · 정원 30명<br>할부 수수료와 조건은 결제 수단에 따라 다릅니다.</div>
   </div>
   <div class="cta">입학 신청하기 <i></i></div>

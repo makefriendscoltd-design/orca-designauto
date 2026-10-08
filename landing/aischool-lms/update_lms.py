@@ -18,8 +18,8 @@ SEQ  = json.loads((HERE / "_gifseq.json").read_text())
 OUT  = HERE / "out/sl"
 CACHE = HERE / "_up_lms.json"
 NO, YT = 395, "e2Jp0D3jwOU"   # 「제가 교장입니다」. 옛 Y1k44op1ZLk 는 비공개(403)라 접근 오류가 났다
-BAND = "/web/upload/NNEditor/20260914/a3d64c7498e1d8c27ee53c495322d748.jpg"
-SUMMARY = "3개월 정규과정 · 6팀 24직군 · AI 빌드데이 · 정원 30명 · 월 275,000원"
+BAND = "/web/upload/NNEditor/20261008/ba858bd90379fe59fc305c265955d7fa.png"
+SUMMARY = "1년 정규과정 · 6팀 24직군 · AI 빌드데이 · 정원 30명 · 월 250,000원"
 
 im = Image.open(FULL).convert("RGB"); W, H = im.size
 px = im.load()
@@ -88,11 +88,11 @@ video = (f'<div style="position:relative;width:100%;max-width:740px;margin:0 aut
          f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>')
 ONCLICK = "product_submit(1,'/exec/front/order/basket/',document.querySelector('a.btnSubmit.gFull'));return false;"
 band = (f'<a href="#none" onclick="{ONCLICK}" style="display:block;cursor:pointer;">'
-        f'<img src="{BAND}" style="display:block;width:100%;max-width:740px;" alt="월 275,000원으로 시작하기"></a>')
+        f'<img src="{BAND}" style="display:block;width:100%;max-width:740px;" alt="월 250,000원으로 시작하기"></a>')
 style = ('<style>'
  '#span_product_price_text,span.quantity_price,#mf-sum dl dd,#mf-sum dl.mf-total dd,.xans-product-detail .total{font-size:0!important;color:transparent!important;letter-spacing:0!important}'
- '#span_product_price_text::after,span.quantity_price::after,#mf-sum dl dd::after{content:"월 275,000원 ×12개월";font-size:16px;color:#111;font-weight:800}'
- '.xans-product-detail .total::after{content:"월 275,000원 ×12개월 할부";font-size:22px;color:#111;font-weight:900}'
+ '#span_product_price_text::after,span.quantity_price::after,#mf-sum dl dd::after{content:"월 250,000원 ×12개월";font-size:16px;color:#111;font-weight:800}'
+ '.xans-product-detail .total::after{content:"월 250,000원 ×12개월 할부";font-size:22px;color:#111;font-weight:900}'
  '.xans-product-detail .total *{font-size:0!important;color:transparent!important}'
  '#mf-sum,tr.productPrice,#totalProducts{display:none!important}'
  '</style>')
