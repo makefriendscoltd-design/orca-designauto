@@ -77,10 +77,24 @@ PROOF2 = [
     ("revenue-dashboard-card-masked","매일 아침 리포트","자동으로 만들어지는 세일즈 리포트 카드"),
 ]
 
-OPS = [  # 운영 실적 — 날짜 없이 수치만
-    ("쇼핑몰 CS 담당자", "3,694", "건", "주문 안내 메일·문자 발송"),
-    ("운영 매니저·비서", "441", "건", "회의·대화에서 뽑아낸 할 일 · 298건 완료"),
-    ("스레드 운영", "1,681", "건", "유입에서 발생한 결제"),
+OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여부)])
+    ("스레드 운영", "1,681", "건", "스레드에서 들어온 방문이 결제로 이어진 건수", "2025년 집계 · 결제금액 31,688,900원", [
+        ("perf2025-threads-revenue-01", "방문 34,671 · 결제 1,681건 · 결제금액 31,688,900원", 1),
+        ("perf2025-threads-to-blog",    "글 조회 1.2만 · 댓글 431건. 댓글에서 블로그로 넘어가는 화면", 1),
+    ]),
+    ("릴스 PD", "0 → 2만", "명", "인스타그램 팔로워", "2개월 · 릴스 39개", [
+        ("perf2025-insta-comments", "달린 댓글마다 답글이 하나씩 달려 있는 화면", 1),
+    ]),
+    ("글감 수집 · 블로그 담당자", "매일", "", "사람이 쓰지 않은 네이버 블로그 글", "현재도 운영 중", [
+        ("perf2025-blog-published", "AI 직원이 직접 써서 올린 글. 발행 시각이 찍혀 있습니다", 1),
+    ]),
+    ("매출 기록 담당자", "매일 아침", "", "전날 매출을 정리한 리포트 카드", "현재도 운영 중", [
+        ("revenue-dashboard-card-masked", "자동으로 만들어지는 세일즈 리포트. 금액은 가렸습니다", 1),
+    ]),
+    ("쇼핑몰 CS 담당자", "3,694", "건", "주문 안내 메일·문자 발송", "2026.07.31 ~ 09.17", [
+        ("l15-send-log", "누구에게 언제 나갔는지 기록이 남는 화면", 0),
+    ]),
+    ("운영 매니저 · 비서", "441", "건", "카톡·회의에서 뽑아낸 할 일 · 298건 완료", "2026.09.06 ~ 09.17", []),
 ]
 CASES = [  # 수강생 사례 — 학교 개설 전 기존 교육 참여자
     ("화장품 브랜드", "3.89천만원", "실제 결제금액"),
@@ -137,6 +151,15 @@ for r in ROWS:
         r["tag"] = o["tag"]
 TEAMS = [t["name"] for t in STAFF["teams"]]
 GIFSEQ = []
+# 주차별 상세 — 공개 정본엔 제목만 있어 여기서 덧댄다
+_LD = json.loads((ROOT / "lesson_detail.json").read_text(encoding="utf-8"))["detail"]
+for _m in CUR["months"]:
+    _d = _LD.get(str(_m["month"]), [])
+    for _i, _l in enumerate(_m.get("lessons") or []):
+        if _i < len(_d):
+            _l.setdefault("do", _d[_i].get("do", ""))
+            _l.setdefault("out", _d[_i].get("out", ""))
+
 MONTH_GIF = {1: "g_task", 3: "g_keep", 5: "g_morning", 7: "g_writing",
              10: "g_ship", 12: "g_grad"}
 TOTAL = sum(len(m.get("lessons") or []) for m in CUR["months"])
@@ -180,10 +203,29 @@ def proofshots(rows, lead=""):
 
 
 def opsblocks():
-    return "".join(
-        f'<div class="rec"><div><div class="who">{who}</div><div class="what">{what}</div></div>'
-        f'<div class="v">{v}<small>{u}</small></div></div>'
-        for who, v, u, what in OPS)
+    out = []
+    for who, v, u, what, when, shots in OPS:
+        imgs = ""
+        for f, c, real in shots:
+            if not (ROOT / "assets/shots" / f"{f}.webp").exists():
+                continue
+            bg = ('<span class="bg ok">실제 화면</span>' if real
+                  else '<span class="bg re">재현 화면</span>')
+            imgs += (f'<figure class="ev2"><img src="assets/shots/{f}.webp" alt="">'
+                     f'<figcaption>{bg}{c}</figcaption></figure>')
+        note = ""
+        if not shots:
+            note = ('<div class="noev">업무 카드에는 직원 이름과 거래처가 그대로 들어 있어 '
+                    '화면을 공개하지 않습니다. 건수와 집계 기간만 밝힙니다.</div>')
+        elif not any(r for _, _, r in shots):
+            note = ('<div class="noev">실제 발송 내용은 고객 주문 정보라 공개하지 않습니다. '
+                    '아래는 같은 흐름을 샘플 데이터로 다시 돌려본 화면입니다.</div>')
+        body = (f'<div class="evs">{imgs}</div>' if imgs else "")
+        out.append(
+            f'<div class="rec2"><div class="rh"><div><div class="who">{who}</div>'
+            f'<div class="what">{what}</div><div class="when">{when}</div></div>'
+            f'<div class="v">{v}<small>{u}</small></div></div>{note}{body}</div>')
+    return "".join(out)
 
 
 def cases():
@@ -325,28 +367,13 @@ HTML = f"""<!doctype html>
   <div class="cap">파는 사람이 안 쓰는 걸 가르치지는 않겠습니다.</div>
 </section>
 
-<section class="stack">
-  <div class="big">24</div>
-  <div class="fore">
-    <div class="lb">우리 회사가 돌린 기록</div>
-    <div class="hd">말로 하면 길어서,<br>숫자만 적습니다.</div>
-    <div class="recs">{opsblocks()}</div>
-    <div class="bd" style="margin-top:34px">숫자만으로는 안 믿기실 겁니다. 아래가 그 화면입니다.</div>
-  </div>
-</section>
-
 <section class="p t">
-  <div class="numlb">증명 · 주문 안내가 나가는 과정</div>
+  <div class="numlb">우리 회사가 돌린 기록</div>
   <div class="gap1"></div>
-  <div class="md">사람이 한 번도<br><span class="bl">손대지 않았습니다.</span></div>
-  {proofshots(PROOF)}
-</section>
-
-<section class="p t">
-  <div class="numlb">증명 · 유입에서 결제까지</div>
+  <div class="md">숫자 옆에<br><span class="bl">그 화면을 같이 둡니다.</span></div>
   <div class="gap1"></div>
-  <div class="md">글이 돌고,<br><span class="bl">결제가 찍혔습니다.</span></div>
-  {proofshots(PROOF2)}
+  <div class="bd">숫자만 적으면 못 믿으실 겁니다. 건수마다 실제로 돌아간 화면을 붙였습니다.</div>
+  <div class="recs">{opsblocks()}</div>
   <div class="gap2"></div>
   <div class="cap">전부 저희 회사 내부 운영 화면입니다.<br>수강생의 동일한 결과를 보장하지 않습니다.</div>
 </section>

@@ -397,3 +397,25 @@ img{display:block;max-width:100%}
 .ps figcaption{padding:20px 22px;text-align:left}
 .ps figcaption b{display:block;font-size:24px;font-weight:800;color:var(--blue2);letter-spacing:-.03em}
 .ps figcaption span{display:block;font-size:18px;color:#aebdd4;margin-top:8px;line-height:1.55}
+
+/* 운영 수치 + 그 수치의 증명 화면 */
+.rec2{padding:52px 0;border-top:1px solid #1d1d1d}
+.rec2:first-child{border-top:0}
+.rh{display:grid;grid-template-columns:1fr auto;align-items:end;gap:20px;text-align:left}
+.rh .who{font-size:25px;font-weight:800;color:var(--blue2)}
+.rh .what{font-size:19px;color:#9fb0c7;margin-top:9px;line-height:1.5}
+.rh .v{font-size:104px;font-weight:800;letter-spacing:-.07em;line-height:.9;color:#fff;white-space:nowrap}
+.rh .v small{font-size:38px;font-weight:800;margin-left:3px}
+.evs{display:grid;gap:12px;margin-top:30px}
+.ev2{margin:0;background:#0d0d0d;border:1px solid #232323;border-radius:12px;overflow:hidden}
+.ev2 img{width:100%;display:block}
+.ev2 figcaption{padding:16px 18px;font-size:17px;color:#aebdd4;text-align:left;line-height:1.55}
+.noev{margin-top:26px;font-size:17px;color:#6f8099;text-align:left;line-height:1.6;
+  border-left:3px solid #2b3750;padding-left:16px}
+.recs{margin-top:46px;text-align:left}
+.rh .when{font-size:17px;color:#64748b;margin-top:6px;letter-spacing:-.01em}
+.ev2 figcaption .bg{display:inline-block;font-size:14px;font-weight:800;padding:4px 10px;
+  border-radius:999px;margin-right:9px;vertical-align:2px;letter-spacing:-.01em}
+.ev2 figcaption .ok{background:#12325e;color:#7fb4ff}
+.ev2 figcaption .re{background:#2a2a2a;color:#9a9a9a}
+.rh>div:first-child{max-width:430px}
