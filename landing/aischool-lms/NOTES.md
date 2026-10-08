@@ -132,3 +132,13 @@ ffmpeg -y -nostdin -v error -i IN.mp4   -vf "setpts=PTS/2.66,fps=10,scale=700:-2
 - 연출컷 슬롯 13개(`shots.json`)는 아직 비어 있다. `shots/<id>.jpg` 로 넣으면 자동으로 박힌다
 - 24직군 개별 영상(`08-staff-01~24`)은 팀별 6개만 썼다. 수강신청 섹션을 만들면 과목마다 붙일 수 있다
 - 밸류 스택의 "직원 1명당 100만원"은 숏폼·CS 두 개만 계산식이 있다. 나머지는 근거 없음
+
+## 함정 — 2026-10-08 추가
+
+- **render_detail.py 는 기본 maxh 40000px 에서 자른다.** 페이지가 그보다 길면 조용히 잘린
+  PNG 가 나오고 높이가 정확히 40000 으로 찍힌다. 이 페이지는 44,531px 이므로
+  `--maxh 80000` 을 반드시 준다. 높이가 딱 40000 이면 잘린 것이다.
+- **update_lms.py 끝의 shop1/shop4 확인 출력은 한 판 늦게 읽는다.** 두 값이 달라 보여도
+  실제로는 같은 경우가 많다. 진짜 확인은 cafe24_client 로 직접 조회한다.
+- 카페 글 증빙 원본: `_inbox/cafe2702/` (urls.txt · raw/ 96장 · cafe_text.txt).
+  cafe.naver.com 은 브라우저 도구로 차단되지만 apis.naver.com 의 cafe-articleapi 는 열린다.

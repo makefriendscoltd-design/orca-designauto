@@ -88,6 +88,7 @@ OPS = [  # (직군, 수치, 단위, 설명, 기간, [(파일, 캡션, 실제여�
         ("perf2025-insta-comments", "달린 댓글마다 답글이 하나씩 달려 있는 화면", 1),
     ]),
     ("유튜브 채널 관리자", "0 → 1만", "명", "나민수 AI 채널 구독자", "3개월 · 영상 177개", [
+        ("cafe-yt-channel", "메이크패밀리 유튜브. 지금은 구독자 1.31만 명 · 올린 영상 380개", 1),
         ("ops-yt-channel", "영상 177개를 올렸고 댓글은 5분마다 확인해 답글을 답니다", 2),
     ]),
     ("글감 수집 · 블로그 담당자", "매일", "", "사람이 쓰지 않은 네이버 블로그 글", "현재도 운영 중", [
@@ -385,6 +386,17 @@ HTML = f"""<!doctype html>
   <div class="recs">{opsblocks()}</div>
   <div class="gap2"></div>
   <div class="cap">전부 저희 회사 내부 운영 화면입니다.<br>수강생의 동일한 결과를 보장하지 않습니다.</div>
+</section>
+
+<section class="p t">
+  <div class="numlb">채널 운영 기록</div>
+  <div class="gap1"></div>
+  <div class="md">계정을 키운 것도<br><span class="bl">AI 직원이 했습니다.</span></div>
+  <div class="gap1"></div>
+  <div class="bd">메이크패밀리가 직접 굴리는 채널입니다. 아래는 전부 그 채널의 실제 화면입니다.</div>
+  <div class="recs"><div class="rec2"><div class="evs"><figure class="ev2"><img src="assets/shots/cafe-ig-profile.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>메이크패밀리 인스타그램. 게시물 793개 · 팔로워 5만 명</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-shorts-views.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>숏폼 조회수. 왼쪽부터 210.9만 · 98.4만 · 39.5만</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-follower-growth.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>같은 기간 팔로워 증가율. +258.5% · +488.0% · +311.8%</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-reach.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>조회 1,740,577 · 631,381 · 571,011. 시청 시간이 같이 찍혀 있습니다</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-reels-engage.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>릴스에 달린 댓글. 1.2만 · 1.1만 · 4,716개</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-publish-sheet.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>AI가 올린 글 단위 기록. 글마다 조회·좋아요·댓글·리포스트가 남습니다</figcaption></figure><figure class="ev2"><img src="assets/shots/cafe-content-grid.webp" alt=""><figcaption><span class="bg ok">실제 화면</span>같은 기간에 찍어낸 콘텐츠. 사람이 한 장씩 만든 게 아닙니다</figcaption></figure></div></div></div>
+  <div class="gap2"></div>
+  <div class="cap">메이크패밀리 자체 채널 기록입니다.<br>수강생의 동일한 결과를 보장하지 않습니다.</div>
 </section>
 
 <section class="p t">
