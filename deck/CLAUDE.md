@@ -25,7 +25,7 @@ deck_slides/slide_NN.png  낱장 (카톡·노션 배포용)
 ```
 
 ```bash
-python ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
+python3 ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
 # 옵션: --w 1920  --h 1080  --keep-png
 ```
 

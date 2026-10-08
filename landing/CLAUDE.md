@@ -21,10 +21,48 @@ Skill: detail-launch
 
 | 만들 것 | 먼저 열 것 |
 |---|---|
+| **와디즈/타이탄 문법 포스터판** | **`poster-detail` 스킬** (아래 절 참조) |
+| **프드프/클래스101 문법 세일즈 레터** | **`pudufu-detail` 스킬** (아래 절 참조) |
 | **무료 웨비나·특강 모집** | **`design/makefamily-webinar/detail_webinar.html`** |
 | 무료 전자책 | `design/aimax-ebook/detail_v2.html` |
 | 유료 전자책·디지털 | `design/aimax-ebook/detail_premium.html` |
 | 유료 강의·클래스 | `design/bloomingbon-class/detail_class_v2.html` |
+
+### 포스터 문법이 필요하면 `poster-detail` 스킬을 연다 (26-08-09)
+
+"와디즈처럼 / 타이탄처럼 / 이 레퍼런스처럼" 요청이면 **범용 템플릿에서 새로 짓지 말고
+`poster-detail` 스킬을 연다.** 키트·실측 스크립트·반려 방지 체크리스트가 다 들어 있다.
+(`landing/_poster-kit/` 은 스킬을 가리키는 포인터만 남겼다 — 사본을 다시 만들지 말 것)
+
+```
+Skill: poster-detail
+```
+
+**폭은 860px** (레퍼런스 실측). 라이브 740px 판과 슬라이스를 섞지 말 것.
+확정 사례는 `aimax-startup/detail_startup_wadiz_v10.html`, 반려된 판은 `..._v7.html`.
+
+**색만 바꾸면 반려된다.** V5~V7 이 세 번 그렇게 반려됐다 — 차이는 팔레트가 아니라
+**타입 스케일(제목 140px)과 한 화면당 메시지 1개**다. 작업 전에 레퍼런스와 현재본을
+**같은 배율로 나란히 붙인 몽타주**부터 만들어 보고, 글자 크기는 눈대중 말고 픽셀로 잰다.
+
+### 프드프 문법이면 `pudufu-detail` 스킬 (26-08-10)
+
+```
+Skill: pudufu-detail
+```
+
+**폭 740px.** 레퍼런스 실측 733(`pudufu.co.kr/home/pdf_detail_page/637`, 733×35,280).
+포스터판(860)과 슬라이스를 섞지 말 것.
+
+**포스터 문법과 정반대로 생각해야 한다** — 결론 제목이 66px 로 **포스터판(92px)보다 작다.**
+이기는 방식이 크기가 아니라 **반복**이다: 회색 리드 한 줄 → 굵은 결론 한 줄이 20번 반복되고,
+분량의 절반이 증거 캡처고, CTA 버튼이 본문 중간에 3번 박힌다.
+어휘도 다르다 — ❝인용부호 · 빨간 화살표↓ · 빨간 밑줄/동그라미 · 노란 형광 · 흰↔인디고 곡선 전환.
+
+**가격이 자주 바뀌는 상품이면 이 스킬을 쓴다.** 숫자를 이미지에 굽지 않고 빈 칸 위에
+HTML 을 얹는 슬롯 방식이 스킬에 들어 있어서 인상돼도 이미지 재렌더가 없다.
+다만 `price_loop.py` 가 판매마다 상세를 덮어쓰므로 **템플릿까지 같이 갈아야 한다**
+(`references/price-slot.md`). 확정 사례는 `aimax-threads-premium/detail_threads_premium_pudufu.html`.
 
 ## 산출물 이름 규칙
 
@@ -41,10 +79,12 @@ thumbnail_<상품>.html/.png  1000×1000 대표이미지
 
 ```bash
 S=~/.claude/skills
-python $S/detail-page/scripts/render_detail.py detail_x.html detail_x_full.png
-python $S/detail-page/scripts/render_detail.py thumbnail_x.html thumbnail_x.png --width 1000
-python $S/detail-page/scripts/slice_detail.py detail_x_full.png ./slices_x --width 1080 --chunk 1500
+python3 $S/detail-page/scripts/render_detail.py detail_x.html detail_x_full.png
+python3 $S/detail-page/scripts/render_detail.py thumbnail_x.html thumbnail_x.png --width 1000
+python3 $S/detail-page/scripts/slice_detail.py detail_x_full.png ./slices_x --width 1080 --chunk 1500
 ```
+
+**맥에는 `python` 이 없다 — `python3`.** 나머지 환경은 상위 `../CLAUDE.md` 「맥 작업 환경」 참조.
 
 ## 0단계 — 정보 먼저 받는다 (없으면 물어본다)
 

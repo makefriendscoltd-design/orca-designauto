@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  AIMAX 창업 프로그램 — 카페 모집글 첨부용 카드 3장 (1080×1350 · 4:5)
+  AIMAX 창업 프로그램 — 카페 모집글 첨부용 카드 4장 (1080×1350 · 4:5)
 
   timeline_startup.html(1080×5,439 롱이미지)과 용도가 다르다.
     롱이미지 = 상세페이지 포맷. 카페 본문에 넣으면 모바일에서 한참 스크롤한다
@@ -10,15 +10,19 @@
   가로형은 모바일에서 작아져서 글씨가 안 읽힌다.
 
   각 .card 는 height 1350px 고정이다. 내용을 늘리면 조용히 잘리므로
-  고친 뒤에는 반드시 세 장을 눈으로 볼 것.
+  고친 뒤에는 반드시 네 장을 눈으로 볼 것.
 
-  렌더 → 3등분:
-    python make_cards.py --gen 4 --label 8월반 --first 2026-08-09
+  렌더 → 4등분:
+    python make_cards.py --gen 5 --label 9월반 --first 2026-09-06
+
+  ※ 26-08-03 구조 변경 — 오프라인이 "1회차 6h 제작 / 2회차 4h 마케팅" 에서
+    "2주 연속 일요일 매회 5시간, 바이브코딩+수익화 병행" 으로 바뀌었다.
+    두 주가 같은 내용이라 회차로 쪼개지 않는다.
 -->
 <html lang="ko">
 <head>
 <meta charset="utf-8">
-<title>AIMAX 창업 프로그램 — 카페 카드 3장</title>
+<title>AIMAX 창업 프로그램 — 카페 카드 4장</title>
 <style>
   @font-face{ font-family:"Wanted"; font-weight:500; src:url("assets/fonts/WantedSans-Medium.woff2") format("woff2"); }
   @font-face{ font-family:"Wanted"; font-weight:600; src:url("assets/fonts/WantedSans-SemiBold.woff2") format("woff2"); }
@@ -73,7 +77,9 @@
                background:var(--tint); padding:16px 24px; }
 
   /* ── 카드 2 : 오프라인 STEP ───────────────────────── */
-  .day{ margin-top:40px; border:1px solid var(--line); padding:34px 40px; }
+  .dayhd{ margin-top:30px; font-size:24px; font-weight:800; color:var(--blue);
+          letter-spacing:-.02em; }
+  .day{ margin-top:26px; border:1px solid var(--line); padding:34px 40px; }
   .day + .day{ margin-top:20px; }
   .day.hi{ border-color:var(--blue); background:var(--tint); }
   .day .hd{ display:flex; align-items:baseline; gap:18px; }
@@ -123,19 +129,17 @@
 
 <!-- ══ 카드 1 — 전체 흐름 ═══════════════════════════════════ -->
 <div class="card">
-  <div class="eyebrow">4기 · 8월반</div>
+  <div class="eyebrow">5기 · 9월반</div>
   <h1>2주 만에 만들고<br><em>5개월 동안 팝니다</em></h1>
-  <div class="sub">첫 달 <b>2주 연속 일요일</b> 오프라인, 이후 <b>5개월 온라인.</b>
+  <div class="sub">첫 달 <b>2주 연속 일요일 · 매회 5시간</b> 오프라인, 이후 <b>5개월 온라인.</b>
     모든 영상은 VOD로 재시청할 수 있습니다.</div>
 
   <div class="flow">
+    <!-- 두 주가 같은 내용이라 회차로 쪼개지 않는다 (26-08-03 구조 변경).
+         날짜 문자열은 make_cards.py 가 통째로 치환한다 -->
     <div class="fn off">
-      <div class="t">8월 9일 (일)<em>6시간</em></div>
-      <div class="d">오프라인 1회차 — AI 직원 제작</div>
-    </div>
-    <div class="fn off">
-      <div class="t">8월 16일 (일)<em>4시간</em></div>
-      <div class="d">오프라인 2회차 — 마케팅 실습</div>
+      <div class="t">9월 6일 · 13일 (일)<em>매회 5시간</em></div>
+      <div class="d">오프라인 2주 — 바이브코딩과 수익화를 같이</div>
     </div>
     <div class="fn on">
       <div class="t">이후 5개월<em>온라인</em></div>
@@ -151,18 +155,19 @@
     </div>
   </div>
 
-  <div class="pills"><span>오프라인 2회차</span><span>온라인 5개월</span><span>정원 10명</span></div>
+  <div class="pills"><span>오프라인 2주 10시간</span><span>온라인 5개월</span><span>정원 10명</span></div>
   <div class="mark">AIMAX</div>
 </div>
 
 <!-- ══ 카드 2 — 오프라인 1·2회차 ═══════════════════════════ -->
 <div class="card">
-  <div class="eyebrow">오프라인 2회차 · 6시간 + 4시간</div>
-  <h1>1회차엔 만들고<br><em>2회차엔 파는 법을</em></h1>
+  <div class="eyebrow">오프라인 2주 · 10시간</div>
+  <h1>만들면서<br><em>파는 법까지 같이</em></h1>
+  <div class="dayhd">9월 6일 · 13일 (일) · 매회 12시 ~ 17시</div>
 
   <div class="day hi">
-    <div class="hd"><div class="dt">8월 9일 (일)</div><div class="tm">12시 ~ 18시 · 6시간</div></div>
-    <div class="ttl">AI 직원 제작</div>
+    <div class="hd"><div class="dt">AI 바이브코딩</div><div class="tm">2주 내내</div></div>
+    <div class="ttl">내 AI 직원을 직접 만든다</div>
     <ul>
       <li>사전 질문지 전달 &amp; 작성</li>
       <li>바이브코딩 A to Z 교육</li>
@@ -173,8 +178,8 @@
   </div>
 
   <div class="day">
-    <div class="hd"><div class="dt">8월 16일 (일)</div><div class="tm">12시 ~ 16시 · 4시간</div></div>
-    <div class="ttl">마케팅 실습</div>
+    <div class="hd"><div class="dt">수익화 세팅</div><div class="tm">2주 내내</div></div>
+    <div class="ttl">만든 직원에 파는 구조를 얹는다</div>
     <ul>
       <li>제작한 AI 직원 수익화 설계</li>
       <li>실제 AI 서비스 마케팅 사례</li>

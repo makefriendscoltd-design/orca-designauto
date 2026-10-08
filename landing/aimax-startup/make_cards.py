@@ -1,19 +1,20 @@
 # -*- coding: utf-8 -*-
 """
-AIMAX 창업 프로그램 — 카페 모집글 첨부용 카드 3장 생성기 (1080×1350 · 4:5)
+AIMAX 창업 프로그램 — 카페 모집글 첨부용 카드 4장 생성기 (1080×1350 · 4:5)
 
     python make_cards.py --gen 5 --label 9월반 --first 2026-09-06
     → cards_5gi_1.png  전체 흐름
-      cards_5gi_2.png  오프라인 2회차 STEP 1~5
-      cards_5gi_3.png  온라인 6개월 두 트랙 (다크)
+      cards_5gi_2.png  오프라인 2주 (바이브코딩 · 수익화 세팅)
+      cards_5gi_3.png  온라인 5개월 운영 (매일 · 매주 · 매달)
+      cards_5gi_4.png  매월 복습 라이브 커리큘럼 (다크)
 
-timeline_startup.html(1080×5,439 롱이미지)은 상세페이지 포맷이라 카페 본문에서
-모바일 스크롤이 길다. 카페에는 이 카드 3장을 글 흐름 중간에 나눠 넣는다.
+롱이미지(timeline_startup.html)는 상세페이지 포맷이라 카페 본문에서 모바일 스크롤이
+길다. 카페에는 이 카드 4장을 글 흐름 중간에 나눠 넣는다.
 
-날짜가 박히는 건 오프라인 2회뿐이다. 라이브 요일·1:1 시점은 기수마다 정해지므로
-"2회차 다음 주부터" · "5주차 전후" 라는 순서만 넣는다 — 날짜로 바꾸지 말 것.
+**날짜가 박히는 건 오프라인 2주뿐이다.** 온라인 운영 주기·복습 라이브 시점은
+"이후 5개월" · "매월 1회" 라는 주기만 쓴다 — 날짜로 바꾸지 말 것.
 
-마스터(cards_startup.html)는 4기 기준으로 써 있고, 아래 BASE_* 문자열을 그대로
+마스터(cards_startup.html)는 5기(9월반) 기준이고, 아래 BASE_* 문자열을 그대로
 찾아 바꾼다. 마스터의 날짜 표기를 고치면 BASE_* 도 같이 고쳐야 한다.
 """
 import argparse
@@ -21,6 +22,16 @@ import subprocess
 import sys
 from datetime import date, timedelta
 from pathlib import Path
+
+# --- venv 고정: 스킬 전용 venv 가 아니면 그쪽으로 재실행한다 ---
+# (시스템 python3 에도 PIL 이 깔려 있어 "PIL 있나"로 판정하면 numpy/fitz 에서 뒤늦게 터진다)
+import os as _os, sys as _sys
+_vdir = _os.path.join(_os.path.expanduser("~"), ".claude", "skills", ".venv")
+_vpy = _os.path.join(_vdir, "Scripts" if _os.name == "nt" else "bin",
+                     "python.exe" if _os.name == "nt" else "python")
+if _os.path.exists(_vpy) and _os.path.realpath(_sys.prefix) != _os.path.realpath(_vdir):
+    _os.execv(_vpy, [_vpy, _os.path.abspath(__file__)] + _sys.argv[1:])
+# --- shim 끝 ---
 
 from PIL import Image
 
@@ -33,16 +44,18 @@ WEEK_KO = "월화수목금토일"
 
 # 마스터에 박혀 있는 4기 값. 몇 건 나와야 하는지까지 못박아 둔다 —
 # 건수가 다르면 마스터 구조가 바뀐 것이고, 조용히 넘어가면 옛 날짜가 섞인 카드가 나간다
-BASE_LABEL = ("4기 · 8월반", 1)
-BASE_FIRST = ("8월 9일 (일)", 2)    # 카드1 flow + 카드2 day
-BASE_SECOND = ("8월 16일 (일)", 2)
+BASE_LABEL = ("5기 · 9월반", 1)
+# 26-08-03 구조 변경: 회차별 분리를 폐기하고 두 날짜를 한 문자열로 묶었다.
+# 카드1 flow 와 카드2 dayhd 두 곳에 같은 문자열이 들어간다.
+BASE_DATES = ("9월 6일 · 13일 (일)", 2)
 
-SUBTITLES = ["전체 흐름", "오프라인 2회차", "온라인 5개월 운영", "복습 라이브 커리큘럼"]
+SUBTITLES = ["전체 흐름", "오프라인 2주", "온라인 5개월 운영", "복습 라이브 커리큘럼"]
 
 
-def md_dow(d: date) -> str:
-    """8월 9일 (일)"""
-    return f"{d.month}월 {d.day}일 ({WEEK_KO[d.weekday()]})"
+def two_dates(a: date, b: date) -> str:
+    """9월 6일 · 13일 (일)  — 달이 넘어가면 9월 27일 · 10월 4일 (일)"""
+    tail = f"{b.day}일" if a.month == b.month else f"{b.month}월 {b.day}일"
+    return f"{a.month}월 {a.day}일 · {tail} ({WEEK_KO[a.weekday()]})"
 
 
 def swap(html: str, base, new: str) -> str:
@@ -61,8 +74,7 @@ def build(gen, label, first, out, keep_raw):
 
     html = SRC.read_text(encoding="utf-8")
     html = swap(html, BASE_LABEL, f"{gen}기 · {label}")
-    html = swap(html, BASE_FIRST, md_dow(first))
-    html = swap(html, BASE_SECOND, md_dow(second))
+    html = swap(html, BASE_DATES, two_dates(first, second))
 
     stem = out or f"cards_{gen}gi"
     tmp_html = HERE / f"_{stem}.html"
@@ -80,7 +92,7 @@ def build(gen, label, first, out, keep_raw):
         sys.exit(f"높이가 {im.size[1]} 이다 (기대 {CARD_H * N_CARDS}).\n"
                  f"  카드 내용이 1350px 를 넘쳤다. cards_startup.html 여백을 조일 것")
 
-    print(f"  {gen}기 · {label}   1회차 {md_dow(first)} / 2회차 {md_dow(second)}")
+    print(f"  {gen}기 · {label}   오프라인 {two_dates(first, second)} · 매회 5시간")
     for i in range(N_CARDS):
         png = HERE / f"{stem}_{i + 1}.png"
         im.crop((0, i * CARD_H, CARD_W, (i + 1) * CARD_H)).save(png)

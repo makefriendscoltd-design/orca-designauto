@@ -36,15 +36,20 @@
 |---|---|---|
 | `class-launch` | `brief.json` → 상세페이지 / 세일즈덱 | `scripts/build_class.py` |
 | `detail-page` | 1080px HTML → 롱이미지 → 슬라이스 | `scripts/render_detail.py`, `slice_detail.py` |
+| `poster-detail` | 레퍼런스 실측 → 860px 포스터판 상세 → 슬라이스 | `scripts/measure_type.py`, `compare_scale.py`, `slice_poster.py` |
 | `slide-deck` | 1920×1080 HTML → `.pptx` + 낱장 PNG | `scripts/build_deck.py` |
 
 ```bash
-python ~/.claude/skills/class-launch/scripts/build_class.py brief.json --detail --render
-python ~/.claude/skills/class-launch/scripts/build_class.py brief.json --deck   --render
-python ~/.claude/skills/detail-page/scripts/render_detail.py detail_x.html detail_x_full.png
-python ~/.claude/skills/detail-page/scripts/slice_detail.py detail_x_full.png ./slices --width 1080 --chunk 1500
-python ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
+python3 ~/.claude/skills/class-launch/scripts/build_class.py brief.json --detail --render
+python3 ~/.claude/skills/class-launch/scripts/build_class.py brief.json --deck   --render
+python3 ~/.claude/skills/detail-page/scripts/render_detail.py detail_x.html detail_x_full.png
+python3 ~/.claude/skills/detail-page/scripts/slice_detail.py detail_x_full.png ./slices --width 1080 --chunk 1500
+python3 ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
+python3 ~/.claude/skills/poster-detail/scripts/measure_type.py ref.png --width 860   # 레퍼런스 실측 먼저
 ```
+
+**맥에는 `python` 이 없다. `python3` 로 쓴다.** 스크립트가 Pillow 없는 인터프리터로 실행되면
+`~/.claude/skills/.venv` 로 알아서 재실행하므로 어떤 python3 를 써도 된다.
 
 브리프 스키마는 `~/.claude/skills/class-launch/references/brief.schema.md`,
 검증된 실제 브리프는 `references/brief.example.json`(블루밍본 4주) 또는
@@ -59,14 +64,37 @@ python ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
   하나의 `contact_sheet.py` 로 합칠 수 있다
 - **가격 일괄 반영** — 가격은 상세이미지·썸네일·판매채널 3곳에 박힌다. 지금은 수동
 
+## 맥 작업 환경 (26-08-04 이관 완료)
+
+원래 윈도우에서 돌리던 파이프라인을 이 맥으로 옮겼다. **아래는 실제로 렌더까지 돌려 확인한 상태다.**
+
+| | 값 |
+|---|---|
+| 렌더 브라우저 | **Google Chrome 151** (`/Applications/Google Chrome.app`) — 스크립트가 자동 탐색 |
+| 파이썬 | `~/.claude/skills/.venv` (3.14) — Pillow · python-pptx · PyMuPDF · requests · numpy |
+| 실행 | `python3 <스크립트>`. Pillow 없는 python3 로 실행돼도 위 venv 로 자동 재실행된다 |
+| 카페24 토큰 | `~/coding/cafe24bot/token.json` — `_c24.py` 가 자동으로 찾는다 |
+| 발송 코드 | `~/orca/projects/cafe24/`(문자·메일) · `~/orca/projects/familypartners/`(뿌리오 자격증명) |
+
+- 브라우저 탐색 순서는 `render_detail.py` / `build_deck.py` 의 `BROWSER_CANDIDATES` 에 있다.
+  Chrome → Edge → Chromium → Brave → playwright 번들 순. **윈도우 경로도 그대로 남겨뒀으니
+  같은 스크립트가 양쪽에서 돈다.**
+- **`D:\coding\...` · `C:\Users\hey_m\...` 로 적힌 경로를 보면 옛 문서다.** 위 표의 맥 경로로 읽는다.
+- 아직 못 옮긴 것: `brain-council` 스킬이 가리키는 볼트가 이 맥에 없다
+  (`~/brain-sangchul` 은 6축 구조라 다른 자료다). 디자인 파이프라인과는 무관.
+
 ## 렌더 규칙 (실측으로 굳힌 것, 어기면 깨진다)
 
 - **Pretendard 로컬 `@font-face` 필수.** CDN `<link>` 는 headless에서 안 붙어 맑은고딕으로 렌더된다.
   HTML 옆에 `assets/pretendard/*.woff2` 5종을 둔다 — 공용 폴더로 빼면 상대경로가 깨진다.
   원본: `orca/projects/design/aimax-ebook/assets/pretendard/`
-- **`taskkill /IM msedge.exe` 절대 금지.** 유저가 열어둔 브라우저까지 죽는다.
-  `--user-data-dir=<격리프로필>` 로 띄우고 그 PID만 `Stop-Process` — 세 스킬 스크립트엔 이미 반영됨
-- **Edge stale 렌더.** 이전 msedge 프로세스가 안 죽으면 재렌더가 무시되고 **이전 파일 바이트가 그대로 남는다.**
+- **전역 브라우저 kill 절대 금지** (윈도우 `taskkill /IM msedge.exe` · 맥 `pkill Chrome`).
+  유저가 열어둔 브라우저까지 죽는다.
+  `--user-data-dir=<격리프로필>` 로 띄우고 그 PID만 종료 — 세 스킬 스크립트엔 이미 반영됨
+- **맥은 폰트 폴백이 안 보인다.** 윈도우는 Pretendard 로딩 실패 시 맑은고딕이라 딱 티가 나는데,
+  맥은 Apple SD Gothic Neo 로 떨어져 그럴싸하게 보인다. **높이가 기준선과 다르면 폰트 실패를 의심할 것**
+  (같은 HTML이면 맥·윈도우 렌더 높이가 픽셀 단위로 같다 — 26-08-04 실측으로 확인)
+- **Edge stale 렌더(윈도우 한정).** 이전 msedge 프로세스가 안 죽으면 재렌더가 무시되고 **이전 파일 바이트가 그대로 남는다.**
   페이지 수가 같으면 못 알아챈다 — 파일 크기가 그대로면 의심할 것.
   렌더 전 kill + 대기를 스크립트에 내장한다
 - Edge headless는 print-to-pdf 후 프로세스가 안 닫힌다(파일은 정상 기록) → size stable 폴링 후 격리 PID 종료
@@ -95,7 +123,9 @@ python ~/.claude/skills/slide-deck/scripts/build_deck.py deck.html "출력.pptx"
 
 ## 디자인 규칙
 
-- **이모지 금지.** 구어체로. 매끄러운 마케팅 카피는 AI 티가 난다
+- **본문 카피에 이모지 금지.** 구어체로. 매끄러운 마케팅 카피는 AI 티가 난다.
+  (26-08-09 완화 — 와디즈/타이탄 문법의 **포스터형 장식 요소**로 쓰는 건 예외.
+  문장 사이에 뿌리는 게 AI 티지, 그래픽으로 쓰는 건 아니다. 컬러 이모지는 렌더된다)
 - 방어 가능한 수치만. 과장 금지
 - 밝은 섹션만 이어붙이지 말고 다크 섹션을 3~4개 간격으로
 - 폰트는 웹 감각보다 크게 — 상세 h1 104 / h2 66 / 본문 25~27px, 덱 h1 104 / h2 76 / 본문 30~36px
