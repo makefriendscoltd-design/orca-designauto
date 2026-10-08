@@ -1,0 +1,4 @@
+interface:
+  display_name: "Detail Launch"
+  short_description: "Turn source copy into a Cafe24-ready launch page"
+  default_prompt: "Use -launch to transform this source copy and images into a reviewed detail page ready for Cafe24 registration."
