@@ -573,7 +573,7 @@ HTML = f"""<!doctype html>
   <div class="opt">
     <div class="nm">AI 학교 정규과정 · 1년</div>
     <div class="v">월 {PRICE_MON:,}<small>원</small></div>
-    <div class="nt">1년 과정 · 12개월 할부 · 정원 30명<br>할부 수수료와 조건은 결제 수단에 따라 다릅니다.</div>
+    <div class="nt">1년 과정 · 수강료 {PRICE_MAN}만원 · 12개월 할부 · 정원 30명<br>할부 수수료와 조건은 결제 수단에 따라 다릅니다.</div>
   </div>
   <div class="cta">입학 신청하기 <i></i></div>
   <div class="fine">입학설명회에서 어떤 AI 직원이 필요한지 먼저 확인하실 수 있습니다.</div>
